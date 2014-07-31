@@ -1,0 +1,32 @@
+// How to include the pronq spinner with CSS/HTML
+
+
+	// The following call to a font library needs to be in the <head> section of your page
+
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+	// The following css needs to be included in your page
+
+		.pq-spinner.orange {
+		  color: #ff9e1b;
+		  font-size: 80px;
+		  text-shadow: 1px 1px 0px #ddddde;
+		}
+
+		.pq-spinner.grey {
+		  color: #babbbd;
+		  font-size: 80px;
+		  text-shadow: 1px 1px 0px #ddddde;
+		}
+
+
+	// Use the following line of code to include the spinner
+
+		// For the orange spinner
+
+			<i class="fa fa-spinner fa-spin pq-spinner orange"></i>
+
+		// For the grey spinner
+
+			<i class="fa fa-spinner fa-spin pq-spinner grey"></i>

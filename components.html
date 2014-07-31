@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html ng-app="uiLibrary">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Pronq.com Pattern Library</title>
+
+	<!-- Icon -->
+
+	<link rel="shortcut icon" href="imgs/assets/favicon.ico" type="image/x-icon" />
+
+	<!-- Fonts -->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+	<!-- CSS -->
+
+	<link href='bootstrap/css/bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='bootstrap/css/pq-bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='includes/style.css' rel='stylesheet' type='text/css'>
+
+	<!-- Javascript -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+</head>
+<body>
+
+	<!-- Navigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<nav class='navbar navbar-default' id='globalnav' role='navigation' ng-include src="'includes/nav.html'"></nav>
+
+	<div class="pq-subnav hidden-xs hidden-sm" id="subnav">
+		<div class="container">
+			<div class="title">Components</div>
+			<ul>
+				<li><a href="#headerfooter">Global Header & Footer</a></li>
+				<li><a href="#menus">Menus</a></li>
+				<li><a href="#headers">Headers</a></li>
+				<li><a href="#buttongroups">Button Groups</a></li>
+				<!--<li><a href="#carousels">Carousels</a></li>
+				<li><a href="#tabs">Tabs</a></li>-->
+				<li><a href="#tables">Tables</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Content - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<div class="container">
+
+	<!-- NAVIGATION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+		<div id="headerfooter" class="pq-docs-section continue">
+
+			<h1>Global Header & Footer</h1>
+
+			<p>All headers and footers have been optimized for desktop and mobile (touch). They should never be sticky.</p>
+
+			<h2>Global Header</h2>
+
+		</div>
+
+	</div>
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-bars fa-2x"></i>
+				</button>
+				<a class="navbar-brand" href="http://www.pronq.com"><img alt="Pronq" src="imgs/assets/Pronq_reverse_orange_rgb_72_LG.png"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+				<ul class="nav navbar-nav">
+					<li><a href="javascript:void(0)">Solutions</a></li>
+					<li class="dropdown"><a href="javascript:void(0)">Products</a>
+						<ul class="dropdown-menu">
+							<a href="http://www.pronq.com/software/agile-manager"><li>Agile Manager</li></a>
+							<a href="http://www.pronq.com/software/app-pulse"><li>AppPulse</li></a>
+							<a href="http://www.pronq.com/software/fortify-on-demand"><li>Fortify on Demand</li></a>
+							<a href="http://www.pronq.com/software/hp-anywhere"><li>HP Anywhere</li></a>
+							<a href="http://www8.hp.com/us/en/software-solutions/service-anywhere-ITSM-ITIL-service-desk/index.html"><li>Service Anywhere</li></a>
+							<a href="http://www.pronq.com/software/vertica"><li>Vertica</li></a>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0)">Pricing</a></li>
+					<li><a href="http://community.pronq.com">Community</a></li>
+					<li><a href="http://resources.pronq.com">Resources</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden-xs"><a href="javascript:void(0)"><span class="hidden-xs hidden-sm">Sign In</span><span class="hidden-lg hidden-md"><i class="fa fa-user fa-lg"></i></a></li>
+					<li><a href="javascript:void(0)"><i class="fa fa-question-circle fa-lg"></i></a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<div class="pq-docs-section continue">
+			<h2>Global Header (Logged in)</h2>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-bars fa-2x"></i>
+				</button>
+				<a class="navbar-brand" href="http://www.pronq.com"><img alt="Pronq" src="imgs/assets/Pronq_reverse_orange_rgb_72_LG.png"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+				<ul class="nav navbar-nav">
+					<li class="hidden-lg hidden-md hidden-sm login"><a href="javascript:void(0)">Welcome Firstname</a></li>
+					<li class="dropdown"><a href="javascript:void(0)">Products</a>
+						<ul class="dropdown-menu">
+							<a href="http://www.pronq.com/software/agile-manager"><li>Agile Manager</li></a>
+							<a href="http://www.pronq.com/software/app-pulse"><li>AppPulse</li></a>
+							<a href="http://www.pronq.com/software/fortify-on-demand"><li>Fortify on Demand</li></a>
+							<a href="http://www.pronq.com/software/hp-anywhere"><li>HP Anywhere</li></a>
+							<a href="http://www8.hp.com/us/en/software-solutions/service-anywhere-ITSM-ITIL-service-desk/index.html"><li>Service Anywhere</li></a>
+							<a href="http://www.pronq.com/software/vertica"><li>Vertica</li></a>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0)">Pricing</a></li>
+					<li><a href="http://community.pronq.com">Community</a></li>
+					<li><a href="http://resources.pronq.com">Resources</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden-xs"><a href="javascript:void(0)"><span class="hidden-xs hidden-sm">Hi Firstname</span><span class="hidden-lg hidden-md"><i class="fa fa-user fa-lg"></i></a>
+						<ul class="dropdown-menu">
+							<a href="javascript:void(0)"><li>My Account</li></a>
+							<a href="javascript:void(0)"><li>Sign Out</li></a>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0)"><i class="fa fa-question-circle fa-lg"></i></a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<div class="pq-docs-section continue">
+			<h2>Minimal Header</h2>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-toggle" href="javascript:void(0)"><i class="fa fa-question-circle fa-lg"></i></a>
+				<a class="navbar-brand" href="http://www.pronq.com"><img alt="Pronq" src="imgs/assets/Pronq_reverse_orange_rgb_72_LG.png"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="javascript:void(0)"><i class="fa fa-question-circle fa-lg"></i></a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<div class="pq-docs-section continue">
+			<h2>Minimal Header (Logged in)</h2>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-toggle" href="javascript:void(0)"><i class="fa fa-question-circle fa-lg"></i></a>
+				<a class="navbar-brand" href="http://www.pronq.com"><img alt="Pronq" src="imgs/assets/Pronq_reverse_orange_rgb_72_LG.png"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden-sm hidden-xs"><a href="javascript:void(0)">Hi Firstname</a>
+						<ul class="dropdown-menu">
+							<a href="javascript:void(0)"><li>My Account</li></a>
+							<a href="javascript:void(0)"><li>Sign Out</li></a>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0)"><i class="fa fa-question-circle fa-lg"></i></a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<div class="pq-docs-section continue">
+			<h2>Landing Page Header</h2>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+
+				<a href="javascript:void(0)" class="btn btn-primary btn-sm">Contact Us</a>
+
+				<a class="navbar-brand" href="index.html"><img alt="Pronq" src="imgs/assets/Pronq_reverse_orange_rgb_72_LG.png"></a>
+			</div>
+
+				<a href="javascript:void(0)" class="btn btn-primary">Contact Us</a>
+
+
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<div class="pq-docs-section continue">
+			<h2>Global Footer</h2>
+		</div>
+	</div>
+
+	<div class="pq-footer" style="margin-top: 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="footer-box col-md-3 col-sm-6">
+					<h1>Products</h1>
+					<ul>
+						<li><a href="javascript:void(0)">Agile Manager</a></li>
+						<li><a href="javascript:void(0)">AppPulse</a></li>
+						<li><a href="javascript:void(0)">Fortify on Demand</a></li>
+						<li><a href="javascript:void(0)">HP Anywhere</a></li>
+						<li><a href="javascript:void(0)">Service Anywhere</a></li>
+						<li><a href="javascript:void(0)">Vertica</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-box col-md-3 col-sm-6">
+					<h1>Learn</h1>
+					<ul>
+						<li><a href="javascript:void(0)">White Papers</a></li>
+						<li><a href="javascript:void(0)">Case Studies</a></li>
+						<li><a href="javascript:void(0)">Videos</a></li>
+						<li><a href="javascript:void(0)">Webinars</a></li>
+						<li><a href="javascript:void(0)">Documentation</a></li>
+						<li><a href="javascript:void(0)">News & Reports</a></li>
+					</ul>
+				</div>
+				<div class="footer-box col-md-3 col-sm-6">
+					<h1>Company</h1>
+					<ul>
+						<li><a href="javascript:void(0)">Contact Us</a></li>
+						<li><a href="javascript:void(0)">Jobs</a></li>
+						<li><a href="javascript:void(0)">Privacy Statement</a></li>
+						<li><a href="javascript:void(0)">Terms of Use</a></li>
+					</ul>
+				</div>
+				<div class="footer-box col-md-3 col-sm-6">
+					<h1>Connect With Us</h1>
+					<a href="javascript:void(0)"><i class="fa fa-facebook fa-2x" style="margin-right: 15px;"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-twitter fa-2x" style="margin-right: 15px;"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-google-plus fa-2x" style="margin-right: 15px;"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-youtube fa-2x" style="margin-right: 15px;"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-linkedin fa-2x"></i></a>
+				</div>
+			</div>
+			<div class="row footer-bottom">
+				<div class="col-md-12">
+					&copy; 2014 pronq.com
+				</div>
+			</div>
+		</div><!-- /.container-fluid -->
+	</div>
+
+	<div class="container">
+		<div class="pq-docs-section continue">
+			<h2>Minimal Footer</h2>
+		</div>
+	</div>
+
+	<div class="pq-footer minimal" style="margin-top: 0px;">
+		<div class="container">
+			<div class="row footer-bottom">
+				<div class="col-md-12">
+					<a href="javascript:void(0)">Privacy Statement</a>&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="javascript:void(0)">Terms of Use</a><span class="cpbullet">&nbsp;&nbsp;&#8226;&nbsp;&nbsp;</span><span class="copyright">&copy; 2014 pronq.com</span>
+				</div>
+			</div>
+		</div><!-- /.container-fluid -->
+	</div>
+
+	<div class="container">
+		<div class="pq-docs-section continue">
+			<h2>Landing Page Footer</h2>
+		</div>
+	</div>
+
+	<div class="pq-footer" style="margin-top: 0px;">
+		<div class="container">
+			<div class="row footer-bottom">
+				<div class="col-md-12">
+					<div class="footer-social">
+					<a href="javascript:void(0)"><i class="fa fa-facebook fa-lg" style="margin-right: 15px;"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-twitter fa-lg" style="margin-right: 15px;"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-google-plus fa-lg" style="margin-right: 15px;"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-youtube fa-lg" style="margin-right: 15px;"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-linkedin fa-lg"></i></a>
+					</div>
+					<a href="javascript:void(0)">Privacy Statement</a>&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="javascript:void(0)">Terms of Use</a><span class="cpbullet">&nbsp;&nbsp;&#8226;&nbsp;&nbsp;</span><span class="copyright">&copy; 2014 pronq.com</span>
+				</div>
+			</div>
+		</div><!-- /.container-fluid -->
+	</div>
+
+	<div class="container">
+		<div class="pq-docs-section" style="margin:-top 0px;padding-top: 0px;"></div>
+
+		<!-- SubNavigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+		<div id="menus" class="pq-docs-section">
+			<h1>Menus</h1>
+
+			<p>Menu's are used throughout the site to provide subnavigation. Menus are used to scroll to sections of a page. Most menus are <b>sticky</b>.</p>
+
+			<div class="pq-subnav" style="position: relative; z-index: 0;" id="content">
+				<div class="title">Title</div>
+				<ul>
+					<a href="javascript:void(0)"><li>Item 1</li></a>
+					<a href="javascript:void(0)"><li>Item 2</li></a>
+					<a href="javascript:void(0)"><li>Item 3</li></a>
+				</ul>
+			</div>
+
+			<span class="sectiontitle">Without titles</span>
+			<p>Menu's can be used with or without titles</p>
+
+			<div class="pq-subnav" style="position: relative; z-index: 0;" id="content">
+				<ul>
+					<a href="javascript:void(0)"><li>Item 1</li></a>
+					<a href="javascript:void(0)"><li>Item 2</li></a>
+					<a href="javascript:void(0)"><li>Item 3</li></a>
+				</ul>
+			</div>
+
+			<span class="sectiontitle">With a button</span>
+			<p>Menu's can include a small button on the right</p>
+
+
+			<div class="pq-subnav" style="position: relative; z-index: 0;" id="content">
+
+				<a class="btn btn-sm btn-secondary">Get Started Now</a>
+
+				<ul>
+					<a href="javascript:void(0)"><li>Item 1</li></a>
+					<a href="javascript:void(0)"><li>Item 2</li></a>
+					<a href="javascript:void(0)"><li>Item 3</li></a>
+				</ul>
+
+			</div>
+
+			<h2>Dark</h2>
+
+			<div class="pq-subnav dark" style="position: relative; z-index: 0;" id="content">
+				<ul>
+					<a href="javascript:void(0)"><li>Item 1</li></a>
+					<a href="javascript:void(0)"><li>Item 2</li></a>
+					<a href="javascript:void(0)"><li>Item 3</li></a>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- Headers - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+		<div id="headers" class="pq-docs-section">
+
+			<h1>Headers</h1>
+
+			<span class="page-header">Example page header</span>
+
+			<button class="btn btn-tertiary bspecs" id="bspecs_button" onclick="$('#specs_progressbars').slideToggle(); $('#code_progressbars').hide();"><i class="fa fa-pencil"></i></button>
+
+			<button class="btn btn-tertiary bspecs" id="bspecs_button" onclick="$('#code_progressbars').slideToggle(); $('#specs_progressbars').hide();"><i class="fa fa-code"></i></button>
+
+			<div id="specs_progressbars" class="specs">
+
+				<h1>Page Headers</h1>
+
+				<table>
+					<tr><th>Font</th><td>Sanchez</td></tr>
+					<tr><th>Font Size</th><td>30px</td></tr>
+					<tr><th>Color</th><td>#75787B</td></tr>
+					<tr><th>Margin</th><td>45px 0px 30px 0px</td></tr>
+					<tr><th>Bottom Padding</th><td>30px</td></tr>
+					<tr><th>Bottom Border</th><td>1px solid #DDDDDE</td></tr>
+				</table>
+
+			</div>
+
+			<div id="code_progressbars" class="code">
+
+				<div class="linenumbers">1</br>2</div>
+
+				<span class="comment">&lt;!-- Page Title --&gt;</span><br/>
+
+				&lt;<span class="tag">span</span> <span class="html">class</span>=<span class="css">"pageheader"</span>&gt;Page Title&lt;/<span class="tag">span</span>&gt;<br />
+
+			</div>
+
+		</div>
+
+		<!-- Buttons Groups - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
+		<div id="buttongroups" class="pq-docs-section">
+
+			<h1>Button Groups</h1>
+
+			<small style="margin-right: 15px;"><b>Tertiary & Primary</b></small>
+			<div class="btn-group">
+				<button type="button" class="btn btn-tertiary">Tertiary</button>
+				<button type="button" class="btn btn-primary">Primary</button>
+			</div>
+
+			<br /><br />
+			<small style="margin-right: 15px;"><b>Tertiary & Secondary</b></small>
+			<div class="btn-group">
+				<button type="button" class="btn btn-tertiary">Tertiary</button>
+				<button type="button" class="btn btn-secondary">Secondary</button>
+			</div>
+			<br /><br />
+
+			<small style="margin-right: 15px;"><b>Minimal Grey & Primary</b></small>
+
+			<div class="btn-group">
+				<button type="button" class="btn btn-mingrey" style="margin-right: 5px;">Minimal Grey</button>
+				<button type="button" class="btn btn-primary">Primary</button>
+			</div>
+
+			<br /><br />
+			<small style="margin-right: 15px;"><b>Minimal Grey & Secondary</b></small>
+
+			<div class="btn-group">
+				<button type="button" class="btn btn-mingrey" style="margin-right: 5px;">Minimal Grey</button>
+				<button type="button" class="btn btn-secondary">Secondary</button>
+			</div>
+
+			<br /><br />
+
+			<div class="darkbox-label">
+				Elements that can only be seen on dark backgrounds
+			</div>
+
+			<div class="darkbox">
+				<small style="margin-right: 15px;"><b>Minimal White & Primary</b></small>
+
+				<div class="btn-group">
+					<button type="button" class="btn btn-minwhite" style="margin-right: 5px;">Minimal White</button>
+					<button type="button" class="btn btn-primary">Primary</button>
+				</div>
+
+				<br /><br />
+
+				<small style="margin-right: 15px;"><b>Minimal White & Primary</b></small>
+
+				<div class="btn-group">
+					<button type="button" class="btn btn-minwhite" style="margin-right: 5px;">Minimal White</button>
+					<button type="button" class="btn btn-secondary">Secondary</button>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Carousel - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
+<!--		<div id="carousels" class="pq-docs-section" id="buttons">
+
+			<h1>Carousels</h1>
+
+			<div id="carousel-example" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example" data-slide-to="1"></li>
+					<li data-target="#carousel-example" data-slide-to="2"></li>
+				</ol>
+
+				<div class="carousel-inner">
+					<div class="item active" style="background-color: #00B0B9; height: 200px;padding: 80px; color: white; text-align: center;">
+						Slide 1
+					</div>
+
+					<div class="item" style="background-color: #FF9E1B; height: 200px;padding: 80px; color: white; text-align: center;">
+						Slide 2
+					</div>
+
+					<div class="item" style="background-color: #006478; height: 200px;padding: 80px; color: white; text-align: center;">
+						Slide 3
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#carousel-example" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="right carousel-control" href="#carousel-example" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+
+			<h2>Carousel with White Backgrounds</h2>
+
+			<div id="carousel-example2" class="carousel slide light" data-ride="carousel">
+
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example2" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example2" data-slide-to="1"></li>
+					<li data-target="#carousel-example2" data-slide-to="2"></li>
+				</ol>
+
+				<div class="carousel-inner">
+					<div class="item active" style="background-color: #FFFFFF; height: 200px;padding: 80px; color: #53565A; text-align: center;">
+						Slide 1
+					</div>
+
+					<div class="item" style="background-color: #FFFFFF; height: 200px;padding: 80px; color: #53565A; text-align: center;">
+						Slide 2
+					</div>
+
+					<div class="item" style="background-color: #FFFFFF; height: 200px;padding: 80px; color: #53565A; text-align: center;">
+						Slide 3
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#carousel-example2" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="right carousel-control" href="#carousel-example2" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+
+		</div> -->
+
+		<!-- Tabs - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+<!--		<div id="tabs" class="pq-docs-section">
+
+		<h1>Tabs</h1>
+
+		<ul class="nav nav-tabs responsive" id="myTab">
+			<li class="active"><a href="#home" data-toggle="tab">Item 1</a></li>
+			<li><a href="#profile" data-toggle="tab">Item 2</a></li>
+			<li><a href="#messages" data-toggle="tab">Item 3</a></li>
+			<li><a href="#settings" data-toggle="tab">Item 4</a></li>
+		</ul>
+
+		<div class="tab-content responsive">
+			<div class="tab-pane active" id="home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie euismod augue, ac fringilla eros placerat in. Nam scelerisque sollicitudin diam, vitae tincidunt dolor vulputate vel.</div>
+			<div class="tab-pane" id="profile">Vestibulum euismod lacus quis felis semper posuere. Morbi fringilla porta lorem, vel cursus sapien ornare nec. Integer elementum, nulla vitae feugiat sagittis, nulla erat fringilla erat, in ultrices nisl est eget lorem. Suspendisse in urna dapibus, elementum velit vitae, volutpat leo. Cras egestas felis at leo lacinia imperdiet. Aenean vel consequat est. </div>
+			<div class="tab-pane" id="messages">Pellentesque congue faucibus pharetra. Donec eu pretium orci, et dictum nibh. Suspendisse ac diam eros. Ut dapibus congue mauris fringilla scelerisque. Aliquam rhoncus, magna a congue scelerisque, nisl magna vestibulum purus, vel viverra mi neque id massa. Nunc auctor tellus quis ornare ultrices. Integer luctus dui vitae mi facilisis facilisis.</div>
+			<div class="tab-pane" id="settings">Nam luctus augue eget pretium egestas. Donec sit amet erat dictum, sodales tortor a, laoreet neque. Phasellus cursus ac neque nec imperdiet. Sed sed leo vitae mauris vehicula tincidunt. Nulla dapibus sit amet sem sollicitudin imperdiet.</div>
+			</div>
+		</div>
+
+		<script>
+			$(function () {
+				$('#myTab a:last').tab('show')
+			})
+		</script> -->
+
+		<!-- Tables - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+		<div id="tables" class="pq-docs-section">
+
+			<h1>Tables</h1>
+
+			<h2>Light Table</h2>
+
+			<table class="table light">
+				<thead>
+					<tr>
+						<th>Column 1</th>
+						<th>Column 2</th>
+						<th>Column 3</th>
+						<th>Column 4</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Item 1</td>
+						<td>Object</td>
+						<td>Category</td>
+						<td>Example of a longer description and with a full sentence of text.</td>
+					</tr>
+					<tr>
+						<td>Item 2</td>
+						<td>Object</td>
+						<td>Category</td>
+						<td>Example of a longer description and with a full sentence of text.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<button class="btn btn-tertiary bspecs" id="bspecs_button" onclick="$('#specs_lighttable').slideToggle(); $('#code_lighttable').hide();"><i class="fa fa-pencil"></i></button>
+
+			<button class="btn btn-tertiary bspecs" id="bspecs_button" onclick="$('#code_lighttable').slideToggle(); $('#specs_lighttable').hide();"><i class="fa fa-code"></i></button>
+
+			<div id="specs_lighttable" class="specs">
+
+				<h1>Basic Tables</h1>
+
+				<div class="row">
+					<div class="col-md-6">
+						<table>
+							<tr><th class="state" colspan=2>Header</th></tr>
+							<tr><th>Font Weight</th><td>700</td></tr>
+							<tr><th>Color</th><td>#53565A</td></tr>
+							<tr><th>Border Radius</th><td>5px</td></tr>
+							<tr><th>Background Color</th><td>#FFFFFF</td></tr>
+							<tr><th>Border Bottom</th><td>2px solid #EDEEEE</td></tr>
+							<tr><th>Padding</th><td>15px</td></tr>
+						</table>
+					</div>
+
+					<div class="col-md-6">
+						<table>
+							<tr><th class="state" colspan=2>Body</th></tr>
+							<tr><th>Border Bottom</th><td>1px solid #EDEEEE</td></tr>
+							<tr><th>Background Color</th><td>#FFFFFF</td></tr>
+							<tr><th>Border Radius</th><td>5px</td></tr>
+							<tr><th>Padding</th><td>15px</td></tr>
+						</table>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="code_lighttable" class="code">
+
+				<div class="linenumbers">1</br>2</div>
+
+				<span class="comment">&lt;!-- Light Table --&gt;</span><br/>
+
+				&lt;<span class="tag">table</span> <span class="html">class</span>=<span class="css">"table light"</span>&gt;<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">thead</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">th</span>&gt;Column 1&lt;/<span class="tag">th</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">th</span>&gt;Column 2&lt;/<span class="tag">th</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">th</span>&gt;Column 3&lt;/<span class="tag">th</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">thead</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">tbody</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">td</span>&gt;Column 1 content&lt;/<span class="tag">td</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">td</span>&gt;Column 2 content&lt;/<span class="tag">td</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">td</span>&gt;Column 3 content&lt;/<span class="tag">td</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">tbody</span>&gt;<br />
+				&lt;/<span class="tag">table</span>&gt;
+			</div>
+
+			<h2>Teal Table</h2>
+
+			<table class="table teal">
+				<thead>
+					<tr>
+						<th>Column 1</th>
+						<th>Column 2</th>
+						<th>Column 3</th>
+						<th>Column 4</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Item 1</td>
+						<td>Object</td>
+						<td>Category</td>
+						<td>Example of a longer description and with a full sentence of text.</td>
+					</tr>
+					<tr>
+						<td>Item 2</td>
+						<td>Object</td>
+						<td>Category</td>
+						<td>Example of a longer description and with a full sentence of text.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<button class="btn btn-tertiary bspecs" id="bspecs_button" onclick="$('#specs_tealtable').slideToggle(); $('#code_tealtable').hide();"><i class="fa fa-pencil"></i></button>
+
+			<button class="btn btn-tertiary bspecs" id="bspecs_button" onclick="$('#code_tealtable').slideToggle(); $('#specs_tealtable').hide();"><i class="fa fa-code"></i></button>
+
+			<div id="specs_tealtable" class="specs">
+
+				<h1>Basic Tables</h1>
+
+				<div class="row">
+					<div class="col-md-6">
+						<table>
+							<tr><th class="state" colspan=2>Header</th></tr>
+							<tr><th>Font Weight</th><td>700</td></tr>
+							<tr><th>Color</th><td>#FFFFFF</td></tr>
+							<tr><th>Border Radius</th><td>5px</td></tr>
+							<tr><th>Background Color</th><td>#00B0B9</td></tr>
+							<tr><th>Border Bottom</th><td>2px solid #EDEEEE</td></tr>
+							<tr><th>Padding</th><td>15px</td></tr>
+						</table>
+					</div>
+
+					<div class="col-md-6">
+						<table>
+							<tr><th class="state" colspan=2>Body</th></tr>
+							<tr><th>Border Bottom</th><td>1px solid #EDEEEE</td></tr>
+							<tr><th>Background Color</th><td>#FFFFFF</td></tr>
+							<tr><th>Border Radius</th><td>5px</td></tr>
+							<tr><th>Padding</th><td>15px</td></tr>
+						</table>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="code_tealtable" class="code">
+
+				<div class="linenumbers">1</br>2</div>
+
+				<span class="comment">&lt;!-- Light Table --&gt;</span><br/>
+
+				&lt;<span class="tag">table</span> <span class="html">class</span>=<span class="css">"table teal"</span>&gt;<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">thead</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">th</span>&gt;Column 1&lt;/<span class="tag">th</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">th</span>&gt;Column 2&lt;/<span class="tag">th</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">th</span>&gt;Column 3&lt;/<span class="tag">th</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">thead</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">tbody</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">td</span>&gt;Column 1 content&lt;/<span class="tag">td</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">td</span>&gt;Column 2 content&lt;/<span class="tag">td</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">td</span>&gt;Column 3 content&lt;/<span class="tag">td</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">tbody</span>&gt;<br />
+				&lt;/<span class="tag">table</span>&gt;
+			</div>
+<!--
+			<h2>Product Table</h2>
+
+			<table class="table producttable">
+				<tbody>
+					<tr>
+						<td><i class="fa fa-circle-o fa-4x logo"></i><h6>Product Name</h6>Your current license status</td>
+						<td><button class="btn btn-secondary btn-sm">Launch</button><br><br><a href="javascript:void(0)">Manage</a> | <a href="javascript:void(0)">Details <i class="fa fa-angle-down"></i></a></td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-circle-o fa-4x logo"></i><h6>Product Name</h6>Your current license status</td>
+						<td><button class="btn btn-secondary btn-sm">Launch</button><br><br><a href="javascript:void(0)">Manage</a> | <a href="javascript:void(0)">Details <i class="fa fa-angle-down"></i></a></td>
+					</tr>
+				</tbody>
+			</table>
+-->
+		</div>
+
+	</div>
+
+	<script>
+
+		angular.module('uiLibrary', ['ui.bootstrap']);
+
+		$(document).ready(function() {
+
+			fakewaffle.responsiveTabs(['xs', 'sm']);
+
+
+			$('.carousel').carousel({
+				interval: false
+			});
+		});
+	</script>
+
+	<div id="footer" class="pq-footer" ng-include="'includes/footer.html'"></div>
+
+	<!-- After load JavaScript files -->
+
+	<script src="js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/ui-bootstrap-0.10.0.min.js" type="text/javascript"></script>
+	<script src="js/responsive-tabs.js"></script>
+	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="js/pq-backgrounds.js" type="text/javascript"></script>
+	<script src="js/pq-subnav.js" type="text/javascript"></script>
+	<script src="js/pq-top.js" type="text/javascript"></script>
+
+</body>
+</html>

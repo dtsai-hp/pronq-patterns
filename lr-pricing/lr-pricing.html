@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html ng-app="uiLibrary">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Pronq.com Pattern Library</title>
+
+	<!-- Icon -->
+
+	<link rel="shortcut icon" href="imgs/assets/favicon.ico" type="image/x-icon" />
+
+	<!-- Fonts -->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Sanchez:400,400italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+	<!-- CSS -->
+
+	<link href='../bootstrap/css/bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='../bootstrap/css/pq-bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='../bootstrap/css/jquery-ui-1.10.4.custom.css' rel='stylesheet' type='text/css'>
+	<link href='../bootstrap/css/pq-slider.css' rel='stylesheet' type='text/css'>
+	<link href='../bootstrap/css/pq-pricing.css' rel='stylesheet' type='text/css'>
+
+	<!-- Javascript -->
+
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
+</head>
+<body>
+
+
+<!-- Navigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-bars fa-2x"></i>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="imgs/assets/Pronq_reverse_orange_rgb_72_LG.png"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+				<ul class="nav navbar-nav">
+					<li class="hidden-lg hidden-md hidden-sm login"><a href="javascript:void(0)">Welcome Firstname</a></li>
+					<li><a href="styles.html">Products</a>
+					</li>
+					<li><a href="ui.html">Pricing</a>
+					</li>
+					<li><a href="components.html">Community</a>
+					</li>
+					<li><a href="templates.html">Learn</a>
+					</li>
+					<li><a href="downloads.html">Blog</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden-xs"><a href="javascript:void(0)"><span class="hidden-xs hidden-sm">Welcome Firstname</span><span class="hidden-lg hidden-md"><i class="fa fa-user fa-lg"></i></a></li>
+					<li><a href="javascript:void(0)"><i class="fa fa-question-circle fa-lg"></i></a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+	<!-- Content - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<div class="container">
+
+		<span class="page-header">LoadRunner Packages</span>		
+
+		<div class="row">
+
+			<div class="col-md-4 pricing-package teal" id="package1">
+				<div class="header">
+					<div class="title">Community Edition</div>
+					<span class="tagline"> </span>
+					<span class="price">Free</span>
+					<span class="unit"> </span>
+					<span class="arrow-down"></span>
+				</div>
+				<div class="details">
+					<button class="btn">Start trial</button>
+					<p>Get 50 virtual user licenses for life.</p>
+				</div>          
+			</div>
+
+			<div class="col-md-4 pricing-package green" id="package2">
+				<div class="header">
+					<!--  <div class="ribbon-container"><span class="star">Recommended</span></div>-->
+					<div class="title">Virtual User Days</div>
+					<span class="tagline">As low as</span>
+					<span class="price">$0.70</span>
+					<span class="unit">per virtual user day</span>
+					<span class="arrow-down"></span>
+				</div>
+				<div class="details">
+					<button class="btn" onclick="openconfigurator();">Build package</button>
+					<p>Expand your testing capabilities by adding more virtual users.</p>
+				</div>          
+			</div>
+
+			<div class="col-md-4 pricing-package blue" id="package3">
+				<div class="header">
+					<div class="title">Enterprise</div>
+					<span class="tagline"></span>
+					<span class="price small">Get a Quote</span>
+					<span class="unit"></span>
+					<span class="arrow-down"></span>
+				</div>
+				<div class="details">
+					<button class="btn">Contact sales</button>
+					<p>Shoot us your contact info and our sales reps will help customize a solution for you.</p>
+				</div>          
+			</div>
+
+		</div>
+	</div>
+
+	<div class="configurator" ng-controller="sliderDemoCtrl">
+
+		<div onclick="closeconfigurator();" class="close"><i class="fa fa-times"></i></div>
+
+		<div class="container">
+			<div class="alert alert-info"><i class="fa fa-info-circle fa-fw"></i>Using purchased virtual user days requires you to have LoadRunner version 12.00 or greater <a href="#">installed</a> and configured.</div>
+			<div class="col-md-8">
+
+				<div class="step">
+					<h2>Select number of virtual user days</h2>
+
+					Virtual user days represent the number of users that can be used to test load on your application or website in a 24 hour period.
+					
+					<span class="slider-name">Multi-step transactions</span>
+					<div class="slider-group noslider nolimit">
+
+						<input type="number" ng-model="demoVals.virtualuserdays" />
+
+					</div>
+					Virtual user days (VUDs) have a tier pricing structure.
+
+					<div class="tier">
+						<div class="row">
+							<div class="col-md-6 level active">
+								<table>
+									<tr>
+										<th>1 - 999 VUDs</th>
+										<td>$5.00/VUD</td>
+									</tr>
+								</table>
+							</div>
+							<div class="col-md-6 level">
+								<table>
+									<tr>
+										<th>10,000 - 24,999 VUDs</th>
+										<td>$1.41/VUD</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 level">
+								<table>
+									<tr>
+										<th>1,000 - 4,999 VUDs</th>
+										<td>$4.07/VUD</td>
+									</tr>
+								</table>
+							</div>
+							<div class="col-md-6 level">
+								<table>
+									<tr>
+										<th>25,000 - 49,999 VUDs</th>
+										<td>$0.89/VUD</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 level">
+								<table>
+									<tr>
+										<th>5,000 - 9,999 VUDs</th>
+										<td>$1.91/VUD</td>
+									</tr>
+								</table>
+							</div>
+							<div class="col-md-6 level">
+								<table>
+									<tr>
+										<th>50,000+ VUDs</th>
+										<td>$0.70/VUD</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<script type="text/javascript" src="js/ui-slider.js"></script>  
+				<script>
+					var app = angular.module('uiLibrary', ['ui.slider']);
+					
+					app.controller('sliderDemoCtrl', function($scope) {
+
+						$scope.demoVals = {
+							virtualuserdays:     1,
+							options: {
+								orientation: 'horizontal',
+								range: 'min'
+							}
+						};
+					});
+				</script>
+
+			</div>
+
+			<div class="col-md-4 overview">
+			
+				<div class="header">
+					Package Summary
+				</div>
+		
+				<div class="details">
+					<table>
+						<tr class="top">
+							<th>Virtual user days</th>
+							<td>{{ (demoVals.virtualuserdays * 5) | currency }}</td>
+						</tr>
+						<tr class="bottom">
+							<td colspan=2>{{ demoVals.virtualuserdays }} virtual user days @ $5.00 each</td>
+						</tr>
+						<tr>
+							<td colspan=2>{{ (demoVals.virtualuserdays * 5) | currency }}<span class="total"><small><strong>Total (Excluding taxes)</strong></small></span><br/>
+
+							<div class="form-group">
+								<div class="btn-group">
+									<button onclick="closeconfigurator();" class="btn btn-tertiary">Cancel</button>
+									<button class="btn btn-primary">Next</button>
+								</div>
+							</div>
+
+							</td>
+						</tr>
+					</table>
+				</div>  
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="lowercontent">
+		<div class="quote-box">
+
+			<div class="container">
+				<span class="quote centered">Get started today with the LoadRunnner Community Edition<br/>and find bottlenecks before you they catch you.</span>
+			</div>
+
+		</div>
+
+		<div class="not-sure">
+
+			<div class="container">
+				<span class="title">Still not sure?</span>
+				Take some time to <a href="#">learn more</a> about LoadRunner.<br/>
+
+				<div class="col-md-2 col-sm-7 icon">
+					<img src="imgs/icon1.png" />
+					<span class="icon-label">Start</span>
+					Get started within minutes.					
+				</div>
+
+				<div class="col-md-2 col-sm-7 icon">
+					<img src="imgs/icon2.png" />
+					<span class="icon-label">End-to-End</span>
+					Test quickly during and after development.					
+				</div>
+
+				<div class="col-md-2 col-sm-7 icon">
+					<img src="imgs/icon3.png" />
+					<span class="icon-label">Prevent</span>
+					Avoid facing problems in the future.					
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="pq-footer" style="margin-top: 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="footer-box col-md-3 col-sm-6">
+					<h1>Products</h1>
+					<ul>
+						<li><a href="javascript:void(0)">Agile Manager</a></li>
+						<li><a href="javascript:void(0)">AppPulse</a></li>
+						<li><a href="javascript:void(0)">Fortify on Demand</a></li>
+						<li><a href="javascript:void(0)">HP Anywhere</a></li>
+						<li><a href="javascript:void(0)">Service Anywhere</a></li>
+						<li><a href="javascript:void(0)">Vertica</a></li>
+					</ul>
+				</div>
+				<div class="footer-box col-md-3 col-sm-6">
+					<h1>Learn</h1>
+					<ul>
+						<li><a href="javascript:void(0)">White Papers</a></li>
+						<li><a href="javascript:void(0)">Case Studies</a></li>
+						<li><a href="javascript:void(0)">Videos</a></li>
+						<li><a href="javascript:void(0)">Webinars</a></li>
+						<li><a href="javascript:void(0)">Documentation</a></li>
+						<li><a href="javascript:void(0)">News & Reports</a></li>
+					</ul>
+				</div>
+				<div class="footer-box col-md-3 col-sm-6">
+					<h1>Company</h1>
+					<ul>
+						<li><a href="javascript:void(0)">Contact Us</a></li>
+						<li><a href="javascript:void(0)">Jobs</a></li>
+						<li><a href="javascript:void(0)">Privacy Statement</a></li>
+						<li><a href="javascript:void(0)">Terms of Use</a></li>
+					</ul>
+				</div>
+				<div class="footer-box col-md-3 col-sm-6">
+					<h1>Connect With Us</h1>
+					<a href="javascript:void(0)"><i class="fa fa-facebook-square fa-2x" style="margin-right: 15px;"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-twitter-square fa-2x" style="margin-right: 15px;"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-google-plus-square fa-2x" style="margin-right: 15px;"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-youtube-square fa-2x" style="margin-right: 15px;"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-linkedin-square fa-2x"></i></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 footer-bottom">
+					&copy; 2014 pronq.com
+				</div>
+			</div>
+		</div><!-- /.container-fluid -->
+	</div>
+	<!-- After load JavaScript files -->
+
+	<script src="../js/ui-bootstrap-0.10.0.min.js"></script>
+	<script src="../js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="../js/pq-forms.js" type="text/javascript"></script>
+	<script src="../js/pq-tooltip.js" type="text/javascript"></script>
+	<script src="../js/pq-top.js" type="text/javascript"></script>
+
+	<script>
+
+		$("#pricing-header").sticky({ topSpacing: -20 });
+
+		$(document).click(function() {
+			closeconfigurator();
+		});
+
+		$(".configurator").click(function(event) {
+			event.stopPropagation();
+		});
+
+		$("button").click(function(event) {
+			event.stopPropagation();
+		});
+
+		var openconfigurator = function() {
+			$(".pricing-package .details").slideUp();
+			$("#package1").addClass("light");
+			$("#package3").addClass("light");
+
+			$(".lowercontent").slideUp();
+			$(".configurator").slideDown();
+
+			$('html, body').animate({ scrollTop: 0 }, 'slow');
+		}
+
+		var closeconfigurator = function() {
+			$(".pricing-package .details").slideDown();
+			$("#package1").removeClass("light");
+			$("#package3").removeClass("light");
+
+			$(".lowercontent").slideDown();
+			$(".configurator").slideUp();
+
+			$('html, body').animate({ scrollTop: 0 }, 'slow');
+		}
+
+	</script>
+
+</body>
+</html>

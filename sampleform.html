@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html ng-app="uiLibrary">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Pronq.com Pattern Library</title>
+
+	<!-- Icon -->
+
+	<link rel="shortcut icon" href="imgs/assets/favicon.ico" type="image/x-icon" />
+
+	<!-- Fonts -->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Sanchez:400,400italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  	
+	<!-- CSS -->
+
+  	<link href='bootstrap/css/bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='bootstrap/css/pq-bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='includes/style.css' rel='stylesheet' type='text/css'>
+	<link href='bootstrap/css/jquery-ui-1.10.4.custom.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap/css/pq-slider.css">
+
+	<!-- Javascript -->
+
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
+
+</head>
+<body>
+
+
+	<!-- Navigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<nav class='navbar navbar-default' id='globalnav' role='navigation' ng-include src="'includes/nav.html'"></nav>
+
+
+	<div class="container">
+
+	<span class="page-header">Contact Us</span>
+
+			<div class="alert alert-danger" id="error-message" style="display: none;"><i class="fa fa-times-circle fa-fw"></i>Please correct the highlighted fields below</div>
+
+			<div class="col-md-5 col-sm-12" style="float: none; margin: 0 auto;">
+				<div class="double-form">
+					<div class="form-group left js-hide-label">
+						<label>First Name</label>
+						<input placeholder="First Name" class="form-control" title="First Name" id="name">
+					</div>
+
+					<div class="form-group right js-hide-label">
+						<label>Last Name</label>
+						<input placeholder="Last Name" class="form-control" title="Last Name" id="name">
+					</div>
+				</div>
+
+				<div class="form-group js-hide-label">
+					<label>Company</label>
+					<input placeholder="Company" class="form-control" title="Company" id="name">
+				</div>
+
+
+				<div class="form-group js-hide-label">
+					<label>Phone Number</label>
+					<input placeholder="Phone Number" class="form-control" title="Phone Number" id="phone">
+				</div>
+
+
+				<div class="form-group js-hide-label" id="field-email">
+					<label>Email Address</label>
+					<input placeholder="Email Address" class="form-control" title="Email Address" id="email" onblur='$("#field-email").addClass("has-error");'>
+					<div class="error">Not a valid email address</div>
+				</div>
+
+				<div class="form-group js-hide-label">
+					<label>Zip Code</label>
+					<input placeholder="Zip Code" class="form-control" title="Zip Code" id="zip">
+				</div>
+
+
+				<div class="dropdown-group">
+					<select>
+						<option selected disabled>Select a country</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+	
+
+				<div class="dropdown-group">
+					<select>
+						<option selected disabled>Select a product</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+
+				<div class="form-group js-hide-label">
+					<textarea placeholder="Other notes" class="form-control" id="area"></textarea>
+				</div>
+
+				<div class="form-group">
+					<button type="button" class="btn btn-primary" onclick="$('#error-message').show('fade'); $('#field-email').addClass('has-error');">Next</button>
+				</div>
+
+
+			</div>
+
+
+
+		</div>
+
+
+			<script type="text/javascript" src="js/ui-slider.js"></script>  
+			<script>
+				var app = angular.module('uiLibrary', ['ui.slider']);
+
+	    	</script>
+
+	</div>
+
+	<div id="footer" class="pq-footer" ng-include="'includes/footer.html'"></div>
+
+	<!-- After load JavaScript files -->
+
+	<script src="js/ui-bootstrap-0.10.0.min.js"></script>
+	<script src="js/pq-forms.js" type="text/javascript"></script>
+
+</body>
+</html>

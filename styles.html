@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Pronq.com Pattern Library</title>
+
+	<!-- Icon -->
+
+	<link rel="shortcut icon" href="imgs/assets/favicon.ico" type="image/x-icon" />
+
+	<!-- Fonts -->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+	<!-- CSS -->
+
+  	<link href='bootstrap/css/bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='bootstrap/css/pq-bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='includes/style.css' rel='stylesheet' type='text/css'>
+
+	<!-- Javascript -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+</head>
+<body>
+
+	<nav class='navbar navbar-default' id='globalnav' role='navigation' ng-include src="'includes/nav.html'"></nav>
+
+
+	<div class="pq-subnav hidden-xs hidden-sm" id="subnav">
+		<div class="container">
+			<div class="title">Styles</div>
+			<ul>
+				<li><a href="#colors">Colors Swatches</a></li>
+				<li><a href="#type">Typography</a></li>
+				<li><a href="#structure">Structure</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Content - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<div class="container">
+
+		<!-- Colors - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+		<div id="colors" class="pq-docs-section">
+
+			<h1>Color Swatches</h1>
+
+			<button id="expandbutton" class="btn btn-mingrey btn-sm" onclick="$('#collapsedcolors').css('display','none'); $('#expandedcolors').css('display','block');$(this).css('display','none');$('#collapsebutton').css('display','inline-block');">Expand Colors</button>
+			<button id="collapsebutton" class="btn btn-mingrey btn-sm" style="display: none;" onclick="$('#collapsedcolors').css('display','block'); $('#expandedcolors').css('display','none');$(this).css('display','none');$('#expandbutton').css('display','inline-block');">Collapse Colors</button>
+
+			<div id="collapsedcolors">
+				<h2>Primary Palette</h2>
+				The primary palette is the main color scheme of Pronq.com.
+
+				<div class="row">
+					<div class="col-md-6">
+					<span class="colortitle">Primary Colors</span>
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #FF9E1B;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #FFB149;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #FFD8A4;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #FFECD1;">
+							</div>
+
+							<div class="colorboxtitle">
+								<span class="hex">#FF9E1B</span>Orange
+							</div>
+						</div>
+
+
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #00B0B9;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #33C0C7;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #99DFE3;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #CCEFF1;">
+							</div>
+
+							<div class="colorboxtitle">
+								<span class="hex">#00B0B9</span>Teal
+							</div>
+						</div>
+
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #53565A;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #75787B;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #BABBBD;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #CBCCCD;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #DDDDDE;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #EDEEEE;">
+							</div>
+
+							<div class="colorboxtitle">
+								<span class="hex">#53565A</span>Grey
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-6">
+					<span class="colortitle">Secondary Colors</span>
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #008264;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #339B83;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #99CDC1;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #CCE6E0;">
+							</div>
+
+
+							<div class="colorboxtitle">
+								<span class="hex">#008264</span>Green
+							</div>
+						</div>
+
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #686E9F;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #868BB2;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #C3C5D8;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #E1E2EC;">
+							</div>
+
+
+							<div class="colorboxtitle">
+								<span class="hex">#686E9F</span>Purple
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-6">
+					<span class="colortitle">Primary Background Colors</span>
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="margin-bottom: 6px; background-color: #FDF9F5;">
+							</div>
+
+							<div class="colorboxtitle">
+								<span class="hex">#FDF9F5</span>Background Orange
+							</div>
+						</div>
+
+
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="margin-bottom: 6px; background-color: #F2F8F8;">
+							</div>
+
+							<div class="colorboxtitle">
+								<span class="hex">#F2F8F8</span>Background Teal
+							</div>
+						</div>
+
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="margin-bottom: 6px; background-color: #F7F7F7;">
+							</div>
+
+							<div class="colorboxtitle">
+								<span class="hex">#F7F7F7</span>Background Grey
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-6">
+					<span class="colortitle">Secondary Background Colors</span>
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="margin-bottom: 6px; background-color: #F3F7F5;">
+							</div>
+
+
+							<div class="colorboxtitle">
+								<span class="hex">#F3F7F5</span>Background Green
+							</div>
+						</div>
+
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="margin-bottom: 6px; background-color: #F5F6F7;">
+							</div>
+
+
+							<div class="colorboxtitle">
+								<span class="hex">#F5F6F7</span>Background Purple
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<h2>Extended Palette</h2>
+
+				The extended palette is only to be used for functional and application purposes.
+
+				<div class="row">
+					<div class="col-md-6">
+					<span class="colortitle">Extended Palette - Primary Colors</span>
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #AF3A2B;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #BF6155;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #DFB0AA;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #EFD7D5;">
+							</div>
+
+							<div class="colorboxtitle">
+								<span class="hex">#AF3A2B</span>Red
+							</div>
+						</div>
+
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #006478;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #338393;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #99C1C9;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #CCE0E4;">
+							</div>
+
+							<div class="colorboxtitle">
+								<span class="hex">#006478</span>Blue
+							</div>
+						</div><br/>
+
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #F9E86A;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #FAED89;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #FCF6C4;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #FEFAE1;">
+							</div>
+
+							<div class="colorboxtitle">
+								<span class="hex">#F9E86A</span>Yellow
+							</div>
+						</div>
+
+
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #75E4E1;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #91E9E7;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #C8F4F3;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #E3FAF9;">
+							</div>
+
+							<div class="colorboxtitle">
+								<span class="hex">#75E4E1</span>Bright Teal
+							</div>
+						</div>
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #292F34;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #54585D;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #A9ACAE;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #D4D5D6;">
+							</div>
+
+							<div class="colorboxtitle">
+								<span class="hex">#292F34</span>Dark Grey
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-6">
+					<span class="colortitle">Extended Palette - Secondary Colors</span>
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #005E3E;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #337E65;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #99BEB2;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #CCDFD8;">
+							</div>
+
+
+							<div class="colorboxtitle">
+								<span class="hex">#005E3E</span>Dark Green
+							</div>
+						</div>
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #435078;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #6A7493;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #B5B9C8;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #DADCE4;">
+							</div>
+
+
+							<div class="colorboxtitle">
+								<span class="hex">#435078</span>Dark Purple
+							</div>
+						</div><br/>
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #98C94E;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #ADD574;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #D6EAB9;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #EAF5DC;">
+							</div>
+
+
+							<div class="colorboxtitle">
+								<span class="hex">#98C94E</span>Bright Green
+							</div>
+						</div>
+
+
+						<div class="colorcontainer">
+
+							<div class="colorbox main" style="background-color: #B081B9;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #C09BC7;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #E0CDE3;">
+							</div>
+
+							<div class="colorbox tint" style="background-color: #EFE6F1;">
+							</div>
+
+
+							<div class="colorboxtitle">
+								<span class="hex">#B081B9</span>Bright Purple
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="expandedcolors">
+				<h2>Primary Palette</h2>
+
+				<span class="colortitle">Primary Colors</span>
+				<div class="colorboxtitle">
+					<strong>Orange</strong><br/>PMS 1375<br/>
+					CMYK: 0, 45, 94, 0
+				</div>
+
+				<div class="colorbox main" style="border-color: #FF9E1B;">
+					<span class="hex">#FF9E1B</span>
+					255, 158, 27
+				</div>
+
+				<div class="colorbox" style="border-color: #FFB149;">
+					<span class="hex">#FFB149</span>
+					255, 177, 73
+				</div>
+
+				<div class="colorbox" style="border-color: #FFD8A4;">
+					<span class="hex">#FFD8A4</span>
+					255, 216, 164
+				</div>
+
+				<div class="colorbox" style="border-color: #FFECD1;">
+					<span class="hex">#FFECD1</span>
+					255, 236, 209
+				</div><br />
+
+
+
+				<div class="colorboxtitle">
+					<strong>Teal</strong><br/>PMS 7466<br/>
+					CMYK: 86, 0, 32, 0
+				</div>
+
+				<div class="colorbox main" style="border-color: #00B0B9;">
+					<span class="hex">#00B0B9</span>
+					0, 176, 185<br/>
+				</div>
+
+				<div class="colorbox" style="border-color: #33C0C7;">
+					<span class="hex">#33C0C7</span>
+					51, 192, 199
+				</div>
+
+				<div class="colorbox" style="border-color: #99DFE3;">
+					<span class="hex">#99DFE3</span>
+					153, 223, 227
+				</div>
+
+				<div class="colorbox" style="border-color: #CCEFF1;">
+					<span class="hex">#CCEFF1</span>
+					204, 239, 241
+				</div><br />
+
+
+
+				<div class="colorboxtitle">
+					<strong>Grey</strong><br/>Cool Grey 11<br/>
+					CMYK: 44, 34, 22, 77
+				</div>
+
+				<div class="colorbox main" style="border-color: #53565A;">
+					<span class="hex">#53565A</span>
+					83, 86, 90
+				</div>
+
+				<div class="colorbox" style="border-color: #75787B;">
+					<span class="hex">#75787B</span>
+					117, 120, 123
+				</div>
+
+				<div class="colorbox" style="border-color: #BABBBD;">
+					<span class="hex">#BABBBD</span>
+					186, 187, 189
+				</div>
+
+				<div class="colorbox" style="border-color: #CBCCCD;">
+					<span class="hex">#CBCCCD</span>
+					203, 204, 205
+				</div>
+
+				<div class="colorbox" style="border-color: #DDDDDE;">
+					<span class="hex">#DDDDDE</span>
+					221, 221, 222
+				</div>
+
+				<div class="colorbox" style="border-color: #EDEEEE;">
+					<span class="hex">#EDEEEE</span>
+					237, 238, 238
+				</div>
+
+
+				<span class="colortitle">Secondary Colors</span>
+
+				<div class="colorboxtitle">
+					<strong>Green</strong><br/>PMS 3288<br/>
+					CMYK: 99, 3, 68, 12
+				</div>
+
+				<div class="colorbox main" style="border-color: #008264;">
+					<span class="hex">#008264</span>
+					0, 130, 100
+				</div>
+
+				<div class="colorbox" style="border-color: #339B83;">
+					<span class="hex">#339B83</span>
+					51, 155, 131
+				</div>
+
+				<div class="colorbox" style="border-color: #99CDC1;">
+					<span class="hex">#99CDC1</span>
+					153, 205, 193
+				</div>
+
+				<div class="colorbox" style="border-color: #CCE6E0;">
+					<span class="hex">#CCE6E0</span>
+					204, 230, 224
+				</div><br />
+
+
+
+				<div class="colorboxtitle">
+					<strong>Purple</strong><br/>PMS 7668<br/>
+					CMYK: 67, 56, 8, 0
+				</div>
+
+				<div class="colorbox main" style="border-color: #686E9F;">
+					<span class="hex">#686E9F</span>
+					104, 110, 159<br/>
+				</div>
+
+				<div class="colorbox" style="border-color: #868BB2;">
+					<span class="hex">#868BB2</span>
+					134, 139, 178
+				</div>
+
+				<div class="colorbox" style="border-color: #C3C5D8;">
+					<span class="hex">#C3C5D8</span>
+					195, 197, 216
+				</div>
+
+				<div class="colorbox" style="border-color: #E1E2EC;">
+					<span class="hex">#E1E2EC</span>
+					225, 226, 236
+				</div>
+
+
+				<span class="colortitle">Background Colors</span>
+
+				<div class="colorboxtitle">
+					<strong>Background Orange</strong>
+				</div>
+
+				<div class="colorbox" style="border-color: #FDF9F5;">
+					<span class="hex">#FDF9F5</span>
+					253, 249, 245
+				</div><br />
+
+
+
+				<div class="colorboxtitle">
+					<strong>Background Teal</strong>
+				</div>
+
+				<div class="colorbox" style="border-color: #F2F8F8;">
+					<span class="hex">#F2F8F8</span>
+					242, 248, 248
+				</div><br />
+
+
+				<div class="colorboxtitle">
+					<strong>Background Grey</strong>
+				</div>
+
+				<div class="colorbox" style="border-color: #F7F7F7;">
+					<span class="hex">#F7F7F7</span>
+					243, 243, 243
+				</div><br />
+
+				<div class="colorboxtitle">
+					<strong>Background Green</strong>
+				</div>
+
+				<div class="colorbox" style="border-color: #F3F7F5;">
+					<span class="hex">#F3F7F5</span>
+					243, 247, 245
+				</div><br />
+
+
+
+				<div class="colorboxtitle">
+					<strong>Background Purple</strong>
+				</div>
+
+				<div class="colorbox" style="border-color: #F5F6F7;">
+					<span class="hex">#F5F6F7</span>
+					245, 246, 247
+				</div>
+
+
+				<h2>Extended Palette</h2>
+				<span class="colortitle">Extended Palette - Primary Colors</span>
+
+				<div class="colorboxtitle">
+					<strong>Red</strong><br/>
+					CMYK: 22, 89, 93, 13
+				</div>
+
+				<div class="colorbox main" style="border-color: #AF3A2B;">
+					<span class="hex">#AF3A2B</span>
+					175, 58, 43
+				</div>
+
+				<div class="colorbox" style="border-color: #BF6155;">
+					<span class="hex">#BF6155</span>
+					191, 97, 85
+				</div>
+
+				<div class="colorbox" style="border-color: #DFB0AA;">
+					<span class="hex">#DFB0AA</span>
+					223, 176, 170
+				</div>
+
+				<div class="colorbox" style="border-color: #EFD7D5;">
+					<span class="hex">#EFD7D5</span>
+					239, 215, 213
+				</div><br />
+
+
+
+				<div class="colorboxtitle">
+					<strong>Yellow</strong><br/>
+					CMYK: 4, 3, 71, 0
+				</div>
+
+				<div class="colorbox main" style="border-color: #F9E86A;">
+					<span class="hex">#F9E86A</span>
+					249, 232, 106
+				</div>
+
+				<div class="colorbox" style="border-color: #FAED89;">
+					<span class="hex">#FAED89</span>
+					250, 237, 137
+				</div>
+
+
+				<div class="colorbox" style="border-color: #FCF6C4;">
+					<span class="hex">#FCF6C4</span>
+					252, 246, 196
+				</div>
+
+				<div class="colorbox" style="border-color: #FEFAE1;">
+					<span class="hex">#FEFAE1</span>
+					254, 250, 225
+				</div><br />
+
+
+
+				<div class="colorboxtitle">
+					<strong>Blue</strong><br/>
+					CMYK: 92, 50, 40, 15
+				</div>
+
+				<div class="colorbox main" style="border-color: #006478;">
+					<span class="hex">#006478</span>
+					0, 100, 120
+				</div>
+
+				<div class="colorbox" style="border-color: #338393;">
+					<span class="hex">#338393</span>
+					51, 131, 147
+				</div>
+
+				<div class="colorbox" style="border-color: #99C1C9;">
+					<span class="hex">#99C1C9</span>
+					153, 193, 201
+				</div>
+
+				<div class="colorbox" style="border-color: #CCE0E4;">
+					<span class="hex">#CCE0E4</span>
+					204, 224, 228
+				</div><br />
+
+
+
+				<div class="colorboxtitle">
+					<strong>Bright Teal</strong><br/>
+					CMYK: 45, 0, 17, 0
+				</div>
+
+				<div class="colorbox main" style="border-color: #75E4E1;">
+					<span class="hex">#75E4E1</span>
+					117, 228, 225
+				</div>
+
+				<div class="colorbox" style="border-color: #91E9E7;">
+					<span class="hex">#91E9E7</span>
+					145, 233, 231
+				</div>
+
+				<div class="colorbox" style="border-color: #C8F4F3;">
+					<span class="hex">#C8F4F3</span>
+					200, 244, 243
+				</div>
+
+				<div class="colorbox" style="border-color: #E3FAF9;">
+					<span class="hex">#E3FAF9</span>
+					227, 250, 249
+				</div><br />
+
+
+
+				<div class="colorboxtitle">
+					<strong>Dark Grey</strong><br/>
+					CMYK: 76, 66, 59, 59
+				</div>
+
+				<div class="colorbox main" style="border-color: #292F34;">
+					<span class="hex">#292F34</span>
+					41, 47, 52
+				</div>
+
+				<div class="colorbox" style="border-color: #54585D;">
+					<span class="hex">#54585D</span>
+					84, 88, 93
+				</div>
+
+				<div class="colorbox" style="border-color: #A9ACAE;">
+					<span class="hex">#A9ACAE</span>
+					169, 172, 174
+				</div>
+
+
+				<div class="colorbox" style="border-color: #D4D5D6;">
+					<span class="hex">#D4D5D6</span>
+					212, 213, 214
+				</div>
+
+
+				<span class="colortitle">Extended Palette - Secondary Colors</span>
+
+
+
+				<div class="colorboxtitle">
+					<strong>Dark Green</strong><br/>
+					CMYK: 90, 37, 84, 32
+				</div>
+
+				<div class="colorbox main" style="border-color: #005E3E;">
+					<span class="hex">#005E3E</span>
+					0, 94, 62
+				</div>
+
+				<div class="colorbox" style="border-color: #337E65;">
+					<span class="hex">#337E65</span>
+					51, 126, 101
+				</div>
+
+				<div class="colorbox" style="border-color: #99BEB2;">
+					<span class="hex">#99BEB2</span>
+					153, 190, 178
+				</div>
+
+				<div class="colorbox" style="border-color: #CCDFD8;">
+					<span class="hex">#CCDFD8</span>
+					204, 223, 216
+				</div><br />
+
+
+
+				<div class="colorboxtitle">
+					<strong>Bright Green</strong><br/>
+					CMYK: 45, 0, 89, 0
+				</div>
+
+				<div class="colorbox main" style="border-color: #98C94E;">
+					<span class="hex">#98C94E</span>
+					152, 201, 78
+				</div>
+
+				<div class="colorbox" style="border-color: #ADD574;">
+					<span class="hex">#ADD574</span>
+					173, 213, 116
+				</div>
+
+				<div class="colorbox" style="border-color: #D6EAB9;">
+					<span class="hex">#D6EAB9</span>
+					214, 234, 185
+				</div>
+
+				<div class="colorbox" style="border-color: #EAF5DC;">
+					<span class="hex">#EAF5DC</span>
+					234, 245, 220
+				</div><br />
+
+
+
+				<div class="colorboxtitle">
+					<strong>Dark Purple</strong><br/>
+					CMYK: 82, 72, 29, 13
+				</div>
+
+				<div class="colorbox main" style="border-color: #435078;">
+					<span class="hex">#435078</span>
+					67, 80, 120
+				</div>
+
+				<div class="colorbox" style="border-color: #6a7493;">
+					<span class="hex">#6A7493</span>
+					106, 116, 147
+				</div>
+
+				<div class="colorbox" style="border-color: #b5b9c8;">
+					<span class="hex">#b5b9c8</span>
+					181, 185, 200
+				</div>
+
+				<div class="colorbox" style="border-color: #dadce4;">
+					<span class="hex">#dadce4</span>
+					218, 220, 228
+				</div><br />
+
+
+
+				<div class="colorboxtitle">
+					<strong>Bright Purple</strong><br/>
+					CMYK: 31, 55, 0, 0
+				</div>
+
+				<div class="colorbox main" style="border-color: #B081B9;">
+					<span class="hex">#B081B9</span>
+					176, 129, 185
+				</div>
+
+				<div class="colorbox" style="border-color: #C09BC7;">
+					<span class="hex">#C09BC7</span>
+					192, 155, 199
+				</div>
+
+				<div class="colorbox" style="border-color: #E0CDE3;">
+					<span class="hex">#E0CDE3</span>
+					224, 205, 227
+				</div>
+
+				<div class="colorbox" style="border-color: #EFE6F1;">
+					<span class="hex">#EFE6F1</span>
+					239, 230, 241
+				</div>
+
+
+
+				<h2>UI Elements Only</h2>
+
+
+
+				<div class="colorboxtitle">
+					<strong>Dark Orange</strong>
+				</div>
+
+				<div class="colorbox" style="border-color: #EF9425;">
+					<span class="hex">#EF9425</span>
+					239, 148, 37
+				</div><br/>
+
+				<div class="colorboxtitle">
+					<strong>Dark Teal</strong>
+				</div>
+
+				<div class="colorbox" style="border-color: #07A0A9;">
+					<span class="hex">#07A0A9</span>
+					7, 160, 169
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- Typography - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+		<div id="type" class="pq-docs-section">
+
+			<h1>Typography</h1>
+
+			<br/><span style="font-size: 36px; font-weight: 400;">Open Sans </span><br/><br/>
+
+			<small>Light 300</small>
+			<span style="font-size: 18px; display: block;margin-bottom: 5px; font-weight: 300;">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
+			<small>Regular 400</small>
+			<span style="font-size: 18px; display: block;margin-bottom: 5px; font-weight: 400;">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
+			<small>Semi-Bold 500</small>
+			<span style="font-size: 18px; display: block;margin-bottom: 5px; font-weight: 600;">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
+			<small>Bold 700</small>
+			<span style="font-size: 18px; display: block;margin-bottom: 5px; font-weight: 700;">Grumpy wizards make toxic brew for the evil Queen and Jack.</span>
+
+			<h2>Font Sizes</h2>
+
+			<span style="font-size: 36px; display: block;margin-bottom: 20px; font-weight: 400;">35 pixels</span>
+
+			<span style="font-size: 32px; display: block;margin-bottom: 20px; font-weight: 400;">32 pixels</span>
+
+			<span style="font-size: 30px; display: block;margin-bottom: 15px; font-weight: 400;">30 pixels</span>
+
+			<span style="font-size: 28px; display: block;margin-bottom: 15px; font-weight: 400;">28 pixels</span>
+
+			<span style="font-size: 24px; display: block;margin-bottom: 10px; font-weight: 400;">24 pixels</span>
+
+			<span style="font-size: 18px; display: block;margin-bottom: 10px; font-weight: 400;">18 pixels</span>
+
+			<span style="font-size: 16px; display: block;margin-bottom: 5px; font-weight: 400;">16 pixels</span>
+
+			<span style="font-size: 14px; display: block;margin-bottom: 5px; font-weight: 400;">14 pixels</span>
+
+			<span style="font-size: 12px; display: block;margin-bottom: 5px; font-weight: 400;">12 pixels</span>
+
+
+			<h2>Header Specifications</h2>
+			<p><b>Note:</b> These are the standard variations used throughout the site. Some elements or specific page templates use different specs which have been set within their individual structures.</p>
+			<div class="row">
+				<div class="col-sm-6">
+
+					<h1 style="margin: 20px 0px;"><small>h1</small> 35px Light</h1>
+
+					<h2 style="margin: 20px 0px;"><small>h2</small> 30px Light</h2>
+
+					<h3 style="margin: 20px 0px;"><small>h3</small> 24px Regular</h3>
+
+					<h4 style="margin: 20px 0px;"><small>h4</small> 22px Regular</h4>
+
+					<h5 style="margin: 20px 0px;"><small>h5</small> 18px Light</h5>
+
+					<h6 style="margin: 20px 0px;"><small>h6</small> 14px Regular</h5>
+
+
+				</div>
+
+				<div class="col-sm-6">
+
+
+
+
+				</div>
+
+			</div>
+
+			<h2>Standard Text Colors</h2>
+
+
+			<div class="textcolorcontainer">
+
+				<div class="colorbox" style="background-color: #53565A;">
+				</div>
+
+				<div class="colorboxtitle">Body Text
+					<span class="hex">#53565A</span>
+				</div>
+			</div>
+
+			<div class="textcolorcontainer">
+
+				<div class="colorbox" style="background-color: #75787B;">
+				</div>
+
+				<div class="colorboxtitle">Header Text
+					<span class="hex">#75787B</span>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<!-- Structure - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+		<div id="structure" class="pq-docs-section">
+
+			<h1>Structure</h1>
+			<h2>Grid System</h2>
+
+			<span class="sectiontitle">Introduction</span>
+			<p>Pronq follows the bootstrap grid system, a responsive 12 column layout. Predefined classes make it easy to build the grid structure. Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:</p>
+
+			<ul>
+				<li>Rows must be placed within a <code>.container</code> (fixed-width) for proper alignment and padding.</li>
+				<li>Use rows to create horizontal groups of columns.</li>
+				<li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+				<li>Predefined grid classes like <code>.row</code> and <code>.col-xs-4</code> are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.</li>
+				<li>Columns create gutters (gaps between column content) via <code>padding</code>. That padding is offset in rows for the first and last column via negative margin on <code>.row</code>s.</li>
+				<li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <code>.col-xs-4</code>.</li>
+			</ul>
+
+			<span class="sectiontitle">Grid Options</span>
+			<p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+
+			<div class="table-responsive">
+				<table class="table-striped table">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Extra small devices</th>
+							<th>Small devices</th>
+							<th>Medium devices</th>
+							<th>Large devices</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Device</th>
+							<td>Phones (&lt;768px)</td>
+							<td>Tablets (&ge;768px)</td>
+							<td>Desktops (&ge;992px)</td>
+							<td>Desktops (&ge;1200px)</td>
+						</tr>
+	 					<tr>
+							<th>Grid behavior</th>
+							<td>Horizontal at all times</td>
+							<td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+						</tr>
+						<tr>
+							<th>Container width</th>
+							<td>None (auto)</td>
+							<td>750px</td>
+							<td>970px</td>
+							<td>1170px</td>
+						</tr>
+						<tr>
+							<th>Class prefix</th>
+							<td><code>.col-xs-</code></td>
+							<td><code>.col-sm-</code></td>
+							<td><code>.col-md-</code></td>
+							<td><code>.col-lg-</code></td>
+						</tr>
+						<tr>
+							<th># of columns</th>
+							<td colspan="4">12</td>
+						</tr>
+						<tr>
+							<th>Column width</th>
+							<td class="text-muted">Auto</td>
+							<td>60px</td>
+							<td>78px</td>
+							<td>95px</td>
+						</tr>
+						<tr>
+							<th>Gutter width</th>
+							<td colspan="4">30px (15px on each side of a column)</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<p>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, applying any <code>.col-md-</code> class to an element will not only affect its styling on medium devices but also on large devices if a <code>.col-lg-</code> class is not present.</p>
+
+
+			<span class="sectiontitle">Breakpoints</span>
+			<table class="table-striped table">
+			<thead>
+				<tr><th>Size</th>
+					<th>Screen Type</th>
+					<th>Min Width</th>
+					<th>Max Width</th>
+				</tr>
+			</thead>
+			<tr><td>Large</td>
+				<td>Desktop</td>
+				<td>1200px</td>
+				<td>none</td>
+			</tr>
+			<tr><td>Medium</td>
+				<td>Landscape Tablet</td>
+				<td>1199px</td>
+				<td>992px</td>
+			</tr>
+			<tr><td>Small</td>
+				<td>Portrait Tablet</td>
+				<td>991px</td>
+				<td>768px</td>
+			</tr>
+			<tr><td>Extra Small</td>
+				<td>Mobile</td>
+				<td>none</td>
+				<td>767px</td>
+			</tr>
+			</table>
+
+			<span class="sectiontitle">Medium Breaks</span>The following structures will always stack on any smaller than a desktop.
+
+			<div class="row">
+			  <div class="col-md-3 grid-demo">.col-md-3</div>
+			  <div class="col-md-3 grid-demo">.col-md-3</div>
+			  <div class="col-md-3 grid-demo">.col-md-3</div>
+			  <div class="col-md-3 grid-demo">.col-md-3</div>
+			</div>
+
+			<div class="row">
+			  <div class="col-md-8 grid-demo">.col-md-8</div>
+			  <div class="col-md-4 grid-demo">.col-md-4</div>
+			</div>
+
+			<div class="row">
+			  <div class="col-md-4 grid-demo">.col-md-4</div>
+			  <div class="col-md-4 grid-demo">.col-md-4</div>
+			  <div class="col-md-4 grid-demo">.col-md-4</div>
+			</div>
+
+			<div class="row">
+			  <div class="col-md-6 grid-demo">.col-md-6</div>
+			  <div class="col-md-6 grid-demo">.col-md-6</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-12 grid-demo">.col-md-12</div>
+			</div>
+
+			<span class="sectiontitle">Small Breaks</span>The following structures will always stack on a mobile screen.
+
+			<div class="row">
+			  <div class="col-sm-8 grid-demo">.col-sm-8</div>
+			  <div class="col-sm-4 grid-demo">.col-sm-4</div>
+			</div>
+			<div class="row">
+			  <div class="col-sm-4 grid-demo">.col-sm-4</div>
+			  <div class="col-sm-4 grid-demo">.col-sm-4</div>
+			  <div class="col-sm-4 grid-demo">.col-sm-4</div>
+			</div>
+			<div class="row">
+			  <div class="col-sm-6 grid-demo">.col-sm-6</div>
+			  <div class="col-sm-6 grid-demo">.col-sm-6</div>
+			</div>
+
+			<br />
+			<span class="sectiontitle">Multiple Breaks</span>The following structures partially stack on a tablet and fully stack on mobile.
+
+			<div class="row">
+			  <div class="col-lg-3 col-sm-6 grid-demo">.col-lg-3 .col-sm-6</div>
+			  <div class="col-lg-3 col-sm-6 grid-demo">.col-lg-3 .col-sm-6</div>
+			  <div class="col-lg-3 col-sm-6 grid-demo">.col-lg-3 .col-sm-6</div>
+			  <div class="col-lg-3 col-sm-6 grid-demo">.col-lg-3 .col-sm-6</div>
+			</div>
+
+			<div class="row">
+			  <div class="col-md-3 col-sm-6 grid-demo">.col-md-3 .col-sm-6</div>
+			  <div class="col-md-3 col-sm-6 grid-demo">.col-md-3 .col-sm-6</div>
+			  <div class="col-md-3 col-sm-6 grid-demo">.col-md-3 .col-sm-6</div>
+			  <div class="col-md-3 col-sm-6 grid-demo">.col-md-3 .col-sm-6</div>
+			</div>
+
+			<h2>Margins</h2>
+			All margins and padding should be a multiple of <b>5</b>.
+
+
+		</div>
+
+	</div>
+
+	<div id="footer" class="pq-footer" ng-include="'includes/footer.html'"></div>
+
+	<!-- After load JavaScript files -->
+
+	<script src="js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="js/pq-subnav.js" type="text/javascript"></script>
+	<script src="js/pq-top.js" type="text/javascript"></script>
+
+</body>
+</html>

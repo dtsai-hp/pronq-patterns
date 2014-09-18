@@ -31,6 +31,23 @@
 	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 
+	<style>
+
+		.blogassets > div {
+			margin-bottom: 25px;
+			overflow: auto;
+		}
+
+		.blogassets img {
+			width: 100%;
+			border: 5px solid #EDEEEE;
+		}
+
+		.blogassets button {
+			float: left;
+			margin-right: 15px;
+		}
+	</style>
 
 </head>
 <body>
@@ -44,7 +61,7 @@
 		<div class="container">
 			<div class="title">Blogging</div>
 			<ul>
-				<a href="#images"><li>Images</li></a>
+				<a href="#teasers"><li>Teaser Images</li></a>
 				<a href="#instructions"><li>Instructions</li></a>
 			</ul>
 		</div>
@@ -54,29 +71,163 @@
 
 	<div class="container">
 
-		<div id="images" class="pq-docs-section">
+		<div id="teasers" class="pq-docs-section">
 
-			<h1>Images</h1>
+			<h1>Teaser Images</h1>
+
+			<p>Need an image for your blog teaser and/or blog post? We have created a library of awesome custom images for you to freely use.</p>
+			<p><b>Directions:</b> Simply pick an image, right-click on that image and hit Save Image As, and then choose a file name and location and save it to your computer. To insert the image into your blog teasers and/or blog post just follow the same steps as you would for any other photo. For more help click here. (Add link to Playbook eventually)</p>
+
+<p>To access stock photography owned by HP and available for use free is located at the <a href="https://h10014.www1.hp.com/hpweb/login.aspx?attempturl=/hpweb/experience/make/look/imagery.aspx" target="blank">HP Experience</a>.</p>
 
 			<h2>Illustrations</h2>
 
 			<h3>Business</h3>
 
-			<div id="illustrations-business"></div>
+			<div class="blogassets row" id="illustrations-business"></div>
 
 			<script>
-				var dir = "downloads/blog/Illustration/Business/";
+				var businessdir = "downloads/blog/Illustration/Business/";
 				var fileextension = ".jpg";
 				$.ajax({
 				    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-				    url: dir,
+				    url: businessdir,
 				    success: function (data) {
 				        //List all png file names in the page
 				        $(data).find("a:contains(" + fileextension + ")").each(function () {
 				            var filename = this.href.replace(window.location.host, "").replace("http:///", "");
-				            $("#illustrations-business").append($("<img src=" + dir + filename + "></img>"));
+							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
+				            $("#illustrations-business").append($("<div class='col-lg-3 col-sm-4'><a href='" + businessdir + filename +"' target='blank'><img src=" + businessdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
 				        });
 				    }
+				});
+			</script>
+
+			<h3>Lifestyle</h3>
+
+			<div class="blogassets row" id="illustrations-lifestyle"></div>
+
+			<script>
+				var lifestyledir = "downloads/blog/Illustration/Lifestyle/";
+				var fileextension = ".jpg";
+				$.ajax({
+					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
+					url: lifestyledir,
+					success: function (data) {
+						//List all png file names in the page
+						$(data).find("a:contains(" + fileextension + ")").each(function () {
+							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
+							$("#illustrations-lifestyle").append($("<div class='col-lg-3 col-sm-4'><a href='" + lifestyledir + filename +"' target='blank'><img src=" + lifestyledir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+						});
+					}
+				});
+			</script>
+
+			<h3>Product</h3>
+
+			<div class="blogassets row" id="illustrations-product"></div>
+
+			<script>
+				var productdir = "downloads/blog/Illustration/Product/";
+				var fileextension = ".jpg";
+				$.ajax({
+					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
+					url: productdir,
+					success: function (data) {
+						//List all png file names in the page
+						$(data).find("a:contains(" + fileextension + ")").each(function () {
+							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
+							$("#illustrations-product").append($("<div class='col-lg-3 col-sm-4'><a href='" + productdir + filename +"' target='blank'><img src=" + productdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+						});
+					}
+				});
+			</script>
+
+			<h3>Tech</h3>
+
+			<div class="blogassets row" id="illustrations-tech"></div>
+
+			<script>
+				var techdir = "downloads/blog/Illustration/Tech/";
+				var fileextension = ".jpg";
+				$.ajax({
+					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
+					url: techdir,
+					success: function (data) {
+						//List all png file names in the page
+						$(data).find("a:contains(" + fileextension + ")").each(function () {
+							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
+							$("#illustrations-tech").append($("<div class='col-lg-3 col-sm-4'><a href='" + techdir + filename +"' target='blank'><img src=" + techdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+						});
+					}
+				});
+			</script>
+
+			<h3>Words and Numbers</h3>
+
+			<div class="blogassets row" id="illustrations-wordsnumbers"></div>
+
+			<script>
+				var wordsnumbersdir = "downloads/blog/Illustration/Words%20and%20Numbers/";
+				var fileextension = ".jpg";
+				$.ajax({
+					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
+					url: wordsnumbersdir,
+					success: function (data) {
+						//List all png file names in the page
+						$(data).find("a:contains(" + fileextension + ")").each(function () {
+							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
+							$("#illustrations-wordsnumbers").append($("<div class='col-lg-3 col-sm-4'><a href='" + wordsnumbersdir + filename +"' target='blank'><img src=" + wordsnumbersdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+						});
+					}
+				});
+			</script>
+
+			<h3>Colored Backgrounds</h3>
+
+			<div class="blogassets row" id="illustrations-backgrounds"></div>
+
+			<script>
+				var backgroundsdir = "downloads/blog/Illustration/Colored%20Backgrounds/";
+				var fileextension = ".jpg";
+				$.ajax({
+					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
+					url: backgroundsdir,
+					success: function (data) {
+						//List all png file names in the page
+						$(data).find("a:contains(" + fileextension + ")").each(function () {
+							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
+							$("#illustrations-backgrounds").append($("<div class='col-lg-3 col-sm-4'><a href='" + backgroundsdir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+						});
+					}
+				});
+			</script>
+
+		</div>
+
+			<h2>Photography</h2>
+
+			<div class="blogassets row" id="photos"></div>
+
+			<script>
+				var photosdir = "downloads/blog/Photos/";
+				var fileextension = ".jpg";
+				$.ajax({
+					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
+					url: photosdir,
+					success: function (data) {
+						//List all png file names in the page
+						$(data).find("a:contains(" + fileextension + ")").each(function () {
+							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
+							$("#photos").append($("<div class='col-lg-3 col-sm-4'><a href='" + photosdir + filename +"' target='blank'><img src=" + photosdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+						});
+					}
 				});
 			</script>
 

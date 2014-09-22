@@ -253,6 +253,7 @@
 					<th>Content</th>
 					<th>File Type</th>
 					<th class="hideColumn">File Name</th>
+					<th>Last Updated</th>
 				</thead>
 
 				</tr>
@@ -272,7 +273,10 @@
 						$(data).find("a:contains(" + filetype + ")").each(function () {
 							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
 							var fileextension = filename.split(".").pop();
-							$("#illustrations-table").append($("<tr><td><a href='" + illustrationsdir + filename +"' target='blank'> Features Library (" + fileextension + ")</a></td><td>." + fileextension + "</td><td class='hideColumn'>" + filename + "</td></tr>"));
+							var filedate = filename.split(".");
+							filedate.pop();
+							var filedate = filedate[0].split("_").pop();
+							$("#illustrations-table").append($("<tr><td><a href='" + illustrationsdir + filename +"' target='blank'> Features Library (" + fileextension + ")</a></td><td>." + fileextension + "</td><td class='hideColumn'>" + filename + "</td><td>" + filedate + "</td></tr>"));
 						});
 					}
 				});

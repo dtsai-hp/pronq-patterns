@@ -291,7 +291,7 @@
 							var filedate = filename.split(".");
 							filedate.pop();
 							var filedate = filedate[0].split("_").pop();
-							$("#illustrations-table").append($("<tr><td><a href='" + illustrationsdir + filename +"' target='blank'> Features Library (" + fileextension + ")</a></td><td>." + fileextension + "</td><td class='hideColumn'>" + filename + "</td><td>" + months[filedate.substring(0,2)] + " " + filedate.substring(2,4) +", 20" + filedate.substring(4,6) + "</td></tr>"));
+							$("#illustrations-table").append($("<tr><td><a href='" + illustrationsdir + filename +"' target='blank'> Feature Library (" + fileextension + ")</a></td><td>." + fileextension + "</td><td class='hideColumn'>" + filename + "</td><td>" + months[filedate.substring(0,2)] + " " + filedate.substring(2,4) +", 20" + filedate.substring(4,6) + "</td></tr>"));
 						});
 					}
 				});
@@ -307,7 +307,10 @@
 						$(data).find("a:contains(" + filetype2 + ")").each(function () {
 							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
 							var fileextension = filename.split(".").pop();
-							$("#illustrations-table").append($("<tr><td><a href='" + illustrationsdir + filename +"' target='blank'> Icons Library (" + fileextension + ")</a></td><td>." + fileextension + "</td><td class='hideColumn'>" + filename + "</td></tr>"));
+							var filedate = filename.split(".");
+							filedate.pop();
+							var filedate = filedate[0].split("_").pop();
+							$("#illustrations-table").append($("<tr><td><a href='" + illustrationsdir + filename +"' target='blank'> Icon Library (" + fileextension + ")</a></td><td>." + fileextension + "</td><td class='hideColumn'>" + filename + "</td><td>" + months[filedate.substring(0,2)] + " " + filedate.substring(2,4) +", 20" + filedate.substring(4,6) + "</td></tr>"));
 						});
 					}
 				});

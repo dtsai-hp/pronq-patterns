@@ -291,7 +291,7 @@
 							var filedate = filename.split(".");
 							filedate.pop();
 							var filedate = filedate[0].split("_").pop();
-							$("#illustrations-table").append($("<tr><td><a href='" + illustrationsdir + filename +"' target='blank'> Features Library (" + fileextension + ")</a></td><td>." + fileextension + "</td><td class='hideColumn'>" + filename + "</td><td>" + months[filedate.substring(0,1)] + " " + filedate.substring(2,3) +", 20" + filedate.substring(4,5) + "</td></tr>"));
+							$("#illustrations-table").append($("<tr><td><a href='" + illustrationsdir + filename +"' target='blank'> Features Library (" + fileextension + ")</a></td><td>." + fileextension + "</td><td class='hideColumn'>" + filename + "</td><td>" + months[filedate.substring(0,2)] + " " + filedate.substring(2,4) +", 20" + filedate.substring(4,6) + "</td></tr>"));
 						});
 					}
 				});

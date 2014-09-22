@@ -253,36 +253,8 @@
 					<th>Content</th>
 					<th>File Type</th>
 					<th class="hideColumn">File Name</th>
-					<th>File Size</th>
-					<th>Last Updated</th>
 				</thead>
-				<tr>
-					<td><a href="downloads/illustrations/IllustrationLibrary_Features_081314.ai">Features Library (AI)</a></td>
-					<td>.ai</td>
-					<td class="hideColumn">IllustrationLibrary_Features_081314.ai</td>
-					<td>852 KB</td>
-					<td>June 4, 2014</td>
-				</tr>
-				<tr>
-					<td><a href="downloads/illustrations/IllustrationLibrary_Features_081314.pdf">Features Library (PDF)</a></td>
-					<td>.pdf</td>
-					<td class="hideColumn">IllustrationLibrary_Features_081314.pdf</td>
-					<td>907 KB</td>
-					<td>June 4, 2014</td>
-				</tr>
-				<tr>
-					<td><a href="downloads/illustrations/IllustrationLibrary_Icons_081314.ai">Icon Library (AI)</a></td>
-					<td>.ai</td>
-					<td class="hideColumn">IllustrationLibrary_Icons_081314.ai</td>
-					<td>522 KB</td>
-					<td>June 4, 2014</td>
-				</tr>
-				<tr>
-					<td><a href="downloads/illustrations/IllustrationLibrary_Icons_081314.pdf">Icon Library (PDF)</a></td>
-					<td>.pdf</td>
-					<td class="hideColumn">IllustrationLibrary_Icons_081314.pdf</td>
-					<td>583 KB</td>
-					<td>June 4, 2014</td>
+
 				</tr>
 			</table>
 
@@ -298,6 +270,20 @@
 							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
 							var fileextension = filename.split(".").pop();
 							$("#illustrations-table").append($("<tr><td><a href='" + illustrationsdir + filename +"' target='blank'> Features Library (" + fileextension + ")</a></td><td>." + fileextension + "</td><td class='hideColumn'>" + filename + "</td></tr>"));
+						});
+					}
+				});
+
+				var filetype2 = "_Icons";
+				$.ajax({
+					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
+					url: illustrationsdir,
+					success: function (data) {
+						//List all png file names in the page
+						$(data).find("a:contains(" + filetype2 + ")").each(function () {
+							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+							var fileextension = filename.split(".").pop();
+							$("#illustrations-table").append($("<tr><td><a href='" + illustrationsdir + filename +"' target='blank'> Icons Library (" + fileextension + ")</a></td><td>." + fileextension + "</td><td class='hideColumn'>" + filename + "</td></tr>"));
 						});
 					}
 				});

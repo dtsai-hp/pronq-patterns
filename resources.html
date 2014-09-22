@@ -228,7 +228,7 @@
 
 			<h2>Icons</h2>
 
-			<table class="table light">
+			<table class="table light" id="illustrations-table">
 				<thead>
 					<th>Content</th>
 					<th>File Type</th>
@@ -285,6 +285,22 @@
 					<td>June 4, 2014</td>
 				</tr>
 			</table>
+
+			<script>
+				var illustrationsdir = "downloads/blog/Illustration/Business/";
+				var fileextension = ".pdf";
+				$.ajax({
+					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
+					url: illustrationsdir,
+					success: function (data) {
+						//List all png file names in the page
+						$(data).find("a:contains(" + fileextension + ")").each(function () {
+							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+							$("#illustrations-table").append($("<tr><td><a href='" + illustrationsdir + filename +"' target='blank'>" + filename + "</a></td><td>.pdf</td><td class='hideColumn'>" + filename + "</td></tr>"));
+						});
+					}
+				});
+			</script>
 
 			<h2>CSS & SCSS Files</h2>
 			<table class="table light">

@@ -37,7 +37,8 @@
 
 <!-- Navigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
-	<nav class='navbar navbar-default' id='globalnav' role='navigation' ng-include src="'includes/nav.html'"></nav>
+	<nav class='navbar navbar-default' id='globalnav' role='navigation'></nav>
+	<script> $("#globalnav").load("includes/nav.html"); </script>
 
 	<div class="pq-subnav hidden-xs hidden-sm" id="content">
 		<div class="container">
@@ -66,13 +67,13 @@
 	<!-- Product Details - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
 		<div id="pricing" class="pq-docs-section continue">
-		
+
 			<h1>Product Pricing</h1>
 
 			<a href="pricing.html" target="blank" class="btn btn-secondary">Sample Page</a>
 
 			<h2>Package Displays (4 column)</h2>
-		
+
 		</div>
 
 		<div class="row">
@@ -87,7 +88,7 @@
 				<div class="details">
 					<a class="btn">Build Package</a>
 					<p>This and that details<br/>This and that more details</p>
-				</div>          
+				</div>
 			</div>
 
 			<div class="col-lg-3 col-sm-6 pricing-package green">
@@ -115,7 +116,7 @@
 				<div class="details">
 					<a class="btn">Build Package</a>
 					<p>This and that details<br/>This and that more details</p>
-				</div>          
+				</div>
 			</div>
 
 			<div class="col-lg-3 col-sm-6 pricing-package blue">
@@ -129,7 +130,7 @@
 				<div class="details">
 					<a class="btn">Build Package</a>
 					<p>This and that details<br/>This and that more details</p>
-				</div>          
+				</div>
 			</div>
 
 		</div>
@@ -153,7 +154,7 @@
 				<div class="details">
 					<a class="btn">Build Package</a>
 					<p>This and that details<br/>This and that more details</p>
-				</div>          
+				</div>
 			</div>
 
 			<div class="col-md-4 pricing-package green">
@@ -168,7 +169,7 @@
 				<div class="details">
 					<a class="btn">Build Package</a>
 					<p>This and that details<br/>This and that more details</p>
-				</div>          
+				</div>
 			</div>
 
 			<div class="col-md-4 pricing-package blue">
@@ -182,7 +183,7 @@
 				<div class="details">
 					<a class="btn">Build Package</a>
 					<p>This and that details<br/>This and that more details</p>
-				</div>          
+				</div>
 			</div>
 
 		</div>
@@ -205,7 +206,7 @@
 			<div class="details">
 				<a class="btn">Build Package</a>
 				<p>This and that details<br/>This and that more details</p>
-			</div>          
+			</div>
 		</div>
 
 		<div class="col-sm-6 pricing-package green">
@@ -237,7 +238,7 @@
 
 	</div>
 
-	<div class="container">	
+	<div class="container">
 		<div class="pq-docs-section continue">
 
 			<h2>Features Table</h2>
@@ -246,7 +247,7 @@
 	</div>
 
 		<div id="pricing-header">
-			<div class="container">	
+			<div class="container">
 				<div class="col-md-12 pricing-features-header">
 
 					<div class="row header">
@@ -261,7 +262,7 @@
 			</div>
 		</div>
 
-		<div class="container">	
+		<div class="container">
 			<div class="col-md-12 pricing-features">
 				<div class="row feature price">
 					<div class="col-sm-4 name"></div>
@@ -389,7 +390,7 @@
 	</div>
 
 
-	<div class="container">	
+	<div class="container">
 		<div class="pq-docs-section continue">
 
 			<h2>Configurator</h2>
@@ -406,15 +407,15 @@
 			<div class="col-md-8">
 
 				<h2><small>Step 1</small>Select Number of Single-Step Transactions</h2>
-				One <abbr title="One Single step transaction entitles the use of a single action against an application from one location. These simple monitors (e.g. URL monitor, Ping monitor, Port monitor, DNS monitor, etc.) require no scripting and are created by filling out a simple web form. These transactions can be run from multiple public locations through our global network points of presences or from private locations behind your firewall." rel="tooltip">Single-step transaction</abbr> entitles the use of a single action against an application from one location. <strong>($12/ Transaction)</strong>				
-				
+				One <abbr title="One Single step transaction entitles the use of a single action against an application from one location. These simple monitors (e.g. URL monitor, Ping monitor, Port monitor, DNS monitor, etc.) require no scripting and are created by filling out a simple web form. These transactions can be run from multiple public locations through our global network points of presences or from private locations behind your firewall." rel="tooltip">Single-step transaction</abbr> entitles the use of a single action against an application from one location. <strong>($12/ Transaction)</strong>
+
 				<div class="slider-group">
-				
+
 					<span class="minlabel">0</span>
 					<span class="maxlabel">100</span>
-				
+
 					<div ui-slider="{ range: 'min' }" min="0" max="100" ng-model="demoVals.sliderExample1"></div>
-					
+
 					<input type="text" ng-model="demoVals.sliderExample1" />
 
 				</div>
@@ -424,7 +425,7 @@
 				<h2><small>Step 2</small>Select Number of Multi-Step Transactions</h2>
 
 				One <abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">Multi-step transaction</abbr> entitles the use of a pre-recorded script (virtual user flow) against your application from one location. <strong>($39/Transaction)</strong>
-				
+
 				<div class="slider-group">
 					<span class="minlabel">0</span>
 					<span class="maxlabel">100</span>
@@ -441,7 +442,7 @@
 				<h2><small>Step 3</small>Select Term of Subscription</h2>
 
 				How many <abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">months</abbr> would you like access to AppPulse?
-				
+
 				<div class="slider-group">
 					<span class="minlabel">3</span>
 					<span class="maxlabel">12</span>
@@ -452,10 +453,10 @@
 
 				</div>
 
-				<script type="text/javascript" src="js/ui-slider.js"></script>  
+				<script type="text/javascript" src="js/ui-slider.js"></script>
 				<script>
 					var app = angular.module('uiLibrary', ['ui.slider']);
-					
+
 					app.controller('sliderDemoCtrl', function($scope) {
 
 						$scope.demoVals = {
@@ -473,11 +474,11 @@
 			</div>
 
 			<div class="col-md-4 overview">
-			
+
 				<div class="header">
 					Package Summary
 				</div>
-		
+
 				<div class="details">
 					<table>
 						<tr class="top">
@@ -502,7 +503,7 @@
 							<td colspan=2>{{ ((demoVals.sliderExample1 * 12) + (demoVals.sliderExample2 * 39)) * demoVals.sliderExample3 | currency }}<span class="total"><small><strong>Total (Excluding taxes)</strong></small></span></td>
 						</tr>
 					</table>
-				</div>  
+				</div>
 
 				<div class="form-group">
 					<div class="btn-group">
@@ -529,7 +530,8 @@
 		</div>
 	</div>
 
-	<div id="footer" class="pq-footer" ng-include="'includes/footer.html'"></div>
+	<div id="footer" class="pq-footer"></div>
+	<script>$("#footer").load("includes/footer.html");</script>
 
 	<!-- After load JavaScript files -->
 

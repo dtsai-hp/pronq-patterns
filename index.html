@@ -29,7 +29,8 @@
 </head>
 <body>
 
-	<nav class='navbar navbar-default' id='globalnav' role='navigation' ng-include src="'includes/nav.html'"></nav>
+	<nav class='navbar navbar-default' id='globalnav' role='navigation'></nav>
+	<script> $("#globalnav").load("includes/nav.html"); </script>
 
 
 	<div class="pq-subnav hidden-xs hidden-sm" id="subnav">
@@ -204,7 +205,8 @@
 
 	</div>
 
-	<div id="footer" class="pq-footer" ng-include="'includes/footer.html'"></div>
+	<div id="footer" class="pq-footer"></div>
+	<script>$("#footer").load("includes/footer.html");</script>
 
 	<!-- After load JavaScript files -->
 

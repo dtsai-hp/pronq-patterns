@@ -226,7 +226,7 @@
 						$(data).find("a:contains(" + fileextension + ")").each(function () {
 							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
 							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
-							$("#photography-business").append($("<div class='col-lg-3 col-sm-4'><a href='" + photosbusinessdir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+							$("#photography-business").append($("<div class='col-lg-3 col-sm-4'><a href='" + photosbusinessdir + filename +"' target='blank'><img src=" + photosbusinessdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
 						});
 					}
 				});
@@ -247,7 +247,7 @@
 						$(data).find("a:contains(" + fileextension + ")").each(function () {
 							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
 							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
-							$("#photography-lifestyle").append($("<div class='col-lg-3 col-sm-4'><a href='" + photoslifestyledir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+							$("#photography-lifestyle").append($("<div class='col-lg-3 col-sm-4'><a href='" + photoslifestyledir + filename +"' target='blank'><img src=" + photoslifestyledir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
 						});
 					}
 				});
@@ -268,7 +268,7 @@
 						$(data).find("a:contains(" + fileextension + ")").each(function () {
 							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
 							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
-							$("#photography-tech").append($("<div class='col-lg-3 col-sm-4'><a href='" + photostechdir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+							$("#photography-tech").append($("<div class='col-lg-3 col-sm-4'><a href='" + photostechdir + filename +"' target='blank'><img src=" + photostechdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
 						});
 					}
 				});
@@ -289,7 +289,7 @@
 						$(data).find("a:contains(" + fileextension + ")").each(function () {
 							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
 							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
-							$("#photography-misc").append($("<div class='col-lg-3 col-sm-4'><a href='" + photosmiscdir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+							$("#photography-misc").append($("<div class='col-lg-3 col-sm-4'><a href='" + photosmiscdir + filename +"' target='blank'><img src=" + photosmiscdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
 						});
 					}
 				});

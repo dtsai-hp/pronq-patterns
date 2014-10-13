@@ -216,17 +216,17 @@
 			<div class="blogassets row" id="photography-business"></div>
 
 			<script>
-				var backgroundsdir = "downloads/blog/Photos/Business/";
+				var photosbusinessdir = "downloads/blog/Photos/Business/";
 				var fileextension = ".jpg";
 				$.ajax({
 					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
-					url: backgroundsdir,
+					url: photosbusinessdir,
 					success: function (data) {
 						//List all png file names in the page
 						$(data).find("a:contains(" + fileextension + ")").each(function () {
 							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
 							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
-							$("#photography-business").append($("<div class='col-lg-3 col-sm-4'><a href='" + backgroundsdir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+							$("#photography-business").append($("<div class='col-lg-3 col-sm-4'><a href='" + photosbusinessdir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
 						});
 					}
 				});
@@ -237,17 +237,17 @@
 			<div class="blogassets row" id="photography-lifestyle"></div>
 
 			<script>
-				var backgroundsdir = "downloads/blog/Photos/Lifestyle/";
+				var photoslifestyledir = "downloads/blog/Photos/Lifestyle/";
 				var fileextension = ".jpg";
 				$.ajax({
 					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
-					url: backgroundsdir,
+					url: photoslifestyledir,
 					success: function (data) {
 						//List all png file names in the page
 						$(data).find("a:contains(" + fileextension + ")").each(function () {
 							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
 							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
-							$("#photography-lifestyle").append($("<div class='col-lg-3 col-sm-4'><a href='" + backgroundsdir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+							$("#photography-lifestyle").append($("<div class='col-lg-3 col-sm-4'><a href='" + photoslifestyledir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
 						});
 					}
 				});
@@ -258,17 +258,17 @@
 			<div class="blogassets row" id="photography-tech"></div>
 
 			<script>
-				var backgroundsdir = "downloads/blog/Photos/Tech/";
+				var photostechdir = "downloads/blog/Photos/Tech/";
 				var fileextension = ".jpg";
 				$.ajax({
 					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
-					url: backgroundsdir,
+					url: photostechdir,
 					success: function (data) {
 						//List all png file names in the page
 						$(data).find("a:contains(" + fileextension + ")").each(function () {
 							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
 							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
-							$("#photography-tech").append($("<div class='col-lg-3 col-sm-4'><a href='" + backgroundsdir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+							$("#photography-tech").append($("<div class='col-lg-3 col-sm-4'><a href='" + photostechdir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
 						});
 					}
 				});
@@ -279,17 +279,17 @@
 			<div class="blogassets row" id="photography-misc"></div>
 
 			<script>
-				var backgroundsdir = "downloads/blog/Photos/Misc/";
+				var photosmiscdir = "downloads/blog/Photos/Misc/";
 				var fileextension = ".jpg";
 				$.ajax({
 					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
-					url: backgroundsdir,
+					url: photosmiscdir,
 					success: function (data) {
 						//List all png file names in the page
 						$(data).find("a:contains(" + fileextension + ")").each(function () {
 							var filename = this.href.replace(window.location.host, "").replace("http:///", "");
 							var filename_cut = filename.slice(0, -4).replace(/-/g," ");
-							$("#photography-misc").append($("<div class='col-lg-3 col-sm-4'><a href='" + backgroundsdir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
+							$("#photography-misc").append($("<div class='col-lg-3 col-sm-4'><a href='" + photosmiscdir + filename +"' target='blank'><img src=" + backgroundsdir + filename + "></img><h6>" + filename_cut + "</h6></a></div>"));
 						});
 					}
 				});

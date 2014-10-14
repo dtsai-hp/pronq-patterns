@@ -26,6 +26,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
+	<script>
+		$.getJSON('http://www.pronq.com/pronq-header-footer/header/html/json',function(header){
+			alert(header.css.footer);
+		});
+	</script>
 </head>
 <body>
 

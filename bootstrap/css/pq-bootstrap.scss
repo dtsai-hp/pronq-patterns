@@ -760,7 +760,7 @@ fieldset[disabled] .checkbox-inline {
   padding: 10px 40px;
   margin: 0px;
   font-size: 18px;
-  font-weight: $light;
+  font-weight: $semi-bold;
   line-height: 1;
   background-color: $orange1;
   outline: none;
@@ -923,7 +923,6 @@ fieldset[disabled] .btn {
   border-radius: 3px;
   height: 30px;
   min-width: 90px;
-  font-weight: $regular;
 }
 
 .dropdown-menu {

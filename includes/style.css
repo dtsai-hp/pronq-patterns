@@ -474,3 +474,19 @@
   font-size: 18px;
   background-color: rgba(104, 110, 159, 0.1);
 }
+
+/* Blogs ------------------------------------------------ */
+.blogassets > div {
+  margin-bottom: 25px;
+  overflow: auto;
+}
+
+.blogassets img {
+  width: 100%;
+  border: 5px solid #EDEEEE;
+}
+
+.blogassets button {
+  float: left;
+  margin-right: 15px;
+}

@@ -1764,7 +1764,7 @@ fieldset[disabled] .btn {
 }
 
 .light .carousel-control {
-  color: #00b0b9;
+  color: #0096d6;
 }
 
 a:link.carousel-control, a:visited.carousel-control, a:active.carousel-control {
@@ -1795,13 +1795,13 @@ a:link.carousel-control, a:visited.carousel-control, a:active.carousel-control {
 }
 
 .light a:link.carousel-control, .light a:visited.carousel-control, .light a:active.carousel-control {
-  color: #00b0b9;
+  color: #0096d6;
   font-size: 90px;
 }
 
 .light .carousel-control:hover,
 .light .carousel-control:focus {
-  color: #00b0b9;
+  color: #0096d6;
   text-decoration: none;
   outline: none;
   opacity: 0.8;

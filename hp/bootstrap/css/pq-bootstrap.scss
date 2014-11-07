@@ -1791,7 +1791,7 @@ fieldset[disabled] .btn {
 }
 
  .light .carousel-control {
-    color: $teal1;
+    color: $hp-blue;
   }
 
   a:link.carousel-control , a:visited.carousel-control , a:active.carousel-control  {
@@ -1822,13 +1822,13 @@ fieldset[disabled] .btn {
   }
 
   .light a:link.carousel-control , .light a:visited.carousel-control , .light a:active.carousel-control  {
-    color: $teal1;
+    color: $hp-blue;
     font-size: 90px;
   }
 
   .light .carousel-control:hover,
   .light .carousel-control:focus {
-    color: $teal1;
+    color: $hp-blue;
     text-decoration: none;
     outline: none;
     opacity: 0.8;

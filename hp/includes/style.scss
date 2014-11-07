@@ -456,64 +456,49 @@
 }
 
 .change table tr:nth-child(even) td {
-	background-color: $grey6;
+	background-color: $backgroundgrey;
 }
 
 .change table tr.date td {
 	background-color: white;
 	text-transform: uppercase;
-	border-top: 5px solid $grey2;
-	border-bottom: 3px solid $grey4;
+	border-top: 0px solid $grey4;
+	border-bottom: 2px solid $grey5;
 	padding: 5px 10px;
 	font-weight: $light;
-	background-color: white;
-	color: $grey1;
+	background-color: $grey2;
+	color: white;
 	letter-spacing: 2px;
 }
 
 .change table tr td.upcoming {
-	border-right: 6px solid $blue1;
 	color: $blue1;
-	background-color: white;
 	text-align: center;
 	font-size: 18px;
-	background-color: transparentize($blue1, .9);
 }
 
 .change table tr td.deletion {
-	border-right: 6px solid $red1;
 	color: $red1;
-	background-color: white;
 	text-align: center;
 	font-size: 18px;
-	background-color: transparentize($red1, .9);
 }
 
 .change table tr td.addition {
-	border-right: 6px solid $green2;
 	color: $green2;
-	background-color: white;
 	text-align: center;
 	font-size: 18px;
-	background-color: transparentize($green2, .9);
 }
 
 .change table tr td.smallchange {
-	border-right: 6px solid $orange1;
 	color: $orange1;
-	background-color: white;
 	text-align: center;
 	font-size: 18px;
-	background-color: transparentize($orange1, .9);
 }
 
 .change table tr td.bigchange {
-	border-right: 6px solid $purple1;
 	color: $purple1;
-	background-color: white;
 	text-align: center;
 	font-size: 18px;
-	background-color: transparentize($purple1, .9);
 }
 
 /* Blogs ------------------------------------------------ */

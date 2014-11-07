@@ -415,64 +415,49 @@
   }
 }
 .change table tr:nth-child(even) td {
-  background-color: #edeeee;
+  background-color: #f7f7f7;
 }
 
 .change table tr.date td {
   background-color: white;
   text-transform: uppercase;
-  border-top: 5px solid #75787b;
-  border-bottom: 3px solid #cbcccd;
+  border-top: 0px solid #cbcccd;
+  border-bottom: 2px solid #ddddde;
   padding: 5px 10px;
   font-weight: 300;
-  background-color: white;
-  color: #53565a;
+  background-color: #75787b;
+  color: white;
   letter-spacing: 2px;
 }
 
 .change table tr td.upcoming {
-  border-right: 6px solid #006478;
   color: #006478;
-  background-color: white;
   text-align: center;
   font-size: 18px;
-  background-color: rgba(0, 100, 120, 0.1);
 }
 
 .change table tr td.deletion {
-  border-right: 6px solid #af3a2b;
   color: #af3a2b;
-  background-color: white;
   text-align: center;
   font-size: 18px;
-  background-color: rgba(175, 58, 43, 0.1);
 }
 
 .change table tr td.addition {
-  border-right: 6px solid #339b83;
   color: #339b83;
-  background-color: white;
   text-align: center;
   font-size: 18px;
-  background-color: rgba(51, 155, 131, 0.1);
 }
 
 .change table tr td.smallchange {
-  border-right: 6px solid #ff9e1b;
   color: #ff9e1b;
-  background-color: white;
   text-align: center;
   font-size: 18px;
-  background-color: rgba(255, 158, 27, 0.1);
 }
 
 .change table tr td.bigchange {
-  border-right: 6px solid #686e9f;
   color: #686e9f;
-  background-color: white;
   text-align: center;
   font-size: 18px;
-  background-color: rgba(104, 110, 159, 0.1);
 }
 
 /* Blogs ------------------------------------------------ */

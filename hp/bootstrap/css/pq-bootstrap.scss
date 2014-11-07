@@ -232,11 +232,11 @@ small,
 }
 
 .table.tealreversed > thead {
-	background-color: $teal1;
+	background-color: $hp-blue;
 	color: white;
 }
 
-.table.tealreversed > tbody > tr > td {
+.table.bluereversed > tbody > tr > td {
 	background-color: $grey6;
 	border-color: white;
 }
@@ -246,8 +246,8 @@ small,
 	color: $grey1;
 }
 
-.table.teal > thead {
-	background-color: $teal1;
+.table.blue > thead {
+	background-color: $hp-blue;
 	color: white;
 }
 
@@ -1105,20 +1105,20 @@ fieldset[disabled] .btn {
 }
 
 .nav > li > .dropdown-menu > a:link , .nav > li > .dropdown-menu > a:visited , .nav > li > .dropdown-menu > a:active {
-  color: $grey6;
+  color: white;
   text-decoration: none;
 }
 
 .nav > li > .dropdown-menu > a:hover {
   text-decoration: none;
-  color: $grey6;
-  background-color: $grey1;
+  color: white;
+  background-color: darken($hp-blue, 5%);
 }
 
 .nav-tabs > li:hover > a,
 .nav-tabs > li:focus > a {
     text-decoration: none;
-    color: $teal1;
+    color: white;
     background-image: none;
   }
 

@@ -222,11 +222,11 @@ small,
 }
 
 .table.tealreversed > thead {
-  background-color: #00b0b9;
+  background-color: #0096d6;
   color: white;
 }
 
-.table.tealreversed > tbody > tr > td {
+.table.bluereversed > tbody > tr > td {
   background-color: #edeeee;
   border-color: white;
 }
@@ -236,8 +236,8 @@ small,
   color: #53565a;
 }
 
-.table.teal > thead {
-  background-color: #00b0b9;
+.table.blue > thead {
+  background-color: #0096d6;
   color: white;
 }
 
@@ -1075,20 +1075,20 @@ fieldset[disabled] .btn {
 }
 
 .nav > li > .dropdown-menu > a:link, .nav > li > .dropdown-menu > a:visited, .nav > li > .dropdown-menu > a:active {
-  color: #edeeee;
+  color: white;
   text-decoration: none;
 }
 
 .nav > li > .dropdown-menu > a:hover {
   text-decoration: none;
-  color: #edeeee;
-  background-color: #53565a;
+  color: white;
+  background-color: #0084bd;
 }
 
 .nav-tabs > li:hover > a,
 .nav-tabs > li:focus > a {
   text-decoration: none;
-  color: #00b0b9;
+  color: white;
   background-image: none;
 }
 

@@ -455,7 +455,7 @@ small,
 }
 
 .form-control:focus {
-  border-color: $teal1;
+  border-color: $hp-blue;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -492,7 +492,7 @@ small,
 }
 
 .dropdown-group:focus {
-  border-color: $teal1;
+  border-color: $hp-blue;
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -657,7 +657,7 @@ input[type="radio"]:hover + .button:before {
   cursor: pointer;
   font-size: 14px;
   padding-left: 10px;
-  color: $teal1;
+  color: $grey1;
 }
 
 .radio input[type="radio"],
@@ -1143,7 +1143,7 @@ fieldset[disabled] .btn {
 .nav-tabs > li > a:hover {
   border-color: $grey6 $grey6 $grey5;
   background-image: none;
-  color: $teal1;
+  color: $hp-blue;
 }
 
 .nav-tabs > li.active > a,
@@ -1656,7 +1656,7 @@ fieldset[disabled] .btn {
   line-height: 20px;
   color: white;
   text-align: center;
-  background-color: $teal1;
+  background-color: $hp-blue;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition: width 0.6s ease;

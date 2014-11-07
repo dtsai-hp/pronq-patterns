@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Pronq.com Pattern Library</title>
+
+	<!-- Icon -->
+
+	<link rel="shortcut icon" href="imgs/assets/favicon.ico" type="image/x-icon" />
+
+	<!-- Fonts -->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+	<!-- CSS -->
+
+  	<link href='bootstrap/css/bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='bootstrap/css/pq-bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='includes/style.css' rel='stylesheet' type='text/css'>
+
+	<!-- Javascript -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+</head>
+<body>
+
+  <!-- Navigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
+	<nav class='navbar navbar-default' id='globalnav' role='navigation' ng-include src="'includes/nav.html'"></nav>
+
+	<div class="pq-subnav hidden-xs hidden-sm" id="subnav">
+		<div class="container">
+	    	<div class="title">Change Log</div>
+	  	</div>
+	</div>
+
+	<!-- Content - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
+	<!-- Change Log - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<div class="container">
+
+		<div class="pq-docs-section" id="changelog">
+
+			<div class="change">
+
+			<p>The pattern library is updated every two weeks with our team's regular production cycles.</p>
+			<!--<h5><small>Next scheduled update</small><br/>Wednesday, August 13, 2014</h5>-->
+
+
+			<table>
+				<tr>
+					<td class="hideColumn title" colspan=2>Change Type</td>
+					<td class="title">Page</td>
+					<td class="title">Section</td>
+					<td class="hideColumn title">Author</td>
+					<td class="title">Details</td>
+				</tr>
+				<tr class="date">
+					<td colspan=6>Regular Updates</td>
+				</tr>
+				<tr>
+					<td class="hideColumn upcoming"><i class="fa fa-clock-o"></i></td>
+					<td class="hideColumn">Scheduled</td>
+					<td>Downloads</td>
+					<td colspan=4>The Brand Book and Illustration Library are updated every two weeks</td>
+				</tr>
+
+
+		<!-- November 5, 2014 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+			<tr class="date">
+				<td>0.2</td>
+				<td colspan=5>Wednesday, November 5, 2014</td>
+			</tr>
+			<tr>
+				<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+				<td class="hideColumn">Minor Change</td>
+				<td>UI</td>
+				<td>Buttons</td>
+				<td class="hideColumn">S Dujari</td>
+				<td>All buttons now use semi-bold font weight.</td>
+			</tr>
+
+		<!-- August 27, 2014 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+			<tr class="date">
+				<td>0.2</td>
+				<td colspan=5>Wednesday, August 27, 2014</td>
+			</tr>
+			<tr>
+				<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+				<td class="hideColumn">Minor Change</td>
+				<td>Components</td>
+				<td>Global Header & Footer</td>
+				<td class="hideColumn">S Dujari</td>
+				<td>Removed background color on landing page footers (using minimal styling now).</td>
+			</tr>
+
+
+		<!-- JULY 30, 2014 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+			<tr class="date">
+				<td>0.2</td>
+				<td colspan=5>Wednesday, July 30, 2014</td>
+			</tr>
+			<tr>
+				<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+				<td class="hideColumn">Minor Change</td>
+				<td>Resources</td>
+				<td>Downloads</td>
+				<td class="hideColumn">S Dujari</td>
+				<td>Updates color palette download to reflect background color changes.</td>
+			</tr>
+
+		<!-- JULY 16, 2014 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+			<tr class="date">
+				<td>0.2</td>
+				<td colspan=5>Wednesday, July 16, 2014</td>
+			</tr>
+			<tr>
+				<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+				<td class="hideColumn">Minor Change</td>
+				<td>UI</td>
+				<td>Forms</td>
+				<td class="hideColumn">S Dujari</td>
+				<td>Removed dropdown arrow on Firefox (bug in windows)</td>
+			</tr>
+
+		<!-- JUNE 18, 2014 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+					<tr class="date">
+						<td>0.2</td>
+						<td colspan=5>Wednesday, June 18, 2014</td>
+					</tr>
+					<tr>
+						<td class="hideColumn addition"><i class="fa fa-plus-circle"></i></td>
+						<td class="hideColumn">Addition</td>
+						<td>Styles</td>
+						<td>Structure</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Added detailed instructions on how to use grid structure</td>
+					</tr>
+					<tr>
+						<td class="hideColumn addition"><i class="fa fa-plus-circle"></i></td>
+						<td class="hideColumn">Addition</td>
+						<td>UI</td>
+						<td>Forms</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Added side-by-side input fields structure/styling</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>Styles</td>
+						<td>Colors</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Changed tints of background colors and added a grey background color</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>UI</td>
+						<td>Forms</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Lightened up placeholder text color in form fields</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>Components</td>
+						<td>Global Header and Footer</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Removed background on minimal footer and darkened text color</td>
+					</tr>
+
+		<!-- JUNE 4, 2014 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+					<tr class="date">
+						<td>0.2</td>
+						<td colspan=5>Wednesday, June 4, 2014</td>
+					</tr>
+					<tr>
+						<td class="hideColumn addition"><i class="fa fa-plus-circle"></i></td>
+						<td class="hideColumn">Addition</td>
+						<td>Components</td>
+						<td>Global Header & Footer</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Added landing page footer</td>
+					</tr>
+					<tr>
+						<td class="hideColumn addition"><i class="fa fa-plus-circle"></i></td>
+						<td class="hideColumn">Addition</td>
+						<td>Resources</td>
+						<td>Downloads</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Added HP and vPV logos for download</td>
+					</tr>
+					<tr>
+						<td class="hideColumn deletion"><i class="fa fa-times-circle"></i></td>
+						<td class="hideColumn">Deletion</td>
+						<td>Styles</td>
+						<td>Typography</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Removed Sanchez font</td>
+					</tr>
+					<tr>
+						<td class="hideColumn deletion"><i class="fa fa-times-circle"></i></td>
+						<td class="hideColumn">Deletion</td>
+						<td>UI</td>
+						<td>Forms</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Removed expanded forms</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>UI</td>
+						<td>Forms</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Redesigned checkboxes and radio buttons to use built in versions</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>UI</td>
+						<td>Buttons</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Changed code behind buttons to align with W3 Standards</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>UI</td>
+						<td>Tooltips & Alerts</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Reduced Height of Alerts</td>
+					</tr>
+
+		<!-- MAY 22, 2014 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+					<tr class="date">
+						<td>0.2</td>
+						<td colspan=5>Thursday, May 22, 2014</td>
+					</tr>
+					<tr>
+						<td class="hideColumn addition"><i class="fa fa-plus-circle"></i></td>
+						<td class="hideColumn">Addition</td>
+						<td>Welcome</td>
+						<td>Brand</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Added brand book</td>
+					</tr>
+					<tr>
+						<td class="hideColumn addition"><i class="fa fa-plus-circle"></i></td>
+						<td class="hideColumn">Addition</td>
+						<td>Resources</td>
+						<td>Downloads</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Added Pronq and product logos for download</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>Resources</td>
+						<td>Downloads</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Removed dark UI swatches from color palette</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>Resources</td>
+						<td>Downloads</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Updates illustration libraries</td>
+					</tr>
+
+		<!-- MAY 14, 2014 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+					<tr class="date">
+						<td>0.1</td>
+						<td colspan=5>Wednesday, May 14, 2014</td>
+					</tr>
+					<tr>
+						<td class="hideColumn deletion"><i class="fa fa-times-circle"></i></td>
+						<td class="hideColumn">Deletion</td>
+						<td>Styles</td>
+						<td>Color Palette</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Removed darker tints of background colors</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>UI</td>
+						<td>Tooltips & Alerts</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Slight changes to alert colors</td>
+					</tr>
+
+		<!-- APRIL 28, 2014 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+					<tr class="date">
+						<td>0.1</td>
+						<td colspan=5>Monday, April 28, 2014</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>UI</td>
+						<td>Forms</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Changed form height and created expanded version of forms</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>UI</td>
+						<td>Forms</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Changed checkbox arrow background color</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>UI</td>
+						<td>Tooltips & Alerts</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Changed tooltip underline color and cursor</td>
+					</tr>
+
+		<!-- APRIL 11, 2014 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+					<tr class="date">
+						<td>0.1</td>
+						<td colspan=5>Friday, April 11, 2014</td>
+					</tr>
+					<tr>
+						<td class="hideColumn bigchange"><i class="fa fa-exclamation-circle"></i></td>
+						<td class="hideColumn">Major Change</td>
+						<td>Styles</td>
+						<td>Colors</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Updated colors to new color palette</td>
+					</tr>
+	<!--				<tr>
+						<td class="hideColumn deletion"><i class="fa fa-times-circle"></i></td>
+						<td class="hideColumn">Deletion  </td>
+						<td>Styles</td>
+						<td>Everything</td>
+						<td class="hideColumn">- -</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Complete revamp! NOT YET COMPLETE!</td>
+					</tr>
+					<tr>
+						<td class="hideColumn smallchange"><i class="fa fa-minus-circle"></i></td>
+						<td class="hideColumn">Minor Change</td>
+						<td>Styles</td>
+						<td>Everything</td>
+						<td class="hideColumn">- -</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Complete revamp! NOT YET COMPLETE!</td>
+					</tr>
+					<tr>
+						<td class="hideColumn bigchange"><i class="fa fa-exclamation-circle"></i></td>
+						<td class="hideColumn">Major Change</td>
+						<td>Styles</td>
+						<td>Everything</td>
+						<td class="hideColumn">- -</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Complete revamp! NOT YET COMPLETE!</td>
+					</tr>
+					<tr>
+						<td class="hideColumn addition"><i class="fa fa-plus-circle"></i></td>
+						<td class="hideColumn">Addition</td>
+						<td>Styles</td>
+						<td>Everything</td>
+						<td class="hideColumn">- -</td>
+						<td class="hideColumn">S Dujari</td>
+						<td>Complete revamp! NOT YET COMPLETE!</td>
+					</tr>-->
+				</table>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<div id="footer" class="pq-footer" ng-include="'includes/footer.html'"></div>
+
+	<!-- After load JavaScript files -->
+
+	<script src="js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="js/pq-subnav.js" type="text/javascript"></script>
+	<script src="js/pq-top.js" type="text/javascript"></script>
+
+
+</body>
+</html>

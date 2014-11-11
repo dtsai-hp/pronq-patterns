@@ -1,4 +1,12 @@
 /* Pronq overrides for bootstrap */
+.this {
+  color: #0096d6;
+  color: #0084bd;
+  color: #57cdff;
+  color: #a3e3ff;
+  color: #f0faff;
+}
+
 html {
   font-family: "Open Sans", sans-serif;
 }
@@ -1311,7 +1319,7 @@ fieldset[disabled] .btn {
   }
 
   .navbar-right > li {
-    border-left: 1px solid #0084bd;
+    border-left: 0px solid #0084bd;
   }
 }
 .navbar-right > li > a > img {
@@ -1635,10 +1643,6 @@ fieldset[disabled] .btn {
   box-shadow: none;
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
-}
-
-.progress-bar-blue {
-  background-color: #006478;
 }
 
 #tooltip {
@@ -2049,11 +2053,6 @@ a:link.carousel-control, a:visited.carousel-control, a:active.carousel-control {
   margin: 19px 0px 0px 10px;
 }
 
-.pq-subnav.dark {
-  background-color: #53565a;
-  color: white;
-}
-
 .pq-subnav .title {
   float: left;
   text-align: left;
@@ -2064,17 +2063,8 @@ a:link.carousel-control, a:visited.carousel-control, a:active.carousel-control {
   border: 0px;
 }
 
-.pq-subnav.dark .title {
-  color: white;
-}
-
 .pq-subnav > ul > a:link, .pq-subnav > ul > a:visited, .pq-subnav > ul > a:active, > ul > .pq-subnav a:hover {
   color: #53565a;
-  text-decoration: none;
-}
-
-.pq-subnav.dark > ul > a:link, .pq-subnav.dark > ul > a:visited, .pq-subnav.dark > ul > a:active, .pq-subnav.dark > ul > a:hover {
-  color: white;
   text-decoration: none;
 }
 

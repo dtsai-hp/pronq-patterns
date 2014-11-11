@@ -1,4 +1,12 @@
 /* Basic Page and Nav Styling ------------------------------------------------ */
+.this {
+  color: #0096d6;
+  color: #0084bd;
+  color: #57cdff;
+  color: #a3e3ff;
+  color: #f0faff;
+}
+
 .pq-docs-section {
   margin-bottom: 0px;
   margin-top: 1px;

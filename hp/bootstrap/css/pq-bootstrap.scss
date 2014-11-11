@@ -1338,7 +1338,7 @@ fieldset[disabled] .btn {
     margin-right: -15px;
   }
   .navbar-right > li {
-  border-left: 1px solid darken($hp-blue, 5%);
+  border-left: 0px solid darken($hp-blue, 5%);
 }
 }
 
@@ -1661,10 +1661,6 @@ fieldset[disabled] .btn {
           box-shadow: none;
   -webkit-transition: width 0.6s ease;
           transition: width 0.6s ease;
-}
-
-.progress-bar-blue {
-  background-color: $blue1;
 }
 
 #tooltip {
@@ -2085,11 +2081,6 @@ fieldset[disabled] .btn {
   margin: 19px 0px 0px 10px;
 }
 
-.pq-subnav.dark {
-  background-color: $grey1;
-  color: white;
-}
-
 .pq-subnav .title {
   float: left;
   text-align: left;
@@ -2100,17 +2091,8 @@ fieldset[disabled] .btn {
   border: 0px;
 }
 
-.pq-subnav.dark .title {
-  color: white;
-}
-
 .pq-subnav > ul > a:link, .pq-subnav > ul > a:visited, .pq-subnav > ul > a:active , > ul > .pq-subnav a:hover {
   color: $grey1;
-  text-decoration: none;
-}
-
-.pq-subnav.dark > ul > a:link, .pq-subnav.dark > ul > a:visited, .pq-subnav.dark > ul > a:active , .pq-subnav.dark > ul > a:hover {
-  color: white;
   text-decoration: none;
 }
 

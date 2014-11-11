@@ -2159,137 +2159,42 @@ fieldset[disabled] .btn {
 }
 
 .pq-footer {
-  display: block;
-  background-color: $darkgrey1;
-  padding: 35px 0px 15px 0px;
-  margin-top: 45px;
-  bottom: 0px;
-  text-align: left;
-}
-
-.pq-footer h1 {
-  font-size: 14px;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-  color: $teal3;
-  font-weight: $regular;
-}
-
-.pq-footer .footer-box {
-  margin-bottom: 30px;
-}
-
-@media(max-width: 767px) {
-	.pq-footer .footer-box {
-	  padding: 0px 30px;
-	}
-}
-
-.pq-footer .footer-bottom {
-  border-top: 1px solid $grey1;
-  font-size: 12px;
-  padding: 5px 0px;
-  color: $grey4;
-  text-align: right;
-  margin: 0px;
-}
-
-.pq-footer.minimal {
-  background-color: transparent;
-
-  .footer-bottom {
-    color: $grey3;
-    border-color: $grey3;
-  }
-
-}
-
-.pq-footer .footer-social {
-  float: left;
-}
-
-.pq-footer .footer-social a:link, .pq-footer .footer-social a:active, .pq-footer .footer-social a:visited {
-  color: $grey4;
-  margin-right: 15px;
-}
-
-
-.pq-footer .footer-social a:hover {
-  color: $teal1;
-}
-
-.pq-footer .footer-bottom .copyright {
-    display: inline-block;
-  }
-
-.pq-footer .footer-bottom .cpbullet {
-  display: inline-block;
-}
-
-@media(max-width: 767px) {
-
-  .pq-footer .footer-bottom {
-    text-align: center;
-  }
-
-  .pq-footer .footer-bottom .copyright {
     display: block;
-  }
-
-  .pq-footer .footer-bottom .cpbullet {
-    display: none;
-  }
-
-  .pq-footer .footer-social {
-    display: block;
-    float: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-}
-
-.pq-footer a:link, .pq-footer a:visited, .pq-footer a:active {
-  color: $grey3;
-}
-
-.pq-footer a:hover {
-  color: $teal1;
+    background-color: $grey6;
+    padding: 30px 0px;
+    margin-top: 45px;
+    bottom: 0px;
+    text-align: left;
+    font-size: 13px;
+    color: $grey2;
 }
 
 .pq-footer ul {
-  list-style-type: none;
-  padding: 0px;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 0px;
 }
 
 .pq-footer ul li {
-  margin-bottom: 2px;
+    display: inline-block;
+    margin-left: 20px;
 }
 
-.pq-footer ul li:last-child {
-  margin-bottom: 0px;
+.pq-footer .right {
+    font-size: 12px;
+    text-size: 12px;
+    text-align: right;
 }
 
-.pq-footer .footer-box > a:link, .pq-footer .footer-box > a:active, .pq-footer .footer-box > a:visited {
-  color: $grey2;
-  text-decoration: none;
+.pq-footer a:link,
+.pq-footer a:active,
+.pq-footer a:visited {
+    color: $grey2;
 }
 
-.pq-footer .footer-box > a:hover {
-  text-decoration: none;
-  color: $teal1;
-}
-
-.pq-footer ul > li > a:link, .pq-footer ul > li > a:active, .pq-footer ul > li > a:visited {
-  color: $grey4;
-  text-decoration: none;
-}
-
-
-.pq-footer ul > li > a:hover {
-  color: $teal2;
-  text-decoration: none;
+.pq-footer a:hover {
+    color: $hp-blue;
 }
 
 .pq-spinner.orange {

@@ -26,16 +26,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
-
-	<script>
-
-		$.getJSON("http://www.pronq.com/pronq-header-footer/header/html/json?callback=?",
-        function(pronqHeader) {
-            alert("success");
-        });
-
-	</script>
-
 </head>
 <body>
 
@@ -488,14 +478,15 @@
 					if($(this).hasClass('active')) {}
 					else {
 						$("#tab"+activeTab).removeClass('active');
-				$("#tab"+activeTab).removeClass('active');
-
-						$(this).addClass('active');
-
+						$("#mobile-tab"+activeTab).removeClass('active');
+						$("#mobile-tab"+activeTab).find(".fa-angle-up").removeClass('fa-angle-up').addClass('fa-angle-down');
 						$("#content"+activeTab).hide().removeClass('active');
 
 						var id = $(this).attr('id').substring(3,4);
+						$(this).addClass('active');
+						$("#mobile-tab"+id).addClass('active');
 						$("#content"+id).show().addClass('active');
+						$(this).find(".fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-up');
 						activeTab = id;
 					}
 				});
@@ -503,12 +494,13 @@
 				$(".pq-sideMenu .mobile-tab").click(function() {
 					if($(this).hasClass('active')) {}
 					else {
-						$(".pq-sideMenu .mobile-tab").removeClass('active');
-						$(this).addClass('active');
+						$("#tab"+activeTab).removeClass('active');
+						$("#mobile-tab"+activeTab).removeClass('active');
+						$("#mobile-tab"+activeTab).find(".fa-angle-up").removeClass('fa-angle-up').addClass('fa-angle-down');
+						$("#content"+activeTab).slideUp().removeClass('active');
 
-						$(".pq-sideMenu .content.active").slideUp().removeClass('active');
-
-						var id = $(this).attr('id').substring(3,4);
+						var id = $(this).attr('id').substring(10,11);
+						$("#mobile-tab"+id).addClass('active');
 						$("#content"+id).slideDown().addClass('active');
 						$(this).find(".fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-up');
 						activeTab = id;

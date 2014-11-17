@@ -496,6 +496,7 @@
 
 						var id = $(this).attr('id').substring(3,4);
 						$("#content"+id).show().addClass('active');
+						activeTab = id;
 					}
 				});
 
@@ -509,7 +510,8 @@
 
 						var id = $(this).attr('id').substring(3,4);
 						$("#content"+id).slideDown().addClass('active');
-							$(this).find(".fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-up');
+						$(this).find(".fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-up');
+						activeTab = id;
 					}
 				});
 

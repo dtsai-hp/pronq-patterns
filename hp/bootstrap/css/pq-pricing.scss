@@ -8,87 +8,10 @@
 
 	.header {
 		padding: 15px;
-		border-top-left-radius: $radius;
-		border-top-right-radius: $radius;
 		position: relative;
 		text-align: center;
-		color: white;
 		min-height: 120px;
-
-		.ribbon-container {
-			position: absolute;
-			top: 15px;
-			right: -15px;
-			overflow: visible; /* so we can see the pseudo-elements we're going to add to the anchor */
-			font-size: 12px; /* font-size and line-height must be equal so we can account for the height of the banner */
-			line-height: 14px;
-			z-index: 2;
-		}
-
-		.ribbon-container:before {
-			content:"";
-			height: 0;
-			width: 0;
-			display: block;
-			position: absolute;
-			top: 3px;
-			left: 0;
-			border-top: 24px solid rgba(122,98,25,.6); /* These 4 border properties create the first part of our drop-shadow */
-			border-bottom: 24px solid rgba(122,98,25,.6); 
-			border-right: 24px solid rgba(122,98,25,.6);
-			border-left: 24px solid transparent;
-		}
-
-		.ribbon-container:after { /* This adds the second part of our dropshadow */
-			content:"";
-			height: 3px;
-			background: rgba(122,98,25,.6);
-			display: block;
-			position: absolute;
-			bottom: -3px;
-			left: 48px;
-			right:3px;
-		}
-
-		.ribbon-container .star {
-			display:block;
-			padding:12px 12px;
-			position:relative; /* allows us to position our pseudo-elements properly */
-			background:#f2bc19;
-			overflow:visible;
-			height:48px;
-			margin-left:24px;
-			color: #fff;
-			text-decoration:none;
-			z-index: 3;
-		}
-
-		.ribbon-container .star:after { /* this creates the "folded" part of our ribbon */
-			content:""; 
-			height: 0;
-			width: 0;
-			display:block;
-			position:absolute;
-			bottom:-15px;
-			right:0;
-			border-top: 15px solid #7a6219; 
-			border-right: 15px solid transparent;
-		}
-
-		.ribbon-container .star:before { /* this creates the "forked" part of our ribbon */
-			content:"";
-			height: 0;
-			width: 0;
-			display:block;
-			position:absolute;
-			top:0;
-			left:-24px;
-			border-top: 24px solid #f2bc19; 
-			border-bottom: 24px solid #f2bc19; 
-			border-right: 24px solid transparent;
-			border-left: 24px solid transparent;
-		}
-
+		background-color: $grey6;
 
 		.title {
 			font-weight: $light;
@@ -101,9 +24,9 @@
 			position: relative;
 			display: block;
 			margin: -15px -15px 10px -15px;
-			padding: 6px 10px 6px 10px;
-			border-radius: $radius $radius 0px 0px;
-			letter-spacing: 2px;
+			letter-spacing: 1px;
+			height: 40px;
+			line-height: 40px;
 		}
 
 		.price {
@@ -141,29 +64,24 @@
 			display: block;
 		}
 
-		.arrow-down {
-			position: absolute;
-			left: 50%;
-			bottom: -10px;
-			width: 0px;
-			height: 0px;
-			margin-left: -10px;
-			border-style: solid;
-			border-width: 10px 10px 0px 10px;
-		}
 	}
 
 	.details {
-		background-color: $grey6;
-		border-bottom-left-radius: $radius;
-		border-bottom-right-radius: $radius;
-		padding: 30px 15px 15px 15px;
-		text-align: center;
-		min-height: 148px;
+		background-color: $backgroundgrey;
 
-		p {
-			margin-top: 15px;
-			margin-bottom: 0px;
+		ul {
+			list-style-type: none;
+			padding: 0px;
+
+			li {
+				padding: 15px 20px;
+				border-bottom: 1px solid white;
+			}
+		}
+
+		.btn {
+			border-radius: 0px;
+			display: block;
 		}
 	}
 }
@@ -188,196 +106,158 @@
 
 }
 
-.pricing-package.teal {
-	.header {
-		background-color: $teal2;
-
-		.title {
-			background-color: $teal1;
-		}
-
-		.arrow-down {
-			border-color: $teal2 transparent transparent transparent;
-		}
+.pricing-package.hp-blue {
+	.title {
+		background-color: $hp-blue;
 	}
 }
 
 .pricing-package.green {
-	.header {
-		background-color: $green2;
-
-		.title {
-			background-color: $green1;
-		}
-
-		.arrow-down {
-			border-color: $green2 transparent transparent transparent;
-		}
+	.title {
+		background-color: $green1;
 	}
 }
 
 .pricing-package.blue {
-	.header {
-		background-color: $blue2;
+	.title {
+		background-color: $blue1;
 
-		.title {
-			background-color: $blue1;
-		}
-
-		.arrow-down {
-			border-color: $blue2 transparent transparent transparent;
-		}
 	}
 }
 
 .pricing-package.purple {
-	.header {
-		background-color: $purple2;
-
-		.title {
-			background-color: $purple1;
-		}
-
-		.arrow-down {
-			border-color: $purple2 transparent transparent transparent;
-		}
+	.title {
+		background-color: $purple1;
 	}
 }
 
-#pricing-header {
-	width: 100%;
-	z-index: 100;
-}
-
-.pricing-features-header {
-	border-collapse: collapse;
-	width: 100%;
-	text-align: center;
-	vertical-align: middle;
-	color: $grey1;
-	z-index: 10;
-	margin-top: 20px;
-	border-top: 20px solid white;
-
-	.header {
-		color: white;
-		font-size: 20px;
-		border-top-left-radius: $radius;
-		border-top-right-radius: $radius;
-		width: 100%;
-		margin: 0px;
-		width: 100%;
-	
-		div {
-			padding: 15px 15px;
-			width: 20%;
-			display: inline-block;
-		}
-
-		.packages {
-			font-weight: $bold;
-			background-color: $grey1;
-			border-top-left-radius: $radius;
-		}
-
-		.teal {
-			background-color: $teal1;
-			font-weight: $light;
-			border-top-left-radius: $radius;
-		}
-
-		.green {
-			background-color: $green1;
-			font-weight: $light;
-		}
-
-		.purple {
-			background-color: $purple1;
-			font-weight: $light;
-		}
-
-		.blue {
-			background-color: $blue1;
-			font-weight: $light;
-		}
-
-		div:last-child {
-			border-top-right-radius: $radius;
-		}
-	}
-
-}
-
-.pricing-features {
-	border-collapse: collapse;
+span.enterprise {
 	display: block;
 	text-align: center;
-	vertical-align: middle;
-	color: $grey1;
-	margin-bottom: 40px;
-	z-index: 0;
+}
 
-	.feature {
+.comparison-table {
+	background-color: $backgroundgrey;
+	padding: 60px 0px;
 
-		border-bottom: 1px solid white;
-		margin: 0px;
-		background-color: $grey6;
+	.pricing-features-header {
+		border-collapse: collapse;
+		width: 100%;
+		text-align: center;
+		vertical-align: middle;
+		color: $grey1;
+		z-index: 10;
 
-		div {
-			padding: 10px 15px;
-			width: 20%;
-			display: inline-block;
+		.header {
+			color: white;
+			font-size: 18px;
+			width: 100%;
+			margin: 0px;
+			width: 100%;
+			letter-spacing: 1px;
+			height: 40px;
+			line-height: 40px;
+			text-transform: uppercase;
+
+			div {
+				width: 20%;
+				display: inline-block;
+			}
+
+			.hp-blue {
+				background-color: $hp-blue;
+				font-weight: $light;
+			}
+
+			.green {
+				background-color: $green1;
+				font-weight: $light;
+			}
+
+			.purple {
+				background-color: $purple1;
+				font-weight: $light;
+			}
+
+			.blue {
+				background-color: $blue1;
+				font-weight: $light;
+			}
 		}
 
-		.name {
-			text-align: right;
-			padding: 13px 15px 13px 30px;
+	}
+
+	.pricing-features {
+		border-collapse: collapse;
+		display: block;
+		text-align: center;
+		vertical-align: middle;
+		color: $grey1;
+		z-index: 0;
+
+		.feature {
+
+			border-bottom: 1px solid $grey6;
+			margin: 0px;
+			background-color: white;
+
+			div {
+				padding: 10px 15px;
+				width: 20%;
+				display: inline-block;
+			}
+
+			.name {
+				text-align: right;
+				padding: 13px 15px 13px 30px;
+				font-weight: $bold;
+				background-color: $backgroundgrey;
+			}
+
+			.value {
+				padding: 13px 15px;
+			}
+
+		}
+
+
+		.feature.price {
 			font-weight: $bold;
+			border: 0px;
+
+
+			div {
+				padding: 15px 15px;
+				width: 20%;
+				background-color: white;
+			}
+
+			small {
+				font-size: 14px;
+				display: block;
+				margin: 3px 0px;
+				font-weight: $regular;
+			}
+
 		}
 
-		.value {
-			padding: 13px 15px;
+		.feature.buttons {
+			background-color: white;
+
+			div {
+				padding-top: 0px;
+			}
 		}
 
-	}
+		.feature:last-child {
 
+			.name {
+				border-bottom-left-radius: $radius;
+			}
 
-	.feature.price {
-		font-size: 20px;
-		background-color: white;
-		font-weight: $bold;
-
-
-		div {
-			padding: 15px 15px;
-			width: 20%;
-		}
-
-		small {
-			font-size: 14px;
-			display: block;
-			margin: 3px 0px;
-			font-weight: $regular;
-		}
-
-	}
-
-	.feature.buttons {
-		background-color: white;
-
-		div {
-			padding-top: 0px;
-		}
-	}
-
-	.feature:last-child {
-
-		.name {
-			border-bottom-left-radius: $radius;
-		}
-
-		.value:last-child {
-			border-bottom-right-radius: $radius;			
+			.value:last-child {
+				border-bottom-right-radius: $radius;
+			}
 		}
 	}
 }
@@ -560,7 +440,7 @@
 
 .quote-box {
 	display: block;
-	background-color: $grey6;
+	background-color: $backgroundgrey;
 	padding: 60px 0px;
 
 	.quote {

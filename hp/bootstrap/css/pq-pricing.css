@@ -4,87 +4,10 @@
 }
 .pricing-package .header {
   padding: 15px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   position: relative;
   text-align: center;
-  color: white;
   min-height: 120px;
-}
-.pricing-package .header .ribbon-container {
-  position: absolute;
-  top: 15px;
-  right: -15px;
-  overflow: visible;
-  /* so we can see the pseudo-elements we're going to add to the anchor */
-  font-size: 12px;
-  /* font-size and line-height must be equal so we can account for the height of the banner */
-  line-height: 14px;
-  z-index: 2;
-}
-.pricing-package .header .ribbon-container:before {
-  content: "";
-  height: 0;
-  width: 0;
-  display: block;
-  position: absolute;
-  top: 3px;
-  left: 0;
-  border-top: 24px solid rgba(122, 98, 25, 0.6);
-  /* These 4 border properties create the first part of our drop-shadow */
-  border-bottom: 24px solid rgba(122, 98, 25, 0.6);
-  border-right: 24px solid rgba(122, 98, 25, 0.6);
-  border-left: 24px solid transparent;
-}
-.pricing-package .header .ribbon-container:after {
-  /* This adds the second part of our dropshadow */
-  content: "";
-  height: 3px;
-  background: rgba(122, 98, 25, 0.6);
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 48px;
-  right: 3px;
-}
-.pricing-package .header .ribbon-container .star {
-  display: block;
-  padding: 12px 12px;
-  position: relative;
-  /* allows us to position our pseudo-elements properly */
-  background: #f2bc19;
-  overflow: visible;
-  height: 48px;
-  margin-left: 24px;
-  color: #fff;
-  text-decoration: none;
-  z-index: 3;
-}
-.pricing-package .header .ribbon-container .star:after {
-  /* this creates the "folded" part of our ribbon */
-  content: "";
-  height: 0;
-  width: 0;
-  display: block;
-  position: absolute;
-  bottom: -15px;
-  right: 0;
-  border-top: 15px solid #7a6219;
-  border-right: 15px solid transparent;
-}
-.pricing-package .header .ribbon-container .star:before {
-  /* this creates the "forked" part of our ribbon */
-  content: "";
-  height: 0;
-  width: 0;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -24px;
-  border-top: 24px solid #f2bc19;
-  border-bottom: 24px solid #f2bc19;
-  border-right: 24px solid transparent;
-  border-left: 24px solid transparent;
+  background-color: #edeeee;
 }
 .pricing-package .header .title {
   font-weight: 300;
@@ -97,9 +20,9 @@
   position: relative;
   display: block;
   margin: -15px -15px 10px -15px;
-  padding: 6px 10px 6px 10px;
-  border-radius: 5px 5px 0px 0px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  height: 40px;
+  line-height: 40px;
 }
 .pricing-package .header .price {
   font-size: 60px;
@@ -129,27 +52,20 @@
   height: 20px;
   display: block;
 }
-.pricing-package .header .arrow-down {
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  width: 0px;
-  height: 0px;
-  margin-left: -10px;
-  border-style: solid;
-  border-width: 10px 10px 0px 10px;
-}
 .pricing-package .details {
-  background-color: #edeeee;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding: 30px 15px 15px 15px;
-  text-align: center;
-  min-height: 148px;
+  background-color: #f7f7f7;
 }
-.pricing-package .details p {
-  margin-top: 15px;
-  margin-bottom: 0px;
+.pricing-package .details ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.pricing-package .details ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid white;
+}
+.pricing-package .details .btn {
+  border-radius: 0px;
+  display: block;
 }
 
 .pricing-package.light {
@@ -168,153 +84,122 @@
   opacity: 1;
 }
 
-.pricing-package.teal .header {
-  background-color: #33c0c7;
-}
-.pricing-package.teal .header .title {
-  background-color: #00b0b9;
-}
-.pricing-package.teal .header .arrow-down {
-  border-color: #33c0c7 transparent transparent transparent;
+.pricing-package.hp-blue .title {
+  background-color: #0096d6;
 }
 
-.pricing-package.green .header {
-  background-color: #339b83;
-}
-.pricing-package.green .header .title {
+.pricing-package.green .title {
   background-color: #008264;
 }
-.pricing-package.green .header .arrow-down {
-  border-color: #339b83 transparent transparent transparent;
-}
 
-.pricing-package.blue .header {
-  background-color: #338393;
-}
-.pricing-package.blue .header .title {
+.pricing-package.blue .title {
   background-color: #006478;
 }
-.pricing-package.blue .header .arrow-down {
-  border-color: #338393 transparent transparent transparent;
-}
 
-.pricing-package.purple .header {
-  background-color: #868bb2;
-}
-.pricing-package.purple .header .title {
+.pricing-package.purple .title {
   background-color: #686e9f;
 }
-.pricing-package.purple .header .arrow-down {
-  border-color: #868bb2 transparent transparent transparent;
+
+span.enterprise {
+  display: block;
+  text-align: center;
 }
 
-#pricing-header {
-  width: 100%;
-  z-index: 100;
+.comparison-table {
+  background-color: #f7f7f7;
+  padding: 60px 0px;
 }
-
-.pricing-features-header {
+.comparison-table .pricing-features-header {
   border-collapse: collapse;
   width: 100%;
   text-align: center;
   vertical-align: middle;
   color: #53565a;
   z-index: 10;
-  margin-top: 20px;
-  border-top: 20px solid white;
 }
-.pricing-features-header .header {
+.comparison-table .pricing-features-header .header {
   color: white;
-  font-size: 20px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  font-size: 18px;
   width: 100%;
   margin: 0px;
   width: 100%;
+  letter-spacing: 1px;
+  height: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
 }
-.pricing-features-header .header div {
-  padding: 15px 15px;
+.comparison-table .pricing-features-header .header div {
   width: 20%;
   display: inline-block;
 }
-.pricing-features-header .header .packages {
-  font-weight: 700;
-  background-color: #53565a;
-  border-top-left-radius: 5px;
-}
-.pricing-features-header .header .teal {
-  background-color: #00b0b9;
+.comparison-table .pricing-features-header .header .hp-blue {
+  background-color: #0096d6;
   font-weight: 300;
-  border-top-left-radius: 5px;
 }
-.pricing-features-header .header .green {
+.comparison-table .pricing-features-header .header .green {
   background-color: #008264;
   font-weight: 300;
 }
-.pricing-features-header .header .purple {
+.comparison-table .pricing-features-header .header .purple {
   background-color: #686e9f;
   font-weight: 300;
 }
-.pricing-features-header .header .blue {
+.comparison-table .pricing-features-header .header .blue {
   background-color: #006478;
   font-weight: 300;
 }
-.pricing-features-header .header div:last-child {
-  border-top-right-radius: 5px;
-}
-
-.pricing-features {
+.comparison-table .pricing-features {
   border-collapse: collapse;
   display: block;
   text-align: center;
   vertical-align: middle;
   color: #53565a;
-  margin-bottom: 40px;
   z-index: 0;
 }
-.pricing-features .feature {
-  border-bottom: 1px solid white;
+.comparison-table .pricing-features .feature {
+  border-bottom: 1px solid #edeeee;
   margin: 0px;
-  background-color: #edeeee;
+  background-color: white;
 }
-.pricing-features .feature div {
+.comparison-table .pricing-features .feature div {
   padding: 10px 15px;
   width: 20%;
   display: inline-block;
 }
-.pricing-features .feature .name {
+.comparison-table .pricing-features .feature .name {
   text-align: right;
   padding: 13px 15px 13px 30px;
   font-weight: 700;
+  background-color: #f7f7f7;
 }
-.pricing-features .feature .value {
+.comparison-table .pricing-features .feature .value {
   padding: 13px 15px;
 }
-.pricing-features .feature.price {
-  font-size: 20px;
-  background-color: white;
+.comparison-table .pricing-features .feature.price {
   font-weight: 700;
+  border: 0px;
 }
-.pricing-features .feature.price div {
+.comparison-table .pricing-features .feature.price div {
   padding: 15px 15px;
   width: 20%;
+  background-color: white;
 }
-.pricing-features .feature.price small {
+.comparison-table .pricing-features .feature.price small {
   font-size: 14px;
   display: block;
   margin: 3px 0px;
   font-weight: 400;
 }
-.pricing-features .feature.buttons {
+.comparison-table .pricing-features .feature.buttons {
   background-color: white;
 }
-.pricing-features .feature.buttons div {
+.comparison-table .pricing-features .feature.buttons div {
   padding-top: 0px;
 }
-.pricing-features .feature:last-child .name {
+.comparison-table .pricing-features .feature:last-child .name {
   border-bottom-left-radius: 5px;
 }
-.pricing-features .feature:last-child .value:last-child {
+.comparison-table .pricing-features .feature:last-child .value:last-child {
   border-bottom-right-radius: 5px;
 }
 
@@ -455,7 +340,7 @@
 
 .quote-box {
   display: block;
-  background-color: #edeeee;
+  background-color: #f7f7f7;
   padding: 60px 0px;
 }
 .quote-box .quote {

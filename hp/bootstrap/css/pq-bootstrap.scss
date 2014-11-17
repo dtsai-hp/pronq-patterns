@@ -11,29 +11,25 @@ body {
   font-family: $sans-serif;
 }
 
-abbr[title] {
-  border-bottom: 0px dotted $grey3;
-  cursor: help;
-}
-
 abbr[rel~="tooltip"] {
-  border-bottom: 0px dotted $grey3;
   cursor: help;
 }
 
 abbr[rel~="inlinetooltip"] {
-  border-bottom: 1px dotted $grey3;
+  border-bottom: 1px dotted $hp-blue;
+  color: $hp-blue;
   cursor: help;
 }
 
-abbr[rel~="tooltip"]:hover {
-  border-bottom: 1px dotted $grey3;
+abbr[rel~="tooltip"] {
+  border-bottom: 0px;
 }
 
 abbr[rel~="tooltip"]:after {
   content: " \f05a";
   font-family: FontAwesome;
-  color: $grey3;
+  color: $hp-blue;
+  margin-left: 3px;
 }
 
 
@@ -1666,13 +1662,13 @@ fieldset[disabled] .btn {
 #tooltip {
   text-align: center;
   color: $grey1;
-  background-color: transparentize($grey5, .05);
+  background-color: $grey5;
   position: absolute;
   z-index: 100;
-  padding: 10px;
+  padding: 15px;
   border-radius: $radius;
-  font-size: 12px;
-  line-height: 22px;
+  font-size: 13px;
+  line-height: 24px;
   max-width: 400px;
   cursor: help;
 }
@@ -2141,28 +2137,79 @@ fieldset[disabled] .btn {
   padding-left: 20px;
 }
 
-.pq-sidenav > a > li {
-  margin-bottom: 10px;
-  font-weight: $regular;
-  font-size: 13px;
-  padding-left: 20px;
+.pq-sideMenu div.tab, .pq-sideMenu div.mobile-tab {
+    height: 64px;
+    padding: 22px 15px;
+    border-bottom: 1px solid #DDDDDE;
+    cursor: pointer;
+    transition: border-right 0.3s;
+    display: block;
+    border-right: 5px solid white;
 }
 
-.pq-sidenav > a:hover {
-  text-decoration: none;
+.pq-sideMenu div.tab:first-child {
+    border-top: 1px solid #DDDDDE;
 }
 
-.pq-sidenav > a > li:hover {
-  border-left: 2px solid $teal1;
-  padding-left: 18px;
-  text-decoration: none;
+.pq-sideMenu div.tab i, .pq-sideMenu div.mobile-tab i {
+    font-size: 35px;
+    float: left;
+    margin-top: -5px;
+    color: $grey5;
+    margin-right: 10px;
+    transition: border-right 0s;
+}
+
+.pq-sideMenu div.mobile-tab i.fa-angle-down, .pq-sideMenu div.mobile-tab i.fa-angle-up {
+    float: right;
+}
+
+.pq-sideMenu div.tab:hover, .pq-sideMenu div.tab:active, .pq-sideMenu div.mobile-tab:hover, .pq-sideMenu div.mobile-tab:active {
+    background-color: lighten($hp-blue,55%);
+    border-color: lighten($hp-blue,55%);
+    color: $hp-blue;
+}
+
+.pq-sideMenu div.tab.active, .pq-sideMenu div.mobile-tab.active {
+    font-weight: bold;
+    border-right: 5px solid $hp-blue;
+}
+
+.pq-sideMenu > div.tab.active i {
+    color: $grey1;
+}
+
+@media(min-width: 992px) {
+    .pq-sideMenu div.mobile-tab {
+        display: none;
+    }
+}
+
+@media(max-width: 991px) {
+
+    .pq-sideMenu div.content {
+        margin-top: 15px;
+    }
+}
+
+.pq-sideMenu div.subTitle {
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 0px 0px 5px;
+}
+
+.pq-sideMenu div.content {
+    display: none;
+}
+
+.pq-sideMenu div.content.active {
+    display: block;
 }
 
 .pq-footer {
     display: block;
     background-color: $grey6;
     padding: 30px 0px;
-    margin-top: 45px;
     bottom: 0px;
     text-align: left;
     font-size: 13px;

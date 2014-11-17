@@ -7,6 +7,10 @@
   border-bottom: 1px solid #edeeee;
 }
 
+.pq-docs-section:last-child {
+  border-bottom: 0px;
+}
+
 @media (max-width: 991px) {
   .pq-docs-section {
     padding: 30px 0px 30px 0px;
@@ -25,20 +29,18 @@
 .backgrounds {
   position: fixed;
   text-align: center;
-  top: 200px;
+  top: 230px;
   right: -118px;
   width: 240px;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 30px;
-  color: #75787b;
+  color: #53565a;
   padding: 14px 20px 10px 12px;
   display: block;
   -webkit-box-shadow: -1px -1px 2px #cbcccd;
   box-shadow: -1px -1px 2px #cbcccd;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   background-color: #edeeee;
   transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -46,6 +48,7 @@
   -webkit-transform: rotate(-90deg);
   transition: .2s;
   z-index: 100;
+  cursor: pointer;
 }
 
 .backgrounds:hover {
@@ -53,20 +56,16 @@
 }
 
 .backgrounds div {
-  border: 1px solid white;
+  border: 2px solid white;
   display: inline-block;
-  margin-left: 7px;
-  margin-top: 7px;
-  width: 24px;
-  height: 24px;
-  -webkit-box-shadow: -2px 2px 3px #ddddde;
-  box-shadow: -2px 2px 3px #ddddde;
-  border-radius: 12px;
+  margin: 5px 2px 0px;
+  width: 75px;
+  color: #75787b;
   transition: .2s;
+  cursor: pointer;
 }
 
 .backgrounds div:hover {
-  border: 1px solid white;
   box-shadow: -2px 2px 3px #babbbd;
 }
 

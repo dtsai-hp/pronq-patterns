@@ -1,14 +1,17 @@
 /* Basic Page and Nav Styling ------------------------------------------------ */
 
-@import '../bootstrap/css/pq-variables';
+@import '../uikit/scss/pq-variables';
 
+form {
+	margin-bottom: 20px;
+}
 
 .pq-docs-section {
 	margin-bottom: 0px;
 	margin-top: 1px;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	border-bottom: 1px solid $grey6;
+	border-bottom: 1px solid $grey-light4;
 }
 
 .pq-docs-section:last-child {
@@ -28,7 +31,7 @@
   font-size: 18px;
   font-weight: $light;
   display: block;
-  border-bottom: 1px solid $grey6;
+  border-bottom: 1px solid $grey-light4;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
@@ -43,12 +46,12 @@
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 30px;
-	color: $grey1;
+	color: $grey;
 	padding: 14px 20px 10px 12px;
 	display: block;
-	-webkit-box-shadow: -1px -1px 2px $grey4;
-			box-shadow: -1px -1px 2px $grey4;
-	background-color: $grey6;
+	-webkit-box-shadow: -1px -1px 2px $grey-light3;
+			box-shadow: -1px -1px 2px $grey-light3;
+	background-color: $grey-light4;
 	transform: rotate(-90deg);
 	-ms-transform:rotate(-90deg); /* IE 9 */
 	-webkit-transform:rotate(-90deg);
@@ -58,7 +61,7 @@
 }
 
 .backgrounds:hover {
-	box-shadow: -1px -1px 5px $grey3;
+	box-shadow: -1px -1px 5px $grey-light2;
 }
 
 .backgrounds div {
@@ -66,22 +69,24 @@
 	display: inline-block;
 	margin: 5px 2px 0px;
 	width: 75px;
-	color: $grey2;
+	color: $grey-light1;
 	transition: .2s;
 	cursor: pointer;
 }
 
 .backgrounds div:hover {
-	box-shadow: -2px 2px 3px $grey3;
+	box-shadow: -2px 2px 3px $grey-light2;
 }
 
 .grid-demo {
+	margin-bottom: 10px;
+}
+
+.grid-demo p {
 	border: 2px solid white;
-	background-color: $grey6;
+	background-color: $grey-light5;
 	padding: 10px;
-	-webkit-box-shadow: inset 1px 1px 3px transparentize(black, .9);
-			box-shadow: inset 1px 1px 3px transparentize(black, .9);
-	border-radius: 5px;
+	border: 1px solid $grey-light3;
 	margin-bottom: 15px;
 }
 
@@ -98,7 +103,7 @@
 }
 
 .darkbox-label {
-	background-color: $grey6;
+	background-color: $grey-light4;
 	border-radius: 5px 5px 0px 0px;
 	padding: 10px 15px;
 	font-size: 12px;
@@ -108,24 +113,14 @@
 
 .darkbox {
 	display: block;
-	background-color: $grey1;
+	background-color: $grey;
 	border-radius: 0px 0px 5px 5px;
 	padding: 15px;
 	color: white;
+	margin-bottom: 15px;
 }
 
 /* Specs Styling ------------------------------------------------ */
-
-
-.bspecs {
-	padding: 10px 10px;
-	height: 40px;
-	min-width: 0px;
-	width: 40px;
-	margin-top: 15px;
-	margin-right: 5px;
-	z-index: 0;
-}
 
 .specs {
 	display: none;
@@ -134,14 +129,14 @@
 	padding: 30px 30px 0px 30px;
 	overflow: auto;
 	z-index: 10;
-	background-color: $backgroundgrey;
-	border: 1px solid $grey5;
+	background-color: $grey-light5;
+	border: 1px solid $grey-light3;
 }
 
 .specs .state {
 	font-size: 14px;
 	font-weight: 400;
-	border-bottom: 1px solid $grey5;
+	border-bottom: 1px solid $grey-light3;
 	padding-top: 10px;
 }
 
@@ -152,9 +147,9 @@
 .specs h1 {
 	font-size: 18px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid $teal1;
+	border-bottom: 1px solid $grey-light3;
 	margin-bottom: 10px;
-	color: $teal1;
+	font-weight: $regular;
 }
 
 .code {
@@ -162,13 +157,13 @@
 	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 	font-size: 12px;
 	line-height: 20px;
-	background-color: $grey1;
+	background-color: $grey;
 	color: white;
 	padding: 20px;
 	margin: 10px 0px 30px 0px;
 	border-radius: 5px;
 	line-height: 2em;
-	border: 1px solid $darkgrey1;
+	border: 1px solid $grey;
 }
 
 .code .linenumbers {
@@ -185,28 +180,28 @@
 }
 
 .code .tag {
-	color: $orange2;
+	color: $orange-light1;
 }
 
 .code .css {
-	color: $brightteal3;
+	color: $red-light2;
 }
 
 .code .html {
-	color: $brightgreen2;
+	color: $yellow;
 }
 
 .code .comment {
-	color: $grey5;
+	color: $grey-light3;
 }
 
 .code .js {
-	color: $yellow2;
+	color: $blue;
 	font-style: italic;
 }
 
 .code .var {
-	color: $brightpurple1;
+	color: $blue;
 }
 
 .specs table {
@@ -232,183 +227,221 @@
 	font-size: 12px;
 	font-weight: 700;
 	text-align: left;
-	border-bottom: 1px solid $grey5;
+	border-bottom: 1px solid $grey-light3;
 }
 
 .fa-hover {
-	color: $grey3;
+	color: $grey-light2;
 	padding: 10px;
 	font-size: 12px;
 }
 
 .fa-hover i {
-	color: $grey1;
+	color: $grey;
 	font-size: 30px;
 	margin-right: 10px;
 }
 
 .fa-hover:hover {
-	color: $grey1;
+	color: $grey;
 }
 
 
 /* Color Styling ------------------------------------------------ */
 
-.colortitle {
-	font-size: 18px;
-	font-weight: 300;
-	display: block;
-	margin-bottom: 20px;
-	margin-top: 30px;
-}
-
-.colorboxtitle {
-	width: 130px;
-	font-weight: 400;
-	display: inline-block;
-	overflow: hidden;
-	font-size: 12px;
-	text-align: right;
-	line-height: 17px;
-	margin-right: 5px;
-	margin-bottom: 3px;
-	height: 84px;
-	padding: 3px 8px 3px 8px;
-	background-color: none;
-}
-
 .colorbox {
-	width: 130px;
-	font-weight: 300;
+	width: 110px;
 	display: inline-block;
-	overflow: hidden;
-	margin-bottom: 3px;
+	border-radius: $radius;
+	margin-top: 20px;
 	font-size: 12px;
 	text-transform: uppercase;
-	text-align: left;
-	line-height: 17px;
-	color: #53565a;
-	border-radius: $radius;
-	border-top: 40px solid;
-	padding: 5px 8px;
-}
+	border-top: 30px solid;
+	text-align: center;
+	background-color: $grey-light5;
 
-#expandedcolors {
-
-	display: none;
-
-}
-
-.colorcontainer {
-
-	display: inline-block;
-	margin-right: 30px;
-
-	.colorboxtitle {
-		display: block;
-		text-align: left;
-		height: 40px;
-		padding: 0px;
-	}
-
-	.colorbox {
-		font-weight: 300;
-		margin-bottom: 0px;
-		border: 0px;
-	}
-
-	.colorbox.tint {
-		color: white;
-		height: 8px;
-		width: 22px;
-		border-top: 0px;
-	}
-
-	.colorbox.main {
-		height: 35px;
-		width: 130px;
-		display: block;
-		line-height: 0px;
-	}
-
-	.colorboxtitle .hex {
-		font-weight: 600;
-		display: block;
+	&.main {
+		border-top-width: 40px;
+		display: inline-block;
 	}
 
 }
 
-.textcolorcontainer {
-
-	display: inline-block;
-	margin-right: 30px;
-
-	.colorboxtitle {
-		display: block;
-		text-align: left;
-		padding: 0px;
-		padding-top: 5px;
-		height: 40px;
-	}
-
-	.colorbox {
-		margin-bottom: 0px;
-		border: 0px;
-		height: 35px;
-		display: block;
-		line-height: 0px;
-	}
-
-	.colorboxtitle .hex {
-		font-size: 12px;
-		font-weight: 600;
-		display: block;
-	}
-
+.blue {
+	border-color: $blue;
 }
 
-
-@media(max-width: 991px) {
-
-	#expandedcolors {
-		.colorboxtitle {
-			display: block;
-			width: 100%;
-			text-align: left;
-			margin-right: 0px;
-			padding: 0px 0px 10px 0px;
-			margin-top: 20px;
-			height: auto;
-		}
-
-		.colorboxtitle br {
-			content: ' ';
-		}
-
-		.colorboxtitle br:before {
-			content: '  -  ';
-		}
-
-		.colorbox {
-			border-top: 25px solid;
-			width: 130px;
-		}
-
-		.colorbox.main {
-			width: 130px;
-			margin-right: 0px;
-		}
-
-	}
-
+.blue:hover {
+	border-color: $blue-hover;
 }
 
-.colorbox .hex {
-	font-size: 12px;
-	font-weight: 600;
-	display: block;
+.blue-dark {
+	border-color: $blue-dark;
 }
 
+.blue-hover {
+	border-color: $blue-hover;
+}
+
+.blue-light1 {
+	border-color: $blue-light1;
+}
+
+.blue-light2 {
+	border-color: $blue-light2;
+}
+
+.orange {
+	border-color: $orange;
+}
+
+.orange:hover {
+	border-color: $orange-hover;
+}
+
+.orange-dark {
+	border-color: $orange-dark;
+}
+
+.orange-hover {
+	border-color: $orange-hover;
+}
+
+.orange-light1 {
+	border-color: $orange-light1;
+}
+
+.orange-light2 {
+	border-color: $orange-light2;
+}
+
+.grey {
+	border-color: $grey;
+}
+
+.grey-dark {
+	border-color: $grey-dark;
+}
+
+.grey-hover {
+	border-color: $grey-hover;
+}
+
+.grey-light1 {
+	border-color: $grey-light1;
+}
+
+.grey-light2 {
+	border-color: $grey-light2;
+}
+
+.grey-light3 {
+	border-color: $grey-light3;
+}
+
+.grey-light4 {
+	border-color: $grey-light4;
+}
+
+.grey-light5 {
+	border-color: $grey-light5;
+}
+
+.green {
+	border-color: $green;
+}
+
+.green-dark {
+	border-color: $green-dark;
+}
+
+.green-light1 {
+	border-color: $green-light1;
+}
+
+.green-light2 {
+	border-color: $green-light2;
+}
+
+.purple {
+	border-color: $purple;
+}
+
+.purple-dark {
+	border-color: $purple-dark;
+}
+
+.purple-light1 {
+	border-color: $purple-light1;
+}
+
+.purple-light2 {
+	border-color: $purple-light2;
+}
+
+.red {
+	border-color: $red;
+}
+
+.red-dark {
+	border-color: $red-dark;
+}
+
+.red-light1 {
+	border-color: $red-light1;
+}
+
+.red-light2 {
+	border-color: $red-light2;
+}
+
+.yellow {
+	border-color: $yellow;
+}
+
+.yellow-dark {
+	border-color: $yellow-dark;
+}
+
+.yellow-light1 {
+	border-color: $yellow-light1;
+}
+
+.yellow-light2 {
+	border-color: $yellow-light2;
+}
+
+.lavender {
+	border-color: $lavender;
+}
+
+.lavender-dark {
+	border-color: $lavender-dark;
+}
+
+.lavender-light1 {
+	border-color: $lavender-light1;
+}
+
+.lavender-light2 {
+	border-color: $lavender-light2;
+}
+
+.teal {
+	border-color: $teal;
+}
+
+.teal-dark {
+	border-color: $teal-dark;
+}
+
+.teal-light1 {
+	border-color: $teal-light1;
+}
+
+.teal-light2 {
+	border-color: $teal-light2;
+}
 
 /* Continued Section Styling ------------------------------------------------ */
 
@@ -430,7 +463,7 @@
 }
 
 .change table tr .title {
-	background-color: $grey1;
+	background-color: $grey;
 	border-bottom: 5px solid white;
 	padding: 10px 15px;
 	font-size: 12px;
@@ -455,47 +488,47 @@
 }
 
 .change table tr:nth-child(even) td {
-	background-color: $backgroundgrey;
+	background-color: $grey-light5;
 }
 
 .change table tr.date td {
 	background-color: white;
 	text-transform: uppercase;
-	border-top: 0px solid $grey4;
-	border-bottom: 2px solid $grey5;
+	border-top: 0px solid $grey-light3;
+	border-bottom: 2px solid $grey-light3;
 	padding: 5px 10px;
 	font-weight: $light;
-	background-color: $grey2;
+	background-color: $grey-light1;
 	color: white;
 	letter-spacing: 2px;
 }
 
 .change table tr td.upcoming {
-	color: $blue1;
+	color: $blue;
 	text-align: center;
 	font-size: 18px;
 }
 
 .change table tr td.deletion {
-	color: $red1;
+	color: $red;
 	text-align: center;
 	font-size: 18px;
 }
 
 .change table tr td.addition {
-	color: $green2;
+	color: $green;
 	text-align: center;
 	font-size: 18px;
 }
 
 .change table tr td.smallchange {
-	color: $orange1;
+	color: $orange;
 	text-align: center;
 	font-size: 18px;
 }
 
 .change table tr td.bigchange {
-	color: $purple1;
+	color: $purple;
 	text-align: center;
 	font-size: 18px;
 }

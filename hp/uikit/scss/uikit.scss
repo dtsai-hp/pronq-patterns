@@ -1,0 +1,264 @@
+@import "uikit-mixins.scss";
+@import "uikit-variables.scss";
+@import "pq-variables.scss";
+
+
+// LESS related
+@import "core/variables.scss";
+
+// Defaults
+@import "core/base.scss";
+
+// Layout
+@import "core/grid.scss";
+@import "core/panel.scss";
+//@import "core/article.scss";
+//@import "core/comment.scss";
+
+// Navs
+@import "core/nav.scss";
+@import "core/navbar.scss";
+@import "core/subnav.scss";
+@import "core/breadcrumb.scss";
+@import "core/pagination.scss";
+@import "core/tab.scss";
+
+// Elements
+@import "core/list.scss";
+@import "core/description-list.scss";
+@import "core/table.scss";
+@import "core/form.scss";
+
+// Common
+@import "core/button.scss";
+@import "core/icon.scss";
+@import "core/close.scss";
+//@import "core/badge.scss";
+@import "core/alert.scss";
+//@import "core/thumbnail.scss";
+@import "core/overlay.scss";
+@import "core/progress.scss";
+//@import "core/animation.scss";
+
+// JavaScript
+@import "core/dropdown.scss";
+//@import "core/modal.scss";
+@import "core/offcanvas.scss";
+//@import "core/switcher.scss";
+@import "core/tooltip.scss";
+
+// Need to be loaded last
+@import "core/text.scss";
+@import "core/utility.scss";
+@import "core/print.scss";
+
+/* Pronq Overrides ---------------------------- */
+
+/* Basics */
+
+h1 {
+    font-weight: 300;
+}
+
+.uk-button {
+    border-radius: 5px;
+}
+
+/* End Basics */
+
+/* Navigation */
+
+.uk-navbar-brand {
+    padding-left: 0px;
+}
+
+.uk-navbar i {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.pq-subnav {
+    height: 60px;
+    background: $grey-light4;
+}
+
+.uk-subnav > li > a {
+    line-height: 60px;
+}
+
+/* End Navigation */
+
+/* Footer */
+
+.pq-footer {
+    background-color: $grey-light4;
+    padding: 30px 0px;
+    font-size: 13px;
+    display: block;
+    color: $grey-light1;
+
+    .supplemental {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $grey-light3;
+        margin-bottom: 10px;
+    }
+
+    .right {
+        text-align: right;
+        font-size: 12px;
+    }
+
+    @media(max-width: 768px) {
+        .right {
+            text-align: left;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    }
+
+    ul {
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+
+        li {
+            padding-right: 20px;
+            display: inline-block;
+
+            a {
+                color: $grey-light1;
+            }
+        }
+    }
+}
+
+/* End Footer */
+
+/* Back to Top */
+
+#pq-toTop {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: transparentize($grey-light3, .5);
+    padding: 5px 15px;
+    font-size: 24px;
+    border-top-left-radius: 5px;
+    color: $grey-light2;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparentize($grey-light3, .3);
+    }
+
+}
+
+/* End Back to Top */
+
+/* Buttons --------------------------------- */
+
+/*
+* Modifier: `uk-button-secondary`
+*/
+
+.uk-button-secondary {
+    background-color: $button-secondary-background;
+    color: $button-secondary-color;
+    @include hook-button-secondary();
+}
+
+/* Hover */
+.uk-button-secondary:hover,
+.uk-button-secondary:focus {
+    background-color: $button-secondary-hover-background;
+    color: $button-secondary-hover-color;
+    @include hook-button-secondary-hover();
+}
+
+/* Active */
+.uk-button-secondary:active,
+.uk-button-secondary.uk-active {
+    background-color: $button-secondary-active-background;
+    color: $button-secondary-active-color;
+    @include hook-button-secondary-active();
+}
+
+/*
+* Modifier: `uk-button-mingrey`
+*/
+
+.uk-button-mingrey {
+    background-color: $button-mingrey-background;
+    color: $button-mingrey-color;
+    border: 1px solid $button-mingrey-border;
+    @include hook-button-mingrey();
+}
+
+/* Hover */
+.uk-button-mingrey:hover,
+.uk-button-mingrey:focus {
+    background-color: $button-mingrey-hover-background;
+    color: $button-mingrey-hover-color;
+    border: 1px solid $button-mingrey-hover-border;
+    @include hook-button-mingrey-hover();
+}
+
+/* Active */
+.uk-button-mingrey:active,
+.uk-button-mingrey.uk-active {
+    background-color: $button-mingrey-active-background;
+    color: $button-mingrey-active-color;
+    border: 1px solid $button-mingrey-active-border;
+    @include hook-button-mingrey-active();
+}
+
+/*
+* Modifier: `uk-button-minwhite`
+*/
+
+.uk-button-minwhite {
+    background-color: $button-minwhite-background;
+    color: $button-minwhite-color;
+    border: 1px solid $button-minwhite-border;
+    @include hook-button-minwhite();
+}
+
+/* Hover */
+.uk-button-minwhite:hover,
+.uk-button-minwhite:focus {
+    background-color: $button-minwhite-hover-background;
+    color: $button-minwhite-hover-color;
+    border: 1px solid $button-minwhite-hover-border;
+    @include hook-button-minwhite-hover();
+}
+
+/* Active */
+.uk-button-minwhite:active,
+.uk-button-minwhite.uk-active {
+    background-color: $button-minwhite-active-background;
+    color: $button-minwhite-active-color;
+    border: 1px solid $button-minwhite-active-border;
+    @include hook-button-minwhite-active();
+}
+
+/* Forms -------------------------- */
+
+.uk-form input,
+.uk-form select,
+.uk-form textarea {
+    border-radius: 5px;
+}
+
+.uk-form .error {
+    display: none;
+}
+
+.uk-form .has-error .error {
+    color: $red;
+    font-size: 12px;
+    display: block;
+}
+
+.uk-form .has-error input, .uk-form .has-error select, .uk-form .has-error textarea {
+    border-color: $red;
+}

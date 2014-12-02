@@ -143,14 +143,8 @@ $uk-upload-dragover-box-shadow:                  rgba(100,100,100,0.3) !default;
 $uk-upload-dragover-box-shadow-blur:             20px !default;
 $alert-margin-vertical:                          15px !default;
 $alert-padding:                                  10px !default;
-$alert-background:                               #ebf7fd !default;
-$alert-color:                                    #2d7091 !default;
-$alert-success-background:                       #f2fae3 !default;
-$alert-success-color:                            #659f13 !default;
-$alert-warning-background:                       #fffceb !default;
-$alert-warning-color:                            #e28327 !default;
-$alert-danger-background:                        #fff1f0 !default;
-$alert-danger-color:                             #d85030 !default;
+*/
+/*
 $alert-large-padding:                            20px !default;
 $article-margin-top:                             25px !default;
 $article-title-font-size:                        36px !default;
@@ -450,14 +444,13 @@ $form-password-line-height:                      $form-password-font-size !defau
 $form-password-color:                            #999 !default;
 $form-password-hover-color:                      #999 !default;
 $form-password-padding:                          50px !default;
-$progress-height:                                20px !default;
+*/
+/*
 $progress-mini-height:                           6px !default;
 $progress-small-height:                          12px !default;
 $progress-margin-vertical:                       15px !default;
-$progress-background:                            #eee !default;
-$progress-bar-background:                        #00a8e6 !default;
-$progress-bar-font-size:                         12px !default;
-$progress-bar-color:                             #fff !default;
+*/
+/*
 $progress-bar-success-background:                #8cc14c !default;
 $progress-bar-warning-background:                #faa732 !default;
 $progress-bar-danger-background:                 #da314b !default;
@@ -510,8 +503,11 @@ $thumbnail-mini-width:                           150px !default;
 $thumbnail-small-width:                          200px !default;
 $thumbnail-medium-width:                         300px !default;
 $thumbnail-large-width:                          400px !default;
+$tooltip-z-index:                                1030 !default;
+$tooltip-max-width:                              200px !default;
 */
 /*
+$tooltip-offset-horizontal:                      10px !default;
 $utility-container-max-width:                    980px !default;
 $utility-container-padding-horizontal:           25px !default;
 $utility-container-large-max-width:              1200px !default;
@@ -566,16 +562,6 @@ form {
     padding: 30px 0px 30px 0px;
   }
 }
-.pq-docs-section .sectiontitle {
-  margin-top: 40px;
-  font-size: 18px;
-  font-weight: 300;
-  display: block;
-  border-bottom: 1px solid #eeeeee;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
 .backgrounds {
   position: fixed;
   text-align: center;
@@ -663,47 +649,52 @@ form {
 
 /* Specs Styling ------------------------------------------------ */
 .specs {
-  display: none;
   border-radius: 3px;
   margin-top: 10px;
-  padding: 30px 30px 0px 30px;
+  padding: 0px 20px 5px;
   overflow: auto;
   z-index: 10;
   background-color: whitesmoke;
-  border: 1px solid #dddddd;
 }
 
-.specs .state {
-  font-size: 14px;
-  font-weight: 400;
-  border-bottom: 1px solid #dddddd;
-  padding-top: 10px;
+.specs:before {
+  content: "Specs";
+  display: block;
+  color: #666666;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  padding: 0px 0px 10px;
+  margin: 0px -20px 20px;
+  background-color: white;
+  border-bottom: 2px solid #aaaaaa;
+  font-size: 16px;
 }
 
 .specs table {
   width: 100%;
 }
 
-.specs h1 {
-  font-size: 18px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #dddddd;
-  margin-bottom: 10px;
-  font-weight: 400;
-}
-
 .code {
-  display: none;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 12px;
   line-height: 20px;
-  background-color: #666666;
-  color: white;
-  padding: 20px;
-  margin: 10px 0px 30px 0px;
+  background-color: whitesmoke;
+  padding: 0px 20px 20px;
+  margin: 20px 0px 30px 0px;
   border-radius: 5px;
   line-height: 2em;
-  border: 1px solid #666666;
+  color: #00608a;
+}
+
+.code:before {
+  content: "Markup";
+  display: block;
+  color: #666666;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  padding: 0px 0px 10px;
+  margin: 0px -20px 20px;
+  background-color: white;
+  border-bottom: 2px solid #aaaaaa;
+  font-size: 16px;
 }
 
 .code .linenumbers {
@@ -721,20 +712,16 @@ form {
   user-select: none;
 }
 
-.code .tag {
-  color: #ffbf68;
-}
-
 .code .css {
-  color: #e4998f;
+  color: #7eaf35;
 }
 
 .code .html {
-  color: #edbe00;
+  color: #4c93a1;
 }
 
 .code .comment {
-  color: #dddddd;
+  color: #888888;
 }
 
 .code .js {
@@ -747,29 +734,15 @@ form {
 }
 
 .specs table {
-  padding: 10px;
-  font-size: 11px;
-  line-height: 15px;
-  border-collapse: collapse;
-  margin-bottom: 30px;
-}
-
-.specs table th {
-  text-align: left;
-  padding: 7px;
-  width: 120px;
-}
-
-.specs table td {
-  padding: 7px;
-  min-width: 150px;
-}
-
-.specs .title {
   font-size: 12px;
-  font-weight: 700;
-  text-align: left;
-  border-bottom: 1px solid #dddddd;
+  line-height: 18px;
+  border-collapse: collapse;
+}
+.specs table td, .specs table th {
+  padding: 10px;
+}
+.specs table code {
+  font-size: 12px;
 }
 
 .fa-hover {

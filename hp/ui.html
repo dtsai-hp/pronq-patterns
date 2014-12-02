@@ -58,37 +58,28 @@
 
 			<p>Pellentesque sollicitudin, ligula eget semper commodo, diam turpis condimentum eros, eget mollis libero lorem nec tortor. <a href="javascript:void(0)">Maecenas</a> et pellentesque purus, vitae sagittis mauris.</p>
 
-			<button class="uk-button uk-button-secondary" onclick="$('#specs_links').slideToggle(); $('#code_links').hide();"><i class="fa fa-pencil"></i></button>
-
-			<button class="uk-button uk-button-secondary" onclick="$('#code_links').slideToggle(); $('#specs_links').hide();"><i class="fa fa-code"></i></button>
-
 			<div id="specs_links" class="specs">
 
-				<h1>Normal, Active, and Visited State</h1>
-				<table>
-					<tr><th>Font Family</th><td>Open Sans</td></tr>
-					<tr><th>Color</th><td>Blue</td></tr>
-					<tr><th>Text Decoration</th><td>None</td></tr>
-				</table>
-
-				<h1>Hover State</h1>
-				<table>
-					<tr><th>Text Decoration</th><td>Underline</td></tr>
+				<table class="uk-table">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Link and Visited States</th>
+							<th>Hover and Active States</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Text Decoration</th><td>None</td><td>Underline</td>
+						</tr>
+						<tr>
+							<th>Color</th><td>Blue</td><td>Blue</td>
+						</tr>
+					</tbody>
 				</table>
 
 			</div>
 
-			<div id="code_links" class="code">
-
-				<div class="linenumbers">
-					1<br/>
-					2
-				</div>
-				<span class="comment">&lt;!-- Standard Link --&gt;</span><br/>
-
-
-				&lt;<span class="tag">a</span> <span class="html">href</span>=<span class="css">"#"</span>&gt;Link&lt;/<span class="tag">a</span>&gt;<br />
-			</div>
 		</div>
 
 
@@ -117,210 +108,73 @@
 
 			</div>
 
-			<button class="uk-button uk-button-secondary" onclick="$('#specs_buttons').slideToggle(); $('#code_buttons').hide();"><i class="fa fa-pencil"></i></button>
-
-			<button class="uk-button uk-button-secondary" onclick="$('#code_buttons').slideToggle();$('#specs_buttons').hide();"><i class="fa fa-code"></i></button>
-
 			<div id="specs_buttons" class="specs">
 
-				<h1>All Buttons</h1>
-				<div class="row">
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Font Family</th><td>Open Sans</td></tr>
-							<tr><th>Font Weight</th><td>600</td></tr>
-							<tr><th>Border Radius</th><td>5px</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Active State</th></tr>
-							<tr><th>Box Shadow</th><td>inset 0 3px 5px rgba(0, 0, 0, 0.125)</td></tr>
-						</table>
-					</div>
-				</div>
-
-				<h1>Primary Button</h1>
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Background Color</th><td>#FF9E1B</td></tr>
-							<tr><th>Text Color</th><td>#FFFFFF</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Hover State</th></tr>
-							<tr><th>Background Color</th><td>#EF9425</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Active State</th></tr>
-							<tr><th>Background Color</th><td>#EF9425</td></tr>
-						</table>
-					</div>
-				</div>
-
-				<h1>Secondary Button</h1>
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Background Color</th><td>#00B0B9</td></tr>
-							<tr><th>Text Color</th><td>#FFFFFF</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Hover State</th></tr>
-							<tr><th>Background Color</th><td>#07A0A9</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Active State</th></tr>
-							<tr><th>Background Color</th><td>#07A0A9</td></tr>
-						</table>
-					</div>
-				</div>
-
-				<h1>Tertiary Button</h1>
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Background Color</th><td>#53565A, .1 Opacity</td></tr>
-							<tr><th>Text Color</th><td>#53565A</td></tr>
-							<tr><th>Border</th><td>1px solid</td></tr>
-							<tr><th>Border Color</th><td>#53565A, .2 Opacity</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Hover State</th></tr>
-							<tr><th>Background Color</th><td>#53565A, .2 Opacity</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Active State</th></tr>
-							<tr><th>Background Color</th><td>#53565A, .2 Opacity</td></tr>
-						</table>
-					</div>
-				</div>
-
-				<h1>Minimal Grey Button</h1>
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Background Color</th><td>none</td></tr>
-							<tr><th>Text Color</th><td>#53565A</td></tr>
-							<tr><th>Border Width</th><td>1px</td>
-							<tr><th>Border Color</th><td>#53565A, .3 Opacity</td>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Hover State</th></tr>
-							<tr><th>Border Color</th><td>#53565A</td>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Active State</th></tr>
-							<tr><th>Border Color</th><td>#53565A</td>
-						</table>
-					</div>
-				</div>
-
-
-				<h1>Minimal White Button</h1>
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Background Color</th><td>none</td></tr>
-							<tr><th>Text Color</th><td>#FFFFFF</td></tr>
-							<tr><th>Border Width</th><td>1px</td>
-							<tr><th>Border Color</th><td>#FFFFFF, .5 Opacity</td>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Hover State</th></tr>
-							<tr><th>Border Color</th><td>#FFFFFF</td>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Active State</th></tr>
-							<tr><th>Border Color</th><td>#FFFFFF</td>
-						</table>
-					</div>
-				</div>
-
+				<table class="uk-table">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Default</th>
+							<th>Primary</th>
+							<th>Secondary</th>
+							<th>Minimal Grey</th>
+							<th>Minimal White</th>
+							<th>Disabled</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Class</th>
+							<td><code>uk-button</code></td>
+							<td><code>uk-button-primary</code></td>
+							<td><code>uk-button-secondary</code></td>
+							<td><code>uk-button-mingrey</code></td>
+							<td><code>uk-button-minwhite</code></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>Background Color</th>
+							<td>Blue</td>
+							<td>Orange</td>
+							<td>Grey-Light3</td>
+							<td>Transparent</td>
+							<td>Transparent</td>
+							<td>Grey-Light4</td>
+						</tr>
+						<tr>
+							<th>Color</th>
+							<td>White</td>
+							<td>White</td>
+							<td>White</td>
+							<td>Grey</td>
+							<td>White</td>
+							<td>Grey-Light3</td>
+						</tr>
+						<tr>
+							<th>Border</th>
+							<td>None</td>
+							<td>None</td>
+							<td>None</td>
+							<td>1px Solid 50% Grey</td>
+							<td>1px Solid 50% White</td>
+							<td>None</td>
+						</tr>
+						<tr>
+							<th>Hover</th>
+							<td>Background - Blue-Hover</td>
+							<td>Background - Orange-Hover</td>
+							<td>Background - Grey-Hover</td>
+							<td>Border Color - Grey</td>
+							<td>Border Color - White</td>
+							<td>None</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 
 			<div id="code_buttons" class="code">
 
-				<div class="linenumbers">
-					1<br/>
-					2<br/>
-					3<br/>
-					4<br/>
-					5<br/>
-					6<br/>
-					7<br/>
-					8<br/>
-					9<br/>
-					10<br/>
-					11<br/>
-					12
-				</div>
-
-				<span class="comment">&lt;!-- Primary Button --&gt;</span><br/>
-
-				&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"btn btn-primary"</span>&gt;Primary&lt;/<span class="tag">a</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Secondary Button --&gt;</span><br/>
-
-				&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"btn btn-secondary"</span>&gt;Secondary&lt;/<span class="tag">a</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Tertiary Button --&gt;</span><br/>
-
-				&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"btn btn-tertiary"</span>&gt;Tertiary&lt;/<span class="tag">a</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Minimal Grey Button --&gt;</span><br/>
-
-				&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"btn btn-mingrey"</span>&gt;Minimal Grey&lt;/<span class="tag">a</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Minimal White Button --&gt;</span><br/>
-
-				&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"btn btn-minwhite"</span>&gt;Minimal White&lt;/<span class="tag">a</span>&gt;<br />
-
-				<span class="comment">&lt;!-- When using any button without a link, use the button tag --&gt;</span><br/>
-
-				&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-primary"</span>&gt;Not a link&lt;/<span class="tag">button</span>&gt;<br />
+				&lt;a <span class="html">class</span>=<span class="css">"uk-button"</span>&gt;...&lt;/a&gt;<br />
 
 
 			</div>
@@ -339,7 +193,6 @@
 
 			<button class="uk-button uk-button-secondary" onclick="$('#specs_buttonsizes').slideToggle(); $('#code_buttonsizes').hide();"><i class="fa fa-pencil"></i></button>
 
-			<button class="uk-button uk-button-secondary" onclick="$('#code_buttonsizes').slideToggle(); $('#specs_buttonsizes').hide();"><i class="fa fa-code"></i></button>
 
 			<div id="specs_buttonsizes" class="specs">
 
@@ -383,34 +236,8 @@
 
 			<div id="code_buttonsizes" class="code">
 
-				<div class="linenumbers">
-					1<br/>
-					2<br/>
-					3<br/>
-					4<br/>
-					5<br/>
-					6<br/>
-					7<br/>
-					8
-				</div>
 
-				<span class="comment">&lt;!-- X-Large Button --&gt;</span><br/>
-
-				&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-xl"</span>&gt;X-Large&lt;/<span class="tag">button</span>&gt;<br />
-
-
-				<span class="comment">&lt;!-- Large Button --&gt;</span><br/>
-
-				&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-lg"</span>&gt;Large&lt;/<span class="tag">button</span>&gt;<br />
-
-
-				<span class="comment">&lt;!-- Medium (Default) Button --&gt;</span><br/>
-
-				&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn"</span>&gt;Medium&lt;/<span class="tag">button</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Small Button --&gt;</span><br/>
-
-				&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-sm"</span>&gt;Small&lt;/<span class="tag">button</span>&gt;<br />
+				&lt;a <span class="html">class</span>=<span class="css">"uk-button  uk-button-large"</span>&gt;...&lt;/a&gt;<br />
 
 
 			</div>
@@ -793,118 +620,12 @@
 
 			<!-- SLIDER BARS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-			<div id="sliderbars" class="pq-docs-section" style="clear:both;" ng-controller="sliderDemoCtrl">
+			<div id="sliderbars" class="pq-docs-section">
 
 				<h1>Slider Bars</h1>
 
-				<h2>Labeled Slider</h2>
-				<span class="slider-name">Example Slider Name</span>
-				<div class="slider-group">
-					<span class="minlabel">0</span>
-					<span class="maxlabel">100</span>
-					<div ui-slider="{ range: 'min' }" min="0" max="100" ng-model="demoVals.sliderExample1"></div>
-					<input type="text" ng-model="demoVals.sliderExample1" />
-				</div><br/>
-				<h2>Unlabeled Slider</h2>
-				<div class="slider-group">
-					<span class="minlabel">3</span>
-					<span class="maxlabel">12</span>
-					<div ui-slider="{ range: 'min' }" min="3" max="12" ng-model="demoVals.sliderExample2"></div>
-					<input type="text" ng-model="demoVals.sliderExample2" />
-				</div>
 
-				<script type="text/javascript" src="js/ui-slider.js"></script>
-				<script>
-					var app = angular.module('uiLibrary', ['ui.slider']);
-					app.controller('sliderDemoCtrl', function($scope) {
-
-						$scope.demoVals = {
-							sliderExample1:     0,
-							sliderExample2:     3,
-							options: {
-								orientation: 'horizontal',
-								range: 'min'
-							}
-						};
-					});
-				</script>
-
-				<br/>
-
-				<button class="uk-button uk-button-secondary" onclick="$('#specs_sliders').slideToggle(); $('#code_sliders').hide();"><i class="fa fa-pencil"></i></button>
-
-				<button class="uk-button uk-button-secondary" onclick="$('#code_sliders').slideToggle(); $('#specs_sliders').hide();"><i class="fa fa-code"></i></button>
-
-				<div id="specs_sliders" class="specs">
-
-					<h1>Input Field</h1>
-
-					<table>
-						<tr><th>Width</th><td>50px</td></tr>
-						<tr><th>Height</th><td>45px</td></tr>
-						<tr><th>Font Size</th><td>22px</td></tr>
-					</table>
-
-
-					<h1>Min and Max Labels</h1>
-
-					<table>
-						<tr><th>Font Size</th><td>11px</td></tr>
-						<tr><th>Color</th><td>#BABBBD</td></tr>
-					</table>
-
-					<h1>Slider Bar</h1>
-
-					<div class="row">
-
-						<div class="col-md-6">
-							<table>
-								<tr><th class="state" colspan=2>Default State</th></tr>
-								<tr><th>Background Color</th><td>#DDDDDE</td></tr>
-								<tr><th>Width</th><td>450px</td></tr>
-								<tr><th>Height</th><td>4px</td></tr>
-							</table>
-						</div>
-
-						<div class="col-md-6">
-							<table>
-								<tr><th class="state" colspan=2>Highlighted State</th></tr>
-								<tr><th>Background Color</th><td>#00B0B9</td></tr>
-							</table>
-						</div>
-
-					</div>
-
-					<h1>Slider Control</h1>
-					<div class="row">
-
-						<div class="col-md-6">
-							<table>
-								<tr><th class="state" colspan=2>Default State</th></tr>
-								<tr><th>Background Color</th><td>#BABBBD</td></tr>
-								<tr><th>Border Color</th><td>#75787B</td></tr>
-								<tr><th>Border Width</th><td>6px</td></tr>
-								<tr><th>Width</th><td>20px</td></tr>
-								<tr><th>Height</th><td>20px</td></tr>
-								<tr><th>Box Shadow</th><td>inset 0 1px 2px rgba(0, 0, 0, 0.15)</td></tr>
-							</table>
-						</div>
-
-						<div class="col-md-6">
-							<table>
-								<tr><th class="state" colspan=2>Hover and Active State</th></tr>
-								<tr><th>Border Color</th><td>#53565A</td></tr>
-								<tr><th>Box Shadow</th><td>inset 0 1px 2px rgba(0, 0, 0, 0.35)</td></tr>
-							</table>
-						</div>
-
-					</div>
-
-				</div>
 			</div>
-
-		</div>
-
 
 
 
@@ -916,9 +637,7 @@
 
 			<h2>Tooltips</h2>
 
-			<abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">Standalone tooltip</abbr><br/><br/>
-			<abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="inlinetooltip">Inline tooltip</abbr>. This is an example of a tooltip.<br/><br/>
-			<button class="uk-button uk-button-secondary" onclick="$('#specs_tooltips').slideToggle(); $('#code_tooltips').hide();"><i class="fa fa-pencil"></i></button>
+			<p><span class="pq-tooltip" data-uk-tooltip title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis turpis vitae orci commodo molestie.">Example tooltip</span></p>
 
 			<button class="uk-button uk-button-secondary" onclick="$('#code_tooltips').slideToggle(); $('#specs_tooltips').hide();"><i class="fa fa-code"></i></button>
 
@@ -1011,15 +730,25 @@
 
 			<h2>Alerts</h2>
 
-			<div class="alert alert-success"><i class="fa fa-check fa-fw"></i> Successful Alert <a href="#" class="alert-link">with example link</a></div>
-			<div class="alert alert-info"><i class="fa fa-info-circle fa-fw"></i> Informative Alert</div>
-			<div class="alert alert-warning"><i class="fa fa-warning fa-fw"></i> Warning Alert</div>
-			<div class="alert alert-danger"><i class="fa fa-times-circle fa-fw"></i> Error Alert</div>
+			<div class="uk-alert" data-uk-alert>
+				<a href="" class="uk-alert-close uk-close"></a>
+				<i class="fa fa-info-circle fa-fw"></i> Informative Alert
+			</div>
 
-			Some alerts can be closed by the user. Below is an example of when. They can be created with any style of alert<br/><br/>
+			<div class="uk-alert uk-alert-success" data-uk-alert>
+				<a href="" class="uk-alert-close uk-close"></a>
+				<i class="fa fa-check fa-fw"></i> Successful Alert
+			</div>
 
-			<div class="alert alert-warning alert-dismissable"><button class="close" data-dismiss="alert" aria-hidden="true"><i class="fa fa-times"></i></button>Closable Alert</div>
+			<div class="uk-alert uk-alert-warning" data-uk-alert>
+				<a href="" class="uk-alert-close uk-close"></a>
+				<i class="fa fa-warning fa-fw"></i> Warning Alert
+			</div>
 
+			<div class="uk-alert uk-alert-danger" data-uk-alert>
+				<a href="" class="uk-alert-close uk-close"></a>
+				<i class="fa fa-times-circle fa-fw"></i> Error Alert
+			</div>
 
 			<button class="uk-button uk-button-secondary" onclick="$('#specs_alerts').slideToggle(); $('#code_alerts').hide();"><i class="fa fa-pencil"></i></button>
 
@@ -1138,42 +867,19 @@
 
 			<h2>Progressing</h2>
 
-			<div class="progress">
-				<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-					<span class="sr-only">20% Complete</span>
-				</div>
-			</div>
-
-			<div class="progress">
-				<div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-					<span class="sr-only">40% Complete</span>
-				</div>
+			<div class="uk-progress">
+				<div class="uk-progress-bar" style="width: 40%;">40%</div>
 			</div>
 
 			<h2>Continuous</h2>
 
-			<div class="progress progress-striped active">
-				<div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-					<span class="sr-only">Loading</span>
-				</div>
+			<div class="uk-progress uk-progress-striped uk-active">
+				<div class="uk-progress-bar" style="width: 100%;"></div>
 			</div>
-
-			<div class="progress progress-striped active">
-				<div class="progress-bar progress-bar-blue"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-					<span class="sr-only">Loading</span>
-				</div>
-			</div>
-
-			<h2>Continuous Spinner</h2>
-			<i class="fa fa-spinner fa-spin pq-spinner grey"></i>&nbsp;&nbsp;
-			<i class="fa fa-spinner fa-spin pq-spinner orange"></i><br/><br/>
-
 
 			<button class="uk-button uk-button-secondary" onclick="$('#specs_progressbars').slideToggle(); $('#code_progressbars').hide();"><i class="fa fa-pencil"></i></button>
 
 			<button class="uk-button uk-button-secondary" onclick="$('#code_progressbars').slideToggle(); $('#specs_progressbars').hide();"><i class="fa fa-code"></i></button>
-
-			<a href="downloads/spinner.txt" target="blank" class="uk-button uk-button-secondary"><i class="fa fa-file-text"></i></a>
 
 			<div id="specs_progressbars" class="specs">
 
@@ -1350,10 +1056,10 @@
 	<script src="uikit/js/uikit.min.js"></script>
 	<script src="uikit/js/core/dropdown.min.js"></script>
 	<script src="uikit/js/core/nav.min.js"></script>
+	<script src="uikit/js/core/tooltip.min.js"></script>
 	<script src="uikit/js/components/sticky.min.js"></script>
 	<script src="js/pq-top.js" type="text/javascript"></script>
 	<script src="js/pq-forms.js" type="text/javascript"></script>
-	<script src="js/pq-backgrounds.js" type="text/javascript"></script>
 
 
 </body>

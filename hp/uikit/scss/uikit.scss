@@ -80,10 +80,97 @@ h1 {
 .pq-subnav {
     height: 60px;
     background: $grey-light4;
+
+    span {
+        float: left;
+        height: 60px;
+        line-height: 60px;
+    }
 }
 
-.uk-subnav > li > a {
+.uk-subnav {
+    display: inline;
+    margin-top: 0px;
+}
+
+.uk-subnav > li {
     line-height: 60px;
+}
+
+.pq-sidebar {
+    padding-left: 20px;
+}
+
+.pq-sideMenu div.tab, .pq-sideMenu div.mobile-tab {
+    padding: 20px 15px;
+    border-bottom: 1px solid $grey-light3;
+    cursor: pointer;
+    transition: border-right 0.3s;
+    display: block;
+    border-right: 5px solid white;
+}
+
+.pq-sideMenu div.tab:first-child {
+    border-top: 1px solid $grey-light3;
+}
+
+.pq-sideMenu div.tab i, .pq-sideMenu div.mobile-tab i {
+    font-size: 35px;
+    float: left;
+    margin-top: -5px;
+    color: $grey-light3;
+    margin-right: 10px;
+    transition: border-right 0s;
+}
+
+.pq-sideMenu div.mobile-tab i.fa-angle-down, .pq-sideMenu div.mobile-tab i.fa-angle-up {
+    float: right;
+}
+
+.pq-sideMenu div.tab:hover, .pq-sideMenu div.tab:active, .pq-sideMenu div.mobile-tab:hover, .pq-sideMenu div.mobile-tab:active {
+    background-color: $blue-light3;
+    border-right-color: $blue;
+    color: $blue;
+}
+
+.pq-sideMenu div.tab.active, .pq-sideMenu div.mobile-tab.active {
+    font-weight: bold;
+    border-right: 5px solid $blue;
+}
+
+.pq-sideMenu > div.tab.active i {
+    color: $grey;
+}
+
+@media(min-width: 992px) {
+    .pq-sideMenu div.mobile-tab {
+        display: none;
+    }
+}
+
+@media(max-width: 991px) {
+
+    .pq-sideMenu div.content {
+        margin-top: 15px;
+    }
+
+    .tabs {
+        display: none;
+    }
+}
+
+.pq-sideMenu div.subTitle {
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 0px 0px 5px;
+}
+
+.pq-sideMenu div.content {
+    display: none;
+}
+
+.pq-sideMenu div.content.active {
+    display: block;
 }
 
 /* End Navigation */
@@ -108,11 +195,30 @@ h1 {
         font-size: 12px;
     }
 
+    .footer-social {
+        float: left;
+        margin-right: 15px;
+
+        i {
+            margin-right: 15px;
+            color: $grey-light1;
+        }
+
+        i:hover {
+            color: $grey;
+        }
+    }
+
+
     @media(max-width: 768px) {
         .right {
             text-align: left;
             font-size: 12px;
             margin-top: 15px;
+        }
+
+        .footer-social {
+            float: none;
         }
     }
 
@@ -120,6 +226,7 @@ h1 {
         padding: 0px;
         margin: 0px;
         list-style-type: none;
+        display: inline-block;
 
         li {
             padding-right: 20px;
@@ -261,4 +368,67 @@ h1 {
 
 .uk-form .has-error input, .uk-form .has-error select, .uk-form .has-error textarea {
     border-color: $red;
+}
+
+/* Tables --------------------------- */
+
+.uk-table thead {
+    border-bottom: 2px solid $grey-light4;
+}
+
+.uk-table.blue thead {
+    background-color: $blue;
+    color: white;
+}
+
+.uk-table th, .uk-table td {
+    padding: 15px;
+}
+
+/* Tooltips --------------------------- */
+
+.pq-tooltip {
+    border-bottom: 1px dotted $blue;
+    color: $blue;
+}
+
+/* Alerts ----------------------------- */
+
+.uk-alert {
+    border: 1px solid $blue-light2;
+    border-radius: $radius;
+
+    i, .uk-close {
+        color: $blue;
+    }
+}
+
+.uk-alert-danger {
+    border-color: $red-light2;
+
+    i, .uk-close {
+        color: $red;
+    }
+}
+
+.uk-alert-success {
+    border-color: $green-light2;
+
+    i, .uk-close {
+        color: $green;
+    }
+}
+
+.uk-alert-warning {
+    border-color: $yellow-light2;
+
+    i, .uk-close {
+        color: $yellow;
+    }
+}
+
+/* Progress bars --------------------------- */
+
+.uk-progress {
+    border-radius: $radius;
 }

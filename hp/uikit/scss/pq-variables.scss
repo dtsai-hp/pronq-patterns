@@ -205,14 +205,16 @@ $uk-upload-dragover-box-shadow:                  rgba(100,100,100,0.3) !default;
 $uk-upload-dragover-box-shadow-blur:             20px !default;
 $alert-margin-vertical:                          15px !default;
 $alert-padding:                                  10px !default;
-$alert-background:                               #ebf7fd !default;
-$alert-color:                                    #2d7091 !default;
-$alert-success-background:                       #f2fae3 !default;
-$alert-success-color:                            #659f13 !default;
-$alert-warning-background:                       #fffceb !default;
-$alert-warning-color:                            #e28327 !default;
-$alert-danger-background:                        #fff1f0 !default;
-$alert-danger-color:                             #d85030 !default;
+*/
+$alert-background:                               transparentize($blue-light2,.75);
+$alert-color:                                    $blue-dark;
+$alert-success-background:                       transparentize($green-light2,.75);
+$alert-success-color:                            $green-dark;
+$alert-warning-background:                       transparentize($yellow-light2,.75);
+$alert-warning-color:                            $yellow-dark;
+$alert-danger-background:                        transparentize($red-light2,.75);
+$alert-danger-color:                             $red-dark;
+/*
 $alert-large-padding:                            20px !default;
 $article-margin-top:                             25px !default;
 $article-title-font-size:                        36px !default;
@@ -662,14 +664,18 @@ $form-password-line-height:                      $form-password-font-size !defau
 $form-password-color:                            #999 !default;
 $form-password-hover-color:                      #999 !default;
 $form-password-padding:                          50px !default;
-$progress-height:                                20px !default;
+*/
+$progress-height:                                25px;
+/*
 $progress-mini-height:                           6px !default;
 $progress-small-height:                          12px !default;
 $progress-margin-vertical:                       15px !default;
-$progress-background:                            #eee !default;
-$progress-bar-background:                        #00a8e6 !default;
-$progress-bar-font-size:                         12px !default;
-$progress-bar-color:                             #fff !default;
+*/
+$progress-background:                            $grey-light4;
+$progress-bar-background:                        $blue;
+$progress-bar-font-size:                         14px;
+$progress-bar-color:                             white;
+/*
 $progress-bar-success-background:                #8cc14c !default;
 $progress-bar-warning-background:                #faa732 !default;
 $progress-bar-danger-background:                 #da314b !default;
@@ -737,18 +743,18 @@ $thumbnail-mini-width:                           150px !default;
 $thumbnail-small-width:                          200px !default;
 $thumbnail-medium-width:                         300px !default;
 $thumbnail-large-width:                          400px !default;
-*/
 $tooltip-z-index:                                1030 !default;
 $tooltip-max-width:                              200px !default;
+*/
 $tooltip-padding-vertical:                       10px;
 $tooltip-padding-horizontal:                     10px;
 $tooltip-background:                             $grey-dark;
-$tooltip-triangle-size:                          5px;
+$tooltip-triangle-size:                          6px;
 $tooltip-color:                                  white;
 $tooltip-font-size:                              12px;
 $tooltip-line-height:                            18px;
-$tooltip-offset-horizontal:                      10px !default;
 /*
+$tooltip-offset-horizontal:                      10px !default;
 $utility-container-max-width:                    980px !default;
 $utility-container-padding-horizontal:           25px !default;
 $utility-container-large-max-width:              1200px !default;

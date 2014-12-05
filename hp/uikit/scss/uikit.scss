@@ -264,6 +264,10 @@ h1 {
 
 /* Buttons --------------------------------- */
 
+.uk-button {
+    font-weight: $semibold;
+}
+
 /*
 * Modifier: `uk-button-secondary`
 */
@@ -354,20 +358,29 @@ h1 {
 .uk-form select,
 .uk-form textarea {
     border-radius: 5px;
+    width: 100%;
+}
+
+.uk-form textarea {
+    resize: none;
 }
 
 .uk-form .error {
     display: none;
 }
 
-.uk-form .has-error .error {
-    color: $red;
+.uk-form .has-error .uk-alert {
     font-size: 12px;
     display: block;
+    margin-top: -1px;
+    margin-bottom: 0px;
+    line-height: 18px;
+    border-radius: 0px 0px $radius $radius;
 }
 
 .uk-form .has-error input, .uk-form .has-error select, .uk-form .has-error textarea {
     border-color: $red;
+    border-radius: $radius $radius 0px 0px;
 }
 
 /* Tables --------------------------- */

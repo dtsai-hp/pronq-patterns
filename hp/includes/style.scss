@@ -121,23 +121,52 @@ form {
 	overflow: auto;
 	z-index: 10;
 	background-color: $grey-light5;
-}
 
+	.uk-grid {
+		margin-bottom: 10px;
+	}
 
-.specs:before {
-	content: "Specs";
-	display: block;
-	color: $grey;
-	font-family: $pq-font;
-	padding: 0px 0px 10px;
-	margin: 0px -20px 20px;
-	background-color: white;
-	border-bottom: 2px solid $grey-light2;
-	font-size: 16px;
-}
+	&:before {
+		content: "Specs";
+		display: block;
+		color: $grey;
+		font-family: $pq-font;
+		padding: 0px 0px 10px;
+		margin: 0px -20px 20px;
+		background-color: white;
+		border-bottom: 2px solid $grey-light2;
+		font-size: 16px;
+	}
 
-.specs table {
-	width: 100%;
+	.note {
+		font-size: 12px;
+		display: block;
+		padding-bottom: 5px;
+
+		&:before {
+			content: "Design note:";
+			margin-right: 5px;
+			background-color: $grey-light3;
+			padding: 3px 6px;
+			font-weight: $bold;
+			border-radius: $radius;
+		}
+	}
+
+	table {
+		font-size: 12px;
+		line-height: 18px;
+		border-collapse: collapse;
+		width: 100%;
+
+		td, th {
+			padding: 10px;
+		}
+
+		code {
+			font-size: 12px;
+		}
+	}
 }
 
 .code {
@@ -150,101 +179,66 @@ form {
 	border-radius: 5px;
 	line-height: 2em;
 	color: $blue-dark;
-}
 
-.code:before {
-	content: "Markup";
-	display: block;
-	color: $grey;
-	font-family: $pq-font;
-	padding: 0px 0px 10px;
-	margin: 0px -20px 20px;
-	background-color: white;
-	border-bottom: 2px solid $grey-light2;
-	font-size: 16px;
-}
-
-.code .linenumbers {
-	float: left;
-	color: #8E9295;
-	margin-right: 20px;
-	-webkit-user-select: none;  /* Chrome all / Safari all */
-	-moz-user-select: none;     /* Firefox all */
-	-ms-user-select: none;      /* IE 10+ */
-
-	/* No support for these yet, use at own risk */
-	-o-user-select: none;
-	user-select: none;
-}
-
-.code .css {
-	color: $green;
-}
-
-.code .html {
-	color: $teal;
-}
-
-.code .comment {
-	color: $grey-light1;
-}
-
-.code .js {
-	color: $blue;
-	font-style: italic;
-}
-
-.code .var {
-	color: $blue;
-}
-
-.specs table {
-	font-size: 12px;
-	line-height: 18px;
-	border-collapse: collapse;
-
-	td, th {
-		padding: 10px;
+	&:before {
+		content: "Markup";
+		display: block;
+		color: $grey;
+		font-family: $pq-font;
+		padding: 0px 0px 10px;
+		margin: 0px -20px 20px;
+		background-color: white;
+		border-bottom: 2px solid $grey-light2;
+		font-size: 16px;
 	}
 
-	code {
-		font-size: 12px;
+	.linenumbers {
+		float: left;
+		color: #8E9295;
+		margin-right: 20px;
+		-webkit-user-select: none;  /* Chrome all / Safari all */
+		-moz-user-select: none;     /* Firefox all */
+		-ms-user-select: none;      /* IE 10+ */
+
+		/* No support for these yet, use at own risk */
+		-o-user-select: none;
+		user-select: none;
 	}
-}
 
-.fa-hover {
-	color: $grey-light2;
-	padding: 10px;
-	font-size: 12px;
-}
+	.css { color: $green; }
 
-.fa-hover i {
-	color: $grey;
-	font-size: 30px;
-	margin-right: 10px;
-}
+	.html { color: $teal; }
 
-.fa-hover:hover {
-	color: $grey;
-}
+	.comment { color: $grey-light1; }
 
+	.js { color: $blue; font-style: italic; }
+
+	.var { color: $blue; }
+}
 
 /* Color Styling ------------------------------------------------ */
 
 .colorbox {
-	width: 110px;
+	width: 100px;
 	display: inline-block;
-	border-radius: $radius;
 	margin-top: 20px;
+	margin-right: -4px;
 	font-size: 12px;
-	text-transform: uppercase;
-	border-top: 30px solid;
-	text-align: center;
-	background-color: $grey-light5;
+	line-height: 18px;
+	padding: 3px 5px;
+	border-top: 25px solid;
+	color: $grey-light1;
 
 	&.main {
-		border-top-width: 40px;
 		display: inline-block;
+		border-top-width: 30px;
+	}
+
+	.hex {
+		text-transform: uppercase;
+		display: block;
+		font-weight: 700;
+		color: $grey;
 	}
 
 }

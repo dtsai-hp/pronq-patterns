@@ -656,7 +656,9 @@ form {
   z-index: 10;
   background-color: whitesmoke;
 }
-
+.specs .uk-grid {
+  margin-bottom: 10px;
+}
 .specs:before {
   content: "Specs";
   display: block;
@@ -668,9 +670,30 @@ form {
   border-bottom: 2px solid #aaaaaa;
   font-size: 16px;
 }
-
+.specs .note {
+  font-size: 12px;
+  display: block;
+  padding-bottom: 5px;
+}
+.specs .note:before {
+  content: "Design note:";
+  margin-right: 5px;
+  background-color: #dddddd;
+  padding: 3px 6px;
+  font-weight: 700;
+  border-radius: 5px;
+}
 .specs table {
+  font-size: 12px;
+  line-height: 18px;
+  border-collapse: collapse;
   width: 100%;
+}
+.specs table td, .specs table th {
+  padding: 10px;
+}
+.specs table code {
+  font-size: 12px;
 }
 
 .code {
@@ -684,7 +707,6 @@ form {
   line-height: 2em;
   color: #00608a;
 }
-
 .code:before {
   content: "Markup";
   display: block;
@@ -696,7 +718,6 @@ form {
   border-bottom: 2px solid #aaaaaa;
   font-size: 16px;
 }
-
 .code .linenumbers {
   float: left;
   color: #8E9295;
@@ -711,71 +732,44 @@ form {
   -o-user-select: none;
   user-select: none;
 }
-
 .code .css {
   color: #7eaf35;
 }
-
 .code .html {
   color: #4c93a1;
 }
-
 .code .comment {
   color: #888888;
 }
-
 .code .js {
   color: #0096d6;
   font-style: italic;
 }
-
 .code .var {
   color: #0096d6;
 }
 
-.specs table {
-  font-size: 12px;
-  line-height: 18px;
-  border-collapse: collapse;
-}
-.specs table td, .specs table th {
-  padding: 10px;
-}
-.specs table code {
-  font-size: 12px;
-}
-
-.fa-hover {
-  color: #aaaaaa;
-  padding: 10px;
-  font-size: 12px;
-}
-
-.fa-hover i {
-  color: #666666;
-  font-size: 30px;
-  margin-right: 10px;
-}
-
-.fa-hover:hover {
-  color: #666666;
-}
-
 /* Color Styling ------------------------------------------------ */
 .colorbox {
-  width: 110px;
+  width: 100px;
   display: inline-block;
-  border-radius: 5px;
   margin-top: 20px;
+  margin-right: -4px;
   font-size: 12px;
-  text-transform: uppercase;
-  border-top: 30px solid;
-  text-align: center;
-  background-color: whitesmoke;
+  line-height: 18px;
+  padding: 3px 5px;
+  border-top: 25px solid;
+  color: #888888;
 }
 .colorbox.main {
-  border-top-width: 40px;
   display: inline-block;
+  border-top-width: 30px;
+}
+.colorbox .hex {
+  text-transform: uppercase;
+  display: block;
+  font-weight: 700;
+  color: #666666;
 }
 
 .blue {

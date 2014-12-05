@@ -7883,6 +7883,10 @@ h1 {
 
 /* End Back to Top */
 /* Buttons --------------------------------- */
+.uk-button {
+  font-weight: 600;
+}
+
 /*
 * Modifier: `uk-button-secondary`
 */
@@ -7960,20 +7964,29 @@ h1 {
 .uk-form select,
 .uk-form textarea {
   border-radius: 5px;
+  width: 100%;
+}
+
+.uk-form textarea {
+  resize: none;
 }
 
 .uk-form .error {
   display: none;
 }
 
-.uk-form .has-error .error {
-  color: #af3a2b;
+.uk-form .has-error .uk-alert {
   font-size: 12px;
   display: block;
+  margin-top: -1px;
+  margin-bottom: 0px;
+  line-height: 18px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .uk-form .has-error input, .uk-form .has-error select, .uk-form .has-error textarea {
   border-color: #af3a2b;
+  border-radius: 5px 5px 0px 0px;
 }
 
 /* Tables --------------------------- */

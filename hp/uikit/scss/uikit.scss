@@ -1,6 +1,6 @@
 @import "uikit-mixins.scss";
 @import "uikit-variables.scss";
-@import "pq-variables.scss";
+@import "obt-variables.scss";
 
 
 // LESS related
@@ -354,11 +354,15 @@ h1 {
 
 /* Forms -------------------------- */
 
-.uk-form input,
+.uk-form input[type="text"],
 .uk-form select,
 .uk-form textarea {
     border-radius: 5px;
     width: 100%;
+}
+
+.uk-form input[type="checkbox"], .uk-form input[type="radio"] {
+    margin: 3px 6px 3px 0px;
 }
 
 .uk-form textarea {

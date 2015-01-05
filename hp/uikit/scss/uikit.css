@@ -7707,10 +7707,22 @@ h1 {
   border-radius: 5px;
 }
 
+ul > li, ol > li {
+  margin-bottom: 10px;
+}
+
+ul > li:last-child, ol > li:last-child {
+  margin-bottom: 0px;
+}
+
 /* End Basics */
 /* Navigation */
 .uk-navbar-brand {
   padding-left: 0px;
+}
+
+.uk-navbar-nav li {
+  margin-bottom: 0px;
 }
 
 .uk-navbar i {
@@ -7848,6 +7860,9 @@ h1 {
   .pq-footer .footer-social {
     float: none;
   }
+}
+.pq-footer a {
+  color: #888888;
 }
 .pq-footer ul {
   padding: 0px;

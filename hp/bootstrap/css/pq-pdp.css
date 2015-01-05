@@ -31,15 +31,17 @@
   text-align: center;
   margin-bottom: 45px;
 }
+
 .templates.pdp-overview .icon-box {
   text-align: center;
   font-size: 16px;
   line-height: 30px;
 }
+
 .templates.pdp-overview .icon-box .icon {
   border-radius: 70px;
-  height: 140px;
-  width: 140px;
+  height: 40px;
+  width: 120px;
   background-color: #edeeee;
   display: inline-block;
   padding: 40px 0px;

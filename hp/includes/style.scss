@@ -6,6 +6,11 @@ form {
 	margin-bottom: 20px;
 }
 
+.uk-button.active {
+	background-color: $grey;
+	color: white;
+}
+
 .pq-docs-section {
 	margin-bottom: 0px;
 	margin-top: 1px;

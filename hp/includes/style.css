@@ -544,6 +544,10 @@ $form-advanced-margin-top:                     -4px !default;
 form {
   margin-bottom: 20px; }
 
+.uk-button.active {
+  background-color: #666666;
+  color: white; }
+
 .pq-docs-section {
   margin-bottom: 0px;
   margin-top: 1px;

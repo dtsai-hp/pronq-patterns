@@ -7733,6 +7733,7 @@ ul > li:last-child, ol > li:last-child {
 .pq-subnav {
   height: 60px;
   background: #EEEEEE;
+  width: 100%;
 }
 .pq-subnav span {
   float: left;
@@ -7873,6 +7874,7 @@ ul > li:last-child, ol > li:last-child {
 .pq-footer ul li {
   padding-right: 20px;
   display: inline-block;
+  margin-bottom: 0px;
 }
 .pq-footer ul li a {
   color: #888888;

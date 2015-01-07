@@ -3824,7 +3824,7 @@ select.uk-form-width-mini {
   display: inline-block;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0 30px;
   background: #0096D6;
   vertical-align: middle;
   /* 8 */
@@ -3981,21 +3981,21 @@ select.uk-form-width-mini {
  ========================================================================== */
 .uk-button-mini {
   min-height: 25px;
-  padding: 0 10px;
+  padding: 0 15px;
   line-height: 25px;
   font-size: 12px;
 }
 
 .uk-button-small {
   min-height: 30px;
-  padding: 0 15px;
+  padding: 0 20px;
   line-height: 30px;
   font-size: 14px;
 }
 
 .uk-button-large {
   min-height: 50px;
-  padding: 0 30px;
+  padding: 0 40px;
   line-height: 50px;
   font-size: 18px;
 }
@@ -7983,6 +7983,59 @@ ul > li:last-child, ol > li:last-child {
   width: 100%;
 }
 
+.uk-form .uk-form-row {
+  position: relative;
+}
+
+.uk-form label {
+  font-size: 12px;
+  position: absolute;
+  top: -12px;
+  margin-left: 10px;
+  background-color: white;
+  padding: 0px 5px;
+}
+
+.uk-form input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.uk-form input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.uk-form input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.uk-form input:focus:-ms-placeholder {
+  color: transparent;
+}
+
+.uk-form textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.uk-form textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.uk-form textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.uk-form textarea:focus:-ms-placeholder {
+  color: transparent;
+}
+
+.uk-form label {
+  display: none;
+}
+
+.uk-form .show-label label {
+  display: block;
+}
+
 .uk-form input[type="checkbox"], .uk-form input[type="radio"] {
   margin: 3px 6px 3px 0px;
 }
@@ -7995,18 +8048,21 @@ ul > li:last-child, ol > li:last-child {
   display: none;
 }
 
-.uk-form .has-error .uk-alert {
+.uk-form .has-error .error {
   font-size: 12px;
+  color: #BF3A3A;
   display: block;
-  margin-top: -1px;
-  margin-bottom: 0px;
+  padding: 5px 5px 0px;
   line-height: 18px;
   border-radius: 0px 0px 5px 5px;
 }
 
 .uk-form .has-error input, .uk-form .has-error select, .uk-form .has-error textarea {
   border-color: #BF3A3A;
-  border-radius: 5px 5px 0px 0px;
+}
+
+.uk-form .uk-button {
+  width: 100%;
 }
 
 /* Tables --------------------------- */
@@ -8036,6 +8092,9 @@ ul > li:last-child, ol > li:last-child {
 }
 .uk-alert i, .uk-alert .uk-close {
   color: #0096D6;
+}
+.uk-alert i {
+  margin-right: 5px;
 }
 
 .uk-alert-danger {

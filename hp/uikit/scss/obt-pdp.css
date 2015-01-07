@@ -1,66 +1,3 @@
-$blue: #0096D6;
-$blue-hover: #0084BD;
-$blue-dark: #00608A;
-$blue-light1: #23BDFF;
-$blue-light2: #70D4FF;
-$blue-light3: #BDEBFF;
-
-$orange: #FF9E1B;
-$orange-hover: #F68E00;
-$orange-dark: #D37900;
-$orange-light1: #FFBF68;
-$orange-light2: #FFDFB4;
-
-$grey: #666666;
-$grey-dark: #444444;
-$grey-light1: #888888;
-$grey-light2: #AAAAAA;
-$grey-hover: #CACACA;
-$grey-light3: #DDDDDD;
-$grey-light4: #EEEEEE;
-$grey-background: #F5F5F5;
-
-$red: #BF3A3A;
-$red-dark: #8C2B2B;
-$red-light1: #E06C6C;
-$red-light2: #F2A7A7;
-
-$yellow: #EDAE00;
-$yellow-dark: #AB7D00;
-$yellow-light1: #FFCF4A;
-$yellow-light2: #FFE396;
-
-$green: #7EAF35;
-$green-dark: #547423;
-$green-light1: #A3CF61;
-$green-light2: #C5E19C;
-
-$teal: #4C93A1;
-$teal-dark: #33646D;
-$teal-light1: #7AB4C0;
-$teal-light2: #ADD1D9;
-
-$purple: #686E9F;
-$purple-dark: #484D72;
-$purple-light1: #979BBD;
-$purple-light2: #C6C8DA;
-
-$lavender: #B081B9;
-$lavender-dark: #8E5599;
-$lavender-light1: #CFB2D4;
-$lavender-light2: #EEE3F0;
-
-$pq-font-size: 14px;
-$pq-line-height: 24px;
-$pq-font: "Open Sans", Helvetica, Arial, sans-serif;
-
-$light: 300;
-$regular: 400;
-$semibold: 600;
-$bold: 700;
-
-$radius: 5px;
-
 /*
 $nav-autocomplete-color:                         #444 !default;
 $nav-autocomplete-active-background:             #00a8e6 !default;
@@ -206,14 +143,6 @@ $uk-upload-dragover-box-shadow-blur:             20px !default;
 $alert-margin-vertical:                          15px !default;
 $alert-padding:                                  10px !default;
 */
-$alert-background:                               transparentize($blue-light2,.75);
-$alert-color:                                    $blue-dark;
-$alert-success-background:                       transparentize($green-light2,.75);
-$alert-success-color:                            $green-dark;
-$alert-warning-background:                       transparentize($yellow-light2,.75);
-$alert-warning-color:                            $yellow-dark;
-$alert-danger-background:                        transparentize($red-light2,.75);
-$alert-danger-color:                             $red-dark;
 /*
 $alert-large-padding:                            20px !default;
 $article-margin-top:                             25px !default;
@@ -245,19 +174,6 @@ $badge-warning-background:                       #faa732 !default;
 $badge-danger-background:                        #da314b !default;
 $base-body-background:                           #fff !default;
 */
-$base-body-font-family:                          $pq-font;
-$base-body-font-weight:                          400;
-$base-body-font-size:                            $pq-font-size;
-$base-body-line-height:                          $pq-line-height;
-$base-body-color:                                $grey;
-$base-link-color:                                $blue;
-$base-link-text-decoration:                      none;
-$base-link-hover-color:                          $blue;
-$base-link-hover-text-decoration:                underline;
-$base-code-color:                                $purple;
-$base-code-font-size:                            14px;
-$base-code-font-family:                          Consolas, monospace, serif;
-$base-em-color:                                  $purple;
 /*
 $base-ins-background:                            #ffa !default;
 $base-ins-color:                                 #444 !default;
@@ -266,9 +182,6 @@ $base-mark-color:                                #444 !default;
 $base-quote-font-style:                          italic !default;
 $base-margin-vertical:                           15px !default;
 */
-$base-heading-font-family:                       $pq-font;
-$base-heading-font-weight:                       normal !default;
-$base-heading-color:                             $grey;
 /*
 $base-heading-text-transform:                    none !default;
 $base-heading-margin-top:                        25px !default;
@@ -307,58 +220,6 @@ $breadcrumb-divider:                             "/" !default;
 $breadcrumb-divider-margin:                      8px !default;
 $breadcrumb-disabled-color:                      #999 !default;
 */
-$button-height:                                  40px;
-$button-mini-height:                             25px;
-$button-small-height:                            30px;
-$button-large-height:                            50px;
-$button-line-height:                             $button-height;
-$button-mini-line-height:                        $button-mini-height;
-$button-small-line-height:                       $button-small-height;
-$button-large-line-height:                       $button-large-height;
-$button-mini-font-size:                          12px;
-$button-small-font-size:                         14px;
-$button-large-font-size:                         18px;
-$button-padding-horizontal:                      30px;
-$button-mini-padding-horizontal:                 15px;
-$button-small-padding-horizontal:                20px;
-$button-large-padding-horizontal:                40px;
-$button-font-size:                               16px;
-$button-background:                              $blue;
-$button-color:                                   white;
-$button-hover-background:                        $blue-hover;
-$button-hover-color:                             white;
-$button-active-background:                       $blue-hover;
-$button-active-color:                            white;
-$button-primary-background:                      $orange;
-$button-primary-color:                           white;
-$button-primary-hover-background:                $orange-hover;
-$button-primary-hover-color:                     white;
-$button-primary-active-background:               $orange-hover;
-$button-primary-active-color:                    white;
-$button-secondary-background:                    $grey-light3;
-$button-secondary-color:                         $grey;
-$button-secondary-hover-background:              $grey-hover;
-$button-secondary-hover-color:                   $grey;
-$button-secondary-active-background:             $grey-hover;
-$button-secondary-active-color:                  $grey;
-$button-mingrey-border:                          transparentize($grey,.5);
-$button-mingrey-background:                      transparent;
-$button-mingrey-color:                           $grey;
-$button-mingrey-hover-border:                    $grey;
-$button-mingrey-hover-background:                transparent;
-$button-mingrey-hover-color:                     $grey;
-$button-mingrey-active-border:                   $grey;
-$button-mingrey-active-background:               transparent;
-$button-mingrey-active-color:                    $grey;
-$button-minwhite-border:                         transparentize(white,.5);
-$button-minwhite-background:                     transparent;
-$button-minwhite-color:                          white;
-$button-minwhite-hover-border:                   white;
-$button-minwhite-hover-background:               transparent;
-$button-minwhite-hover-color:                    white;
-$button-minwhite-active-border:                  white;
-$button-minwhite-active-background:              transparent;
-$button-minwhite-active-color:                   white;
 /*
 $button-success-background:                      #8cc14c !default;
 $button-success-color:                           #fff !default;
@@ -372,8 +233,7 @@ $button-danger-hover-background:                 #e4354f !default;
 $button-danger-hover-color:                      #fff !default;
 $button-danger-active-background:                #c91032 !default;
 $button-danger-active-color:                     #fff !default;
-*/$button-disabled-background:                   $grey-light4;
-$button-disabled-color:                          $grey-light3;
+*/
 /*$button-link-color:                              #07D !default;
 $button-link-hover-color:                        #059 !default;
 $button-link-hover-text-decoration:              underline !default;
@@ -415,61 +275,6 @@ $dropdown-navbar-color:                          #444 !default;
 $dropdown-navbar-animation:                      uk-slide-top-fixed !default;
 $dropdown-scrollable-height:                     200px !default;
 */
-$form-height:                                    40px;
-$form-padding:                                   5px 15px;
-$form-border:                                    $grey-light3;
-$form-border-width:                              1px;
-$form-background:                                white;
-$form-color:                                     $grey;
-$form-focus-border:                              $blue;
-$form-focus-background:                          white;
-$form-focus-color:                               $grey;
-$form-disabled-border:                           $grey-light3;
-$form-disabled-background:                       $grey-background;
-$form-disabled-color:                            $grey-light3;
-$form-placeholder-color:                         $grey-light2;
-$form-gutter:                                    15px;
-$form-legend-border:                             #ddd !default;
-$form-legend-border-width:                       1px !default;
-$form-legend-font-size:                          18px !default;
-$form-legend-line-height:                        30px !default;
-$form-small-height:                              25px !default;
-$form-large-height:                              40px !default;
-$form-small-padding:                             3px 3px !default;
-$form-large-padding:                             8px 6px !default;
-$form-small-font-size:                           12px !default;
-$form-large-font-size:                           16px !default;
-$form-danger-border:                             #dc8d99 !default;
-$form-danger-background:                         #fff7f8 !default;
-$form-danger-color:                              #d85030 !default;
-$form-success-border:                            #8ec73b !default;
-$form-success-background:                        #fafff2 !default;
-$form-success-color:                             #659f13 !default;
-$form-blank-border:                              #ddd !default;
-$form-blank-border-style:                        dashed !default;
-$form-mini-width:                                40px !default;
-$form-small-width:                               130px !default;
-$form-medium-width:                              200px !default;
-$form-large-width:                               500px !default;
-$form-help-inline-margin-left:                   10px !default;
-$form-help-block-margin-top:                     5px !default;
-$form-controls-condensed-margin-vertical:        5px !default;
-$form-stacked-margin-bottom:                     5px !default;
-$form-stacked-font-weight:                       bold !default;
-$form-horizontal-label-width:                    200px !default;
-$form-horizontal-label-margin-top:               5px !default;
-$form-horizontal-controls-margin-left:           215px !default;
-$form-horizontal-controls-text-padding-top:      5px !default;
-$form-icon-width:                                30px !default;
-$form-icon-font-size:                            14px !default;
-$form-icon-color:                                #999 !default;
-
-$grid-gutter-horizontal:                         15px;
-$grid-gutter-vertical:                           15px;
-$grid-gutter-large-horizontal:                   30px;
-$grid-gutter-large-vertical:                     30px;
-$grid-gutter-small-horizontal:                   10px;
-$grid-gutter-small-vertical:                     10px;
 /*
 $grid-divider-border:                            #ddd !default;
 $grid-divider-border-width:                      1px !default;
@@ -566,23 +371,6 @@ $nav-offcanvas-divider-border-width:             1px !default;
 $nav-offcanvas-nested-color:                     #ccc !default;
 $nav-offcanvas-nested-hover-color:               #fff !default;
 */
-$navbar-background:                              $blue;
-$navbar-color:                                   white;
-$navbar-link-color:                              white;
-$navbar-link-hover-color:                        white;
-$navbar-nav-height:                              60px;
-$navbar-nav-line-height:                         $navbar-nav-height;
-$navbar-nav-padding-horizontal:                  20px;
-$navbar-nav-color:                               white;
-$navbar-nav-font-size:                           14px !default;
-$navbar-nav-font-weight:                         normal !default;
-$navbar-nav-font-family:                         "Open Sans", Helvetica, Arial, sans-serif;
-$navbar-nav-hover-background:                    $blue-hover;
-$navbar-nav-hover-color:                         white;
-$navbar-nav-onclick-background:                  $blue-hover;
-$navbar-nav-onclick-color:                       white;
-$navbar-nav-active-background:                   $blue-hover;
-$navbar-nav-active-color:                        white;
 /*$navbar-nav-subtitle-font-size:                  10px !default;
 $navbar-nav-subtitle-offset:                     2px !default;
 $navbar-brand-font-size:                         18px !default;
@@ -594,15 +382,6 @@ $navbar-toggle-hover-color:                      #444 !default;
 $navbar-toggle-icon:                             "\f0c9" !default;
 $navbar-toggle-icon-alt:                         "\f002" !default;
 */
-$offcanvas-z-index:                              1000 !default;
-$offcanvas-background:                           rgba(0,0,0,0.2) !default;
-$offcanvas-bar-width:                            270px !default;
-$offcanvas-bar-background:                       darken($grey, 15%);
-$offcanvas-panel-margin:                         45px 25px;
-$offcanvas-panel-color:                          darken($grey, 15%);
-$offcanvas-panel-link-color:                     white;
-$offcanvas-panel-link-hover-color:               $grey;
-$offcanvas-panel-title-color:                    $offcanvas-panel-link-color !default;
 /*
 $overlay-area-background:                        rgba(0,0,0,0.3) !default;
 $overlay-area-icon:                              "\f002" !default;
@@ -665,35 +444,16 @@ $form-password-color:                            #999 !default;
 $form-password-hover-color:                      #999 !default;
 $form-password-padding:                          50px !default;
 */
-$progress-height:                                25px;
 /*
 $progress-mini-height:                           6px !default;
 $progress-small-height:                          12px !default;
 $progress-margin-vertical:                       15px !default;
 */
-$progress-background:                            $grey-light4;
-$progress-bar-background:                        $blue;
-$progress-bar-font-size:                         14px;
-$progress-bar-color:                             white;
 /*
 $progress-bar-success-background:                #8cc14c !default;
 $progress-bar-warning-background:                #faa732 !default;
 $progress-bar-danger-background:                 #da314b !default;
 */
-$subnav-font-size:                               $pq-font-size;
-$subnav-margin:                                  20px;
-$subnav-color:                                   $grey;
-$subnav-hover-color:                             $grey;
-$subnav-disabled-color:                          #999 !default;
-$subnav-line-border-height:                      10px !default;
-$subnav-line-border:                             #ddd !default;
-$subnav-line-border-width:                       1px !default;
-$subnav-pill-padding-vertical:                   3px !default;
-$subnav-pill-padding-horizontal:                 9px !default;
-$subnav-pill-hover-background:                   #eee !default;
-$subnav-pill-hover-color:                        #444 !default;
-$subnav-pill-active-background:                  #00a8e6 !default;
-$subnav-pill-active-color:                       #fff !default;
 /*
 $tab-border:                                     #ddd !default;
 $tab-border-width:                               1px !default;
@@ -717,7 +477,6 @@ $table-padding-horizontal:                       8px !default;
 $table-caption-color:                            #999 !default;
 $table-caption-font-size:                        12px !default;
 */
-$table-striped-background:                       $grey-background;
 /*$table-condensed-padding-vertical:               4px !default;
 $table-condensed-padding-horizontal:             8px !default;
 $table-hover-background:                         #EEE !default;
@@ -746,13 +505,6 @@ $thumbnail-large-width:                          400px !default;
 $tooltip-z-index:                                1030 !default;
 $tooltip-max-width:                              200px !default;
 */
-$tooltip-padding-vertical:                       10px;
-$tooltip-padding-horizontal:                     10px;
-$tooltip-background:                             $grey-dark;
-$tooltip-triangle-size:                          6px;
-$tooltip-color:                                  white;
-$tooltip-font-size:                              12px;
-$tooltip-line-height:                            18px;
 /*
 $tooltip-offset-horizontal:                      10px !default;
 $utility-container-max-width:                    980px !default;
@@ -788,10 +540,86 @@ $form-advanced-border:                         #aaa !default;
 $form-advanced-border-width:                   1px !default;
 $form-advanced-margin-top:                     -4px !default;
 */
-$form-advanced-color:                          transparent !default;
-$form-advanced-checked-color:                  $blue;
-$form-advanced-radio-size:                     8px !default;
-$form-advanced-checkbox-icon:                  "\f00c" !default;
-$form-advanced-checkbox-font-size:             30px;
-$form-advanced-disabled-border:                #ddd !default;
-$form-advanced-disabled-color:                #aaa;
+.templates {
+  margin-top: 15px; }
+
+.templates.wireframe .icon-box .icon {
+  border-radius: 70px;
+  height: 34px;
+  width: 134px;
+  background-color: #edeeee;
+  display: inline-block;
+  padding: 50px 0px;
+  border: 2px solid #cbcccd;
+  text-align: center; }
+
+.templates.example {
+  display: none; }
+
+.templates p.placeholder {
+  font-size: 22px;
+  font-weight: bold;
+  color: #75787b; }
+
+.templates.pdp-hero {
+  background-color: #F5F5F5;
+  padding: 60px 0px; }
+
+.templates.pdp-hero .hero-illustration {
+  height: 300px;
+  background-color: #ddddde;
+  border-right: 30px solid #F5F5F5;
+  border-left: 30px solid #F5F5F5;
+  padding: 40px; }
+
+.templates.pdp-hero.example .hero-illustration {
+  height: auto;
+  background-color: transparent;
+  text-align: center;
+  padding: 40px; }
+
+.templates.pdp-hero h1 {
+  margin-bottom: 20px;
+  font-size: 30px; }
+
+.templates.pdp-hero p.description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 25px; }
+
+.templates.pdp-overview {
+  padding: 60px; }
+
+.templates h2.header {
+  text-align: center;
+  margin-bottom: 45px;
+  font-size: 24px; }
+
+.templates.pdp-overview .icon-box {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px; }
+
+.templates.pdp-overview .icon-box h3 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  color: #53565a; }
+
+.templates.pdp-features {
+  background-color: #F5F5F5;
+  padding: 60px 0px; }
+  .templates.pdp-features .feature-row {
+    margin-bottom: 30px; }
+    .templates.pdp-features .feature-row:last-child {
+      margin-bottom: 0px; }
+
+.templates.pdp-getstarted {
+  padding: 60px 0px;
+  background-color: #F5F5F5; }
+  .templates.pdp-getstarted .illustration {
+    height: 300px;
+    background-color: #ddddde;
+    border-right: 30px solid #F5F5F5;
+    border-left: 30px solid #F5F5F5;
+    padding: 40px; }

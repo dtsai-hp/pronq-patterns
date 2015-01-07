@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="uiLibrary">
+<html>
 <head>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,23 +13,15 @@
 	<!-- Fonts -->
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 	<!-- CSS -->
 
-	<link href='bootstrap/css/bootstrap.css' rel='stylesheet' type='text/css'>
-	<link href='bootstrap/css/pq-bootstrap.css' rel='stylesheet' type='text/css'>
-	<link href='bootstrap/css/jquery-ui-1.10.4.custom.css' rel='stylesheet' type='text/css'>
-	<link href='bootstrap/css/pq-slider.css' rel='stylesheet' type='text/css'>
-	<link href='bootstrap/css/pq-pricing.css' rel='stylesheet' type='text/css'>
+	<link href='uikit/scss/uikit.css' rel='stylesheet' type='text/css'>
 	<link href='includes/style.css' rel='stylesheet' type='text/css'>
 
 	<!-- Javascript -->
 
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 
 </head>
 <body>
@@ -37,17 +29,13 @@
 
 <!-- Navigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
-	<nav class='navbar navbar-default' id='globalnav' role='navigation'></nav>
+	<div id="globalnav"></div>
 	<script> $("#globalnav").load("includes/nav.html"); </script>
 
-	<div class="pq-subnav hidden-xs hidden-sm" id="content">
-		<div class="container">
-			<div class="title">Templates</div>
-			<ul>
-				<a href="#productdetails"><li>Product Details</li></a>
-				<a href="#pricing"><li>Product Pricing</li></a>
-				<a href="#community"><li>Community</li></a>
-				<a href="#emails"><li>Emails</li></a>
+	<div class="pq-subnav" id="subnav" data-uk-sticky>
+		<div class="uk-container uk-container-center">
+			<ul class="uk-subnav">
+				<li><a href="#modules">Page Modules</a></li>
 			</ul>
 		</div>
 	</div>
@@ -55,479 +43,16 @@
 
 	<!-- Content - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
-	<div class="container">
+	<div class="uk-container uk-container-center">
 
 	<!-- Product Details - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
-	<div id="productdetails" class="pq-docs-section">
-		<h1>Product Details</h1>
-		Coming Soon
-	</div>
-
-	<!-- Product Details - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-
-		<div id="pricing" class="pq-docs-section continue">
-
-			<h1>Product Pricing</h1>
-
-			<a href="pricing.html" target="blank" class="btn btn-secondary">Sample Page</a>
-
-			<h2>Package Displays (4 column)</h2>
-
+		<div id="modules" class="pq-docs-section">
+			<h1>Page Modules</h1>
+			<a href="templates/pdp.html">Product Details</a>
 		</div>
 
-		<div class="row">
-			<div class="col-lg-3 col-sm-6 pricing-package teal">
-				<div class="header">
-					<div class="title">Package Title</div>
-					<span class="tagline">scans starting at</span>
-					<span class="price">$39</span>
-					<span class="unit">per assessment</span>
-					<span class="arrow-down"></span>
-				</div>
-				<div class="details">
-					<a class="btn">Build Package</a>
-					<p>This and that details<br/>This and that more details</p>
-				</div>
-			</div>
 
-			<div class="col-lg-3 col-sm-6 pricing-package green">
-				<div class="header">
-					<div class="title">Package Title</div>
-					<span class="tagline">scans starting at</span>
-					<span class="price">$39</span>
-					<span class="unit">per assessment</span>
-					<span class="arrow-down"></span>
-				</div>
-				<div class="details">
-					<a class="btn">Build Package</a>
-					<p>This and that details<br/>This and that more details</p>
-				</div>
-			</div>
-
-			<div class="col-lg-3 col-sm-6 pricing-package purple">
-				<div class="header">
-					<div class="title">Package Title</div>
-					<span class="tagline">scans starting at</span>
-					<span class="price">$39</span>
-					<span class="unit">per assessment</span>
-					<span class="arrow-down"></span>
-				</div>
-				<div class="details">
-					<a class="btn">Build Package</a>
-					<p>This and that details<br/>This and that more details</p>
-				</div>
-			</div>
-
-			<div class="col-lg-3 col-sm-6 pricing-package blue">
-				<div class="header">
-					<div class="title">Package Title</div>
-					<span class="tagline">scans starting at</span>
-					<span class="price">$39</span>
-					<span class="unit">per assessment</span>
-					<span class="arrow-down"></span>
-				</div>
-				<div class="details">
-					<a class="btn">Build Package</a>
-					<p>This and that details<br/>This and that more details</p>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="pq-docs-section continue">
-
-			<h2>Package Displays (3 column)</h2>
-
-		</div>
-
-		<div class="row">
-
-			<div class="col-md-4 pricing-package teal">
-				<div class="header">
-					<div class="title">Package Title</div>
-					<span class="tagline">scans starting at</span>
-					<span class="price">$39</span>
-					<span class="unit">per assessment</span>
-					<span class="arrow-down"></span>
-				</div>
-				<div class="details">
-					<a class="btn">Build Package</a>
-					<p>This and that details<br/>This and that more details</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 pricing-package green">
-				<div class="header">
-					<!--  <div class="ribbon-container"><span class="star">Recommended</span></div>-->
-					<div class="title">Package Title</div>
-					<span class="tagline">scans starting at</span>
-					<span class="price">$39</span>
-					<span class="unit">per assessment</span>
-					<span class="arrow-down"></span>
-				</div>
-				<div class="details">
-					<a class="btn">Build Package</a>
-					<p>This and that details<br/>This and that more details</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 pricing-package blue">
-				<div class="header">
-					<div class="title">Package Title</div>
-					<span class="tagline">scans starting at</span>
-					<span class="price">$39</span>
-					<span class="unit">per assessment</span>
-					<span class="arrow-down"></span>
-				</div>
-				<div class="details">
-					<a class="btn">Build Package</a>
-					<p>This and that details<br/>This and that more details</p>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="pq-docs-section continue">
-
-			<h2>Package Displays (2 column)</h2>
-
-		</div>
-
-		<div class="row">
-			<div class="col-sm-6 pricing-package teal">
-				<div class="header">
-				<div class="title">Package Title</div>
-				<span class="tagline">scans starting at</span>
-				<span class="price">$39</span>
-				<span class="unit">per assessment</span>
-				<span class="arrow-down"></span>
-			</div>
-			<div class="details">
-				<a class="btn">Build Package</a>
-				<p>This and that details<br/>This and that more details</p>
-			</div>
-		</div>
-
-		<div class="col-sm-6 pricing-package green">
-			<div class="header">
-				<div class="title">Package Title</div>
-				<span class="tagline">scans starting at</span>
-				<span class="price">$39</span>
-				<span class="unit">per assessment</span>
-				<span class="arrow-down"></span>
-			</div>
-			<div class="details">
-				<a class="btn">Build Package</a>
-				<p>This and that details<br/>This and that more details</p>
-				</div>
-			</div>
-		</div>
-
-			<h2>Quote Box</h2>
-
-		</div>
-	</div>
-
-	<div class="quote-box">
-
-		<div class="container">
-			<span class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida."</span>
-			<span class="byline">Speaker Name - Title<br/>Company</span>
-		</div>
-
-	</div>
-
-	<div class="container">
-		<div class="pq-docs-section continue">
-
-			<h2>Features Table</h2>
-
-		</div>
-	</div>
-
-		<div id="pricing-header">
-			<div class="container">
-				<div class="col-md-12 pricing-features-header">
-
-					<div class="row header">
-						<div class="col-sm-4"></div>
-						<div class="col-sm-2 teal">Express</div>
-						<div class="col-sm-2 green">Basic</div>
-						<div class="col-sm-2 purple">Standard</div>
-						<div class="col-sm-2 blue">Premium</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="col-md-12 pricing-features">
-				<div class="row feature price">
-					<div class="col-sm-4 name"></div>
-					<div class="col-sm-2 value">Free</div>
-					<div class="col-sm-2 value"><small>As low as</small>$399<small>per 50 OSI Packs</small></div>
-					<div class="col-sm-2 value"><small>As low as</small>$399<small>per 50 OSI Packs</small></div>
-					<div class="col-sm-2 value">Get a quote</div>
-				</div>
-				<div class="row feature buttons">
-					<div class="col-sm-4 name"></div>
-					<div class="col-sm-2 value">
-						<a class="btn btn-mingrey btn-sm">Build package</a>
-					</div>
-					<div class="col-sm-2 value">
-						<a class="btn btn-mingrey btn-sm">Build package</a>
-					</div>
-					<div class="col-sm-2 value">
-						<a class="btn btn-mingrey btn-sm">Build package</a>
-					</div>
-					<div class="col-sm-2 value">
-						<a class="btn btn-mingrey btn-sm">Build package</a>
-					</div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name">Applications Risk Level</div>
-					<div class="col-sm-2 value">Low</div>
-					<div class="col-sm-2 value">Medium</div>
-					<div class="col-sm-2 value">High</div>
-					<div class="col-sm-2 value">High</div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name">Binary: Client</div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value">OWASP Top 10*</div>
-					<div class="col-sm-2 value">OWASP Top 10*</div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name">Source Code: Client</div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value">OWASP Top 10*</div>
-					<div class="col-sm-2 value">OWASP Top 10*</div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name">Manual: Client</div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value">OWASP Top 10*</div>
-					<div class="col-sm-2 value">OWASP Top 10*</div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name">Network</div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value">OWASP Top 10*</div>
-					<div class="col-sm-2 value">OWASP Top 10*</div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name"><abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">Server API</abbr></div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name">iOS</div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name">Android</div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name">Windows</div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name">Blackberry</div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name"><abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">False Positive Removal</abbr></div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name"><abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">Remidiation Scan</abbr></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name">Web Support</div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-				</div>
-				<div class="row feature">
-					<div class="col-sm-4 name"><abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">TAM Support</abbr></div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value"></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-
-	<div class="container">
-		<div class="pq-docs-section continue">
-
-			<h2>Configurator</h2>
-
-		</div>
-	</div>
-
-
-	<div class="configurator" style="display: block;" ng-controller="sliderDemoCtrl">
-
-		<div class="close"><i class="fa fa-times"></i></div>
-
-		<div class="container">
-			<div class="col-md-8">
-
-				<h2><small>Step 1</small>Select Number of Single-Step Transactions</h2>
-				One <abbr title="One Single step transaction entitles the use of a single action against an application from one location. These simple monitors (e.g. URL monitor, Ping monitor, Port monitor, DNS monitor, etc.) require no scripting and are created by filling out a simple web form. These transactions can be run from multiple public locations through our global network points of presences or from private locations behind your firewall." rel="tooltip">Single-step transaction</abbr> entitles the use of a single action against an application from one location. <strong>($12/ Transaction)</strong>
-
-				<div class="slider-group">
-
-					<span class="minlabel">0</span>
-					<span class="maxlabel">100</span>
-
-					<div ui-slider="{ range: 'min' }" min="0" max="100" ng-model="demoVals.sliderExample1"></div>
-
-					<input type="text" ng-model="demoVals.sliderExample1" />
-
-				</div>
-
-				<br /><hr />
-
-				<h2><small>Step 2</small>Select Number of Multi-Step Transactions</h2>
-
-				One <abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">Multi-step transaction</abbr> entitles the use of a pre-recorded script (virtual user flow) against your application from one location. <strong>($39/Transaction)</strong>
-
-				<div class="slider-group">
-					<span class="minlabel">0</span>
-					<span class="maxlabel">100</span>
-
-					<div ui-slider="{ range: 'min' }" min="0" max="100" ng-model="demoVals.sliderExample2"></div>
-
-					<input type="text" ng-model="demoVals.sliderExample2" />
-
-				</div>
-
-
-				<br /><hr />
-
-				<h2><small>Step 3</small>Select Term of Subscription</h2>
-
-				How many <abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">months</abbr> would you like access to AppPulse?
-
-				<div class="slider-group">
-					<span class="minlabel">3</span>
-					<span class="maxlabel">12</span>
-
-					<div ui-slider="{ range: 'min' }" min="3" max="12" ng-model="demoVals.sliderExample3"></div>
-
-					<input type="text" ng-model="demoVals.sliderExample3" />
-
-				</div>
-
-				<script type="text/javascript" src="js/ui-slider.js"></script>
-				<script>
-					var app = angular.module('uiLibrary', ['ui.slider']);
-
-					app.controller('sliderDemoCtrl', function($scope) {
-
-						$scope.demoVals = {
-							sliderExample1:     0,
-							sliderExample2:     0,
-							sliderExample3:     3,
-							options: {
-								orientation: 'horizontal',
-								range: 'min'
-							}
-						};
-					});
-				</script>
-
-			</div>
-
-			<div class="col-md-4 overview">
-
-				<div class="header">
-					Package Summary
-				</div>
-
-				<div class="details">
-					<table>
-						<tr class="top">
-							<th>Single-Step Transactions</th>
-							<td>{{ (demoVals.sliderExample1 * 12) | currency }}</td>
-						</tr>
-						<tr class="bottom">
-							<td colspan=2>{{ demoVals.sliderExample1 }} transactions @ $12 each</td>
-						</tr>
-						<tr class="top">
-							<th>Multi-Step Transactions</th>
-							<td>{{ (demoVals.sliderExample2 * 39) | currency }}</td>
-						</tr>
-						<tr class="bottom">
-							<td colspan=2>{{ demoVals.sliderExample2 }} transactions @ $39 each</td>
-						</tr>
-						<tr>
-							<tH>Duration</tH>
-							<td>{{ demoVals.sliderExample3 }} months</td>
-						</tr>
-						<tr>
-							<td colspan=2>{{ ((demoVals.sliderExample1 * 12) + (demoVals.sliderExample2 * 39)) * demoVals.sliderExample3 | currency }}<span class="total"><small><strong>Total (Excluding taxes)</strong></small></span></td>
-						</tr>
-					</table>
-				</div>
-
-				<div class="form-group">
-					<div class="btn-group">
-						<button class="btn btn-tertiary">Cancel</button>
-						<a class="btn btn-primary">Next</a>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-	</div>
-
-	<div class="container">
-
-		<div id="community" class="pq-docs-section">
-			<h1>Community</h1>
-			Coming Soon
-		</div>
-
-		<div id="emails" class="pq-docs-section">
-			<h1>Emails</h1>
-			Coming Soon
-		</div>
 	</div>
 
 	<div id="footer" class="pq-footer"></div>
@@ -535,12 +60,11 @@
 
 	<!-- After load JavaScript files -->
 
-	<script src="js/ui-bootstrap-0.10.0.min.js"></script>
-	<script src="js/pq-forms.js" type="text/javascript"></script>
-	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-	<script src="js/jquery.sticky.js" type="text/javascript"></script>
-	<script src="js/pq-tooltip.js" type="text/javascript"></script>
-	<script src="js/pq-subnav.js" type="text/javascript"></script>
+	<script src="uikit/js/uikit.min.js"></script>
+	<script src="uikit/js/core/dropdown.min.js"></script>
+	<script src="uikit/js/core/nav.min.js"></script>
+	<script src="uikit/js/core/tooltip.min.js"></script>
+	<script src="uikit/js/components/sticky.min.js"></script>
 	<script src="js/pq-top.js" type="text/javascript"></script>
 
 

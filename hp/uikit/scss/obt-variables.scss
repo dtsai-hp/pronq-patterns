@@ -206,13 +206,13 @@ $uk-upload-dragover-box-shadow-blur:             20px !default;
 $alert-margin-vertical:                          15px !default;
 $alert-padding:                                  10px !default;
 */
-$alert-background:                               transparentize($blue-light2,.75);
+$alert-background:                               transparentize($blue-light2,.8);
 $alert-color:                                    $blue-dark;
-$alert-success-background:                       transparentize($green-light2,.75);
+$alert-success-background:                       transparentize($green-light2,.8);
 $alert-success-color:                            $green-dark;
-$alert-warning-background:                       transparentize($yellow-light2,.75);
+$alert-warning-background:                       transparentize($yellow-light2,.8);
 $alert-warning-color:                            $yellow-dark;
-$alert-danger-background:                        transparentize($red-light2,.75);
+$alert-danger-background:                        transparentize($red-light2,.8);
 $alert-danger-color:                             $red-dark;
 /*
 $alert-large-padding:                            20px !default;
@@ -570,7 +570,7 @@ $navbar-background:                              $blue;
 $navbar-color:                                   white;
 $navbar-link-color:                              white;
 $navbar-link-hover-color:                        white;
-$navbar-nav-height:                              60px;
+$navbar-nav-height:                              64px;
 $navbar-nav-line-height:                         $navbar-nav-height;
 $navbar-nav-padding-horizontal:                  20px;
 $navbar-nav-color:                               white;

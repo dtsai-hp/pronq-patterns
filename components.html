@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html ng-app="uiLibrary">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Pronq.com Pattern Library</title>
+
+	<!-- Icon -->
+
+	<link rel="shortcut icon" href="imgs/assets/favicon.ico" type="image/x-icon" />
+
+	<!-- Fonts -->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+	<!-- CSS -->
+
+	<link href='uikit/scss/uikit.css' rel='stylesheet' type='text/css'>
+	<link href='includes/style.css' rel='stylesheet' type='text/css'>
+
+	<!-- Javascript -->
+
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+</head>
+<body>
+
+	<!-- Navigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<div id='globalnav'></div>
+	<script> $("#globalnav").load("includes/nav.html"); </script>
+
+	<div class="obt-subnav" id="subnav" data-uk-sticky>
+		<div class="uk-container uk-container-center">
+			<ul class="uk-subnav">
+				<li><a href="#headerfooter">Global Header & Footer</a></li>
+				<li><a href="#menus">Menus</a></li>
+				<li><a href="#tables">Tables</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Content - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<div class="uk-container uk-container-center">
+
+	<!-- NAVIGATION - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+		<div id="headerfooter" class="pq-docs-section continue">
+
+			<h1>Global Header & Footer</h1>
+
+			<p>All headers and footers have been optimized for desktop and mobile (touch). They should never be sticky.</p>
+
+			<h2>Global Header</h2>
+
+		</div>
+
+	</div>
+
+	<nav class='uk-navbar'>
+		<div class="uk-container uk-container-center">
+			<a class="uk-navbar-brand" href='index.html'><img src='http://www.hpobteam.com/hp/imgs/assets/HP-White.png' /></a>
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li><a href='#'>Products</a></li>
+				<li><a href='#'>Community</a></li>
+				<li><a href='#'>Resources</a></li>
+			</ul>
+
+			<div class="uk-navbar-flip">
+				<ul class="uk-navbar-nav uk-visible-small">
+					<li><a href="#globalnavexample-mobile" data-uk-offcanvas><i class="fa fa-bars"></i></a></li>
+				</ul>
+				<ul class='uk-navbar-nav uk-hidden-small'>
+					<li><a href='#'>My Account / sign in</a></li>
+					<li><a href='#'>Contact us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="uk-offcanvas" id="globalnavexample-mobile">
+		<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+			<ul class="uk-nav uk-nav-offcanvas">
+				<li><a href='#'>Products</a></li>
+				<li><a href='#'>Community</a></li>
+				<li><a href='#'>Resources</a></li>
+				<li><a href='#'>My Account / sign in</a></li>
+				<li><a href='#'>Contact us</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="uk-container uk-container-center">
+		<div class="pq-docs-section continue">
+			<h2>Global Header (Logged in)</h2>
+		</div>
+	</div>
+
+	<nav class='uk-navbar'>
+		<div class="uk-container uk-container-center">
+			<a class="uk-navbar-brand" href='index.html'><img src='http://www.hpobteam.com/hp/imgs/assets/HP-White.png' /></a>
+			<ul class="uk-navbar-nav uk-hidden-small">
+				<li><a href='#'>Products</a></li>
+				<li><a href='#'>Community</a></li>
+				<li><a href='#'>Resources</a></li>
+			</ul>
+
+			<div class="uk-navbar-flip">
+				<ul class="uk-navbar-nav uk-visible-small">
+					<li><a href="#globalnavloggedinexample-mobile" data-uk-offcanvas><i class="fa fa-bars"></i></a></li>
+				</ul>
+				<ul class='uk-navbar-nav uk-hidden-small'>
+					<li><a href='#'>Hi, Christopher</a></li>
+					<li><a href='#'>Contact us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="uk-offcanvas" id="globalnavloggedinexample-mobile">
+		<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+			<ul class="uk-nav uk-nav-offcanvas">
+				<li><a href='#'>Products</a></li>
+				<li><a href='#'>Community</a></li>
+				<li><a href='#'>Resources</a></li>
+				<li><a href='#'>My Account / sign in</a></li>
+				<li><a href='#'>Contact us</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="uk-container uk-container-center">
+		<div class="pq-docs-section continue">
+			<h2>Minimal Header</h2>
+		</div>
+	</div>
+
+	<nav class='uk-navbar'>
+		<div class="uk-container uk-container-center">
+			<a class="uk-navbar-brand" href='index.html'><img src='http://www.hpobteam.com/hp/imgs/assets/HP-White.png' /></a>
+
+			<div class="uk-navbar-flip">
+				<ul class='uk-navbar-nav uk-hidden-small'>
+					<li><a href='#'>My Account / sign in</a></li>
+					<li><a href='#'>Contact us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="uk-container uk-container-center">
+		<div class="pq-docs-section continue">
+			<h2>Landing Page Header</h2>
+		</div>
+	</div>
+
+	<nav class='uk-navbar'>
+		<div class="uk-container uk-container-center">
+			<a class="uk-navbar-brand" href='index.html'><img src='http://www.hpobteam.com/hp/imgs/assets/HP-White.png' /></a>
+
+			<div class="uk-navbar-flip">
+				<ul class='uk-navbar-nav uk-hidden-small'>
+					<li><a href='#'>Hi, Christopher</a></li>
+					<li><a href='#'>Contact us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="uk-container uk-container-center">
+		<div class="pq-docs-section continue">
+			<h2>Global Footer</h2>
+		</div>
+	</div>
+
+	<div class="pq-footer">
+		<div class="uk-container uk-container-center">
+			<div class="uk-grid uk-grid-small">
+				<div class="uk-width-medium-4-6">
+					<ul>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">Community</a></li>
+						<li><a href="#">Resources</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">Site map</a></li>
+						<li><a href="#">Careers</a></li>
+					</ul>
+					<div class="footer-social">
+						<a href="javascript:void(0)"><i class="fa fa-facebook"></i></a>
+						<a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
+						<a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a>
+						<a href="javascript:void(0)"><i class="fa fa-youtube"></i></a>
+						<a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a>
+					</div>
+				</div>
+				<div class="uk-width-medium-2-6 right">
+					<a href="#">Privacy statement</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#">Terms of Use</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;&copy; 2014 pronq.com
+				</div>
+			</div>
+		</div><!-- /.container-fluid -->
+	</div>
+
+	<div class="uk-container uk-container-center">
+		<div class="pq-docs-section continue">
+			<h2>Minimal Footer</h2>
+		</div>
+	</div>
+
+<div class="pq-footer">
+	<div class="uk-container uk-container-center">
+		<div class="uk-grid uk-grid-small">
+			<div class="uk-width-1-1 right">
+				<a href="#">Privacy statement</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#">Terms of Use</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;&copy; 2014 pronq.com
+			</div>
+		</div>
+	</div><!-- /.container-fluid -->
+</div>
+<div class="uk-container uk-container-center">
+	<div class="pq-docs-section continue">
+		<h2>Marketing Footer</h2>
+	</div>
+</div>
+
+<div class="pq-footer">
+	<div class="uk-container uk-container-center">
+		<div class="uk-grid uk-grid-small">
+			<div class="uk-width-medium-4-6">
+				<div class="footer-social">
+					<a href="javascript:void(0)"><i class="fa fa-facebook"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-youtube"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a>
+				</div>
+			</div>
+			<div class="uk-width-medium-2-6 right">
+				<a href="#">Privacy statement</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#">Terms of Use</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;&copy; 2014 pronq.com
+			</div>
+		</div>
+	</div><!-- /.container-fluid -->
+</div>
+
+<div class="uk-container uk-container-center">
+	<div class="pq-docs-section continue">
+		<h2>Footer with Supplemental Content</h2>
+	</div>
+</div>
+
+<div class="pq-footer">
+	<div class="uk-container uk-container-center">
+		<div class="uk-grid uk-grid-small supplemental">
+			<div class="uk-width-1-2">
+				Supplemental content here
+			</div>
+
+			<div class="uk-width-1-2 right">
+				Supplemental content here
+			</div>
+		</div>
+		<div class="uk-grid uk-grid-small">
+			<div class="uk-width-medium-4-6">
+				<ul>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="#">Resources</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Site map</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+				<div class="footer-social">
+					<a href="javascript:void(0)"><i class="fa fa-facebook"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-youtube"></i></a>
+					<a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a>
+				</div>
+			</div>
+			<div class="uk-width-medium-2-6 right">
+				<a href="#">Privacy statement</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#">Terms of Use</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;&copy; 2014 pronq.com
+			</div>
+		</div>
+	</div><!-- /.container-fluid -->
+</div>
+
+<div class="uk-container uk-container-center">
+	<div class="pq-docs-section continue">
+		<h2>Checkout Footer</h2>
+	</div>
+</div>
+
+<div class="pq-footer">
+	<div class="uk-container uk-container-center">
+		<div class="uk-grid uk-grid-small supplemental">
+			<div class="uk-width-1-2">
+				<br/><a href="#">Online support</a>
+				Customer service hotline (650) 963-5701 USA/Canada
+			</div>
+
+			<div class="uk-width-1-2 right">
+				Order processed by Avangate<br/>
+				Authorized vendor of Hewlett Packard Galway Limited products
+			</div>
+		</div>
+		<div class="uk-grid uk-grid-small">
+			<div class="uk-width-1-1 right">
+				<a href="#">Privacy statement</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#">Terms of Use</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;&copy; 2014 pronq.com
+			</div>
+		</div>
+	</div><!-- /.container-fluid -->
+</div>
+
+<div class="uk-container uk-container-center">
+	<div class="pq-docs-section" style="margin:-top 0px;padding-top: 0px;"></div>
+
+		<!-- SubNavigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+		<div id="menus" class="pq-docs-section continue">
+			<h1>Menus</h1>
+
+
+			<p>Menu's are used throughout the site to provide subnavigation. Menus are used to scroll to sections of a page. Most menus are <b>sticky</b>.</p>
+
+			<h2>Sub Navigation</h2>
+
+		</div>
+	</div>
+
+	<div class="obt-subnav">
+		<div class="uk-container uk-container-center">
+			<span>Product Title</span>
+			<ul class="uk-subnav uk-navbar-flip">
+				<li><a href="javascript:void(0)">Item 1</a></li>
+				<li><a href="javascript:void(0)">Item 2</a></li>
+				<li><a href="javascript:void(0)">Item 3</a></li>
+				<li><button class="uk-button uk-button-small" href="javascript:void(0)">Sample button</button></li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class="uk-container uk-container-center">
+
+		<div class="pq-docs-section">
+
+			<h2>Side Navigation</h2>
+
+			<p>This menu can also be used as a vertical tab system.</p>
+
+			<div class="uk-grid pq-sideMenu">
+
+				<div class="uk-width-1-3 tabs">
+					<div class="tab active" id="tab1"><i class="fa fa-circle"></i> Tab title</div>
+
+					<div class="tab" id="tab2"><i class="fa fa-circle"></i> Tab title</div>
+
+					<div class="tab" id="tab3"><i class="fa fa-circle"></i> Tab title</div>
+
+				</div>
+				<div class="mobile-tab uk-width-1-1 active" id="mobile-tab1"><i class="fa fa-circle"></i> Tab title<i class="fa fa-angle-up"></i></div>
+				<div class="uk-width-large-2-3 content active" id="content1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium varius nunc, in sagittis nisi molestie a. Pellentesque convallis libero quis arcu feugiat, vel faucibus felis semper. Duis at laoreet ligula. Suspendisse potenti. Sed ac tincidunt mauris. Vivamus rutrum ullamcorper libero a fermentum. Nullam ac enim luctus, iaculis metus quis, pulvinar tortor.</p>
+				</div>
+				<div class="mobile-tab uk-width-1-1" id="mobile-tab2"><i class="fa fa-circle"></i> Tab title<i class="fa fa-angle-down"></i></div>
+				<div class="uk-width-large-2-3 content" id="content2">
+					<p>Nam bibendum sit amet elit ac posuere. Donec luctus velit eu diam suscipit luctus. Curabitur sodales magna eu leo consequat rhoncus. Nunc consequat fringilla nibh, mollis sollicitudin leo. Cras in nisi sed sem molestie volutpat vitae ac velit. Aliquam maximus pharetra aliquam. Aliquam faucibus arcu leo, et elementum tortor tempor sed. Ut non consequat quam, eu blandit elit. Nulla sem sem, commodo ac suscipit ut, rutrum vel quam.</p>
+				</div>
+				<div class="mobile-tab uk-width-1-1" id="mobile-tab3"><i class="fa fa-circle"></i> Tab title<i class="fa fa-angle-down"></i></div>
+				<div class="uk-width-large-2-3 content" id="content3">
+					<p>Sed et porta elit, in lacinia tellus. Sed efficitur sem diam, a malesuada risus gravida vel. Morbi sit amet pharetra turpis. Donec lacinia nibh non odio imperdiet, ac gravida nisi auctor. Curabitur lacinia tellus libero, eu fermentum augue egestas id. Maecenas augue neque, dictum at dapibus non, eleifend eu felis. Quisque consequat ligula nibh, at hendrerit tellus commodo in. Donec rhoncus ante felis, at facilisis leo mattis sit amet. Donec laoreet id neque non consequat. Phasellus elementum ornare gravida. Aliquam ultricies tincidunt ex id dignissim. Aenean sem velit, vestibulum eu nulla et, fermentum rhoncus nibh. Fusce odio risus, congue a ullamcorper ac, bibendum non odio. Fusce dapibus dolor lacus, vel egestas lectus molestie et.
+</p>
+				</div>
+
+			</div>
+
+			<script>
+
+				var activeTab = 1;
+
+				$(".pq-sideMenu .tabs .tab").click(function() {
+					if($(this).hasClass('active')) {}
+					else {
+						$("#tab"+activeTab).removeClass('active');
+						$("#mobile-tab"+activeTab).removeClass('active');
+						$("#mobile-tab"+activeTab).find(".fa-angle-up").removeClass('fa-angle-up').addClass('fa-angle-down');
+						$("#content"+activeTab).hide().removeClass('active');
+
+						var id = $(this).attr('id').substring(3,4);
+						$(this).addClass('active');
+						$("#mobile-tab"+id).addClass('active');
+						$("#content"+id).show().addClass('active');
+						$(this).find(".fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-up');
+						activeTab = id;
+					}
+				});
+
+				$(".pq-sideMenu .mobile-tab").click(function() {
+					if($(this).hasClass('active')) {}
+					else {
+						$("#tab"+activeTab).removeClass('active');
+						$("#mobile-tab"+activeTab).removeClass('active');
+						$("#mobile-tab"+activeTab).find(".fa-angle-up").removeClass('fa-angle-up').addClass('fa-angle-down');
+						$("#content"+activeTab).slideUp().removeClass('active');
+
+						var id = $(this).attr('id').substring(10,11);
+						$("#mobile-tab"+id).addClass('active');
+						$("#content"+id).slideDown().addClass('active');
+						$(this).find(".fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-up');
+						activeTab = id;
+					}
+				});
+
+			</script>
+
+		</div>
+
+		<!-- Tabs - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+<!--		<div id="tabs" class="pq-docs-section">
+
+		<h1>Tabs</h1>
+
+		<ul class="nav nav-tabs responsive" id="myTab">
+			<li class="active"><a href="#home" data-toggle="tab">Item 1</a></li>
+			<li><a href="#profile" data-toggle="tab">Item 2</a></li>
+			<li><a href="#messages" data-toggle="tab">Item 3</a></li>
+			<li><a href="#settings" data-toggle="tab">Item 4</a></li>
+		</ul>
+
+		<div class="tab-content responsive">
+			<div class="tab-pane active" id="home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie euismod augue, ac fringilla eros placerat in. Nam scelerisque sollicitudin diam, vitae tincidunt dolor vulputate vel.</div>
+			<div class="tab-pane" id="profile">Vestibulum euismod lacus quis felis semper posuere. Morbi fringilla porta lorem, vel cursus sapien ornare nec. Integer elementum, nulla vitae feugiat sagittis, nulla erat fringilla erat, in ultrices nisl est eget lorem. Suspendisse in urna dapibus, elementum velit vitae, volutpat leo. Cras egestas felis at leo lacinia imperdiet. Aenean vel consequat est. </div>
+			<div class="tab-pane" id="messages">Pellentesque congue faucibus pharetra. Donec eu pretium orci, et dictum nibh. Suspendisse ac diam eros. Ut dapibus congue mauris fringilla scelerisque. Aliquam rhoncus, magna a congue scelerisque, nisl magna vestibulum purus, vel viverra mi neque id massa. Nunc auctor tellus quis ornare ultrices. Integer luctus dui vitae mi facilisis facilisis.</div>
+			<div class="tab-pane" id="settings">Nam luctus augue eget pretium egestas. Donec sit amet erat dictum, sodales tortor a, laoreet neque. Phasellus cursus ac neque nec imperdiet. Sed sed leo vitae mauris vehicula tincidunt. Nulla dapibus sit amet sem sollicitudin imperdiet.</div>
+			</div>
+		</div>
+
+		<script>
+			$(function () {
+				$('#myTab a:last').tab('show')
+			})
+		</script> -->
+
+		<!-- Tables - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+		<div id="tables" class="pq-docs-section">
+
+			<h1>Tables</h1>
+
+			<h2>Light Table</h2>
+
+			<table class="uk-table">
+				<thead>
+					<tr>
+						<th>Column 1</th>
+						<th>Column 2</th>
+						<th>Column 3</th>
+						<th>Column 4</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Item 1</td>
+						<td>Object</td>
+						<td>Category</td>
+						<td>Example of a longer description and with a full sentence of text.</td>
+					</tr>
+					<tr>
+						<td>Item 2</td>
+						<td>Object</td>
+						<td>Category</td>
+						<td>Example of a longer description and with a full sentence of text.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div id="specs_lighttable" class="specs">
+
+				<table class="uk-table">
+					<thead>
+						<tr>
+							<th colspan=2>Default</th>
+							<th colspan=2>Header</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Color</th><td>Grey</td>
+							<th>Color</th><td>White</td>
+						</tr>
+						<tr>
+							<th>Font Weight</th><td>400</td>
+							<th>Font Weight</th><td>700</td>
+
+						</tr>
+						<tr>
+							<th>Background Color</th><td>Transparent</td>
+							<th>Border Bottom</th><td>2px solid Grey-Light3</td>
+						</tr>
+						<tr>
+							<th>Padding</th><td>15px</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			<div id="code_lighttable" class="code">
+
+				&lt;<span class="tag">table</span> <span class="html">class</span>=<span class="css">"uk-table"</span>&gt;<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">thead</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">th</span>&gt;...&lt;/<span class="tag">th</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">thead</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">tbody</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">td</span>&gt;...&lt;/<span class="tag">td</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">tbody</span>&gt;<br />
+				&lt;/<span class="tag">table</span>&gt;
+			</div>
+
+			<h2>Blue Table</h2>
+
+			<table class="uk-table blue">
+				<thead>
+					<tr>
+						<th>Column 1</th>
+						<th>Column 2</th>
+						<th>Column 3</th>
+						<th>Column 4</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Item 1</td>
+						<td>Object</td>
+						<td>Category</td>
+						<td>Example of a longer description and with a full sentence of text.</td>
+					</tr>
+					<tr>
+						<td>Item 2</td>
+						<td>Object</td>
+						<td>Category</td>
+						<td>Example of a longer description and with a full sentence of text.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div id="specs_bluetable" class="specs">
+
+				<table class="uk-table">
+					<thead>
+						<tr>
+							<th colspan=2>Default</th>
+							<th colspan=2>Header</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Color</th><td>Grey</td>
+							<th>Color</th><td>White</td>
+						</tr>
+						<tr>
+							<th>Background Color</th><td>Transparent</td>
+							<th>Background Color</th><td>Blue</td>
+						</tr>
+						<tr>
+							<th>Font Weight</th><td>400</td>
+							<th>Font Weight</th><td>700</td>
+
+						</tr>
+						<tr>
+							<th>Padding</th><td>15px</td>
+							<th>Border Bottom</th><td>2px solid Grey-Light3</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			<div id="code_bluetable" class="code">
+
+				&lt;<span class="tag">table</span> <span class="html">class</span>=<span class="css">"uk-table blue"</span>&gt;<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">thead</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">th</span>&gt;...&lt;/<span class="tag">th</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">thead</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">tbody</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">td</span>&gt;...&lt;/<span class="tag">td</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">tr</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">tbody</span>&gt;<br />
+				&lt;/<span class="tag">table</span>&gt;
+			</div>
+
+		</div>
+
+	</div>
+
+	<script>
+
+		angular.module('uiLibrary', ['ui.bootstrap']);
+
+		$(document).ready(function() {
+
+			fakewaffle.responsiveTabs(['xs', 'sm']);
+
+
+			$('.carousel').carousel({
+				interval: false
+			});
+		});
+	</script>
+
+	<div id="footer" class="pq-footer"></div>
+	<script>$("#footer").load("includes/footer.html");</script>
+
+	<!-- After load JavaScript files -->
+
+	<script src="uikit/js/uikit.min.js"></script>
+	<script src="uikit/js/core/dropdown.min.js"></script>
+	<script src="uikit/js/core/nav.min.js"></script>
+	<script src="uikit/js/components/sticky.min.js"></script>
+	<script src="js/pq-top.js" type="text/javascript"></script
+
+</body>
+</html>

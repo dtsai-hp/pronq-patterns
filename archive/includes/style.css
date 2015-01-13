@@ -1,0 +1,492 @@
+/* Basic Page and Nav Styling ------------------------------------------------ */
+.pq-docs-section {
+  margin-bottom: 0px;
+  margin-top: 1px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #EDEEEE;
+}
+
+@media (max-width: 991px) {
+  .pq-docs-section {
+    padding: 30px 0px 30px 0px;
+  }
+}
+.pq-docs-section .sectiontitle {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 300;
+  display: block;
+  border-bottom: 1px solid #EDEEEE;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.backgrounds {
+  position: fixed;
+  text-align: center;
+  top: 200px;
+  right: -118px;
+  width: 240px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #75787B;
+  padding: 14px 20px 10px 12px;
+  display: block;
+  -webkit-box-shadow: -1px -1px 2px #CBCCCD;
+  box-shadow: -1px -1px 2px #CBCCCD;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #EDEEEE;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  transition: .2s;
+  z-index: 100;
+}
+
+.backgrounds:hover {
+  box-shadow: -1px -1px 5px #BABBBD;
+}
+
+.backgrounds div {
+  border: 1px solid white;
+  display: inline-block;
+  margin-left: 7px;
+  margin-top: 7px;
+  width: 24px;
+  height: 24px;
+  -webkit-box-shadow: -2px 2px 3px #DDDDDE;
+  box-shadow: -2px 2px 3px #DDDDDE;
+  border-radius: 12px;
+  transition: .2s;
+}
+
+.backgrounds div:hover {
+  border: 1px solid white;
+  box-shadow: -2px 2px 3px #BABBBD;
+}
+
+.grid-demo {
+  border: 2px solid white;
+  background-color: #EDEEEE;
+  padding: 10px;
+  -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.downloads {
+  font-size: 12px;
+}
+
+.downloads thead {
+  font-size: 14px;
+}
+
+.downloads a:link, .downloads a:active, .downloads a:visited, .downloads a:hover {
+  font-size: 14px;
+}
+
+.darkbox-label {
+  background-color: #EDEEEE;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.darkbox {
+  display: block;
+  background-color: #53565A;
+  border-radius: 0px 0px 5px 5px;
+  padding: 15px;
+  color: white;
+}
+
+/* Specs Styling ------------------------------------------------ */
+.bspecs {
+  padding: 10px 10px;
+  height: 40px;
+  min-width: 0px;
+  width: 40px;
+  margin-top: 15px;
+  margin-right: 5px;
+  z-index: 0;
+}
+
+.specs {
+  display: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: 30px 30px 0px 30px;
+  overflow: auto;
+  z-index: 10;
+  background-color: #F7F7F7;
+  border: 1px solid #DDDDDE;
+}
+
+.specs .state {
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid #DDDDDE;
+  padding-top: 10px;
+}
+
+.specs table {
+  width: 100%;
+}
+
+.specs h1 {
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #00B0B9;
+  margin-bottom: 10px;
+  color: #00B0B9;
+}
+
+.code {
+  display: none;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  line-height: 20px;
+  background-color: #53565A;
+  color: white;
+  padding: 20px;
+  margin: 10px 0px 30px 0px;
+  border-radius: 5px;
+  line-height: 2em;
+  border: 1px solid #292f34;
+}
+
+.code .linenumbers {
+  float: left;
+  color: #8E9295;
+  margin-right: 20px;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;
+}
+
+.code .tag {
+  color: #FFB149;
+}
+
+.code .css {
+  color: #C8F4F3;
+}
+
+.code .html {
+  color: #ADD574;
+}
+
+.code .comment {
+  color: #DDDDDE;
+}
+
+.code .js {
+  color: #FAED89;
+  font-style: italic;
+}
+
+.code .var {
+  color: #B081B9;
+}
+
+.specs table {
+  padding: 10px;
+  font-size: 11px;
+  line-height: 15px;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.specs table th {
+  text-align: left;
+  padding: 7px;
+  width: 120px;
+}
+
+.specs table td {
+  padding: 7px;
+  min-width: 150px;
+}
+
+.specs .title {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  border-bottom: 1px solid #DDDDDE;
+}
+
+.fa-hover {
+  color: #BABBBD;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.fa-hover i {
+  color: #53565A;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.fa-hover:hover {
+  color: #53565A;
+}
+
+/* Color Styling ------------------------------------------------ */
+.colortitle {
+  font-size: 18px;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.colorboxtitle {
+  width: 130px;
+  font-weight: 400;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 12px;
+  text-align: right;
+  line-height: 17px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  height: 84px;
+  padding: 3px 8px 3px 8px;
+  background-color: none;
+}
+
+.colorbox {
+  width: 130px;
+  font-weight: 300;
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 17px;
+  color: #53565a;
+  border-radius: 5px;
+  border-top: 40px solid;
+  padding: 5px 8px;
+}
+
+#expandedcolors {
+  display: none;
+}
+
+.colorcontainer {
+  display: inline-block;
+  margin-right: 30px;
+}
+.colorcontainer .colorboxtitle {
+  display: block;
+  text-align: left;
+  height: 40px;
+  padding: 0px;
+}
+.colorcontainer .colorbox {
+  font-weight: 300;
+  margin-bottom: 0px;
+  border: 0px;
+}
+.colorcontainer .colorbox.tint {
+  color: white;
+  height: 8px;
+  width: 22px;
+  border-top: 0px;
+}
+.colorcontainer .colorbox.main {
+  height: 35px;
+  width: 130px;
+  display: block;
+  line-height: 0px;
+}
+.colorcontainer .colorboxtitle .hex {
+  font-weight: 600;
+  display: block;
+}
+
+.textcolorcontainer {
+  display: inline-block;
+  margin-right: 30px;
+}
+.textcolorcontainer .colorboxtitle {
+  display: block;
+  text-align: left;
+  padding: 0px;
+  padding-top: 5px;
+  height: 40px;
+}
+.textcolorcontainer .colorbox {
+  margin-bottom: 0px;
+  border: 0px;
+  height: 35px;
+  display: block;
+  line-height: 0px;
+}
+.textcolorcontainer .colorboxtitle .hex {
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  #expandedcolors .colorboxtitle {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-right: 0px;
+    padding: 0px 0px 10px 0px;
+    margin-top: 20px;
+    height: auto;
+  }
+  #expandedcolors .colorboxtitle br {
+    content: ' ';
+  }
+  #expandedcolors .colorboxtitle br:before {
+    content: '  -  ';
+  }
+  #expandedcolors .colorbox {
+    border-top: 25px solid;
+    width: 130px;
+  }
+  #expandedcolors .colorbox.main {
+    width: 130px;
+    margin-right: 0px;
+  }
+}
+.colorbox .hex {
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+}
+
+/* Continued Section Styling ------------------------------------------------ */
+.continue {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+/* Change Log Styling ------------------------------------------------ */
+.change table {
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: left;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.change table tr .title {
+  background-color: #53565A;
+  border-bottom: 5px solid white;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.change table td {
+  border: 1px solid white;
+  padding: 10px 15px;
+}
+
+@media (max-width: 767px) {
+  .change table td {
+    padding: 8px;
+  }
+}
+.change table tr:nth-child(even) td {
+  background-color: #EDEEEE;
+}
+
+.change table tr.date td {
+  background-color: white;
+  text-transform: uppercase;
+  border-top: 5px solid #75787B;
+  border-bottom: 3px solid #CBCCCD;
+  padding: 5px 10px;
+  font-weight: 300;
+  background-color: white;
+  color: #53565A;
+  letter-spacing: 2px;
+}
+
+.change table tr td.upcoming {
+  border-right: 6px solid #006478;
+  color: #006478;
+  background-color: white;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(0, 100, 120, 0.1);
+}
+
+.change table tr td.deletion {
+  border-right: 6px solid #AF3A2B;
+  color: #AF3A2B;
+  background-color: white;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(175, 58, 43, 0.1);
+}
+
+.change table tr td.addition {
+  border-right: 6px solid #339B83;
+  color: #339B83;
+  background-color: white;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(51, 155, 131, 0.1);
+}
+
+.change table tr td.smallchange {
+  border-right: 6px solid #FF9E1B;
+  color: #FF9E1B;
+  background-color: white;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(255, 158, 27, 0.1);
+}
+
+.change table tr td.bigchange {
+  border-right: 6px solid #686E9F;
+  color: #686E9F;
+  background-color: white;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(104, 110, 159, 0.1);
+}
+
+/* Blogs ------------------------------------------------ */
+.blogassets > div {
+  margin-bottom: 25px;
+  overflow: auto;
+}
+
+.blogassets img {
+  width: 100%;
+  border: 5px solid #EDEEEE;
+}
+
+.blogassets button {
+  float: left;
+  margin-right: 15px;
+}

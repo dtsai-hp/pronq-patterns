@@ -1,88 +1,88 @@
 /* Basic Page and Nav Styling ------------------------------------------------ */
 
-@import '../bootstrap/css/pq-variables';
+@import '../uikit/scss/obt-variables';
 
+form {
+	margin-bottom: 20px;
+}
+
+.uk-button.active {
+	background-color: $grey;
+	color: white;
+}
 
 .pq-docs-section {
 	margin-bottom: 0px;
 	margin-top: 1px;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	border-bottom: 1px solid $grey6;
+	border-bottom: 1px solid $grey-light4;
+}
+
+.pq-docs-section:last-child {
+	border-bottom: 0px;
 }
 
 @media(max-width: 991px) {
 
-  .pq-docs-section {
-    padding: 30px 0px 30px 0px;
-  }
+	.pq-docs-section {
+		padding: 30px 0px 30px 0px;
+	}
 
 }
 
-.pq-docs-section .sectiontitle {
-  margin-top: 40px;
-  font-size: 18px;
-  font-weight: $light;
-  display: block;
-  border-bottom: 1px solid $grey6;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
 
 .backgrounds {
 	position: fixed;
 	text-align: center;
-	top: 200px;
+	top: 230px;
 	right: -118px;
 	width: 240px;
 	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 30px;
-	color: $grey2;
+	color: $grey;
 	padding: 14px 20px 10px 12px;
 	display: block;
-	-webkit-box-shadow: -1px -1px 2px $grey4;
-			box-shadow: -1px -1px 2px $grey4;
-	border-top-left-radius: $radius;
-	border-top-right-radius: $radius;
-	background-color: $grey6;
+	-webkit-box-shadow: -1px -1px 2px $grey-light3;
+			box-shadow: -1px -1px 2px $grey-light3;
+	background-color: $grey-light4;
 	transform: rotate(-90deg);
 	-ms-transform:rotate(-90deg); /* IE 9 */
 	-webkit-transform:rotate(-90deg);
 	transition: .2s;
 	z-index: 100;
+	cursor: pointer;
 }
 
 .backgrounds:hover {
-	box-shadow: -1px -1px 5px $grey3;
+	box-shadow: -1px -1px 5px $grey-light2;
 }
 
 .backgrounds div {
-	border: 1px solid white;
+	border: 2px solid white;
 	display: inline-block;
-	margin-left: 7px;
-	margin-top: 7px;
-	width: 24px;
-	height: 24px;
-	-webkit-box-shadow: -2px 2px 3px $grey5;
-			box-shadow: -2px 2px 3px $grey5;
-	border-radius: 12px;
+	margin: 5px 2px 0px;
+	width: 75px;
+	color: $grey-light1;
 	transition: .2s;
+	cursor: pointer;
 }
 
 .backgrounds div:hover {
-	border: 1px solid white;
-	box-shadow: -2px 2px 3px $grey3;
+	box-shadow: -2px 2px 3px $grey-light2;
 }
 
 .grid-demo {
+	margin-bottom: 10px;
+}
+
+.grid-demo p {
 	border: 2px solid white;
-	background-color: $grey6;
+	background-color: $grey-background;
 	padding: 10px;
-	-webkit-box-shadow: inset 1px 1px 3px transparentize(black, .9);
-			box-shadow: inset 1px 1px 3px transparentize(black, .9);
-	border-radius: 5px;
+	border: 1px solid $grey-light3;
 	margin-bottom: 15px;
 }
 
@@ -99,7 +99,7 @@
 }
 
 .darkbox-label {
-	background-color: $grey6;
+	background-color: $grey-light4;
 	border-radius: 5px 5px 0px 0px;
 	padding: 10px 15px;
 	font-size: 12px;
@@ -109,307 +109,328 @@
 
 .darkbox {
 	display: block;
-	background-color: $grey1;
+	background-color: $grey;
 	border-radius: 0px 0px 5px 5px;
 	padding: 15px;
 	color: white;
+	margin-bottom: 15px;
 }
 
 /* Specs Styling ------------------------------------------------ */
 
 
-.bspecs {
-	padding: 10px 10px;
-	height: 40px;
-	min-width: 0px;
-	width: 40px;
-	margin-top: 15px;
-	margin-right: 5px;
-	z-index: 0;
-}
-
 .specs {
-	display: none;
 	border-radius: 3px;
 	margin-top: 10px;
-	padding: 30px 30px 0px 30px;
+	padding: 0px 20px 5px;
 	overflow: auto;
 	z-index: 10;
-	background-color: $backgroundgrey;
-	border: 1px solid $grey5;
-}
+	background-color: $grey-background;
+	font-size: 12px;
 
-.specs .state {
-	font-size: 14px;
-	font-weight: 400;
-	border-bottom: 1px solid $grey5;
-	padding-top: 10px;
-}
+	.uk-grid {
+		margin-bottom: 10px;
+	}
 
-.specs table {
-	width: 100%;
-}
+	&:before {
+		content: "Specs";
+		display: block;
+		color: $grey;
+		font-family: $pq-font;
+		padding: 0px 0px 10px;
+		margin: 0px -20px 20px;
+		background-color: white;
+		border-bottom: 2px solid $grey-light2;
+		font-size: 16px;
+	}
 
-.specs h1 {
-	font-size: 18px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid $teal1;
-	margin-bottom: 10px;
-	color: $teal1;
+	.note {
+		font-size: 12px;
+		display: block;
+		padding-bottom: 5px;
+
+		&:before {
+			content: "Design note:";
+			margin-right: 5px;
+			background-color: $grey-light3;
+			padding: 3px 6px;
+			font-weight: $bold;
+			border-radius: $radius;
+		}
+	}
+
+	table {
+		line-height: 18px;
+		border-collapse: collapse;
+		width: 100%;
+
+		td, th {
+			padding: 10px;
+		}
+
+		code {
+			font-size: 12px;
+		}
+	}
 }
 
 .code {
-	display: none;
 	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 	font-size: 12px;
 	line-height: 20px;
-	background-color: $grey1;
-	color: white;
-	padding: 20px;
-	margin: 10px 0px 30px 0px;
+	background-color: $grey-background;
+	padding: 0px 20px 20px;
+	margin: 20px 0px 30px 0px;
 	border-radius: 5px;
 	line-height: 2em;
-	border: 1px solid $darkgrey1;
+	color: $blue-dark;
+
+	&:before {
+		content: "Markup";
+		display: block;
+		color: $grey;
+		font-family: $pq-font;
+		padding: 0px 0px 10px;
+		margin: 0px -20px 20px;
+		background-color: white;
+		border-bottom: 2px solid $grey-light2;
+		font-size: 16px;
+	}
+
+	.linenumbers {
+		float: left;
+		color: #8E9295;
+		margin-right: 20px;
+		-webkit-user-select: none;  /* Chrome all / Safari all */
+		-moz-user-select: none;     /* Firefox all */
+		-ms-user-select: none;      /* IE 10+ */
+
+		/* No support for these yet, use at own risk */
+		-o-user-select: none;
+		user-select: none;
+	}
+
+	.css { color: $green; }
+
+	.html { color: $teal; }
+
+	.comment { color: $grey-light1; }
+
+	.js { color: $blue; font-style: italic; }
+
+	.var { color: $blue; }
 }
 
-.code .linenumbers {
-	float: left;
-	color: #8E9295;
-	margin-right: 20px;
-	-webkit-user-select: none;  /* Chrome all / Safari all */
-	-moz-user-select: none;     /* Firefox all */
-	-ms-user-select: none;      /* IE 10+ */
-
-	/* No support for these yet, use at own risk */
-	-o-user-select: none;
-	user-select: none;
+code.required {
+	color: $red;
 }
-
-.code .tag {
-	color: $orange2;
-}
-
-.code .css {
-	color: $brightteal3;
-}
-
-.code .html {
-	color: $brightgreen2;
-}
-
-.code .comment {
-	color: $grey5;
-}
-
-.code .js {
-	color: $yellow2;
-	font-style: italic;
-}
-
-.code .var {
-	color: $brightpurple1;
-}
-
-.specs table {
-	padding: 10px;
-	font-size: 11px;
-	line-height: 15px;
-	border-collapse: collapse;
-	margin-bottom: 30px;
-}
-
-.specs table th {
-	text-align: left;
-	padding: 7px;
-	width: 120px;
-}
-
-.specs table td {
-	padding: 7px;
-	min-width: 150px;
-}
-
-.specs .title {
-	font-size: 12px;
-	font-weight: 700;
-	text-align: left;
-	border-bottom: 1px solid $grey5;
-}
-
-.fa-hover {
-	color: $grey3;
-	padding: 10px;
-	font-size: 12px;
-}
-
-.fa-hover i {
-	color: $grey1;
-	font-size: 30px;
-	margin-right: 10px;
-}
-
-.fa-hover:hover {
-	color: $grey1;
-}
-
 
 /* Color Styling ------------------------------------------------ */
 
-.colortitle {
-	font-size: 18px;
-	font-weight: 300;
-	display: block;
-	margin-bottom: 20px;
-	margin-top: 30px;
-}
-
-.colorboxtitle {
-	width: 130px;
-	font-weight: 400;
-	display: inline-block;
-	overflow: hidden;
-	font-size: 12px;
-	text-align: right;
-	line-height: 17px;
-	margin-right: 5px;
-	margin-bottom: 3px;
-	height: 84px;
-	padding: 3px 8px 3px 8px;
-	background-color: none;
-}
-
 .colorbox {
-	width: 130px;
-	font-weight: 300;
+	width: 100px;
 	display: inline-block;
-	overflow: hidden;
-	margin-bottom: 3px;
+	margin-top: 20px;
+	margin-right: -4px;
 	font-size: 12px;
-	text-transform: uppercase;
-	text-align: left;
-	line-height: 17px;
-	color: #53565a;
-	border-radius: $radius;
-	border-top: 40px solid;
-	padding: 5px 8px;
-}
+	line-height: 18px;
+	padding: 3px 5px;
+	border-top: 25px solid;
+	color: $grey-light1;
 
-#expandedcolors {
+	&.main {
+		display: inline-block;
+		border-top-width: 30px;
+	}
 
-	display: none;
-
-}
-
-.colorcontainer {
-
-	display: inline-block;
-	margin-right: 30px;
-
-	.colorboxtitle {
+	.hex {
+		text-transform: uppercase;
 		display: block;
-		text-align: left;
-		height: 40px;
-		padding: 0px;
-	}
-
-	.colorbox {
-		font-weight: 300;
-		margin-bottom: 0px;
-		border: 0px;
-	}
-
-	.colorbox.tint {
-		color: white;
-		height: 8px;
-		width: 22px;
-		border-top: 0px;
-	}
-
-	.colorbox.main {
-		height: 35px;
-		width: 130px;
-		display: block;
-		line-height: 0px;
-	}
-
-	.colorboxtitle .hex {
-		font-weight: 600;
-		display: block;
+		font-weight: 700;
+		color: $grey;
 	}
 
 }
 
-.textcolorcontainer {
-
-	display: inline-block;
-	margin-right: 30px;
-
-	.colorboxtitle {
-		display: block;
-		text-align: left;
-		padding: 0px;
-		padding-top: 5px;
-		height: 40px;
-	}
-
-	.colorbox {
-		margin-bottom: 0px;
-		border: 0px;
-		height: 35px;
-		display: block;
-		line-height: 0px;
-	}
-
-	.colorboxtitle .hex {
-		font-size: 12px;
-		font-weight: 600;
-		display: block;
-	}
-
+.blue {
+	border-color: $blue;
 }
 
-
-@media(max-width: 991px) {
-
-	#expandedcolors {
-		.colorboxtitle {
-			display: block;
-			width: 100%;
-			text-align: left;
-			margin-right: 0px;
-			padding: 0px 0px 10px 0px;
-			margin-top: 20px;
-			height: auto;
-		}
-
-		.colorboxtitle br {
-			content: ' ';
-		}
-
-		.colorboxtitle br:before {
-			content: '  -  ';
-		}
-
-		.colorbox {
-			border-top: 25px solid;
-			width: 130px;
-		}
-
-		.colorbox.main {
-			width: 130px;
-			margin-right: 0px;
-		}
-
-	}
-
+.blue:hover {
+	border-color: $blue-hover;
 }
 
-.colorbox .hex {
-	font-size: 12px;
-	font-weight: 600;
-	display: block;
+.blue-dark {
+	border-color: $blue-dark;
 }
 
+.blue-hover {
+	border-color: $blue-hover;
+}
+
+.blue-light1 {
+	border-color: $blue-light1;
+}
+
+.blue-light2 {
+	border-color: $blue-light2;
+}
+
+.blue-light3 {
+	border-color: $blue-light3;
+}
+
+.orange {
+	border-color: $orange;
+}
+
+.orange:hover {
+	border-color: $orange-hover;
+}
+
+.orange-dark {
+	border-color: $orange-dark;
+}
+
+.orange-hover {
+	border-color: $orange-hover;
+}
+
+.orange-light1 {
+	border-color: $orange-light1;
+}
+
+.orange-light2 {
+	border-color: $orange-light2;
+}
+
+.grey {
+	border-color: $grey;
+}
+
+.grey-dark {
+	border-color: $grey-dark;
+}
+
+.grey-hover {
+	border-color: $grey-hover;
+}
+
+.grey-light1 {
+	border-color: $grey-light1;
+}
+
+.grey-light2 {
+	border-color: $grey-light2;
+}
+
+.grey-light3 {
+	border-color: $grey-light3;
+}
+
+.grey-light4 {
+	border-color: $grey-light4;
+}
+
+.grey-background {
+	border-color: $grey-background;
+}
+
+.green {
+	border-color: $green;
+}
+
+.green-dark {
+	border-color: $green-dark;
+}
+
+.green-light1 {
+	border-color: $green-light1;
+}
+
+.green-light2 {
+	border-color: $green-light2;
+}
+
+.purple {
+	border-color: $purple;
+}
+
+.purple-dark {
+	border-color: $purple-dark;
+}
+
+.purple-light1 {
+	border-color: $purple-light1;
+}
+
+.purple-light2 {
+	border-color: $purple-light2;
+}
+
+.red {
+	border-color: $red;
+}
+
+.red-dark {
+	border-color: $red-dark;
+}
+
+.red-light1 {
+	border-color: $red-light1;
+}
+
+.red-light2 {
+	border-color: $red-light2;
+}
+
+.yellow {
+	border-color: $yellow;
+}
+
+.yellow-dark {
+	border-color: $yellow-dark;
+}
+
+.yellow-light1 {
+	border-color: $yellow-light1;
+}
+
+.yellow-light2 {
+	border-color: $yellow-light2;
+}
+
+.lavender {
+	border-color: $lavender;
+}
+
+.lavender-dark {
+	border-color: $lavender-dark;
+}
+
+.lavender-light1 {
+	border-color: $lavender-light1;
+}
+
+.lavender-light2 {
+	border-color: $lavender-light2;
+}
+
+.teal {
+	border-color: $teal;
+}
+
+.teal-dark {
+	border-color: $teal-dark;
+}
+
+.teal-light1 {
+	border-color: $teal-light1;
+}
+
+.teal-light2 {
+	border-color: $teal-light2;
+}
 
 /* Continued Section Styling ------------------------------------------------ */
 
@@ -431,7 +452,7 @@
 }
 
 .change table tr .title {
-	background-color: $grey1;
+	background-color: $grey;
 	border-bottom: 5px solid white;
 	padding: 10px 15px;
 	font-size: 12px;
@@ -440,7 +461,6 @@
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
-
 
 .change table td {
 	border: 1px solid white;
@@ -456,64 +476,49 @@
 }
 
 .change table tr:nth-child(even) td {
-	background-color: $grey6;
+	background-color: $grey-background;
 }
 
 .change table tr.date td {
 	background-color: white;
 	text-transform: uppercase;
-	border-top: 5px solid $grey2;
-	border-bottom: 3px solid $grey4;
+	border-top: 0px solid $grey-light3;
+	border-bottom: 2px solid $grey-light3;
 	padding: 5px 10px;
 	font-weight: $light;
-	background-color: white;
-	color: $grey1;
+	background-color: $grey-light1;
+	color: white;
 	letter-spacing: 2px;
 }
 
 .change table tr td.upcoming {
-	border-right: 6px solid $blue1;
-	color: $blue1;
-	background-color: white;
+	color: $blue;
 	text-align: center;
 	font-size: 18px;
-	background-color: transparentize($blue1, .9);
 }
 
 .change table tr td.deletion {
-	border-right: 6px solid $red1;
-	color: $red1;
-	background-color: white;
+	color: $red;
 	text-align: center;
 	font-size: 18px;
-	background-color: transparentize($red1, .9);
 }
 
 .change table tr td.addition {
-	border-right: 6px solid $green2;
-	color: $green2;
-	background-color: white;
+	color: $green;
 	text-align: center;
 	font-size: 18px;
-	background-color: transparentize($green2, .9);
 }
 
 .change table tr td.smallchange {
-	border-right: 6px solid $orange1;
-	color: $orange1;
-	background-color: white;
+	color: $orange;
 	text-align: center;
 	font-size: 18px;
-	background-color: transparentize($orange1, .9);
 }
 
 .change table tr td.bigchange {
-	border-right: 6px solid $purple1;
-	color: $purple1;
-	background-color: white;
+	color: $purple;
 	text-align: center;
 	font-size: 18px;
-	background-color: transparentize($purple1, .9);
 }
 
 /* Blogs ------------------------------------------------ */

@@ -17,19 +17,13 @@
 
 	<!-- CSS -->
 
-  	<link href='bootstrap/css/bootstrap.css' rel='stylesheet' type='text/css'>
-	<link href='bootstrap/css/pq-bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='uikit/scss/uikit.css' rel='stylesheet' type='text/css'>
 	<link href='includes/style.css' rel='stylesheet' type='text/css'>
-	<link href='bootstrap/css/jquery-ui-1.10.4.custom.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="bootstrap/css/pq-slider.css">
+	<link rel="stylesheet" href="bootstrap/css/pq-slider.css">
 
 	<!-- Javascript -->
 
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
-
 
 </head>
 <body>
@@ -37,13 +31,12 @@
 
 	<!-- Navigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
-	<nav class='navbar navbar-default' id='globalnav' role='navigation'></nav>
+	<div id="globalnav"></div>
 	<script> $("#globalnav").load("includes/nav.html"); </script>
 
-	<div class="pq-subnav hidden-xs hidden-sm" id="subnav">
-		<div class="container">
-			<div class="title">User Interface</div>
-			<ul>
+	<div class="obt-subnav" id="subnav" data-uk-sticky>
+		<div class="uk-container uk-container-center">
+			<ul class="uk-subnav">
 				<li><a href="#links">Links</a></li>
 				<li><a href="#buttons">Buttons</a></li>
 				<li><a href="#forms">Forms</a></li>
@@ -55,48 +48,38 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="uk-container uk-container-center">
 
-<!-- Links - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+		<!-- Links - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
 		<div id="links" class="pq-docs-section">
 
 			<h1>Links</h1>
 
-			<span class="text">Pellentesque sollicitudin, ligula eget semper commodo, diam turpis condimentum eros, eget mollis libero lorem nec tortor. <a href="javascript:void(0)">Maecenas</a> et pellentesque purus, vitae sagittis mauris. Nulla vestibulum tortor ut massa varius, ut sollicitudin magna iaculis. Nullam imperdiet sem sed tellus luctus, vitae pretium leo pretium. <a href="javascript:void(0)">Learn More</a></span>
-
-			<br /><br />
-			<button class="btn btn-tertiary bspecs" onclick="$('#specs_links').slideToggle(); $('#code_links').hide();"><i class="fa fa-pencil"></i></button>
-
-			<button class="btn btn-tertiary bspecs" onclick="$('#code_links').slideToggle(); $('#specs_links').hide();"><i class="fa fa-code"></i></button>
+			<p>Pellentesque sollicitudin, ligula eget semper commodo, diam turpis condimentum eros, eget mollis libero lorem nec tortor. <a href="javascript:void(0)">Maecenas</a> et pellentesque purus, vitae sagittis mauris.</p>
 
 			<div id="specs_links" class="specs">
 
-					<h1>Normal, Active, and Visited State</h1>
-					<table>
-						<tr><th>Font Family</th><td>Open Sans</td></tr>
-						<tr><th>Color</th><td>#00B0B9</td></tr>
-						<tr><th>Text Decoration</th><td>None</td></tr>
-					</table>
-
-					<h1>Hover State</h1>
-					<table>
-						<tr><th>Text Decoration</th><td>Underline</td></tr>
-					</table>
+				<table class="uk-table">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Link and Visited States</th>
+							<th>Hover and Active States</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Text Decoration</th><td>None</td><td>Underline</td>
+						</tr>
+						<tr>
+							<th>Color</th><td>blue</td><td>blue</td>
+						</tr>
+					</tbody>
+				</table>
 
 			</div>
 
-			<div id="code_links" class="code">
-
-				<div class="linenumbers">
-				1<br/>
-				2
-				</div>
-					<span class="comment">&lt;!-- Standard Link --&gt;</span><br/>
-
-
-					&lt;<span class="tag">a</span> <span class="html">href</span>=<span class="css">"#"</span>&gt;Link&lt;/<span class="tag">a</span>&gt;<br />
-			</div>
 		</div>
 
 
@@ -107,366 +90,189 @@
 
 			<h1>Buttons</h1>
 
-			<div class="alert alert-warning"><i class="fa fa-warning"></i>&nbsp;This section has been recently <a href="change.html" class="alert-link">changed</a>.</div>
+			<p><button class="uk-button">Default</button>
 
-			The text in all buttons should be <strong>sentence case</strong>.<br/><br/>
+			<button class="uk-button uk-button-primary">Primary</button>
 
-			<abbr style="margin-right: 15px;" rel="tooltip" title="This button is meant to be used as the primary call to action on a page."><small><b>Primary</b></small></abbr>
+			<button class="uk-button uk-button-secondary">Secondary</button>
 
-			<a class="btn btn-primary">Primary</a><br/><br/>
+			<button class="uk-button uk-button-mingrey">Minimal grey</button>
 
-
-			<abbr style="margin-right: 15px;" rel="tooltip" title="This button is meant to be used for secondary actions on the page."><small><b>Secondary</b></small></abbr>
-			<a class="btn btn-secondary">Secondary</a>
-
-			<br /><br />
-
-			<abbr style="margin-right: 15px;" rel="tooltip" title='This button is meant to use for secondary actions and for "Cancel" or "Back" buttons in a button group.'><small><b>Tertiary</b></small></abbr>
-
-			<a class="btn btn-tertiary">Tertiary</a>
-
-			<br /><br />
-
-			<abbr style="margin-right: 15px;" rel="tooltip" title='This button may only be used on marketing pages on top of a light background.'><small><b>Minimal (Marketing Only)</b></small></abbr>
-
-			<a class="btn btn-mingrey">Minimal grey</a>
-
-			<br /><br />
+			<button class="uk-button" disabled>Disabled</button></p>
 
 			<div class="darkbox-label">Elements that can only be seen on dark backgrounds</div>
 
 			<div class="darkbox">
 
-				<abbr style="margin-right: 15px;" rel="tooltip" title='This button may only be used on marketing pages on top of a dark background.'><small><b>Minimal (Marketing Only)</b></small></abbr>
-
-				<a class="btn btn-minwhite">Minimal white</a>
+			<button class="uk-button uk-button-minwhite">Minimal white</button>
 
 			</div>
 
-			<button class="btn btn-tertiary bspecs" onclick="$('#specs_buttons').slideToggle(); $('#code_buttons').hide();"><i class="fa fa-pencil"></i></button>
-
-			<button class="btn btn-tertiary bspecs" onclick="$('#code_buttons').slideToggle();$('#specs_buttons').hide();"><i class="fa fa-code"></i></button>
-
 			<div id="specs_buttons" class="specs">
 
-				<h1>All Buttons</h1>
-				<div class="row">
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Font Family</th><td>Open Sans</td></tr>
-							<tr><th>Font Weight</th><td>600</td></tr>
-							<tr><th>Border Radius</th><td>5px</td></tr></table>
-						</div>
+				<p class="note">The text in all buttons should be <strong>sentence case</strong>.</p>
 
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Active State</th></tr>
-							<tr><th>Box Shadow</th><td>inset 0 3px 5px rgba(0, 0, 0, 0.125)</td></tr>
-						</table>
-					</div>
-				</div>
-
-				<h1>Primary Button</h1>
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Background Color</th><td>#FF9E1B</td></tr>
-							<tr><th>Text Color</th><td>#FFFFFF</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Hover State</th></tr>
-							<tr><th>Background Color</th><td>#EF9425</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Active State</th></tr>
-							<tr><th>Background Color</th><td>#EF9425</td></tr>
-						</table>
-					</div>
-				</div>
-
-				<h1>Secondary Button</h1>
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Background Color</th><td>#00B0B9</td></tr>
-							<tr><th>Text Color</th><td>#FFFFFF</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Hover State</th></tr>
-							<tr><th>Background Color</th><td>#07A0A9</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Active State</th></tr>
-							<tr><th>Background Color</th><td>#07A0A9</td></tr>
-						</table>
-					</div>
-				</div>
-
-				<h1>Tertiary Button</h1>
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Background Color</th><td>#53565A, .1 Opacity</td></tr>
-							<tr><th>Text Color</th><td>#53565A</td></tr>
-							<tr><th>Border</th><td>1px solid</td></tr>
-							<tr><th>Border Color</th><td>#53565A, .2 Opacity</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Hover State</th></tr>
-							<tr><th>Background Color</th><td>#53565A, .2 Opacity</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Active State</th></tr>
-							<tr><th>Background Color</th><td>#53565A, .2 Opacity</td></tr>
-						</table>
-					</div>
-				</div>
-
-				<h1>Minimal Grey Button</h1>
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Background Color</th><td>none</td></tr>
-							<tr><th>Text Color</th><td>#53565A</td></tr>
-							<tr><th>Border Width</th><td>1px</td>
-							<tr><th>Border Color</th><td>#53565A, .3 Opacity</td>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Hover State</th></tr>
-							<tr><th>Border Color</th><td>#53565A</td>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Active State</th></tr>
-							<tr><th>Border Color</th><td>#53565A</td>
-						</table>
-					</div>
-				</div>
-
-
-				<h1>Minimal White Button</h1>
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Background Color</th><td>none</td></tr>
-							<tr><th>Text Color</th><td>#FFFFFF</td></tr>
-							<tr><th>Border Width</th><td>1px</td>
-							<tr><th>Border Color</th><td>#FFFFFF, .5 Opacity</td>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Hover State</th></tr>
-							<tr><th>Border Color</th><td>#FFFFFF</td>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Active State</th></tr>
-							<tr><th>Border Color</th><td>#FFFFFF</td>
-						</table>
-					</div>
-				</div>
-
+				<table class="uk-table">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Default</th>
+							<th>Primary</th>
+							<th>Secondary</th>
+							<th>Minimal Grey</th>
+							<th>Minimal White</th>
+							<th>Disabled</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Class</th>
+							<td><code>uk-button</code></td>
+							<td><code>uk-button-primary</code></td>
+							<td><code>uk-button-secondary</code></td>
+							<td><code>uk-button-mingrey</code></td>
+							<td><code>uk-button-minwhite</code></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>Font Weight</th>
+							<td>600</td>
+							<td>600</td>
+							<td>600</td>
+							<td>600</td>
+							<td>600</td>
+							<td>600</td>
+						</tr>
+						<tr>
+							<th>Border Radius</th>
+							<td>5px</td>
+							<td>5px</td>
+							<td>5px</td>
+							<td>5px</td>
+							<td>5px</td>
+							<td>5px</td>
+						</tr>
+						<tr>
+							<th>Background Color</th>
+							<td>blue</td>
+							<td>orange</td>
+							<td>grey-light3</td>
+							<td>transparent</td>
+							<td>transparent</td>
+							<td>grey-light4</td>
+						</tr>
+						<tr>
+							<th>Color</th>
+							<td>white</td>
+							<td>white</td>
+							<td>white</td>
+							<td>grey</td>
+							<td>white</td>
+							<td>grey-light3</td>
+						</tr>
+						<tr>
+							<th>Border</th>
+							<td>None</td>
+							<td>None</td>
+							<td>None</td>
+							<td>1px Solid 50% grey</td>
+							<td>1px Solid 50% white</td>
+							<td>None</td>
+						</tr>
+						<tr>
+							<th>Hover</th>
+							<td>Background - blue-hover</td>
+							<td>Background - orange-hover</td>
+							<td>Background - grey-hover</td>
+							<td>Border Color - grey</td>
+							<td>Border Color - white</td>
+							<td>None</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 
 			<div id="code_buttons" class="code">
 
-				<div class="linenumbers">
-					1<br/>
-					2<br/>
-					3<br/>
-					4<br/>
-					5<br/>
-					6<br/>
-					7<br/>
-					8<br/>
-					9<br/>
-					10<br/>
-					11<br/>
-					12
-				</div>
-
-				<span class="comment">&lt;!-- Primary Button --&gt;</span><br/>
-
-				&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"btn btn-primary"</span>&gt;Primary&lt;/<span class="tag">a</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Secondary Button --&gt;</span><br/>
-
-				&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"btn btn-secondary"</span>&gt;Secondary&lt;/<span class="tag">a</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Tertiary Button --&gt;</span><br/>
-
-				&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"btn btn-tertiary"</span>&gt;Tertiary&lt;/<span class="tag">a</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Minimal Grey Button --&gt;</span><br/>
-
-				&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"btn btn-mingrey"</span>&gt;Minimal Grey&lt;/<span class="tag">a</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Minimal White Button --&gt;</span><br/>
-
-				&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"btn btn-minwhite"</span>&gt;Minimal White&lt;/<span class="tag">a</span>&gt;<br />
-
-				<span class="comment">&lt;!-- When using any button without a link, use the button tag --&gt;</span><br/>
-
-				&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-primary"</span>&gt;Not a link&lt;/<span class="tag">button</span>&gt;<br />
+				&lt;a <span class="html">class</span>=<span class="css">"uk-button"</span>&gt;...&lt;/a&gt;<br />
 
 
 			</div>
 
 			<h2>Sizes</h2>
 
-			Button sizes can be used with any style of buttons by pairing the classes together.<br/><br/>
+			<p>Button sizes can be used with any style of buttons by pairing the classes together.</p>
 
-			<small style="margin-right: 15px;"><b>X-Large</b></small>
-			<a class="btn btn-primary btn-xl">X-Large</a>
-			<br /><br />
+			<p><button class="uk-button uk-button-large">Large</button>
 
-			<small style="margin-right: 15px;"><b>Large</b></small>
-			<a class="btn btn-primary btn-lg">Large</a>
-			<br /><br />
+			<button class="uk-button">Default</button>
 
-			<small style="margin-right: 15px;"><b>Medium</b></small>
-			<a class="btn btn-primary">Medium</a>
-			<br /><br />
+			<button class="uk-button uk-button uk-button-small">Small</button>
 
-			<small style="margin-right: 15px;"><b>Small</b></small>
-			<a class="btn btn-primary btn-sm">Small</a>
-			<br /><br />
-
-			<button class="btn btn-tertiary bspecs" onclick="$('#specs_buttonsizes').slideToggle(); $('#code_buttonsizes').hide();"><i class="fa fa-pencil"></i></button>
-
-			<button class="btn btn-tertiary bspecs" onclick="$('#code_buttonsizes').slideToggle(); $('#specs_buttonsizes').hide();"><i class="fa fa-code"></i></button>
+			<button class="uk-button uk-button-mini">Mini</button></p>
 
 			<div id="specs_buttonsizes" class="specs">
 
-				<h1>Extra Large Buttons</h1>
-
-				<table>
-					<tr><th>Minimum Width</th><td>170px</td></tr>
-					<tr><th>Height</th><td>65px</td></tr>
-					<tr><th>Font Size</th><td>24px</td></tr>
-					<tr><th>Padding</th><td>19px 60px</td></tr>
-				</table>
-
-				<h1>Large Buttons</h1>
-
-				<table>
-					<tr><th>Minimum Width</th><td>150px</td></tr>
-					<tr><th>Height</th><td>45px</td></tr>
-					<tr><th>Font Size</th><td>20px</td></tr>
-					<tr><th>Padding</th><td>12px 50px</td></tr>
-				</table>
-
-				<h1>Medium (Default) Buttons</h1>
-
-				<table>
-					<tr><th>Minimum Width</th><td>130px</td></tr>
-					<tr><th>Height</th><td>40px</td></tr>
-					<tr><th>Font Size</th><td>18px</td></tr>
-					<tr><th>Padding</th><td>10px 40px</td></tr>
-				</table>
-
-				<h1>Small Buttons</h1>
-
-				<table>
-					<tr><th>Minimum Width</th><td>90px</td></tr>
-					<tr><th>Height</th><td>30px</td></tr>
-					<tr><th>Font Size</th><td>14px</td></tr>
-					<tr><th>Padding</th><td>4px 20px</td></tr>
+				<table class="uk-table">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Large</th>
+							<th>Default</th>
+							<th>Small</th>
+							<th>Mini</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Class</th>
+							<td><code>uk-button-large</code></td>
+							<td><code>uk-button</code></td>
+							<td><code>uk-button-small</code></td>
+							<td><code>uk-button-mini</code></td>
+						</tr>
+						<tr>
+							<th>Font Size</th>
+							<td>18px</td>
+							<td>16px</td>
+							<td>14px</td>
+							<td>12px</td>
+						</tr>
+						<tr>
+							<th>Padding</th>
+							<td>0px 40px</td>
+							<td>0px 30px</td>
+							<td>0px 20px</td>
+							<td>0px 15px</td>
+						</tr>
+						<tr>
+							<th>Height</th>
+							<td>50px</td>
+							<td>40px</td>
+							<td>30px</td>
+							<td>25px</td>
+						</tr>
+					</tbody>
 				</table>
 
 			</div>
 
 			<div id="code_buttonsizes" class="code">
 
-				<div class="linenumbers">
-					1<br/>
-					2<br/>
-					3<br/>
-					4<br/>
-					5<br/>
-					6<br/>
-					7<br/>
-					8
-				</div>
 
-				<span class="comment">&lt;!-- X-Large Button --&gt;</span><br/>
-
-				&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-xl"</span>&gt;X-Large&lt;/<span class="tag">button</span>&gt;<br />
-
-
-				<span class="comment">&lt;!-- Large Button --&gt;</span><br/>
-
-				&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-lg"</span>&gt;Large&lt;/<span class="tag">button</span>&gt;<br />
-
-
-				<span class="comment">&lt;!-- Medium (Default) Button --&gt;</span><br/>
-
-				&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn"</span>&gt;Medium&lt;/<span class="tag">button</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Small Button --&gt;</span><br/>
-
-				&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-sm"</span>&gt;Small&lt;/<span class="tag">button</span>&gt;<br />
+				&lt;a <span class="html">class</span>=<span class="css">"uk-button  uk-button-large"</span>&gt;...&lt;/a&gt;<br />
 
 
 			</div>
 
 			<h2>Buttons with Icons</h2>
 
-			All buttons styles and sizes can be used with icons without any extra specifications.
+			<p>All buttons styles and sizes can be used with icons without any extra specifications.</p>
 
-			<br /><br />
 
-			<small style="margin-right: 15px;"><b>Example</b></small> <a class="btn btn-primary"><i class="fa fa-download"></i> Download</a>
-
-			<h2>Disabled Buttons</h2>
-
-			All buttons have the same disabled state.<br/><br/>
-
-			<small style="margin-right: 15px;"><b>Example</b></small> <a class="btn btn-primary disabled">Disabled</a>
+			<p><button class="uk-button"><i class="fa fa-download"></i> Download</button></p>
 
 		</div>
-
-
-
-
 
 		<!-- Form Fields - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
@@ -474,346 +280,166 @@
 
 			<h1>Forms</h1>
 
-			<h2>Input Boxes</h2>
+			<h2>Form fields</h2>
 
-			<div class="col-md-5 col-sm-12">
+			<div class="uk-grid" style="margin-bottom: 20px;">
 
-				<div class="form-group js-hide-label">
-					<label>Email</label>
-					<input placeholder="Email" class="form-control" title="Email" id="email">
-				</div>
+				<form class="uk-form uk-width-1-3">
 
-				<div class="form-group has-error js-hide-label">
-					<label>Phone</label>
-					<input placeholder="Phone" class="form-control" id="phone">
-				 	<div class="error">Input with error</div>
-				</div>
+					<div class="uk-alert uk-alert-danger" id="error-message"><i class="fa fa-exclamation-circle"></i>Please correct the highlighted fields below</div>
 
-				<div class="form-group js-hide-label">
-					<input placeholder="Disabled" class="form-control" id="disabled" disabled>
-				</div>
+					<div class="uk-form-row uk-grid uk-grid-small">
 
-				<div class="double-form">
+						<div class="uk-width-1-2">
+							<label>First name</label>
+							<input placeholder="First name" title="First Name" id="firstname" type="text">
+						</div>
 
-					<div class="form-group left js-hide-label">
-						<label>First Name</label>
-						<input placeholder="First Name" class="form-control" title="First Name" id="firstname">
+						<div class="uk-width-1-2">
+							<label>Last name</label>
+							<input placeholder="Last name" title="Last Name" id="lastname" type="text">
+						</div>
 					</div>
 
-					<div class="form-group right js-hide-label">
-						<label>Last Name</label>
-						<input placeholder="Last Name" class="form-control" title="Last Name" id="lastname">
+					<div class="uk-form-row">
+						<label>Email</label>
+						<input placeholder="Email" title="Email" id="email" type="text">
 					</div>
 
-				</div>
+					<div class="uk-form-row has-error">
+						<label>Phone</label>
+						<input placeholder="Phone" id="phone" type="text">
+						<div class="error">Input with error</div>
+					</div>
+
+					<div class="uk-form-row">
+						<label>Disabled</label>
+						<input placeholder="Disabled" id="disabled" type="text" disabled>
+					</div>
+
+					<div class="uk-form-row">
+						<label>Sample</label>
+						<textarea placeholder="Sample" id="area"></textarea>
+					</div>
+
+					<div class="uk-form-row">
+						<select>
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+						</select>
+					</div>
+
+				</form>
 
 			</div>
 
-			<div style="clear: both;">
+			<div id="specs_inputs" class="specs">
 
-				<button class="btn btn-tertiary bspecs" onclick="$('#specs_inputs').slideToggle(); $('#code_inputs').hide();"><i class="fa fa-pencil"></i></button>
+				<div class="uk-grid">
 
-				<button class="btn btn-tertiary bspecs" onclick="$('#code_inputs').slideToggle(); $('#specs_inputs').hide();"><i class="fa fa-code"></i></button>
 
-				<div id="specs_inputs" class="specs">
-
-					<h1>Input Box</h1>
-					<div class="row">
-
-						<div class="col-md-4">
-							<table>
-								<tr><th class="state" colspan=2>Default State</th></tr>
-								<tr><th>Background Color</th><td>#FFFFFF</td></tr>
-								<tr><th>Text Color</th><td>#53565A</td></tr>
-								<tr><th>Placeholder Text Color</th><td>#BABBBD</td></tr>
-								<tr><th>Border Width</th><td>1px</td>
-								<tr><th>Border Color</th><td>#DDDDDE</td>
-								<tr><th>Height</th><td>40px</td></tr>
-								<tr><th>Font Size</th><td>14px</td></tr>
-							</table>
-						</div>
-
-						<div class="col-md-4">
-							<table>
-								<tr><th class="state" colspan=2>Active/Focused State</th></tr>
-								<tr><th>Border Color</th><td>#00B0B9</td></tr>
-								<tr><th>Height</th><td>60px</td></tr>
-							</table>
-						</div>
-
-						<div class="col-md-4">
-							<table>
-								<tr><th class="state" colspan=2>Active/Focused State Label</th></tr>
-								<tr><th>Text Color</th><td>#BABBBD</td></tr>
-								<tr><th>Font Size</th><td>10px</td></tr>
-								<tr><th>Font Weight</th><td>700</td></tr>
-							</table>
-						</div>
-
+					<div class="uk-width-2-3">
+						<table class="uk-table">
+							<thead>
+								<tr>
+									<th>States</th>
+									<th>Default (Placeholder)</th>
+									<th>Focus</th>
+									<th>Disabled</th>
+									<th>Input with Error</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Border Color</th>
+									<td>grey-light3</td>
+									<td>blue</td>
+									<td>grey-light3</td>
+									<td>red</td>
+								</tr>
+								<tr>
+									<th>Background Color</th>
+									<td>white</td>
+									<td>white</td>
+									<td>grey-light4</td>
+									<td>white</td>
+								</tr>
+								<tr>
+									<th>Color</th>
+									<td>grey-light2</td>
+									<td>grey</td>
+									<td>grey-light2</td>
+									<td>grey</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="uk-table" style="margin-bottom: 15px;">
+							<thead>
+								<tr>
+									<th>Messages</th>
+									<th>Label</th>
+									<th>Error Message</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Font Size</th>
+									<td>12px</td>
+									<td>12px</td>
+								</tr>
+								<tr>
+									<th>Color</th>
+									<td>grey, white border</td>
+									<td>red</td>
+								</tr>
+								<tr>
+									<th>Padding</th>
+									<td>(Position) Top: -12px, Margin-left: 5px</td>
+									<td>5px 5px 0px</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 
-					<h1>Input Box, Special Cases</h1>
-					<div class="row">
-
-						<div class="col-md-4">
-							<table>
-								<tr><th class="state" colspan=2>Input Box with Error</th></tr>
-								<tr><th>Border Color</th><td>#AF3A2B</td>
-							</table>
-						</div>
-
-						<div class="col-md-4">
-							<table>
-								<tr><th class="state" colspan=2>Error Message</th></tr>
-								<tr><th>Text Color</th><td>#AF3A2B</td></tr>
-								<tr><th>Background Color</th><td>#AF3A2B, .05 Opacity</td></tr>
-								<tr><th>Font Size</th><td>12px</td></tr>
-							</table>
-						</div>
-
-						<div class="col-md-4">
-							<table>
-								<tr><th class="state" colspan=2>Disabled State</th></tr>
-								<tr><th>Background Color</th><td>#EDEEEE</td></tr>
-							</table>
-						</div>
-
+					<div class="uk-width-1-3">
+						<table class="uk-table">
+							<thead>
+								<tr>
+									<th>Box styling</th>
+									<th>Input/Select</th>
+									<th>Textarea</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Height</th>
+									<td>40px</td>
+									<td>auto</td>
+								</tr>
+								<tr>
+									<th>Font Size</th>
+									<td>14px</td>
+									<td>14px</td>
+								</tr>
+								<tr>
+									<th>Padding</th>
+									<td>5px 10px</td>
+									<td>5px 10px</td>
+								</tr>
+								<tr>
+									<th>Border Radius</th>
+									<td>5px</td>
+									<td>5px</td>
+								</tr>
+								<tr>
+									<th>Border</th>
+									<td>1px solid</td>
+									<td>1px solid</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-
-					<h1>Input Box, Label</h1>
-
-					<table>
-						<tr><th>Color</th><td>#BABBBD</td></tr>
-						<tr><th>Font Size</th><td>10px</td></tr>
-						<tr><th>Font Weight</th><td>400</td></tr>
-						<tr><th>Position</th><td>Top: -12px, Left: 11px</td></tr>
-						<tr><th>Padding</th><td>0px 4px</td></tr>
-					</table>
-
-				</div>
-
-				<div id="code_inputs" class="code">
-
-					<div class="linenumbers">
-						1<br/>
-						2<br/>
-						3<br/>
-						4<br/>
-						5<br/>
-						6<br/>
-						7<br/>
-						8<br/>
-						9<br/>
-						10<br/>
-						11<br/>
-						12<br/>
-						13<br/>
-						14<br/>
-						15<br/>
-						16<br/>
-						17<br/>
-						18<br/>
-						19<br/>
-						20<br/>
-						21<br/>
-						22<br/>
-						23<br/>
-						24<br/>
-						25<br/>
-						26<br/>
-						27<br/>
-						28<br/>
-						29<br/>
-						30<br/>
-						31
-					</div>
-
-					<span class="comment">&lt;!-- Input Box --&gt;</span><br/>
-
-					&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"form-group js-hide-label"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">label</span>&gt;Input Name&lt;/<span class="tag">label</span>&gt;<br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">input</span> <span class="html">placeholder</span>=<span class="css">"Input Name"</span> <span class="html">class</span>=<span class="css">"form-control"</span> <span class="html">id</span>=<span class="css">"inputid"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"error"</span> <span class="html">for</span>=<span class="css">"inputid"</span>&gt;Error message&lt;/<span class="tag">div</span>&gt;<br />
-					&lt;/<span class="tag">div</span>&gt;
-
-					<br />
-
-					<span class="comment">&lt;!-- Input Box with error --&gt;</span><br/>
-
-					&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"form-group has-error js-hide-label"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">label</span>&gt;Input Name&lt;/<span class="tag">label</span>&gt;<br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">input</span> <span class="html">placeholder</span>=<span class="css">"Input Name"</span> <span class="html">class</span>=<span class="css">"form-control"</span> <span class="html">id</span>=<span class="css">"inputid"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"error"</span> <span class="html">for</span>=<span class="css">"inputid"</span>&gt;Error message&lt;/<span class="tag">div</span>&gt;<br />
-					&lt;/<span class="tag">div</span>&gt;
-
-					<br />
-
-					<span class="comment">&lt;!-- Disabled Input Box --&gt;</span><br/>
-
-					&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"form-group js-hide-label"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">label</span>&gt;Input Name&lt;/<span class="tag">label</span>&gt;<br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">input</span> <span class="html">placeholder</span>=<span class="css">"Input Name"</span> <span class="html">class</span>=<span class="css">"form-control"</span> <span class="html">id</span>=<span class="css">"inputid"</span> <span class="html">disabled</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"error"</span> <span class="html">for</span>=<span class="css">"inputid"</span>&gt;Error message&lt;/<span class="tag">div</span>&gt;<br />
-					&lt;/<span class="tag">div</span>&gt;<br/>
-
-					<span class="comment">&lt;!-- Double Input Box --&gt;</span><br/>
-
-					&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"double-form"</span>&gt;<br />
-
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"form-group js-hide-label"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">label</span>&gt;Input Name&lt;/<span class="tag">label</span>&gt;<br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">input</span> <span class="html">placeholder</span>=<span class="css">"Input Name"</span> <span class="html">class</span>=<span class="css">"form-control"</span> <span class="html">id</span>=<span class="css">"inputid"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"error"</span> <span class="html">for</span>=<span class="css">"inputid"</span>&gt;Error message&lt;/<span class="tag">div</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">div</span>&gt;<br />
-
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"form-group js-hide-label"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">label</span>&gt;Input Name&lt;/<span class="tag">label</span>&gt;<br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">input</span> <span class="html">placeholder</span>=<span class="css">"Input Name"</span> <span class="html">class</span>=<span class="css">"form-control"</span> <span class="html">id</span>=<span class="css">"inputid"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"error"</span> <span class="html">for</span>=<span class="css">"inputid"</span>&gt;Error message&lt;/<span class="tag">div</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">div</span>&gt;<br />
-					&lt;/<span class="tag">div</span>&gt;
-
-				</div>
-			</div>
-
-			<h2>Text Areas</h2>
-
-
-			<div class="col-md-5 col-sm-12">
-				<div class="form-group js-hide-label">
-					<textarea placeholder="Sample" class="form-control" id="area"></textarea>
-				</div>
-			</div>
-
-			<div style="clear: both;">
-
-				<button class="btn btn-tertiary bspecs" onclick="$('#specs_textareas').slideToggle(); $('#code_textareas').hide();"><i class="fa fa-pencil"></i></button>
-
-				<button class="btn btn-tertiary bspecs" onclick="$('#code_textareas').slideToggle(); $('#specs_textareas').hide();"><i class="fa fa-code"></i></button>
-
-				<div id="specs_textareas" class="specs">
-
-					<h1>Textarea</h1>
-					<div class="row">
-
-						<div class="col-md-6">
-							<table>
-								<tr><th class="state" colspan=2>Default State</th></tr>
-								<tr><th>Background Color</th><td>#FFFFFF</td></tr>
-								<tr><th>Text Color</th><td>#53565A</td></tr>
-								<tr><th>Placeholder Text Color</th><td>#BABBBD</td></tr>
-								<tr><th>Border Width</th><td>1px</td>
-								<tr><th>Border Color</th><td>#DDDDDE</td>
-							</table>
-						</div>
-
-						<div class="col-md-6">
-							<table>
-								<tr><th class="state" colspan=2>Active/Focused State</th></tr>
-								<tr><th>Border Color</th><td>#00B0B9</td></tr>
-								<tr><th>Height</th><td>60px</td></tr>
-							</table>
-						</div>
-
-					</div>
-
-					<h1>Textarea, Disabled</h1>
-
-					<table>
-						<tr><th>Background Color</th><td>#EDEEEE</td></tr>
-					</table>
-
-				</div>
-
-				<div id="code_textareas" class="code">
-
-					<div class="linenumbers">
-						1<br/>
-						2<br/>
-						3<br/>
-						4
-					</div>
-
-					<span class="comment">&lt;!-- Textarea --&gt;</span><br/>
-
-					&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"form-group js-hide-label"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">textarea</span> <span class="html">placeholder</span>=<span class="css">"Sample text"</span> <span class="html">class</span>=<span class="css">"form-control"</span> <span class="html">id</span>=<span class="css">"textareaid"</span>&gt;<br />
-					&lt;/<span class="tag">div</span>&gt;
-
-				</div>
-
-			</div>
-
-			<h2>Dropdown Menu</h2>
-
-			Design note, dropdown menu items should be in alphabetical order. <br /> <br />
-
-			<div class="col-md-5 col-sm-12">
-
-				<div class="dropdown-group">
-					<select>
-						<option>Option 1</option>
-						<option>Option 2</option>
-						<option>Option 3</option>
-					</select>
-				</div>
-
-			</div>
-
-			<div style="clear: both;">
-
-				<button class="btn btn-tertiary bspecs" onclick="$('#specs_dropdown').slideToggle(); $('#code_dropdown').hide();"><i class="fa fa-pencil"></i></button>
-
-				<button class="btn btn-tertiary bspecs" onclick="$('#code_dropdown').slideToggle(); $('#specs_dropdown').hide();"><i class="fa fa-code"></i></button>
-
-				<div id="specs_dropdown" class="specs">
-
-					<h1>Dropdown Menu, Button</h1>
-
-					<div class="row">
-
-						<div class="col-md-6">
-							<table>
-								<tr><th class="state" colspan=2>Default State</th></tr>
-								<tr><th>Background Color</th><td>#DDDDDE</td></tr>
-								<tr><th>Caret Color</th><td>#BABBBD</td></tr>
-							</table>
-						</div>
-
-						<div class="col-md-6">
-							<table>
-								<tr><th class="state" colspan=2>Hover State</th></tr>
-								<tr><th>Background Color</th><td>#CBCCCD</td></tr>
-								<tr><th>Caret Color</th><td>#75787B</td></tr>
-							</table>
-						</div>
-
-					</div>
-
-				</div>
-
-				<div id="code_dropdown" class="code">
-
-					<div class="linenumbers">
-						1<br/>
-						2<br/>
-						3<br/>
-						4<br/>
-						5<br/>
-						6<br/>
-						7<br/>
-						8
-					</div>
-
-					<span class="comment">&lt;!-- Dropdown --&gt;</span><br/>
-
-					&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"dropdown-group"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">select</span> <span class="html">name</span>=<span class="css">"Dropdown Name"</span> <span class="html">id</span>=<span class="css">"ddid"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">option</span> <span class="html">value</span>=<span class="css">"option1"</span>&gt;Option 1&lt;/<span class="tag">option</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">option</span> <span class="html">value</span>=<span class="css">"option2"</span>&gt;Option 2&lt;/<span class="tag">option</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">option</span> <span class="html">value</span>=<span class="css">"option3"</span>&gt;Option 3&lt;/<span class="tag">option</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">select</span>&gt;<br/>
-					&lt;/<span class="tag">div</span>&gt;
 
 				</div>
 
@@ -821,264 +447,53 @@
 
 			<h2>Checkboxes & Radio Buttons</h2>
 
-			<div class="form-group">
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" checked> Checkbox example
-					</label> with extra text
+
+			<form class="uk-form uk-grid">
+				<div class="uk-form-row uk-width-1-2">
+					<div class="uk-form-controls uk-form-controls-text">
+						<input type="checkbox" id="checkbox1" checked>
+						Checkbox example
+					</div>
+					<div class="uk-form-controls uk-form-controls-text">
+						<input type="checkbox" id="checkbox1">
+						Checkbox example
+					</div>
 				</div>
-			</div>
-
-			<div class="form-group">
-
-				<div class="radio">
-					<label>
-						<input type="radio" name="radioExample" checked> Radio example 1
-					</label>
-				</div>
-
-				<div class="radio">
-					<label>
-						<input type="radio" name="radioExample"> Radio example 2
-					</label>
-				</div>
-
-			</div>
-
-			<button class="btn btn-tertiary bspecs" onclick="$('#specs_checkradio').slideToggle(); $('#code_checkradio').hide();"><i class="fa fa-pencil"></i></button>
-
-			<button class="btn btn-tertiary bspecs" onclick="$('#code_checkradio').slideToggle(); $('#specs_checkradio').hide();"><i class="fa fa-code"></i></button>
-
-			<div id="specs_checkradio" class="specs">
-
-				<h1>Checkbox</h1>
-
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Unselected Default State</th></tr>
-							<tr><th>FA Icon</th><td>fa-square</td></tr>
-							<tr><th>Color</th><td>#CCEFF1</td></tr>
-						</table>
+				<div class="uk-form-row uk-width-1-2" style="margin-top: 0px;">
+					<div class="uk-form-controls uk-form-controls-text">
+						<input name="radiotest" type="radio" id="radio1" checked>
+						Radio example
 					</div>
 
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Unselected Hover State</th></tr>
-							<tr><th>FA Icon</th><td>fa-check-square</td></tr>
-							<tr><th>Color</th><td>#CCEFF1</td></tr>
-						</table>
+					<div class="uk-form-controls uk-form-controls-text">
+						<input name="radiotest" type="radio" id="radio2" checked>
+						Radio example
 					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Selected Default and Hover States</th></tr>
-							<tr><th>FA Icon</th><td>fa-check-square</td></tr>
-							<tr><th>Color</th><td>#00B0B9</td></tr>
-						</table>
-					</div>
-
 				</div>
-
-				<h1>Radio Button</h1>
-
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Unselected Default State</th></tr>
-							<tr><th>FA Icon</th><td>fa-circle-o</td></tr>
-							<tr><th>Color</th><td>#CCEFF1</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Unselected Hover State</th></tr>
-							<tr><th>FA Icon</th><td>fa-dot-circle-o</td></tr>
-							<tr><th>Color</th><td>#CCEFF1</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Selected Default and Hover States</th></tr>
-							<tr><th>FA Icon</th><td>fa-dot-circle-o</td></tr>
-							<tr><th>Color</th><td>#00B0B9</td></tr>
-						</table>
-					</div>
-
-				</div>
-
-			</div>
-
-			<div id="code_checkradio" class="code">
-				<div class="linenumbers">
-					1<br/>
-					2<br/>
-					3<br/>
-					4<br/>
-					5<br/>
-					6<br/>
-					7<br/>
-					8<br/>
-					9<br/>
-					10<br/>
-					11<br/>
-					12<br/>
-					13<br/>
-					14<br/>
-					15<br/>
-					16<br/>
-					17<br/>
-					18<br/>
-					19<br/>
-					20<br/>
-					21<br/>
-					22<br/>
-					23<br/>
-					24
-				</div>
-
-				<span class="comment">&lt;!-- Checkbox --&gt;</span><br/>
-
-				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"form-group"</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"checkbox"</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">label</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">input</span> <span class="html">type</span>=<span class="css">"checkbox"</span> <span class="html">id</span>=<span class="css">"cbExample"</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checkbox Label<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">label</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">div</span>&gt;<br />
-				&lt;/<span class="tag">div</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Radio Buttons --&gt;</span><br/>
-				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"form-group"</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"radio"</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">label</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">input</span> <span class="html">type</span>=<span class="css">"radio"</span> <span class="html">name</span>=<span class="css">"rbExample"</span> <span class="html">value</span>=<span class="css">"option1"</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Option 1 Label<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">label</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">div</span>&gt;<br />
-
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"radio"</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">label</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">input</span> <span class="html">type</span>=<span class="css">"radio"</span> <span class="html">name</span>=<span class="css">"rbExample"</span> <span class="html">value</span>=<span class="css">"option2"</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Option 2 Label<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">label</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">div</span>&gt;<br />
-				&lt;/<span class="tag">div</span>&gt;<br />
-
-			</div>
+			</form>
 
 			<h2>Buttons</h2>
 
-			<div class="col-md-5 col-sm-12">
+			<div class="uk-grid">
 
-				<div class="form-group">
-					<a class="btn btn-primary">Next</a>
+				<div class="uk-width-1-3">
+					<h3>Single button</h3>
+					<button class="uk-button uk-button-primary uk-width-1-1">Next</button>
 				</div>
 
+				<div class="uk-width-1-3">
 
-				<div class="form-group" style="margin-bottom: 15px; overflow: auto;">
-					<div class="btn-group">
-						<a class="btn btn-tertiary">Previous</a>
-						<a class="btn btn-primary">Create account</a>
-					</div>
-				</div>
+					<div class="uk-grid uk-grid-small">
+						<h3 class="uk-width-1-1" style="margin-bottom: 15px;">Button Group</h3>
 
-				<div class="form-group" style="margin-bottom: 15px; overflow: auto;">
-					<div class="btn-group">
-						<a class="btn btn-tertiary">Cancel</a>
-						<a class="btn btn-secondary">Next</a>
-					</div>
-				</div>
-
-			</div>
-
-			<div style="clear: both;">
-
-				<button class="btn btn-tertiary bspecs" onclick="$('#specs_formbuttons').slideToggle(); $('#code_formbuttons').hide();"><i class="fa fa-pencil"></i></button>
-
-				<button class="btn btn-tertiary bspecs" onclick="$('#code_formbuttons').slideToggle(); $('#specs_formbuttons').hide();"><i class="fa fa-code"></i></button>
-
-				<div id="specs_formbuttons" class="specs">
-
-					<h1>Single Button</h1>
-
-					<table>
-						<tr><th>Button Class</th><td>Primary</td></tr>
-						<tr><th>Width</th><td>100%</td></tr>
-					</table>
-
-
-					<h1>Button Group</h1>
-
-					<div class="row">
-
-						<div class="col-md-6">
-							<table>
-								<tr><th class="state" colspan=2>Tertiary Button</th></tr>
-								<tr><th>Button Class</th><td>Tertiary</td></tr>
-								<tr><th>Width</th><td>50% - 4px</td></tr>
-							</table>
+						<div class="uk-width-1-2">
+							<button class="uk-button uk-button-secondary uk-width-1-1">Cancel</button>
 						</div>
 
-						<div class="col-md-6">
-							<table>
-								<tr><th class="state" colspan=2>Primary Button</th></tr>
-								<tr><th>Button Class</th><td>Primary or Secondary</td></tr>
-								<tr><th>Width</th><td>50% - 4px</td></tr>
-							</table>
+						<div class="uk-width-1-2">
+							<button class="uk-button uk-button-primary uk-width-1-1">Checkout</button>
 						</div>
-
 					</div>
-
-				</div>
-
-				<div id="code_formbuttons" class="code">
-
-					<div class="linenumbers">
-						1<br/>
-						2<br/>
-						3<br/>
-						4<br/>
-						5<br/>
-						6<br/>
-						7<br/>
-						8<br/>
-						9<br/>
-						10<br/>
-						11<br/>
-						12<br/>
-						13<br/>
-						14<br/>
-						15<br/>
-						16<br/>
-						17<br/>
-						18
-					</div>
-
-					<span class="comment">&lt;!-- Single Button --&gt;</span><br/>
-
-					&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"form-group"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-primary"</span>&gt;Primary&lt;/<span class="tag">button</span>&gt;<br />
-					&lt;/<span class="tag">div</span>&gt;<br />
-
-					<span class="comment">&lt;!-- Button Group with Primary Button --&gt;</span><br/>
-					&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"form-group"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"button-group"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-tertiary"</span>&gt;Tertiary&lt;/<span class="tag">button</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-primary"</span>&gt;Primary&lt;/<span class="tag">button</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">div</span>&gt;<br />
-					&lt;/<span class="tag">div</span>&gt;<br />
-					<span class="comment">&lt;!-- Button Group with Secondary Button --&gt;</span><br/>
-					&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"form-group"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"button-group"</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-tertiary"</span>&gt;Tertiary&lt;/<span class="tag">button</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"btn btn-secondary"</span>&gt;Secondary&lt;/<span class="tag">button</span>&gt;<br />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">div</span>&gt;<br />
-					&lt;/<span class="tag">div</span>&gt;
 
 				</div>
 			</div>
@@ -1087,621 +502,303 @@
 
 		<!-- SLIDER BARS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-		<div id="sliderbars" class="pq-docs-section" style="clear:both;" ng-controller="sliderDemoCtrl">
+		<div id="sliderbars" class="pq-docs-section">
 
 			<h1>Slider Bars</h1>
 
-			<h2>Labeled Slider</h2>
-			<span class="slider-name">Example Slider Name</span>
-			<div class="slider-group">
-				<span class="minlabel">0</span>
-				<span class="maxlabel">100</span>
-				<div ui-slider="{ range: 'min' }" min="0" max="100" ng-model="demoVals.sliderExample1"></div>
-				<input type="text" ng-model="demoVals.sliderExample1" />
-			</div><br/>
-			<h2>Unlabeled Slider</h2>
-			<div class="slider-group">
-				<span class="minlabel">3</span>
-				<span class="maxlabel">12</span>
-				<div ui-slider="{ range: 'min' }" min="3" max="12" ng-model="demoVals.sliderExample2"></div>
-				<input type="text" ng-model="demoVals.sliderExample2" />
-			</div>
-
-			<script type="text/javascript" src="js/ui-slider.js"></script>
-			<script>
-				var app = angular.module('uiLibrary', ['ui.slider']);
-				app.controller('sliderDemoCtrl', function($scope) {
-
-					$scope.demoVals = {
-			    		sliderExample1:     0,
-			    		sliderExample2:     3,
-			    		options: {
-							orientation: 'horizontal',
-							range: 'min'
-						}
-					};
-				});
-	    	</script>
-
-      		<br/>
-
-			<button class="btn btn-tertiary bspecs" onclick="$('#specs_sliders').slideToggle(); $('#code_sliders').hide();"><i class="fa fa-pencil"></i></button>
-
-			<button class="btn btn-tertiary bspecs" onclick="$('#code_sliders').slideToggle(); $('#specs_sliders').hide();"><i class="fa fa-code"></i></button>
-
-			<div id="specs_sliders" class="specs">
-
-				<h1>Input Field</h1>
-
-				<table>
-					<tr><th>Width</th><td>50px</td></tr>
-					<tr><th>Height</th><td>45px</td></tr>
-					<tr><th>Font Size</th><td>22px</td></tr>
-				</table>
-
-
-				<h1>Min and Max Labels</h1>
-
-				<table>
-					<tr><th>Font Size</th><td>11px</td></tr>
-					<tr><th>Color</th><td>#BABBBD</td></tr>
-				</table>
-
-				<h1>Slider Bar</h1>
-
-				<div class="row">
-
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Background Color</th><td>#DDDDDE</td></tr>
-							<tr><th>Width</th><td>450px</td></tr>
-							<tr><th>Height</th><td>4px</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Highlighted State</th></tr>
-							<tr><th>Background Color</th><td>#00B0B9</td></tr>
-						</table>
-					</div>
-
-				</div>
-
-				<h1>Slider Control</h1>
-				<div class="row">
-
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Default State</th></tr>
-							<tr><th>Background Color</th><td>#BABBBD</td></tr>
-							<tr><th>Border Color</th><td>#75787B</td></tr>
-							<tr><th>Border Width</th><td>6px</td></tr>
-							<tr><th>Width</th><td>20px</td></tr>
-							<tr><th>Height</th><td>20px</td></tr>
-							<tr><th>Box Shadow</th><td>inset 0 1px 2px rgba(0, 0, 0, 0.15)</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Hover and Active State</th></tr>
-							<tr><th>Border Color</th><td>#53565A</td></tr>
-							<tr><th>Box Shadow</th><td>inset 0 1px 2px rgba(0, 0, 0, 0.35)</td></tr>
-						</table>
-					</div>
-
-				</div>
-
-			</div>
-
-			<div id="code_sliders" class="code">
-
-				<div class="linenumbers">
-					1<br/>
-					2<br/>
-					3<br/>
-					4<br/>
-					5<br/>
-					6<br/>
-					7<br/>
-					8<br/>
-					9<br/>
-					10<br/>
-					11<br/>
-					12<br/>
-					13<br/>
-					14<br/>
-					15<br/>
-					16<br/>
-					17<br/>
-					18<br/>
-					19<br/>
-					20<br/>
-					21
-				</div>
-
-				<span class="comment">&lt;!-- Slider --&gt;</span><br/>
-
-				&lt;<span class="tag">html</span> <span class="html">ng-app</span>=<span class="css">"pagename"</span>&gt;<br /><span class="comment">...</span><br/>
-
-				&lt;<span class="tag">div</span> <span class="html">ng-controller</span>=<span class="css">"sliderController"</span>&gt;<br/>
-
-
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">span</span> <span class="html">class</span>=<span class="css">"slider-name"</span>&gt;Slider label&lt;/<span class="tag">span</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"slider-group"</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">span</span> <span class="html">class</span>=<span class="css">"minlabel"</span>&gt;0&lt;/<span class="tag">span</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">span</span> <span class="html">class</span>=<span class="css">"maxlabel"</span>&gt;100&lt;/<span class="tag">span</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">ui-slider</span>=<span class="css">"{ range: 'min'}"</span> <span class="html">min</span>=<span class="css">"0"</span> <span class="html">max</span>=<span class="css">"100"</span> <span class="html">ng-model</span>=<span class="css">"sliderVals.slider1"</span>&gt;&lt;/<span class="tag">div</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">input</span> <span class="html">type</span>=<span class="css">"text"</span> <span class="html">ng-model</span>=<span class="css">"sliderVals.slider1"</span> /&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">div</span>&gt;<br/>
-				&lt;/<span class="tag">div</span>&gt;<br/>
-
-				&lt;<span class="tag">script</span> <span class="html">type</span>=<span class="css">"text/javascript"</span> <span class="html">src</span>=<span class="css">"js/ui-slider.js"</span>&&gt;&lt;/<span class="tag">script</span>&gt;<br />
-				&lt;<span class="tag">script</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="js">var</span> app = angular.module(<span class="css">'pagename'</span>, [<span class="css">'ui.slider'</span>]);<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;app.controller(<span class="css">'sliderController'</span>, <span class="js">function</span>(<span class="tag">$</span>scope) {<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">$</span>scope.sliderVals <span class="tag"> = </span>{<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;slider1: <span class="var">0</span><br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-				&lt;/<span class="tag">script</span>&gt;
-
-			</div>
 
 		</div>
 
 
 
+	<!-- Tooltips - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
-		<!-- Tooltips - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+	<div id="tooltips" class="pq-docs-section">
 
-		<div id="tooltips" class="pq-docs-section">
+		<h1 style="margin-bottom: 30px;">Tooltips & Alerts</h1>
 
-			<h1 style="margin-bottom: 30px;">Tooltips & Alerts</h1>
+		<h2>Tooltips</h2>
 
-			<h2>Tooltips</h2>
+		<p><span class="pq-tooltip" data-uk-tooltip title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis turpis vitae orci commodo molestie.">Example tooltip</span></p>
 
-			<abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">Standalone tooltip</abbr><br/><br/>
-			<abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="inlinetooltip">Inline tooltip</abbr>. This is an example of a tooltip.<br/><br/>
-			<button class="btn btn-tertiary bspecs" onclick="$('#specs_tooltips').slideToggle(); $('#code_tooltips').hide();"><i class="fa fa-pencil"></i></button>
+		<div id="specs_tooltips" class="specs">
 
-			<button class="btn btn-tertiary bspecs" onclick="$('#code_tooltips').slideToggle(); $('#specs_tooltips').hide();"><i class="fa fa-code"></i></button>
+			<div class="uk-grid">
 
-			<div id="specs_tooltips" class="specs">
-
-				<h1>Inline Tooltip Text</h1>
-
-				<div class="row">
-					<div class="col-sm-6">
-						<table>
-							<tr><th class="state" colspan=2>Default State (After)</th></tr>
-							<tr><th>Icon</th><td>fa-info-circle</td></tr>
-							<tr><th>Color</th><td>#BABBBD</td></tr>
-						</table>
-					</div>
-					<div class="col-sm-6">
-						<table>
-							<tr><th class="state" colspan=2>Hover State</th></tr>
-							<tr><th>Underline</th><td>1px dotted #00B9B0</td></tr>
-							<tr><th>Cursor</th><td>help</td></tr>
-						</table>
-					</div>
+				<div class="uk-width-1-2">
+					<table class="uk-table" style="margin-bottom: 15px;">
+						<thead>
+							<tr>
+								<th>Text styling</th>
+								<th>Tagged text</th>
+								<th>Tooltip text</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Color</th>
+								<td>blue</td>
+								<td>white</td>
+							</tr>
+							<tr>
+								<th>Border Bottom</th>
+								<td>1px dotted blue</td>
+								<td>none</td>
+							</tr>
+							<tr>
+								<th>Font Size</th>
+								<td>auto</td>
+								<td>12px / 18px</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 
-				<h1>Inline Tooltip Text</h1>
-
-				<table>
-					<tr><th>Underline</th><td>1px dotted #00B9B0</td></tr>
-					<tr><th>Cursor</th><td>help</td></tr>
-				</table>
-
-
-				<h1>Tooltip</h1>
-
-				<div class="row">
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Box</th></tr>
-							<tr><th>Background Color</th><td>#DDDDDE, .95 opacity</td></tr>
-							<tr><th>Min Width</th><td>250px</td></tr>
-							<tr><th>Border Radius</th><td>5px</td></tr>
-							<tr><th>Arrow Height</th><td>10px</td></tr>
-							<tr><th>Arrow Width</th><td>20px</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Text</th></tr>
-							<tr><th>Color</th><td>white</td></tr>
-							<tr><th>Font Size</th><td>12px</td></tr>
-							<tr><th>Line Height</th><td>24px</td></tr>
-							<tr><th>Padding</th><td>15px</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-4">
-						<table>
-							<tr><th class="state" colspan=2>Animation</th></tr>
-							<tr><th>Duration</th><td>50 milliseconds</td></tr>
-							<tr><th>Movement</th><td>10px Down</td></tr>
-						</table>
-					</div>
-
+				<div class="uk-width-1-2">
+					<table class="uk-table">
+						<thead>
+							<tr>
+								<th>Box styling</th>
+								<th>Box</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Background Color</th>
+								<td>grey-dark</td>
+							</tr>
+							<tr>
+								<th>Padding</th>
+								<td>10px</td>
+							</tr>
+							<tr>
+								<th>Caret Size</th>
+								<td>6px</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-
-			</div>
-
-
-			<div id="code_tooltips" class="code">
-
-				<div class="linenumbers">
-					1<br/>
-					2<br/>
-					3<br/>
-					4<br/>
-					5
-				</div>
-
-				<span class="comment">&lt;!-- Standalone Tooltip --&gt;</span><br/>
-
-				&lt;<span class="tag">abbr</span> <span class="html">rel</span>=<span class="css">"tooltip"</span> <span class="html">title</span>=<span class="css">"Tooltip content."</span>&gt;Tagged Text&lt;/<span class="tag">abbr</span>&gt;<br/><br/>
-
-				<span class="comment">&lt;!-- Inline Tooltip --&gt;</span><br/>
-
-				&lt;<span class="tag">abbr</span> <span class="html">rel</span>=<span class="css">"inlinetooltip"</span> <span class="html">title</span>=<span class="css">"Tooltip content."</span>&gt;Tagged Text&lt;/<span class="tag">abbr</span>&gt;
-
-			</div>
-
-			<h2>Alerts</h2>
-
-			<div class="alert alert-success"><i class="fa fa-check fa-fw"></i> Successful Alert <a href="#" class="alert-link">with example link</a></div>
-			<div class="alert alert-info"><i class="fa fa-info-circle fa-fw"></i> Informative Alert</div>
-			<div class="alert alert-warning"><i class="fa fa-warning fa-fw"></i> Warning Alert</div>
-			<div class="alert alert-danger"><i class="fa fa-times-circle fa-fw"></i> Error Alert</div>
-
-			Some alerts can be closed by the user. Below is an example of when. They can be created with any style of alert<br/><br/>
-
-			<div class="alert alert-warning alert-dismissable"><button class="close" data-dismiss="alert" aria-hidden="true"><i class="fa fa-times"></i></button>Closable Alert</div>
-
-
-			<button class="btn btn-tertiary bspecs" onclick="$('#specs_alerts').slideToggle(); $('#code_alerts').hide();"><i class="fa fa-pencil"></i></button>
-
-			<button class="btn btn-tertiary bspecs" onclick="$('#code_alerts').slideToggle(); $('#specs_alerts').hide();"><i class="fa fa-code"></i></button>
-
-			<div id="specs_alerts" class="specs">
-
-				<h1>Alert Boxes</h1>
-
-				<table>
-					<tr><th>Font Size</th><td>14px</td></tr>
-					<tr><th>Line Height</th><td>24px</td></tr>
-					<tr><th>Padding</th><td>10px 15px</td></tr>
-					<tr><th>Border Radius</th><td>5px</td></tr>
-					<tr><th>Padding</th><td>7px 15px</td></tr>
-				</table>
-
-				<h1>Box Coloring</h1>
-
-				<div class="row">
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Success Alert</th></tr>
-							<tr><th>Icon</th><td>fa-check</td></tr>
-							<tr><th>Color</th><td>#005E3E</td></tr>
-							<tr><th>Border Color</th><td>#B5D0C7</td></tr>
-							<tr><th>Background Color</th><td>#ECF5E0</td></tr>
-						</table>
-					</div>
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Warning Alert</th></tr>
-							<tr><th>Icon</th><td>fa-warning</td></tr>
-							<tr><th>Color</th><td>#AD8007</td></tr>
-							<tr><th>Border Color</th><td>#F9E981</td></tr>
-							<tr><th>Background Color</th><td>#FDFADF</td></tr>
-						</table>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Info Alert</th></tr>
-							<tr><th>Icon</th><td>fa-info-circle</td></tr>
-							<tr><th>Color</th><td>#006478</td></tr>
-							<tr><th>Border Color</th><td>#AECDD3</td></tr>
-							<tr><th>Background Color</th><td>#E1EDF0</td></tr>
-						</table>
-					</div>
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Error Alert</th></tr>
-							<tr><th>Icon</th><td>fa-times-circle</td></tr>
-							<tr><th>Color</th><td>#AF3A2B</td></tr>
-							<tr><th>Border Color</th><td>#E5C0BD</td></tr>
-							<tr><th>Background Color</th><td>#F5E9E7</td></tr>
-						</table>
-					</div>
-				</div>
-
-			</div>
-
-
-			<div id="code_alerts" class="code">
-
-				<div class="linenumbers">
-					1<br/>
-					2<br/>
-					3<br/>
-					4<br/>
-					5<br/>
-					6<br/>
-					7<br/>
-					8<br/>
-					9<br/>
-					10<br/>
-					11<br/>
-					12<br/>
-					13
-				</div>
-
-				<span class="comment">&lt;!-- Success Alert --&gt;</span><br/>
-
-				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"alert alert-success"</span>&gt;&lt;<span class="tag">i</span> <span class="html">class</span>=<span class="css">"fa fa-check fa-fw"</span>&gt;&lt;/<span class="tag">i</span>&gt;Success Alert Text&lt;/<span class="tag">div</span>&gt;<br/>
-
-				<span class="comment">&lt;!-- Warning Alert --&gt;</span><br/>
-
-				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"alert alert-warning"</span>&gt;&lt;<span class="tag">i</span> <span class="html">class</span>=<span class="css">"fa fa-exclamation fa-fw"</span>&gt;&lt;/<span class="tag">i</span>&gt;Warning Alert Text&lt;/<span class="tag">div</span>&gt;<br/>
-
-				<span class="comment">&lt;!-- Info Alert --&gt;</span><br/>
-
-				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"alert alert-info"</span>&gt;&lt;<span class="tag">i</span> <span class="html">class</span>=<span class="css">"fa fa-info-circle fa-fw"</span>&gt;&lt;/<span class="tag">i</span>&gt;Info Alert Text&lt;/<span class="tag">div</span>&gt;<br/>
-
-				<span class="comment">&lt;!-- Error Alert --&gt;</span><br/>
-
-				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"alert alert-danger"</span>&gt;&lt;<span class="tag">i</span> <span class="html">class</span>=<span class="css">"fa fa-times-circle fa-fw"</span>&gt;&lt;/<span class="tag">i</span>&gt;Error Alert Text&lt;/<span class="tag">div</span>&gt;<br/>
-
-				<span class="comment">&lt;!-- Alert with link (can be used with any style) --&gt;</span><br/>
-
-				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"alert alert-error"</span>&gt;&lt;<span class="tag">i</span> <span class="html">class</span>=<span class="css">"fa fa-times-circle fa-fw"</span>&gt;&lt;/<span class="tag">i</span>&gt;Error Alert Text &lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"alert-link"</span> <span class="html">href</span>=<span class="css">"#"</span>&gt;Example Link&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">div</span>&gt;<br/>
-
-				<span class="comment">&lt;!-- Closable Alert (can be used with any style) --&gt;</span><br/>
-
-				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"alert alert-error alert-dismissable"</span>&gt;&lt;<span class="tag">button</span> <span class="html">class</span>=<span class="css">"close"</span> <span class="html">aria-hidden</span>=<span class="css">"true"</span> <span class="html">data-dismiss</span>=<span class="css">"alert"</span> <span class="html">type</span>=<span class="css">"button"</span>&gt;&lt;/<span class="tag">button</span>&gt;&lt;<span class="tag">i</span> <span class="html">class</span>=<span class="css">"fa fa-times-circle fa-fw"</span>&gt;&lt;/<span class="tag">i</span>&gt;Error Alert Text&lt;/<span class="tag">div</span>&gt;<br/>
-
-			</div>
-
-		</div>
-
-		<!-- Progress Sliders - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-
-		<div id="progressbars" class="pq-docs-section">
-
-			<h1>Progress Bars</h1>
-
-			<h2>Progressing</h2>
-
-			<div class="progress">
-			  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-			    <span class="sr-only">20% Complete</span>
-			  </div>
-			</div>
-
-			<div class="progress">
-			  <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-			    <span class="sr-only">40% Complete</span>
-			  </div>
-			</div>
-
-			<h2>Continuous</h2>
-
-			<div class="progress progress-striped active">
-			  <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-			    <span class="sr-only">Loading</span>
-			  </div>
-			</div>
-
-			<div class="progress progress-striped active">
-			  <div class="progress-bar progress-bar-blue"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-			    <span class="sr-only">Loading</span>
-			  </div>
-			</div>
-
-			<h2>Continuous Spinner</h2>
-			<i class="fa fa-spinner fa-spin pq-spinner grey"></i>&nbsp;&nbsp;
-			<i class="fa fa-spinner fa-spin pq-spinner orange"></i><br/><br/>
-
-
-			<button class="btn btn-tertiary bspecs" onclick="$('#specs_progressbars').slideToggle(); $('#code_progressbars').hide();"><i class="fa fa-pencil"></i></button>
-
-			<button class="btn btn-tertiary bspecs" onclick="$('#code_progressbars').slideToggle(); $('#specs_progressbars').hide();"><i class="fa fa-code"></i></button>
-
-			<a href="downloads/spinner.txt" target="blank" class="btn btn-tertiary bspecs"><i class="fa fa-file-text"></i></a>
-
-			<div id="specs_progressbars" class="specs">
-
-				<h1>Progressing</h1>
-
-				<div class="row">
-
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Background Bar</th></tr>
-							<tr><th>Height</th><td>20px</td></tr>
-							<tr><th>Border Radius</th><td>5px</td></tr>
-							<tr><th>Background Color</th><td>#EDEEEE</td></tr>
-							<tr><th>Box Shadow</th><td>inset 0 1px 2px rgba(0, 0, 0, 0.1)</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Progress Bar</th></tr>
-							<tr><th>Background Color</th><td>#00B0B9 or #0A5A73</td></tr>
-						</table>
-					</div>
-
-				</div>
-
-				<h1>Continuous Spinner</h1>
-
-				<div class="row">
-
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Spinner (Orange)</th></tr>
-							<tr><th>FA Icon</th><td>fa-spinner</td></tr>
-							<tr><th>Font Size</th><td>80px</td></tr>
-							<tr><th>Color</th><td>#FF9E1B</td></tr>
-							<tr><th>Text Shadow</th><td>1px 1px 0px #DDDDDE</td></tr>
-						</table>
-					</div>
-
-					<div class="col-md-6">
-						<table>
-							<tr><th class="state" colspan=2>Spinner (Grey)</th></tr>
-							<tr><th>Color</th><td>#BABBBD</td></tr>
-						</table>
-					</div>
-
-				</div>
-
-			</div>
-
-			<div id="code_progressbars" class="code">
-
-				<div class="linenumbers">
-					1<br/>
-					2<br/>
-					3<br/>
-					4<br/>
-					5<br/>
-					6<br/>
-					7<br/>
-					8<br/>
-					9<br/>
-					10<br/>
-					11<br/>
-					12<br/>
-					13<br/>
-					14<br/>
-					15<br/>
-					16<br/>
-					17<br/>
-					18<br/>
-					19<br/>
-					20<br/>
-					21<br/>
-					22<br/>
-					23<br/>
-					24<br/>
-					25<br/>
-					26<br/>
-					27<br/>
-					28
-				</div>
-
-				<span class="comment">&lt;!-- Teal Progress Bar (at 20%) --&gt;</span><br/>
-
-				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"progress"</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"progress-bar"</span> <span class="html">role</span>=<span class="css">"progressbar"</span> <span class="html">aria-valuenow</span>=<span class="css">"20"</span> <span class="html">aria-valuemin</span>=<span class="css">"0"</span> <span class="html">aria-valuemax</span>=<span class="css">"100"</span> <span class="html">style</span>=<span class="css">"width: 20%;"</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">span</span> <span class="html">class</span>=<span class="css">"sr-only"</span>&gt;20% Complete&lt;/<span class="tag">span</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">div</span>&gt;<br />
-				&lt;/<span class="tag">div</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Blue Progress Bar (at 20%) --&gt;</span><br/>
-
-				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"progress"</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"progress-bar progress-bar-blue"</span> <span class="html">role</span>=<span class="css">"progressbar"</span> <span class="html">aria-valuenow</span>=<span class="css">"20"</span> <span class="html">aria-valuemin</span>=<span class="css">"0"</span> <span class="html">aria-valuemax</span>=<span class="css">"100"</span> <span class="html">style</span>=<span class="css">"width: 20%;"</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">span</span> <span class="html">class</span>=<span class="css">"sr-only"</span>&gt;20% Complete&lt;/<span class="tag">span</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">div</span>&gt;<br />
-				&lt;/<span class="tag">div</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Teal Continuous Bar --&gt;</span><br/>
-
-				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"progress progress-striped active"</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"progress-bar progress-bar-blue"</span> <span class="html">role</span>=<span class="css">"progressbar"</span> <span class="html">aria-valuenow</span>=<span class="css">"100"</span> <span class="html">aria-valuemin</span>=<span class="css">"0"</span> <span class="html">aria-valuemax</span>=<span class="css">"100"</span> <span class="html">style</span>=<span class="css">"width: 100%;"</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">span</span> <span class="html">class</span>=<span class="css">"sr-only"</span>&gt;Loading&lt;/<span class="tag">span</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">div</span>&gt;<br />
-				&lt;/<span class="tag">div</span>&gt;<br />
-
-				<span class="comment">&lt;!-- Blue Continuous Bar --&gt;</span><br/>
-
-				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"progress progress-striped active"</span>&gt;<br />
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"progress-bar"</span> <span class="html">role</span>=<span class="css">"progressbar"</span> <span class="html">aria-valuenow</span>=<span class="css">"100"</span> <span class="html">aria-valuemin</span>=<span class="css">"0"</span> <span class="html">aria-valuemax</span>=<span class="css">"100"</span> <span class="html">style</span>=<span class="css">"width: 100%;"</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">span</span> <span class="html">class</span>=<span class="css">"sr-only"</span>&gt;Loading&lt;/<span class="tag">span</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tag">div</span>&gt;<br />
-				&lt;/<span class="tag">div</span>&gt;<br />
-				<span class="comment">&lt;!-- Grey Continuous Spinner --&gt;</span><br/>
-
-				&lt;<span class="tag">i</span> <span class="html">class</span>=<span class="css">"fa fa-spinner fa-spin pq-spinner grey"</span>&gt;&lt;/<span class="tag">i</span>&gt;<br/>
-				<span class="comment">&lt;!-- Orange Continuous Spinner --&gt;</span><br/>
-
-				&lt;<span class="tag">i</span> <span class="html">class</span>=<span class="css">"fa fa-spinner fa-spin pq-spinner orange"</span>&gt;&lt;/<span class="tag">i</span>&gt;
-
 			</div>
 
 		</div>
 
 
+		<div id="code_tooltips" class="code">
 
-		<!-- Glyph States - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+			&lt;<span class="tag">span</span> <span class="html">class</span>=<span class="css">"pq-tooltip"</span> <span class="html">title</span>=<span class="css">"..."</span> <span class="html">data-uk-tooltip</span>&gt;...&lt;/<span class="tag">span</span>&gt;
+		</div>
 
-		<div id="icons" class="pq-docs-section">
+		<h2>Alerts</h2>
 
-			<h1>Icons</h1>
+		<div class="uk-alert" data-uk-alert>
+			<a href="" class="uk-alert-close uk-close"></a>
+			<i class="fa fa-info-circle"></i> Informative Alert
+		</div>
 
-			We use the <a href="http://fontawesome.io" target="blank">Font Awesome icon library</a>. This library is constantly being updated and improved so please visit their page to see the most current list of icons in the library.
+		<div class="uk-alert uk-alert-success" data-uk-alert>
+			<a href="" class="uk-alert-close uk-close"></a>
+			<i class="fa fa-check"></i> Successful Alert
+		</div>
 
-			<a href="downloads/fonts/fontawesome.ai" class="btn btn-tertiary bspecs"><i class="fa fa-floppy-o"></i></a>
+		<div class="uk-alert uk-alert-warning" data-uk-alert>
+			<a href="" class="uk-alert-close uk-close"></a>
+			<i class="fa fa-warning"></i> Warning Alert
+		</div>
 
-			<button class="btn btn-tertiary bspecs" onclick="$('#code_icons').slideToggle();"><i class="fa fa-code"></i></button>
+		<div class="uk-alert uk-alert-danger" data-uk-alert>
+			<a href="" class="uk-alert-close uk-close"></a>
+			<i class="fa fa-exclamation-circle"></i> Error Alert
+		</div>
 
-			<div id="code_icons" class="code">
+		<div id="specs_alerts" class="specs">
 
-				<div class="linenumbers">
-					1<br/>
-					2<br/>
-					3<br/>
-					4<br/>
-					5<br/>
-					6<br/>
-					7
+			<div class="uk-grid">
+
+				<div class="uk-width-1-4">
+					<table class="uk-table">
+						<thead>
+							<tr>
+								<th>Box styling</th>
+								<th>Alert</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Border</th>
+								<td>1px solid</td>
+							</tr>
+							<tr>
+								<th>Border Radius</th>
+								<td>5px</td>
+							</tr>
+							<tr>
+								<th>Padding</th>
+								<td>10px</td>
+							</tr>
+							<tr>
+								<th>Font Size</th>
+								<td>14px / 24px</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 
-				<span class="comment">&lt;!-- Include the following in the head section of your page --&gt;</span><br/>
+				<div class="uk-width-3-4">
+					<table class="uk-table">
+						<thead>
+							<tr>
+								<th>States</th>
+								<th>Default</th>
+								<th>Success</th>
+								<th>Warning</th>
+								<th>Error</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Class</th>
+								<td><code>uk-alert</code></td>
+								<td><code>uk-alert-success</code></td>
+								<td><code>uk-alert-warning</code></td>
+								<td><code>uk-alert-danger</code></td>
+							</tr>
+							<tr>
+								<th>Color</th>
+								<td>blue-dark</td>
+								<td>green-dark</td>
+								<td>yellow-dark</td>
+								<td>red-dark</td>
 
-				&lt;<span class="tag">head</span>&gt;<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">link</span> <span class="html">href</span>=<span class="css">"http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"</span> <span class="html">rel</span>=<span class="css">"stylesheet"</span>&gt;<br/>
-				&lt;/<span class="tag">head</span>&gt;<br/>
-				...<br/>
-				<span class="comment">&lt;!-- Use the provided class for the icon you wish to use, the example below is for the adjust icon --&gt;</span><br/>
-
-				&lt;<span class="tag">i</span> <span class="html">class</span>=<span class="css">"fa fa-adjust"</span>&gt;&lt;/<span class="tag">i</span>&gt;
-
+							</tr>
+							<tr>
+								<th>Border and Icon Color</th>
+								<td>blue</td>
+								<td>green</td>
+								<td>yellow</td>
+								<td>red</td>
+							</tr>
+							<tr>
+								<th>Background Color</th>
+								<td>blue, 20%</td>
+								<td>green, 20%</td>
+								<td>yellow, 20%</td>
+								<td>red, 20%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
+		</div>
 
-  		</div>
+
+		<div id="code_alerts" class="code">
+
+			&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"uk-alert"</span> <span class="html">data-uk-alert</span>&gt;<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"uk-alert-close uk-close"</span>&gt;&lt;/<span class="tag">a</span>&gt;<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp...
+			<br/>&lt;/<span class="tag">div</span>&gt;<br/>
+
+		</div>
 
 	</div>
 
-	<div id="footer" class="pq-footer"></div>
-	<script>$("#footer").load("includes/footer.html");</script>
+	<!-- Progress Sliders - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
-	<!-- After load JavaScript files -->
+	<div id="progressbars" class="pq-docs-section">
 
-	<script src="js/ui-bootstrap-0.10.0.min.js"></script>
-	<script src="js/pq-forms.js" type="text/javascript"></script>
-	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-	<script src="js/jquery.sticky.js" type="text/javascript"></script>
-	<script src="js/pq-backgrounds.js" type="text/javascript"></script>
-	<script src="js/pq-tooltip.js" type="text/javascript"></script>
-	<script src="js/pq-subnav.js" type="text/javascript"></script>
-	<script src="js/pq-top.js" type="text/javascript"></script>
+		<h1>Progress Bars</h1>
+
+		<h2>Progressing</h2>
+
+		<div class="uk-progress">
+			<div class="uk-progress-bar" style="width: 40%;">40%</div>
+		</div>
+
+		<h2>Continuous</h2>
+
+		<div class="uk-progress uk-progress-striped uk-active">
+			<div class="uk-progress-bar" style="width: 100%;"></div>
+		</div>
+
+		<div id="specs_progressbars" class="specs">
+
+			<table class="uk-table">
+				<thead>
+					<tr>
+						<th>Box</th>
+						<th>Background Color</th>
+						<th>Bar Color</th>
+						<th>Border Radius</th>
+						<th>Height</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th></th>
+						<td>grey-light4</td>
+						<td>blue</td>
+						<td>5px</td>
+						<td>25px</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+
+		<div id="code_progressbars" class="code">
+
+			&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"uk-progress"</span>&gt;<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"uk-progress-bar"</span> <span class="html">style</span>=<span class="css">"width: 20%;"</span>&gt;&lt;/<span class="tag">div</span>&gt;<br />
+			&lt;/<span class="tag">div</span>&gt;<br />
+
+		</div>
+
+	</div>
+
+
+
+	<!-- Glyph States - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<div id="icons" class="pq-docs-section">
+
+		<h1>Icons</h1>
+
+		<p>We use the <a href="http://fontawesome.io" target="blank">Font Awesome icon library</a>. This library is constantly being updated and improved so please visit their page to see the most current list of icons in the library.</p>
+
+		<a href="downloads/fonts/fontawesome.ai" class="uk-button uk-button-secondary"><i class="fa fa-floppy-o"></i> Download font</a>
+
+		<div id="code_icons" class="code">
+
+			<span class="comment">&lt;!-- Include the following in the head section of your page --&gt;</span><br/>
+
+			&lt;<span class="tag">head</span>&gt;<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">link</span> <span class="html">href</span>=<span class="css">"http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"</span> <span class="html">rel</span>=<span class="css">"stylesheet"</span>&gt;<br/>
+			&lt;/<span class="tag">head</span>&gt;<br/>
+			...<br/>
+			<span class="comment">&lt;!-- Use the provided class for the icon you wish to use, the example below is for the adjust icon --&gt;</span><br/>
+
+			&lt;<span class="tag">i</span> <span class="html">class</span>=<span class="css">"fa fa-adjust"</span>&gt;&lt;/<span class="tag">i</span>&gt;
+
+		</div>
+
+	</div>
+
+</div>
+
+<div id="footer" class="pq-footer"></div>
+<script>$("#footer").load("includes/footer.html");</script>
+
+<!-- After load JavaScript files -->
+
+<script src="uikit/js/uikit.min.js"></script>
+<script src="uikit/js/core/dropdown.min.js"></script>
+<script src="uikit/js/core/nav.min.js"></script>
+<script src="uikit/js/core/tooltip.min.js"></script>
+<script src="uikit/js/components/sticky.min.js"></script>
+<script src="js/pq-top.js" type="text/javascript"></script>
+<script src="js/obt-forms.js" type="text/javascript"></script>
+
 
 </body>
 </html>

@@ -17,18 +17,18 @@
 
 	<!-- CSS -->
 
-	<link href='../bootstrap/css/bootstrap.css' rel='stylesheet' type='text/css'>
-	<link href='../bootstrap/css/pq-bootstrap.css' rel='stylesheet' type='text/css'>
-	<link href='../bootstrap/css/jquery-ui-1.10.4.custom.css' rel='stylesheet' type='text/css'>
-	<link href='../bootstrap/css/pq-slider.css' rel='stylesheet' type='text/css'>
-	<link href='../bootstrap/css/pq-pricing.css' rel='stylesheet' type='text/css'>
-	<link href='../includes/style.css' rel='stylesheet' type='text/css'>
+	<link href='bootstrap/css/bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='bootstrap/css/pq-bootstrap.css' rel='stylesheet' type='text/css'>
+	<link href='bootstrap/css/jquery-ui-1.10.4.custom.css' rel='stylesheet' type='text/css'>
+	<link href='bootstrap/css/pq-slider.css' rel='stylesheet' type='text/css'>
+	<link href='bootstrap/css/pq-pricing.css' rel='stylesheet' type='text/css'>
+	<link href='includes/style.css' rel='stylesheet' type='text/css'>
 
 	<!-- Javascript -->
 
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-	<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 
 </head>
@@ -38,17 +38,16 @@
 <!-- Navigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
 	<nav class='navbar navbar-default' id='globalnav' role='navigation'></nav>
-	<script> $("#globalnav").load("../includes/nav.html"); </script>
+	<script> $("#globalnav").load("includes/nav.html"); </script>
 
 	<div class="pq-subnav hidden-xs hidden-sm" id="content">
 		<div class="container">
-			<div class="title">Pricing pages</div>
+			<div class="title">Templates</div>
 			<ul>
-				<a href="#packages"><li>Packages</li></a>
-				<a href="#taglines"><li>Taglines</li></a>
-				<a href="#comparison"><li>Comparison Table</li></a>
-				<a href="#faq"><li>FAQ</li></a>
-				<a href="#stillnotsure"><li>Still not sure?</li></a>
+				<a href="#productdetails"><li>Product Details</li></a>
+				<a href="#pricing"><li>Product Pricing</li></a>
+				<a href="#community"><li>Community</li></a>
+				<a href="#emails"><li>Emails</li></a>
 			</ul>
 		</div>
 	</div>
@@ -58,187 +57,172 @@
 
 	<div class="container">
 
+	<!-- Product Details - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<div id="productdetails" class="pq-docs-section">
+		<h1>Product Details</h1>
+		Coming Soon
+	</div>
 
 	<!-- Product Details - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
-		<div id="packages" class="pq-docs-section">
+		<div id="pricing" class="pq-docs-section continue">
 
-			<h1>Packages</h1>
+			<h1>Product Pricing</h1>
+
+			<a href="pricing.html" target="blank" class="btn btn-secondary">Sample Page</a>
 
 			<h2>Package Displays (4 column)</h2>
 
-			<div class="row">
-				<div class="col-lg-3 col-sm-6 pricing-package hp-blue">
-					<div class="header">
-						<div class="title">Package Title</div>
-						<span class="tagline">Starting at</span>
-						<span class="price">$39</span>
-						<span class="unit">per assessment</span>
-					</div>
-					<div class="details">
-						<ul>
-							<li>Sample feature 1</li>
-							<li>Sample feature 2</li>
-							<li>Sample feature 3</li>
-						<a class="btn">Build Package</a>
-					</div>
-				</div>
+		</div>
 
-				<div class="col-lg-3 col-sm-6 pricing-package green">
-					<div class="header">
-						<div class="title">Package Title</div>
-						<span class="tagline">Starting at</span>
-						<span class="price">$39</span>
-						<span class="unit">per assessment</span>
-					</div>
-					<div class="details">
-						<ul>
-							<li>Sample feature 1</li>
-							<li>Sample feature 2</li>
-							<li>Sample feature 3 with a longer description</li>
-						<a class="btn">Build Package</a>
-					</div>
+		<div class="row">
+			<div class="col-lg-3 col-sm-6 pricing-package teal">
+				<div class="header">
+					<div class="title">Package Title</div>
+					<span class="tagline">scans starting at</span>
+					<span class="price">$39</span>
+					<span class="unit">per assessment</span>
+					<span class="arrow-down"></span>
 				</div>
-
-				<div class="col-lg-3 col-sm-6 pricing-package purple">
-					<div class="header">
-						<div class="title">Package Title</div>
-						<span class="tagline">Starting at</span>
-						<span class="price">$39</span>
-						<span class="unit">per assessment</span>
-					</div>
-					<div class="details">
-						<ul>
-							<li>Sample feature 1</li>
-							<li>Sample feature 2</li>
-						<a class="btn">Build Package</a>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-sm-6 pricing-package blue">
-					<div class="header">
-						<div class="title">Package Title</div>
-						<span class="tagline">Starting at</span>
-						<span class="price">$39</span>
-						<span class="unit">per assessment</span>
-					</div>
-					<div class="details">
-						<ul>
-							<li>Sample feature 1</li>
-							<li>Sample feature 2</li>
-							<li>Sample feature 3 with a longer description</li>
-						<a class="btn">Build Package</a>
-					</div>
+				<div class="details">
+					<a class="btn">Build Package</a>
+					<p>This and that details<br/>This and that more details</p>
 				</div>
 			</div>
 
-			<span class="enterprise">Need more? <a href="#">Contact sales</a> to discuss an enterprise package.</span>
+			<div class="col-lg-3 col-sm-6 pricing-package green">
+				<div class="header">
+					<div class="title">Package Title</div>
+					<span class="tagline">scans starting at</span>
+					<span class="price">$39</span>
+					<span class="unit">per assessment</span>
+					<span class="arrow-down"></span>
+				</div>
+				<div class="details">
+					<a class="btn">Build Package</a>
+					<p>This and that details<br/>This and that more details</p>
+				</div>
+			</div>
 
+			<div class="col-lg-3 col-sm-6 pricing-package purple">
+				<div class="header">
+					<div class="title">Package Title</div>
+					<span class="tagline">scans starting at</span>
+					<span class="price">$39</span>
+					<span class="unit">per assessment</span>
+					<span class="arrow-down"></span>
+				</div>
+				<div class="details">
+					<a class="btn">Build Package</a>
+					<p>This and that details<br/>This and that more details</p>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-sm-6 pricing-package blue">
+				<div class="header">
+					<div class="title">Package Title</div>
+					<span class="tagline">scans starting at</span>
+					<span class="price">$39</span>
+					<span class="unit">per assessment</span>
+					<span class="arrow-down"></span>
+				</div>
+				<div class="details">
+					<a class="btn">Build Package</a>
+					<p>This and that details<br/>This and that more details</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="pq-docs-section continue">
 
 			<h2>Package Displays (3 column)</h2>
 
+		</div>
 
-			<div class="row">
+		<div class="row">
 
-				<div class="col-md-4 pricing-package hp-blue">
-					<div class="header">
-						<div class="title">Package Title</div>
-						<span class="tagline">Starting at</span>
-						<span class="price">$39</span>
-						<span class="unit">per assessment</span>
-					</div>
-					<div class="details">
-						<ul>
-							<li>Sample feature 1</li>
-							<li>Sample feature 2</li>
-							<li>Sample feature 3 with a longer description</li>
-						<a class="btn">Build Package</a>
-					</div>
+			<div class="col-md-4 pricing-package teal">
+				<div class="header">
+					<div class="title">Package Title</div>
+					<span class="tagline">scans starting at</span>
+					<span class="price">$39</span>
+					<span class="unit">per assessment</span>
+					<span class="arrow-down"></span>
 				</div>
-
-				<div class="col-md-4 pricing-package green">
-					<div class="header">
-						<!--  <div class="ribbon-container"><span class="star">Recommended</span></div>-->
-						<div class="title">Package Title</div>
-						<span class="tagline">Starting at</span>
-						<span class="price">$39</span>
-						<span class="unit">per assessment</span>
-					</div>
-					<div class="details">
-						<ul>
-							<li>Sample feature 1</li>
-							<li>Sample feature 2</li>
-							<li>Sample feature 3 with a longer description</li>
-						<a class="btn">Build Package</a>
-					</div>
-				</div>
-
-				<div class="col-md-4 pricing-package blue">
-					<div class="header">
-						<div class="title">Package Title</div>
-						<span class="tagline">Starting at</span>
-						<span class="price">$39</span>
-						<span class="unit">per assessment</span>
-					</div>
-					<div class="details">
-						<ul>
-							<li>Sample feature 1</li>
-							<li>Sample feature 2</li>
-							<li>Sample feature 3 with a longer description</li>
-						<a class="btn">Build Package</a>
-					</div>
+				<div class="details">
+					<a class="btn">Build Package</a>
+					<p>This and that details<br/>This and that more details</p>
 				</div>
 			</div>
 
-			<span class="enterprise">Need more? <a href="#">Contact sales</a> to discuss an enterprise package.</span>
+			<div class="col-md-4 pricing-package green">
+				<div class="header">
+					<!--  <div class="ribbon-container"><span class="star">Recommended</span></div>-->
+					<div class="title">Package Title</div>
+					<span class="tagline">scans starting at</span>
+					<span class="price">$39</span>
+					<span class="unit">per assessment</span>
+					<span class="arrow-down"></span>
+				</div>
+				<div class="details">
+					<a class="btn">Build Package</a>
+					<p>This and that details<br/>This and that more details</p>
+				</div>
+			</div>
 
+			<div class="col-md-4 pricing-package blue">
+				<div class="header">
+					<div class="title">Package Title</div>
+					<span class="tagline">scans starting at</span>
+					<span class="price">$39</span>
+					<span class="unit">per assessment</span>
+					<span class="arrow-down"></span>
+				</div>
+				<div class="details">
+					<a class="btn">Build Package</a>
+					<p>This and that details<br/>This and that more details</p>
+				</div>
+			</div>
 
+		</div>
+
+		<div class="pq-docs-section continue">
 
 			<h2>Package Displays (2 column)</h2>
 
-		<div class="row">
-			<div class="col-sm-2"></div>
-			<div class="col-sm-4 pricing-package hp-blue">
-				<div class="header">
-					<div class="title">Package Title</div>
-					<span class="tagline">Starting at</span>
-					<span class="price">$39</span>
-					<span class="unit">per assessment</span>
-				</div>
-				<div class="details">
-					<ul>
-						<li>Sample feature 1</li>
-						<li>Sample feature 2</li>
-						<li>Sample feature 3 with a longer description</li>
-					<a class="btn">Build Package</a>
-				</div>
-			</div>
-
-			<div class="col-sm-4 pricing-package green">
-				<div class="header">
-					<div class="title">Package Title</div>
-					<span class="tagline">Starting at</span>
-					<span class="price">$39</span>
-					<span class="unit">per assessment</span>
-				</div>
-				<div class="details">
-					<ul>
-						<li>Sample feature 1</li>
-						<li>Sample feature 2</li>
-						<li>Sample feature 3 with a longer description</li>
-					<a class="btn">Build Package</a>
-				</div>
-			</div>
-			<div class="col-sm-2"></div>
 		</div>
 
-		<span class="enterprise">Need more? <a href="#">Contact sales</a> to discuss an enterprise package.</span>
+		<div class="row">
+			<div class="col-sm-6 pricing-package teal">
+				<div class="header">
+				<div class="title">Package Title</div>
+				<span class="tagline">scans starting at</span>
+				<span class="price">$39</span>
+				<span class="unit">per assessment</span>
+				<span class="arrow-down"></span>
+			</div>
+			<div class="details">
+				<a class="btn">Build Package</a>
+				<p>This and that details<br/>This and that more details</p>
+			</div>
+		</div>
 
-	</div>
-
-	<div id="taglines" class="pq-docs-section continue">
-
-		<h1>Taglines</h1>
+		<div class="col-sm-6 pricing-package green">
+			<div class="header">
+				<div class="title">Package Title</div>
+				<span class="tagline">scans starting at</span>
+				<span class="price">$39</span>
+				<span class="unit">per assessment</span>
+				<span class="arrow-down"></span>
+			</div>
+			<div class="details">
+				<a class="btn">Build Package</a>
+				<p>This and that details<br/>This and that more details</p>
+				</div>
+			</div>
+		</div>
 
 			<h2>Quote Box</h2>
 
@@ -255,16 +239,12 @@
 	</div>
 
 	<div class="container">
-		<div class="pq-docs-section"></div>
+		<div class="pq-docs-section continue">
 
-		<div id="comparison" class="pq-docs-section continue">
-
-			<h1>Comparison Table</h1>
+			<h2>Features Table</h2>
 
 		</div>
 	</div>
-
-	<div class="comparison-table">
 
 		<div id="pricing-header">
 			<div class="container">
@@ -272,7 +252,7 @@
 
 					<div class="row header">
 						<div class="col-sm-4"></div>
-						<div class="col-sm-2 hp-blue">Express</div>
+						<div class="col-sm-2 teal">Express</div>
 						<div class="col-sm-2 green">Basic</div>
 						<div class="col-sm-2 purple">Standard</div>
 						<div class="col-sm-2 blue">Premium</div>
@@ -286,10 +266,10 @@
 			<div class="col-md-12 pricing-features">
 				<div class="row feature price">
 					<div class="col-sm-4 name"></div>
-					<div class="col-sm-2 value"><small>&nbsp;</small>Free<small>&nbsp;</small></div>
+					<div class="col-sm-2 value">Free</div>
 					<div class="col-sm-2 value"><small>As low as</small>$399<small>per 50 OSI Packs</small></div>
 					<div class="col-sm-2 value"><small>As low as</small>$399<small>per 50 OSI Packs</small></div>
-					<div class="col-sm-2 value"><small>&nbsp;</small>Get a quote<small>&nbsp;</small></div>
+					<div class="col-sm-2 value">Get a quote</div>
 				</div>
 				<div class="row feature buttons">
 					<div class="col-sm-4 name"></div>
@@ -342,7 +322,7 @@
 					<div class="col-sm-2 value">OWASP Top 10*</div>
 				</div>
 				<div class="row feature">
-					<div class="col-sm-4 name"><abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="inlinetooltip">Server API</abbr></div>
+					<div class="col-sm-4 name"><abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">Server API</abbr></div>
 					<div class="col-sm-2 value"></div>
 					<div class="col-sm-2 value"></div>
 					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
@@ -377,14 +357,14 @@
 					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
 				</div>
 				<div class="row feature">
-					<div class="col-sm-4 name"><abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="inlinetooltip">False Positive Removal</abbr></div>
+					<div class="col-sm-4 name"><abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">False Positive Removal</abbr></div>
 					<div class="col-sm-2 value"></div>
 					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
 					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
 					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
 				</div>
 				<div class="row feature">
-					<div class="col-sm-4 name"><abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="inlinetooltip">Remidiation Scan</abbr></div>
+					<div class="col-sm-4 name"><abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">Remidiation Scan</abbr></div>
 					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
 					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
 					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
@@ -398,7 +378,7 @@
 					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
 				</div>
 				<div class="row feature">
-					<div class="col-sm-4 name"><abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="inlinetooltip">TAM Support</abbr></div>
+					<div class="col-sm-4 name"><abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">TAM Support</abbr></div>
 					<div class="col-sm-2 value"></div>
 					<div class="col-sm-2 value"></div>
 					<div class="col-sm-2 value"><i class="fa fa-check"></i></div>
@@ -427,7 +407,7 @@
 			<div class="col-md-8">
 
 				<h2><small>Step 1</small>Select Number of Single-Step Transactions</h2>
-				One <abbr title="One Single step transaction entitles the use of a single action against an application from one location. These simple monitors (e.g. URL monitor, Ping monitor, Port monitor, DNS monitor, etc.) require no scripting and are created by filling out a simple web form. These transactions can be run from multiple public locations through our global network points of presences or from private locations behind your firewall." rel="inlinetooltip">Single-step transaction</abbr> entitles the use of a single action against an application from one location. <strong>($12/ Transaction)</strong>
+				One <abbr title="One Single step transaction entitles the use of a single action against an application from one location. These simple monitors (e.g. URL monitor, Ping monitor, Port monitor, DNS monitor, etc.) require no scripting and are created by filling out a simple web form. These transactions can be run from multiple public locations through our global network points of presences or from private locations behind your firewall." rel="tooltip">Single-step transaction</abbr> entitles the use of a single action against an application from one location. <strong>($12/ Transaction)</strong>
 
 				<div class="slider-group">
 
@@ -444,7 +424,7 @@
 
 				<h2><small>Step 2</small>Select Number of Multi-Step Transactions</h2>
 
-				One <abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="inlinetooltip">Multi-step transaction</abbr> entitles the use of a pre-recorded script (virtual user flow) against your application from one location. <strong>($39/Transaction)</strong>
+				One <abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">Multi-step transaction</abbr> entitles the use of a pre-recorded script (virtual user flow) against your application from one location. <strong>($39/Transaction)</strong>
 
 				<div class="slider-group">
 					<span class="minlabel">0</span>
@@ -461,7 +441,7 @@
 
 				<h2><small>Step 3</small>Select Term of Subscription</h2>
 
-				How many <abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="inlinetooltip">months</abbr> would you like access to AppPulse?
+				How many <abbr title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus massa id justo porta, nec viverra neque euismod. Cras quis tellus in nisi fermentum gravida." rel="tooltip">months</abbr> would you like access to AppPulse?
 
 				<div class="slider-group">
 					<span class="minlabel">3</span>
@@ -537,18 +517,31 @@
 
 	</div>
 
+	<div class="container">
+
+		<div id="community" class="pq-docs-section">
+			<h1>Community</h1>
+			Coming Soon
+		</div>
+
+		<div id="emails" class="pq-docs-section">
+			<h1>Emails</h1>
+			Coming Soon
+		</div>
+	</div>
+
 	<div id="footer" class="pq-footer"></div>
-	<script>$("#footer").load("../includes/footer.html");</script>
+	<script>$("#footer").load("includes/footer.html");</script>
 
 	<!-- After load JavaScript files -->
 
-	<script src="../js/ui-bootstrap-0.10.0.min.js"></script>
-	<script src="../js/pq-forms.js" type="text/javascript"></script>
-	<script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
-	<script src="../js/jquery.sticky.js" type="text/javascript"></script>
-	<script src="../js/pq-tooltip.js" type="text/javascript"></script>
-	<script src="../js/pq-subnav.js" type="text/javascript"></script>
-	<script src="../js/pq-top.js" type="text/javascript"></script>
+	<script src="js/ui-bootstrap-0.10.0.min.js"></script>
+	<script src="js/pq-forms.js" type="text/javascript"></script>
+	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="js/jquery.sticky.js" type="text/javascript"></script>
+	<script src="js/pq-tooltip.js" type="text/javascript"></script>
+	<script src="js/pq-subnav.js" type="text/javascript"></script>
+	<script src="js/pq-top.js" type="text/javascript"></script>
 
 
 </body>

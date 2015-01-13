@@ -27,8 +27,6 @@
 </head>
 <body>
 	<div id="globalnav"></div>
-	<script> $("#globalnav").load("includes/nav.html"); </script>
-
 
 	<div class="obt-subnav" data-uk-sticky>
 		<div class="uk-container uk-container-center">
@@ -114,7 +112,10 @@
 	</div>
 
 	<div id="footer" class="pq-footer"></div>
-	<script>$("#footer").load("includes/footer.html");</script>
+	<script>
+		$("#globalnav").load("includes/nav.html");
+		$("#footer").load("includes/footer.html");
+	</script>
 
 	<!-- After load JavaScript files -->
 

@@ -7,7 +7,7 @@
   position: relative;
   text-align: center;
   min-height: 120px;
-  background-color: #edeeee;
+  background-color: #EDEEEE;
 }
 .pricing-package .header .title {
   font-weight: 300;
@@ -53,7 +53,7 @@
   display: block;
 }
 .pricing-package .details {
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
 }
 .pricing-package .details ul {
   list-style-type: none;
@@ -85,7 +85,7 @@
 }
 
 .pricing-package.hp-blue .title {
-  background-color: #0096d6;
+  background-color: #0096D6;
 }
 
 .pricing-package.green .title {
@@ -97,7 +97,7 @@
 }
 
 .pricing-package.purple .title {
-  background-color: #686e9f;
+  background-color: #686E9F;
 }
 
 span.enterprise {
@@ -106,7 +106,7 @@ span.enterprise {
 }
 
 .comparison-table {
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
   padding: 60px 0px;
 }
 .comparison-table .pricing-features-header {
@@ -114,7 +114,7 @@ span.enterprise {
   width: 100%;
   text-align: center;
   vertical-align: middle;
-  color: #53565a;
+  color: #53565A;
   z-index: 10;
 }
 .comparison-table .pricing-features-header .header {
@@ -133,7 +133,7 @@ span.enterprise {
   display: inline-block;
 }
 .comparison-table .pricing-features-header .header .hp-blue {
-  background-color: #0096d6;
+  background-color: #0096D6;
   font-weight: 300;
 }
 .comparison-table .pricing-features-header .header .green {
@@ -141,7 +141,7 @@ span.enterprise {
   font-weight: 300;
 }
 .comparison-table .pricing-features-header .header .purple {
-  background-color: #686e9f;
+  background-color: #686E9F;
   font-weight: 300;
 }
 .comparison-table .pricing-features-header .header .blue {
@@ -153,11 +153,11 @@ span.enterprise {
   display: block;
   text-align: center;
   vertical-align: middle;
-  color: #53565a;
+  color: #53565A;
   z-index: 0;
 }
 .comparison-table .pricing-features .feature {
-  border-bottom: 1px solid #edeeee;
+  border-bottom: 1px solid #EDEEEE;
   margin: 0px;
   background-color: white;
 }
@@ -170,7 +170,7 @@ span.enterprise {
   text-align: right;
   padding: 13px 15px 13px 30px;
   font-weight: 700;
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
 }
 .comparison-table .pricing-features .feature .value {
   padding: 13px 15px;
@@ -209,8 +209,8 @@ span.enterprise {
   }
 }
 .configurator {
-  background-color: #edeeee;
-  border-top: 1px solid #ddddde;
+  background-color: #EDEEEE;
+  border-top: 1px solid #DDDDDE;
   display: none;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -232,7 +232,7 @@ span.enterprise {
   padding: 5px;
 }
 .configurator .step .tier .level.active {
-  background-color: #ddddde;
+  background-color: #DDDDDE;
   border-radius: 5px;
 }
 .configurator .close {
@@ -240,20 +240,20 @@ span.enterprise {
   right: 30px;
   top: -1px;
   font-size: 30px;
-  background-color: #edeeee;
-  border: 1px solid #ddddde;
+  background-color: #EDEEEE;
+  border: 1px solid #DDDDDE;
   padding: 0px 5px;
   z-index: 1;
   opacity: 1;
-  color: #babbbd;
+  color: #BABBBD;
   border-radius: 0px 0px 5px 5px;
 }
 .configurator .close:hover {
-  color: #75787b;
-  background-color: #ddddde;
+  color: #75787B;
+  background-color: #DDDDDE;
 }
 .configurator hr {
-  border-top: 1px solid #ddddde;
+  border-top: 1px solid #DDDDDE;
   margin-top: 0px;
   margin-bottom: 45px;
 }
@@ -264,8 +264,8 @@ span.enterprise {
 .configurator h2 > small {
   text-transform: uppercase;
   font-weight: 700;
-  border-right: 1px solid #cbcccd;
-  color: #75787b;
+  border-right: 1px solid #CBCCCD;
+  color: #75787B;
   font-size: 24px;
   padding-right: 20px;
   margin-right: 20px;
@@ -282,7 +282,7 @@ span.enterprise {
   color: white;
   font-size: 18px;
   font-weight: 300;
-  background-color: #75787b;
+  background-color: #75787B;
 }
 .configurator .overview table {
   width: 100%;
@@ -305,7 +305,7 @@ span.enterprise {
   line-height: 20px;
 }
 .configurator .overview table tr td .total small {
-  color: #75787b;
+  color: #75787B;
   font-weight: 400;
 }
 .configurator .overview table tr.top {
@@ -321,7 +321,7 @@ span.enterprise {
   text-align: left;
   padding: 0px 15px 15px 15px;
   font-weight: 400;
-  color: #75787b;
+  color: #75787B;
 }
 .configurator .overview table tr:first-child th {
   border-top-left-radius: 5px;
@@ -340,12 +340,12 @@ span.enterprise {
 
 .quote-box {
   display: block;
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
   padding: 60px 0px;
 }
 .quote-box .quote {
   font-size: 22px;
-  color: #75787b;
+  color: #75787B;
   line-height: 32px;
   display: block;
   margin-bottom: 30px;
@@ -359,7 +359,7 @@ span.enterprise {
   font-size: 18px;
   font-style: italic;
   display: block;
-  color: #babbbd;
+  color: #BABBBD;
 }
 
 .not-sure {

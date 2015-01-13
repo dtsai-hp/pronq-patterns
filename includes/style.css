@@ -4,7 +4,7 @@
   margin-top: 1px;
   padding-top: 60px;
   padding-bottom: 60px;
-  border-bottom: 1px solid #edeeee;
+  border-bottom: 1px solid #EDEEEE;
 }
 
 @media (max-width: 991px) {
@@ -17,7 +17,7 @@
   font-size: 18px;
   font-weight: 300;
   display: block;
-  border-bottom: 1px solid #edeeee;
+  border-bottom: 1px solid #EDEEEE;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
@@ -32,14 +32,14 @@
   font-weight: bold;
   text-transform: uppercase;
   line-height: 30px;
-  color: #75787b;
+  color: #75787B;
   padding: 14px 20px 10px 12px;
   display: block;
-  -webkit-box-shadow: -1px -1px 2px #cbcccd;
-  box-shadow: -1px -1px 2px #cbcccd;
+  -webkit-box-shadow: -1px -1px 2px #CBCCCD;
+  box-shadow: -1px -1px 2px #CBCCCD;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background-color: #edeeee;
+  background-color: #EDEEEE;
   transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   /* IE 9 */
@@ -49,7 +49,7 @@
 }
 
 .backgrounds:hover {
-  box-shadow: -1px -1px 5px #babbbd;
+  box-shadow: -1px -1px 5px #BABBBD;
 }
 
 .backgrounds div {
@@ -59,20 +59,20 @@
   margin-top: 7px;
   width: 24px;
   height: 24px;
-  -webkit-box-shadow: -2px 2px 3px #ddddde;
-  box-shadow: -2px 2px 3px #ddddde;
+  -webkit-box-shadow: -2px 2px 3px #DDDDDE;
+  box-shadow: -2px 2px 3px #DDDDDE;
   border-radius: 12px;
   transition: .2s;
 }
 
 .backgrounds div:hover {
   border: 1px solid white;
-  box-shadow: -2px 2px 3px #babbbd;
+  box-shadow: -2px 2px 3px #BABBBD;
 }
 
 .grid-demo {
   border: 2px solid white;
-  background-color: #edeeee;
+  background-color: #EDEEEE;
   padding: 10px;
   -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
@@ -93,7 +93,7 @@
 }
 
 .darkbox-label {
-  background-color: #edeeee;
+  background-color: #EDEEEE;
   border-radius: 5px 5px 0px 0px;
   padding: 10px 15px;
   font-size: 12px;
@@ -103,7 +103,7 @@
 
 .darkbox {
   display: block;
-  background-color: #53565a;
+  background-color: #53565A;
   border-radius: 0px 0px 5px 5px;
   padding: 15px;
   color: white;
@@ -127,14 +127,14 @@
   padding: 30px 30px 0px 30px;
   overflow: auto;
   z-index: 10;
-  background-color: #f7f7f7;
-  border: 1px solid #ddddde;
+  background-color: #F7F7F7;
+  border: 1px solid #DDDDDE;
 }
 
 .specs .state {
   font-size: 14px;
   font-weight: 400;
-  border-bottom: 1px solid #ddddde;
+  border-bottom: 1px solid #DDDDDE;
   padding-top: 10px;
 }
 
@@ -145,9 +145,9 @@
 .specs h1 {
   font-size: 18px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #00b0b9;
+  border-bottom: 1px solid #00B0B9;
   margin-bottom: 10px;
-  color: #00b0b9;
+  color: #00B0B9;
 }
 
 .code {
@@ -155,7 +155,7 @@
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 12px;
   line-height: 20px;
-  background-color: #53565a;
+  background-color: #53565A;
   color: white;
   padding: 20px;
   margin: 10px 0px 30px 0px;
@@ -180,28 +180,28 @@
 }
 
 .code .tag {
-  color: #ffb149;
+  color: #FFB149;
 }
 
 .code .css {
-  color: #c8f4f3;
+  color: #C8F4F3;
 }
 
 .code .html {
-  color: #add574;
+  color: #ADD574;
 }
 
 .code .comment {
-  color: #ddddde;
+  color: #DDDDDE;
 }
 
 .code .js {
-  color: #faed89;
+  color: #FAED89;
   font-style: italic;
 }
 
 .code .var {
-  color: #b081b9;
+  color: #B081B9;
 }
 
 .specs table {
@@ -227,23 +227,23 @@
   font-size: 12px;
   font-weight: 700;
   text-align: left;
-  border-bottom: 1px solid #ddddde;
+  border-bottom: 1px solid #DDDDDE;
 }
 
 .fa-hover {
-  color: #babbbd;
+  color: #BABBBD;
   padding: 10px;
   font-size: 12px;
 }
 
 .fa-hover i {
-  color: #53565a;
+  color: #53565A;
   font-size: 30px;
   margin-right: 10px;
 }
 
 .fa-hover:hover {
-  color: #53565a;
+  color: #53565A;
 }
 
 /* Color Styling ------------------------------------------------ */
@@ -394,7 +394,7 @@
 }
 
 .change table tr .title {
-  background-color: #53565a;
+  background-color: #53565A;
   border-bottom: 5px solid white;
   padding: 10px 15px;
   font-size: 12px;
@@ -415,18 +415,18 @@
   }
 }
 .change table tr:nth-child(even) td {
-  background-color: #edeeee;
+  background-color: #EDEEEE;
 }
 
 .change table tr.date td {
   background-color: white;
   text-transform: uppercase;
-  border-top: 5px solid #75787b;
-  border-bottom: 3px solid #cbcccd;
+  border-top: 5px solid #75787B;
+  border-bottom: 3px solid #CBCCCD;
   padding: 5px 10px;
   font-weight: 300;
   background-color: white;
-  color: #53565a;
+  color: #53565A;
   letter-spacing: 2px;
 }
 
@@ -440,8 +440,8 @@
 }
 
 .change table tr td.deletion {
-  border-right: 6px solid #af3a2b;
-  color: #af3a2b;
+  border-right: 6px solid #AF3A2B;
+  color: #AF3A2B;
   background-color: white;
   text-align: center;
   font-size: 18px;
@@ -449,8 +449,8 @@
 }
 
 .change table tr td.addition {
-  border-right: 6px solid #339b83;
-  color: #339b83;
+  border-right: 6px solid #339B83;
+  color: #339B83;
   background-color: white;
   text-align: center;
   font-size: 18px;
@@ -458,8 +458,8 @@
 }
 
 .change table tr td.smallchange {
-  border-right: 6px solid #ff9e1b;
-  color: #ff9e1b;
+  border-right: 6px solid #FF9E1B;
+  color: #FF9E1B;
   background-color: white;
   text-align: center;
   font-size: 18px;
@@ -467,8 +467,8 @@
 }
 
 .change table tr td.bigchange {
-  border-right: 6px solid #686e9f;
-  color: #686e9f;
+  border-right: 6px solid #686E9F;
+  color: #686E9F;
   background-color: white;
   text-align: center;
   font-size: 18px;

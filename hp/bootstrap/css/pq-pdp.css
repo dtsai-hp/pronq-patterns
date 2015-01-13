@@ -1,40 +1,22 @@
-.templates {
-    margin-top: 15px;
-}
-
-.templates.example {
-    display: none;
-}
-
 .templates p.placeholder {
   font-size: 22px;
   font-weight: bold;
-  color: #75787b;
+  color: #75787B;
 }
 .templates.pdp-hero {
-  background-color: #F5F5F5;
+  display: block;
+  background-color: #F7F7F7;
   padding: 60px 0px;
 }
 .templates.pdp-hero .hero-illustration {
   height: 300px;
-  background-color: #ddddde;
-  border-right: 30px solid #F5F5F5;
-  border-left: 30px solid #F5F5F5;
+  background-color: #DDDDDE;
+  border-right: 30px solid #F7F7F7;
   padding: 40px;
 }
-
-.templates.pdp-hero.example .hero-illustration {
-    height: auto;
-    background-color: transparent;
-    text-align: center;
-    padding: 40px;
-}
-
 .templates.pdp-hero h1 {
-  margin-bottom: 20px;
-  font-size: 30px;
+  margin-bottom: 25px;
 }
-
 .templates.pdp-hero p.description {
   font-size: 20px;
   font-weight: 300;
@@ -42,37 +24,28 @@
   margin-bottom: 25px;
 }
 .templates.pdp-overview {
+  display: block;
   padding: 60px;
 }
-
 .templates.pdp-overview h2.header {
   text-align: center;
   margin-bottom: 45px;
-  font-size: 24px;
 }
-
 .templates.pdp-overview .icon-box {
   text-align: center;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 30px;
 }
-
-.templates.pdp-overview.wireframe .icon-box .icon {
+.templates.pdp-overview .icon-box .icon {
   border-radius: 70px;
-  height: 34px;
-  width: 134px;
-  background-color: #edeeee;
+  height: 140px;
+  width: 140px;
+  background-color: #EDEEEE;
   display: inline-block;
-  padding: 50px 0px;
-  border: 2px solid #cbcccd;
+  padding: 40px 0px;
+  border: 2px solid #CBCCCD;
 }
-
 .templates.pdp-overview .icon-box h3 {
-  margin-top: 20px;
-  margin-bottom: 25px;
-  color: #53565a;
-}
-
-.templates.pdp-features {
-    background-color: #
+  margin-top: 5px;
+  color: #53565A;
 }

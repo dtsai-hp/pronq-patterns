@@ -140,7 +140,7 @@
   border-width: 10px 10px 0px 10px;
 }
 .pricing-package .details {
-  background-color: #edeeee;
+  background-color: #EDEEEE;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 30px 15px 15px 15px;
@@ -169,23 +169,23 @@
 }
 
 .pricing-package.teal .header {
-  background-color: #33c0c7;
+  background-color: #33C0C7;
 }
 .pricing-package.teal .header .title {
-  background-color: #00b0b9;
+  background-color: #00B0B9;
 }
 .pricing-package.teal .header .arrow-down {
-  border-color: #33c0c7 transparent transparent transparent;
+  border-color: #33C0C7 transparent transparent transparent;
 }
 
 .pricing-package.green .header {
-  background-color: #339b83;
+  background-color: #339B83;
 }
 .pricing-package.green .header .title {
   background-color: #008264;
 }
 .pricing-package.green .header .arrow-down {
-  border-color: #339b83 transparent transparent transparent;
+  border-color: #339B83 transparent transparent transparent;
 }
 
 .pricing-package.blue .header {
@@ -199,13 +199,13 @@
 }
 
 .pricing-package.purple .header {
-  background-color: #868bb2;
+  background-color: #868BB2;
 }
 .pricing-package.purple .header .title {
-  background-color: #686e9f;
+  background-color: #686E9F;
 }
 .pricing-package.purple .header .arrow-down {
-  border-color: #868bb2 transparent transparent transparent;
+  border-color: #868BB2 transparent transparent transparent;
 }
 
 #pricing-header {
@@ -218,7 +218,7 @@
   width: 100%;
   text-align: center;
   vertical-align: middle;
-  color: #53565a;
+  color: #53565A;
   z-index: 10;
   margin-top: 20px;
   border-top: 20px solid white;
@@ -239,11 +239,11 @@
 }
 .pricing-features-header .header .packages {
   font-weight: 700;
-  background-color: #53565a;
+  background-color: #53565A;
   border-top-left-radius: 5px;
 }
 .pricing-features-header .header .teal {
-  background-color: #00b0b9;
+  background-color: #00B0B9;
   font-weight: 300;
   border-top-left-radius: 5px;
 }
@@ -252,7 +252,7 @@
   font-weight: 300;
 }
 .pricing-features-header .header .purple {
-  background-color: #686e9f;
+  background-color: #686E9F;
   font-weight: 300;
 }
 .pricing-features-header .header .blue {
@@ -268,14 +268,14 @@
   display: block;
   text-align: center;
   vertical-align: middle;
-  color: #53565a;
+  color: #53565A;
   margin-bottom: 40px;
   z-index: 0;
 }
 .pricing-features .feature {
   border-bottom: 1px solid white;
   margin: 0px;
-  background-color: #edeeee;
+  background-color: #EDEEEE;
 }
 .pricing-features .feature div {
   padding: 10px 15px;
@@ -324,8 +324,8 @@
   }
 }
 .configurator {
-  background-color: #edeeee;
-  border-top: 1px solid #ddddde;
+  background-color: #EDEEEE;
+  border-top: 1px solid #DDDDDE;
   display: none;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -347,7 +347,7 @@
   padding: 5px;
 }
 .configurator .step .tier .level.active {
-  background-color: #ddddde;
+  background-color: #DDDDDE;
   border-radius: 5px;
 }
 .configurator .close {
@@ -355,20 +355,20 @@
   right: 30px;
   top: -1px;
   font-size: 30px;
-  background-color: #edeeee;
-  border: 1px solid #ddddde;
+  background-color: #EDEEEE;
+  border: 1px solid #DDDDDE;
   padding: 0px 5px;
   z-index: 1;
   opacity: 1;
-  color: #babbbd;
+  color: #BABBBD;
   border-radius: 0px 0px 5px 5px;
 }
 .configurator .close:hover {
-  color: #75787b;
-  background-color: #ddddde;
+  color: #75787B;
+  background-color: #DDDDDE;
 }
 .configurator hr {
-  border-top: 1px solid #ddddde;
+  border-top: 1px solid #DDDDDE;
   margin-top: 0px;
   margin-bottom: 45px;
 }
@@ -379,8 +379,8 @@
 .configurator h2 > small {
   text-transform: uppercase;
   font-weight: 700;
-  border-right: 1px solid #cbcccd;
-  color: #75787b;
+  border-right: 1px solid #CBCCCD;
+  color: #75787B;
   font-size: 24px;
   padding-right: 20px;
   margin-right: 20px;
@@ -397,7 +397,7 @@
   color: white;
   font-size: 18px;
   font-weight: 300;
-  background-color: #75787b;
+  background-color: #75787B;
 }
 .configurator .overview table {
   width: 100%;
@@ -420,7 +420,7 @@
   line-height: 20px;
 }
 .configurator .overview table tr td .total small {
-  color: #75787b;
+  color: #75787B;
   font-weight: 400;
 }
 .configurator .overview table tr.top {
@@ -436,7 +436,7 @@
   text-align: left;
   padding: 0px 15px 15px 15px;
   font-weight: 400;
-  color: #75787b;
+  color: #75787B;
 }
 .configurator .overview table tr:first-child th {
   border-top-left-radius: 5px;
@@ -455,12 +455,12 @@
 
 .quote-box {
   display: block;
-  background-color: #edeeee;
+  background-color: #EDEEEE;
   padding: 60px 0px;
 }
 .quote-box .quote {
   font-size: 22px;
-  color: #75787b;
+  color: #75787B;
   line-height: 32px;
   display: block;
   margin-bottom: 30px;
@@ -474,7 +474,7 @@
   font-size: 18px;
   font-style: italic;
   display: block;
-  color: #babbbd;
+  color: #BABBBD;
 }
 
 .not-sure {

@@ -225,6 +225,14 @@ code.required {
 	color: $red;
 }
 
+.uk-table.logos tr td:first-child {
+	text-align: center;
+
+	img {
+		max-height: 30px;
+	}
+}
+
 /* Color Styling ------------------------------------------------ */
 
 .colorbox {

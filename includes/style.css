@@ -758,6 +758,13 @@ code.required {
   color: #BF3A3A;
 }
 
+.uk-table.logos tr td:first-child {
+  text-align: center;
+}
+.uk-table.logos tr td:first-child img {
+  max-height: 30px;
+}
+
 /* Color Styling ------------------------------------------------ */
 .colorbox {
   width: 100px;

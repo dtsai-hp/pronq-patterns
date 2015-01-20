@@ -6696,6 +6696,8 @@ ul > li:last-child, ol > li:last-child {
         color: #0096D6; }
       .pq-footer .supplemental ul li:last-child {
         margin-right: 0px; }
+    .pq-footer .supplemental img {
+      vertical-align: baseline; }
 
 /* End Footer */
 /* Back to Top */

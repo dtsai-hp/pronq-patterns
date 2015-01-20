@@ -41,7 +41,7 @@
 
 	<!-- Content - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
-<!-- Modules - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+	<!-- Modules - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
 
 
 	<div class="uk-container uk-container-center">
@@ -313,19 +313,19 @@
 
 <script>
 
-function showWireframe(module) {
-	$(".templates." + module + ".wireframe").show();
-	$(".templates." + module + ".example").hide();
-	$(".uk-button-" + module).removeClass("active");
-	$("#uk-button-" + module + "-wireframe").addClass('active');
-}
+	function showWireframe(module) {
+		$(".templates." + module + ".wireframe").show();
+		$(".templates." + module + ".example").hide();
+		$(".uk-button-" + module).removeClass("active");
+		$("#uk-button-" + module + "-wireframe").addClass('active');
+	}
 
-function showExample(module) {
-	$(".templates." + module + ".wireframe").hide();
-	$(".templates." + module + ".example").show();
-	$(".uk-button-" + module).removeClass("active");
-	$("#uk-button-" + module + "-example").addClass('active');
-}
+	function showExample(module) {
+		$(".templates." + module + ".wireframe").hide();
+		$(".templates." + module + ".example").show();
+		$(".uk-button-" + module).removeClass("active");
+		$("#uk-button-" + module + "-example").addClass('active');
+	}
 
 </script>
 

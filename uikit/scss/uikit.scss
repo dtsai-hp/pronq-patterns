@@ -215,6 +215,10 @@ ul > li:last-child, ol > li:last-child {
 
 /* Footer */
 
+.uk-container > .pq-footer {
+    padding: 30px;
+}
+
 .pq-footer {
     background-color: $grey-light4;
     padding: 30px 0px;
@@ -222,9 +226,17 @@ ul > li:last-child, ol > li:last-child {
     display: block;
     color: $grey-light1;
 
-    .right {
-        text-align: right;
+    .top {
+        margin-bottom: 15px;
+    }
+
+    .bottom {
         font-size: 12px;
+    }
+
+    .right {
+        font-size: 12px;
+        text-align: right;
     }
 
     .footer-social {
@@ -261,22 +273,6 @@ ul > li:last-child, ol > li:last-child {
                 background-color: white;
                 cursor: pointer;
             }
-        }
-    }
-
-
-    @media(max-width: 1220px) {
-        .left {
-            display: block;
-            width: 100%;
-            margin-bottom: 15px;
-        }
-
-        .right {
-            text-align: left;
-            clear: both;
-            width: 100%;
-            display: block;
         }
     }
 

@@ -6622,15 +6622,22 @@ ul > li:last-child, ol > li:last-child {
 
 /* End Navigation */
 /* Footer */
+.uk-container > .pq-footer {
+  padding: 30px; }
+
 .pq-footer {
   background-color: #EEEEEE;
   padding: 30px 0px;
   font-size: 13px;
   display: block;
   color: #888888; }
-  .pq-footer .right {
-    text-align: right;
+  .pq-footer .top {
+    margin-bottom: 15px; }
+  .pq-footer .bottom {
     font-size: 12px; }
+  .pq-footer .right {
+    font-size: 12px;
+    text-align: right; }
   .pq-footer .footer-social {
     float: left;
     margin-right: 15px; }
@@ -6654,16 +6661,6 @@ ul > li:last-child, ol > li:last-child {
       .pq-footer .footer-social .language:hover {
         background-color: white;
         cursor: pointer; }
-  @media (max-width: 1220px) {
-    .pq-footer .left {
-      display: block;
-      width: 100%;
-      margin-bottom: 15px; }
-    .pq-footer .right {
-      text-align: left;
-      clear: both;
-      width: 100%;
-      display: block; } }
   .pq-footer a {
     color: #888888; }
   .pq-footer ul {

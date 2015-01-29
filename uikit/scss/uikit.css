@@ -6638,6 +6638,9 @@ ul > li:last-child, ol > li:last-child {
   .pq-footer .right {
     font-size: 12px;
     text-align: right; }
+  @media (max-width: 767px) {
+    .pq-footer .right {
+      text-align: left; } }
   .pq-footer .footer-social {
     float: left;
     margin-right: 15px; }

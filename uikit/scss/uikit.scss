@@ -239,6 +239,12 @@ ul > li:last-child, ol > li:last-child {
         text-align: right;
     }
 
+    @media (max-width: 767px) {
+        .right {
+            text-align: left;
+        }
+    }
+
     .footer-social {
         float: left;
         margin-right: 15px;

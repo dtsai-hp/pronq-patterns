@@ -9,7 +9,7 @@
 
 		<div class="uk-navbar-flip">
 			<ul class="uk-navbar-nav uk-visible-small">
-				<li><a href="#globalnav-mobile" data-uk-offcanvas><img src="http://www.hpobteam.com/downloads/psds/navigation/assets/hamburger.png"></a></li>
+				<li id="mobile-menu"><a href="#globalnav-mobile"><img src="http://www.hpobteam.com/downloads/psds/navigation/assets/hamburger.png"></a></li>
 			</ul>
 			<ul class='uk-navbar-nav uk-hidden-small'>
 				<li><a href='http://www.hpobteam.com/resources.html'>Resources</a></li>
@@ -19,14 +19,21 @@
 	</div>
 </nav>
 
-<div class="uk-offcanvas" id="globalnav-mobile">
-	<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
-		<ul class="uk-nav uk-nav-offcanvas">
-			<li><a href='http://www.hpobteam.com/styles.html'>Styles</a></li>
-			<li><a href='http://www.hpobteam.com/ui.html'>UI</a></li>
-			<li><a href='http://www.hpobteam.com/components.html'>Components</a></li>
-			<li><a href='http://www.hpobteam.com/resources.html'>Resources</a></li>
-			<li><a href='http://www.hpobteam.com/change.html'>Change Log</a></li>
-		</ul>
-	</div>
+<div class="obt-mobilenav" id="globalnav-mobile">
+	<ul>
+		<li><a href='http://www.hpobteam.com/styles.html'>Styles</a></li>
+		<li><a href='http://www.hpobteam.com/ui.html'>UI</a></li>
+		<li><a href='http://www.hpobteam.com/components.html'>Components</a></li>
+		<li><a href='http://www.hpobteam.com/resources.html'>Resources</a></li>
+		<li><a href='http://www.hpobteam.com/change.html'>Change Log</a></li>
+	</ul>
 </div>
+
+<script>
+
+	$("#mobile-menu").on("click", function() {
+		$("#globalnav-mobile").slideToggle('slow');
+
+	});
+
+</script>

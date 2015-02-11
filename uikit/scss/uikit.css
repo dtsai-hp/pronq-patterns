@@ -5290,7 +5290,7 @@ select.uk-form-width-mini {
 /* Modifier: `uk-alert-danger`
  ========================================================================== */
 .uk-alert-danger {
-  background: rgba(242, 167, 167, 0.2);
+  background: rgba(246, 204, 204, 0.2);
   color: #8C2B2B; }
 
 /* Modifier: `uk-alert-large`
@@ -6966,7 +6966,7 @@ ul > li:last-child, ol > li:last-child {
     margin-right: 5px; }
 
 .uk-alert-danger {
-  border-color: #F2A7A7; }
+  border-color: #F6CCCC; }
   .uk-alert-danger i, .uk-alert-danger .uk-close {
     color: #BF3A3A; }
 

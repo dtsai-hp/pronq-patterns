@@ -150,7 +150,13 @@
         .summary tr.total td {
             font-size: 24px;
             font-weight: 700;
+            border-top: 1px solid #DDDDDD;
         }
+
+        .summary tr.total th {
+            border-top: 1px solid #DDDDDD;
+        }
+
 
         @media (max-width: 480px) {
             #detail table th, #detail table td {
@@ -216,7 +222,7 @@
                     </tr>
                 </table>
                 <hr>
-                <button class="uk-button uk-button-primary" onclick="showConfig();">Build package</button><a href="javascript:void(0)" onclick="hideDetails();">Hide details</a>
+                <a href="#"><button class="uk-button uk-button-primary" onclick="showConfig();">Build package</button></a><a href="javascript:void(0)" onclick="hideDetails();">Hide details</a>
             </div>
         </div>
 
@@ -235,7 +241,7 @@
         <div class="uk-container uk-container-center">
 
             <h1><small>Build package</small>Month-to-Month</h1>
-            <a href="javascript:void(0);" onclick="hideConfig();">Select a different package</a>
+            <a href="#" onclick="hideConfig();">Select a different package</a>
             <div class="step">
                 <div class="number">1</div>
                 <h3>This is the first step</h3>
@@ -272,7 +278,7 @@
                         <button class="uk-button uk-button-secondary uk-width-1-1" onclick="hideConfig();">Cancel</button>
                     </div>
                     <div class="uk-width-1-2">
-                        <button class="uk-button uk-button-primary uk-width-1-1">Checkout</button>
+                        <a href="#"><button class="uk-button uk-button-primary uk-width-1-1">Checkout</button></a>
                     </div>
                 </div>
 

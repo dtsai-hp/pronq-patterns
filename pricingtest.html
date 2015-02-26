@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html ng-app="uiLibrary">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>HP Online Business Team Pattern Library</title>
+
+    <!-- Icon -->
+
+    <link rel="shortcut icon" href="imgs/assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link href='uikit/scss/uikit.css' rel='stylesheet' type='text/css'>
+    <link href='includes/style.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap/css/pq-slider.css">
+
+    <!-- Javascript -->
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+    <style>
+
+        .package {
+            border: 1px solid #DDDDDD;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 8px solid #8E5599;
+            margin-bottom: 15px;
+            transition: .1s;
+        }
+
+        .package.trial-box {
+            border-left: 8px solid #B081B9;
+        }
+
+        .package h1, .configurator h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 0px;
+            color: #8E5599;
+        }
+
+        .configurator h1 small {
+            color: #888888;
+            display: block;
+        }
+
+        .package.trial-box h1 {
+            color: #B081B9;
+        }
+
+        .package:first-child {
+            margin-top: 60px;
+        }
+
+        .package:last-child {
+            margin-bottom: 60px;
+        }
+
+        #detail table {
+            text-align: left;
+        }
+
+        #detail table th {
+            padding: 5px 30px 5px 0px;
+        }
+
+        #detail button {
+            margin-right: 15px;
+        }
+
+        #detail {
+            display: none;
+        }
+
+        h3 {
+            font-weight: 600;
+        }
+
+        .configurator {
+            background-color: #F5F5F5;
+            display: none;
+            padding: 30px 0px;
+        }
+
+        .step {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 60px;
+        }
+
+        .number {
+            position: absolute;
+            left: -50px;
+            color: white;
+            background-color: #666666;
+            border-radius: 50%;
+            padding: 8px 0px;
+            font-size: 18px;
+            font-weight: 600;
+            width: 34px;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        input {
+            height: 40px;
+            width: 150px;
+            background-color: white;
+            font-size: 18px;
+            border: 1px solid #DDDDDD;
+            border-radius: 5px;
+            padding: 0px 15px;
+        }
+
+        .summary {
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid #DDDDDD;
+            padding: 15px 30px 30px;
+        }
+
+        .summary table {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .summary table th {
+            text-align: left;
+            padding-top: 15px;
+        }
+
+        .summary table th + td {
+            text-align: right;
+            padding-top: 15px;
+
+        }
+
+        .summary tr.total {
+            border-top: 1px solid #DDDDDD;
+        }
+
+        .summary tr.total td {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 480px) {
+            #detail table th, #detail table td {
+                display: block;
+            }
+
+            #detail table td {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <!-- Navigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+    <div id="globalnav"></div>
+    <script> $("#globalnav").load("includes/nav.html"); </script>
+
+    <div class="obt-subnav" id="subnav" data-uk-sticky>
+        <div class="uk-container uk-container-center">
+            <ul class="uk-subnav">
+                <li>AppPulse Mobile</li>
+                <li class="pull-right" style="font-size: 24px;"><a href="#"><i class="fa fa-angle-down"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="uk-container uk-container-center packages">
+
+        <div class="package trial-box">
+            <h1>Trial</h1>
+            <strong>Free, No credit card required</strong><br>
+                1 month free trial<br>
+                20 data points<br>
+                <a href="javascript:void(0)">More details</a>
+        </div>
+
+        <div class="package">
+            <h1>Month-to-Month</h1>
+            <strong>Free, No credit card required</strong>
+            <div id="highlight">
+                1 month free trial<br>
+                20 data points<br>
+                <a href="javascript:void(0)" onclick="showDetails();">More details</a>
+            </div>
+            <div id="detail">
+                <hr>
+                <table>
+                    <tr>
+                        <th>Scripting services monthly fee</th><td>Free trial</td>
+                    </tr>
+                    <tr>
+                        <th>Data points per tenant</th><td>Free trial</td>
+                    </tr>
+                    <tr>
+                        <th>Support</th><td>Free trial</td>
+                    </tr>
+                    <tr>
+                        <th>Term Duration</th><td>Free trial</td>
+                    </tr>
+                </table>
+                <hr>
+                <button class="uk-button uk-button-primary" onclick="showConfig();">Build package</button><a href="javascript:void(0)" onclick="hideDetails();">Hide details</a>
+            </div>
+        </div>
+
+
+        <div class="package">
+            <h1>Flexible Term</h1>
+            <strong>Free, No credit card required</strong><br>
+                1 month free trial<br>
+                20 data points<br>
+                <a href="javascript:void(0)">More details</a>
+        </div>
+
+    </div>
+
+    <div class="configurator">
+        <div class="uk-container uk-container-center">
+
+            <h1><small>Build package</small>Month-to-Month</h1>
+            <a href="javascript:void(0);" onclick="hideConfig();">Select a different package</a>
+            <div class="step">
+                <div class="number">1</div>
+                <h3>This is the first step</h3>
+                <p>This is the instructions fro the first step</p>
+                <input value="0" />
+            </div>
+
+            <div class="step">
+                <div class="number">2</div>
+                <h3>This is the first step</h3>
+                <p>This is the instructions fro the first step</p>
+                <input value="0" />
+            </div>
+
+            <h3>Package Summary</h3>
+            <div class="summary">
+                <table>
+                    <tr><th>Applications</th>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr><td colspan=2>1 application @ $20 each</th>
+                    </tr>
+                    <tr><th>Users</th>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr><td colspan=2>1 user @ $20 each</th>
+                    </tr>
+                    <tr class="total"><th>TOTAL</th>
+                        <td>$40.00</td>
+                    </tr>
+                </table>
+                <div class="uk-grid">
+                    <div class="uk-width-1-2">
+                        <button class="uk-button uk-button-secondary uk-width-1-1" onclick="hideConfig();">Cancel</button>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <button class="uk-button uk-button-primary uk-width-1-1">Checkout</button>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+<div id="footer" class="pq-footer"></div>
+<script>$("#footer").load("includes/footer.html");</script>
+
+
+    <script>
+
+        function hideDetails() {
+            $("#detail").slideUp();
+            $("#highlight").slideDown();
+        }
+
+        function showDetails() {
+            $("#detail").slideDown();
+            $("#highlight").slideUp();
+        }
+
+        function showConfig() {
+            $(".packages").hide();
+            $(".configurator").show();
+        }
+
+        function hideConfig() {
+            $(".packages").show();
+            $(".configurator").hide();
+        }
+
+    </script>
+
+<!-- After load JavaScript files -->
+
+<script src="uikit/js/uikit.min.js"></script>
+<script src="uikit/js/core/dropdown.min.js"></script>
+<script src="uikit/js/core/nav.min.js"></script>
+<script src="uikit/js/core/tooltip.min.js"></script>
+<script src="uikit/js/components/sticky.min.js"></script>
+<script src="js/pq-top.js" type="text/javascript"></script>
+<script src="js/obt-forms.js" type="text/javascript"></script>
+
+
+</body>
+</html>

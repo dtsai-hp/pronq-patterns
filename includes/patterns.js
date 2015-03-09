@@ -55,3 +55,6 @@ $('#mobile-menu').on('click', function() {
 
 });
 
+$("#globalnav").html(header);
+$("#footer").html(footer);
+

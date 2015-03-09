@@ -29,9 +29,11 @@
 <body>
 
 
-	<!-- Navigation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+	<!-- Navigation -->
 
 	<div id="globalnav"></div>
+
+	<!-- Subnav -->
 
 	<div class="obt-subnav" id="subnav" data-uk-sticky>
 		<div class="uk-container uk-container-center">
@@ -39,7 +41,6 @@
 				<li><a href="#links">Links</a></li>
 				<li><a href="#buttons">Buttons</a></li>
 				<li><a href="#forms">Forms</a></li>
-				<li><a href="#sliderbars">Slider Bars</a></li>
 				<li><a href="#tooltips">Tooltips & Alerts</a></li>
 				<li><a href="#progressbars">Progress Bars</a></li>
 				<li><a href="#icons">Icons</a></li>
@@ -49,7 +50,7 @@
 
 	<div class="uk-container uk-container-center">
 
-		<!-- Links - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+		<!-- Links -->
 
 		<div id="links" class="pq-docs-section">
 
@@ -82,7 +83,7 @@
 		</div>
 
 
-		<!-- Buttons - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+		<!-- Buttons -->
 
 
 		<div id="buttons" class="pq-docs-section">
@@ -195,20 +196,18 @@
 
 				&lt;a <span class="html">class</span>=<span class="css">"uk-button"</span>&gt;...&lt;/a&gt;<br />
 
-
 			</div>
 
 			<h2>Sizes</h2>
 
 			<p>Button sizes can be used with any style of buttons by pairing the classes together.</p>
 
-			<p><button class="uk-button uk-button-large">Large</button>
-
-			<button class="uk-button">Default</button>
-
-			<button class="uk-button uk-button uk-button-small">Small</button>
-
-			<button class="uk-button uk-button-mini">Mini</button></p>
+			<p>
+				<button class="uk-button uk-button-large">Large</button>
+				<button class="uk-button">Default</button>
+				<button class="uk-button uk-button uk-button-small">Small</button>
+				<button class="uk-button uk-button-mini">Mini</button>
+			</p>
 
 			<div id="specs_buttonsizes" class="specs">
 
@@ -257,8 +256,6 @@
 			</div>
 
 			<div id="code_buttonsizes" class="code">
-
-
 				&lt;a <span class="html">class</span>=<span class="css">"uk-button  uk-button-large"</span>&gt;...&lt;/a&gt;<br />
 
 
@@ -268,12 +265,11 @@
 
 			<p>All buttons styles and sizes can be used with icons without any extra specifications.</p>
 
-
 			<p><button class="uk-button"><i class="fa fa-download"></i> Download</button></p>
 
 		</div>
 
-		<!-- Form Fields - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+		<!-- Form Fields -->
 
 		<div id="forms" class="pq-docs-section">
 
@@ -336,7 +332,6 @@
 			<div id="specs_inputs" class="specs">
 
 				<div class="uk-grid">
-
 
 					<div class="uk-width-2-3">
 						<table class="uk-table">
@@ -439,13 +434,10 @@
 							</tbody>
 						</table>
 					</div>
-
 				</div>
-
 			</div>
 
 			<h2>Checkboxes & Radio Buttons</h2>
-
 
 			<form class="uk-form uk-grid">
 				<div class="uk-form-row uk-width-1-2">
@@ -496,307 +488,293 @@
 
 				</div>
 			</div>
+		</div>
+
+		<!-- Tooltips -->
+
+		<div id="tooltips" class="pq-docs-section">
+
+			<h1 style="margin-bottom: 30px;">Tooltips & Alerts</h1>
+
+			<h2>Tooltips</h2>
+
+			<p><span class="pq-tooltip" data-uk-tooltip title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis turpis vitae orci commodo molestie.">Example tooltip</span></p>
+
+			<div id="specs_tooltips" class="specs">
+
+				<div class="uk-grid">
+
+					<div class="uk-width-1-2">
+						<table class="uk-table" style="margin-bottom: 15px;">
+							<thead>
+								<tr>
+									<th>Text styling</th>
+									<th>Tagged text</th>
+									<th>Tooltip text</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Color</th>
+									<td>blue</td>
+									<td>white</td>
+								</tr>
+								<tr>
+									<th>Border Bottom</th>
+									<td>1px dotted blue</td>
+									<td>none</td>
+								</tr>
+								<tr>
+									<th>Font Size</th>
+									<td>auto</td>
+									<td>12px / 18px</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="uk-width-1-2">
+						<table class="uk-table">
+							<thead>
+								<tr>
+									<th>Box styling</th>
+									<th>Box</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Background Color</th>
+									<td>grey-dark</td>
+								</tr>
+								<tr>
+									<th>Padding</th>
+									<td>10px</td>
+								</tr>
+								<tr>
+									<th>Caret Size</th>
+									<td>6px</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div id="code_tooltips" class="code">
+
+				&lt;<span class="tag">span</span> <span class="html">class</span>=<span class="css">"pq-tooltip"</span> <span class="html">title</span>=<span class="css">"..."</span> <span class="html">data-uk-tooltip</span>&gt;...&lt;/<span class="tag">span</span>&gt;
+
+			</div>
+
+			<h2>Alerts</h2>
+
+			<div class="uk-alert" data-uk-alert>
+				<a href="" class="uk-alert-close uk-close"></a>
+				<i class="fa fa-info-circle"></i> Informative Alert
+			</div>
+
+			<div class="uk-alert uk-alert-success" data-uk-alert>
+				<a href="" class="uk-alert-close uk-close"></a>
+				<i class="fa fa-check"></i> Successful Alert
+			</div>
+
+			<div class="uk-alert uk-alert-warning" data-uk-alert>
+				<a href="" class="uk-alert-close uk-close"></a>
+				<i class="fa fa-warning"></i> Warning Alert
+			</div>
+
+			<div class="uk-alert uk-alert-danger" data-uk-alert>
+				<a href="" class="uk-alert-close uk-close"></a>
+				<i class="fa fa-exclamation-circle"></i> Error Alert
+			</div>
+
+			<div id="specs_alerts" class="specs">
+
+				<div class="uk-grid">
+
+					<div class="uk-width-1-4">
+						<table class="uk-table">
+							<thead>
+								<tr>
+									<th>Box styling</th>
+									<th>Alert</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Border</th>
+									<td>1px solid</td>
+								</tr>
+								<tr>
+									<th>Border Radius</th>
+									<td>5px</td>
+								</tr>
+								<tr>
+									<th>Padding</th>
+									<td>10px</td>
+								</tr>
+								<tr>
+									<th>Font Size</th>
+									<td>14px / 24px</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="uk-width-3-4">
+						<table class="uk-table">
+							<thead>
+								<tr>
+									<th>States</th>
+									<th>Default</th>
+									<th>Success</th>
+									<th>Warning</th>
+									<th>Error</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Class</th>
+									<td><code>uk-alert</code></td>
+									<td><code>uk-alert-success</code></td>
+									<td><code>uk-alert-warning</code></td>
+									<td><code>uk-alert-danger</code></td>
+								</tr>
+								<tr>
+									<th>Color</th>
+									<td>blue-dark</td>
+									<td>green-dark</td>
+									<td>yellow-dark</td>
+									<td>red-dark</td>
+
+								</tr>
+								<tr>
+									<th>Border and Icon Color</th>
+									<td>blue</td>
+									<td>green</td>
+									<td>yellow</td>
+									<td>red</td>
+								</tr>
+								<tr>
+									<th>Background Color</th>
+									<td>blue, 20%</td>
+									<td>green, 20%</td>
+									<td>yellow, 20%</td>
+									<td>red, 20%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="code_alerts" class="code">
+
+				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"uk-alert"</span> <span class="html">data-uk-alert</span>&gt;<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"uk-alert-close uk-close"</span>&gt;&lt;/<span class="tag">a</span>&gt;<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp...
+				<br/>&lt;/<span class="tag">div</span>&gt;<br/>
+
+			</div>
 
 		</div>
 
-		<!-- SLIDER BARS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<!-- Progress Sliders -->
 
-		<div id="sliderbars" class="pq-docs-section">
+		<div id="progressbars" class="pq-docs-section">
 
-			<h1>Slider Bars</h1>
+			<h1>Progress Bars</h1>
 
+			<h2>Progressing</h2>
 
-		</div>
+			<div class="uk-progress">
+				<div class="uk-progress-bar" style="width: 40%;">40%</div>
+			</div>
 
+			<h2>Continuous</h2>
 
+			<div class="uk-progress uk-progress-striped uk-active">
+				<div class="uk-progress-bar" style="width: 100%;"></div>
+			</div>
 
-	<!-- Tooltips - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+			<div id="specs_progressbars" class="specs">
 
-	<div id="tooltips" class="pq-docs-section">
+				<table class="uk-table">
+					<thead>
+						<tr>
+							<th>Box</th>
+							<th>Background Color</th>
+							<th>Bar Color</th>
+							<th>Border Radius</th>
+							<th>Height</th>
 
-		<h1 style="margin-bottom: 30px;">Tooltips & Alerts</h1>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th></th>
+							<td>grey-light4</td>
+							<td>blue</td>
+							<td>5px</td>
+							<td>25px</td>
+						</tr>
+					</tbody>
+				</table>
 
-		<h2>Tooltips</h2>
+			</div>
 
-		<p><span class="pq-tooltip" data-uk-tooltip title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis turpis vitae orci commodo molestie.">Example tooltip</span></p>
+			<div id="code_progressbars" class="code">
 
-		<div id="specs_tooltips" class="specs">
+				&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"uk-progress"</span>&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"uk-progress-bar"</span> <span class="html">style</span>=<span class="css">"width: 20%;"</span>&gt;&lt;/<span class="tag">div</span>&gt;<br />
+				&lt;/<span class="tag">div</span>&gt;<br />
 
-			<div class="uk-grid">
-
-				<div class="uk-width-1-2">
-					<table class="uk-table" style="margin-bottom: 15px;">
-						<thead>
-							<tr>
-								<th>Text styling</th>
-								<th>Tagged text</th>
-								<th>Tooltip text</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th>Color</th>
-								<td>blue</td>
-								<td>white</td>
-							</tr>
-							<tr>
-								<th>Border Bottom</th>
-								<td>1px dotted blue</td>
-								<td>none</td>
-							</tr>
-							<tr>
-								<th>Font Size</th>
-								<td>auto</td>
-								<td>12px / 18px</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-
-				<div class="uk-width-1-2">
-					<table class="uk-table">
-						<thead>
-							<tr>
-								<th>Box styling</th>
-								<th>Box</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th>Background Color</th>
-								<td>grey-dark</td>
-							</tr>
-							<tr>
-								<th>Padding</th>
-								<td>10px</td>
-							</tr>
-							<tr>
-								<th>Caret Size</th>
-								<td>6px</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
 			</div>
 
 		</div>
 
 
-		<div id="code_tooltips" class="code">
+		<!-- Glyph States -->
 
-			&lt;<span class="tag">span</span> <span class="html">class</span>=<span class="css">"pq-tooltip"</span> <span class="html">title</span>=<span class="css">"..."</span> <span class="html">data-uk-tooltip</span>&gt;...&lt;/<span class="tag">span</span>&gt;
-		</div>
+		<div id="icons" class="pq-docs-section">
 
-		<h2>Alerts</h2>
+			<h1>Icons</h1>
 
-		<div class="uk-alert" data-uk-alert>
-			<a href="" class="uk-alert-close uk-close"></a>
-			<i class="fa fa-info-circle"></i> Informative Alert
-		</div>
+			<p>We use the <a href="http://fontawesome.io" target="blank">Font Awesome icon library</a>. This library is constantly being updated and improved so please visit their page to see the most current list of icons in the library.</p>
 
-		<div class="uk-alert uk-alert-success" data-uk-alert>
-			<a href="" class="uk-alert-close uk-close"></a>
-			<i class="fa fa-check"></i> Successful Alert
-		</div>
+			<a href="downloads/fonts/fontawesome.ai" class="uk-button uk-button-secondary"><i class="fa fa-floppy-o"></i> Download font</a>
 
-		<div class="uk-alert uk-alert-warning" data-uk-alert>
-			<a href="" class="uk-alert-close uk-close"></a>
-			<i class="fa fa-warning"></i> Warning Alert
-		</div>
+			<div id="code_icons" class="code">
 
-		<div class="uk-alert uk-alert-danger" data-uk-alert>
-			<a href="" class="uk-alert-close uk-close"></a>
-			<i class="fa fa-exclamation-circle"></i> Error Alert
-		</div>
+				<span class="comment">&lt;!-- Include the following in the head section of your page --&gt;</span><br/>
 
-		<div id="specs_alerts" class="specs">
+				&lt;<span class="tag">head</span>&gt;<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">link</span> <span class="html">href</span>=<span class="css">"http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"</span> <span class="html">rel</span>=<span class="css">"stylesheet"</span>&gt;<br/>
+				&lt;/<span class="tag">head</span>&gt;<br/>
+				...<br/>
+				<span class="comment">&lt;!-- Use the provided class for the icon you wish to use, the example below is for the adjust icon --&gt;</span><br/>
 
-			<div class="uk-grid">
+				&lt;<span class="tag">i</span> <span class="html">class</span>=<span class="css">"fa fa-adjust"</span>&gt;&lt;/<span class="tag">i</span>&gt;
 
-				<div class="uk-width-1-4">
-					<table class="uk-table">
-						<thead>
-							<tr>
-								<th>Box styling</th>
-								<th>Alert</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th>Border</th>
-								<td>1px solid</td>
-							</tr>
-							<tr>
-								<th>Border Radius</th>
-								<td>5px</td>
-							</tr>
-							<tr>
-								<th>Padding</th>
-								<td>10px</td>
-							</tr>
-							<tr>
-								<th>Font Size</th>
-								<td>14px / 24px</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-
-				<div class="uk-width-3-4">
-					<table class="uk-table">
-						<thead>
-							<tr>
-								<th>States</th>
-								<th>Default</th>
-								<th>Success</th>
-								<th>Warning</th>
-								<th>Error</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th>Class</th>
-								<td><code>uk-alert</code></td>
-								<td><code>uk-alert-success</code></td>
-								<td><code>uk-alert-warning</code></td>
-								<td><code>uk-alert-danger</code></td>
-							</tr>
-							<tr>
-								<th>Color</th>
-								<td>blue-dark</td>
-								<td>green-dark</td>
-								<td>yellow-dark</td>
-								<td>red-dark</td>
-
-							</tr>
-							<tr>
-								<th>Border and Icon Color</th>
-								<td>blue</td>
-								<td>green</td>
-								<td>yellow</td>
-								<td>red</td>
-							</tr>
-							<tr>
-								<th>Background Color</th>
-								<td>blue, 20%</td>
-								<td>green, 20%</td>
-								<td>yellow, 20%</td>
-								<td>red, 20%</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
 			</div>
-		</div>
-
-
-		<div id="code_alerts" class="code">
-
-			&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"uk-alert"</span> <span class="html">data-uk-alert</span>&gt;<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&lt;<span class="tag">a</span> <span class="html">class</span>=<span class="css">"uk-alert-close uk-close"</span>&gt;&lt;/<span class="tag">a</span>&gt;<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp...
-			<br/>&lt;/<span class="tag">div</span>&gt;<br/>
 
 		</div>
 
 	</div>
 
-	<!-- Progress Sliders - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+	<div id="footer" class="pq-footer"></div>
 
-	<div id="progressbars" class="pq-docs-section">
+	<!-- After load JavaScript files -->
 
-		<h1>Progress Bars</h1>
-
-		<h2>Progressing</h2>
-
-		<div class="uk-progress">
-			<div class="uk-progress-bar" style="width: 40%;">40%</div>
-		</div>
-
-		<h2>Continuous</h2>
-
-		<div class="uk-progress uk-progress-striped uk-active">
-			<div class="uk-progress-bar" style="width: 100%;"></div>
-		</div>
-
-		<div id="specs_progressbars" class="specs">
-
-			<table class="uk-table">
-				<thead>
-					<tr>
-						<th>Box</th>
-						<th>Background Color</th>
-						<th>Bar Color</th>
-						<th>Border Radius</th>
-						<th>Height</th>
-
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th></th>
-						<td>grey-light4</td>
-						<td>blue</td>
-						<td>5px</td>
-						<td>25px</td>
-					</tr>
-				</tbody>
-			</table>
-
-		</div>
-
-		<div id="code_progressbars" class="code">
-
-			&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"uk-progress"</span>&gt;<br />
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">div</span> <span class="html">class</span>=<span class="css">"uk-progress-bar"</span> <span class="html">style</span>=<span class="css">"width: 20%;"</span>&gt;&lt;/<span class="tag">div</span>&gt;<br />
-			&lt;/<span class="tag">div</span>&gt;<br />
-
-		</div>
-
-	</div>
-
-
-
-	<!-- Glyph States - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-
-	<div id="icons" class="pq-docs-section">
-
-		<h1>Icons</h1>
-
-		<p>We use the <a href="http://fontawesome.io" target="blank">Font Awesome icon library</a>. This library is constantly being updated and improved so please visit their page to see the most current list of icons in the library.</p>
-
-		<a href="downloads/fonts/fontawesome.ai" class="uk-button uk-button-secondary"><i class="fa fa-floppy-o"></i> Download font</a>
-
-		<div id="code_icons" class="code">
-
-			<span class="comment">&lt;!-- Include the following in the head section of your page --&gt;</span><br/>
-
-			&lt;<span class="tag">head</span>&gt;<br/>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">link</span> <span class="html">href</span>=<span class="css">"http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"</span> <span class="html">rel</span>=<span class="css">"stylesheet"</span>&gt;<br/>
-			&lt;/<span class="tag">head</span>&gt;<br/>
-			...<br/>
-			<span class="comment">&lt;!-- Use the provided class for the icon you wish to use, the example below is for the adjust icon --&gt;</span><br/>
-
-			&lt;<span class="tag">i</span> <span class="html">class</span>=<span class="css">"fa fa-adjust"</span>&gt;&lt;/<span class="tag">i</span>&gt;
-
-		</div>
-
-	</div>
-
-</div>
-
-<div id="footer" class="pq-footer"></div>
-
-<!-- After load JavaScript files -->
-
-<script src="includes/patterns.js"></script>
-<script src="uikit/js/uikit.min.js"></script>
-<script src="uikit/js/core/dropdown.min.js"></script>
-<script src="uikit/js/core/nav.min.js"></script>
-<script src="uikit/js/core/tooltip.min.js"></script>
-<script src="uikit/js/components/sticky.min.js"></script>
-<script src="js/pq-top.js" type="text/javascript"></script>
-<script src="js/obt-forms.js" type="text/javascript"></script>
+	<script src="includes/patterns.js"></script>
+	<script src="uikit/js/uikit.min.js"></script>
+	<script src="uikit/js/core/dropdown.min.js"></script>
+	<script src="uikit/js/core/nav.min.js"></script>
+	<script src="uikit/js/core/tooltip.min.js"></script>
+	<script src="uikit/js/components/sticky.min.js"></script>
+	<script src="js/pq-top.js" type="text/javascript"></script>
+	<script src="js/obt-forms.js" type="text/javascript"></script>
 
 
 </body>

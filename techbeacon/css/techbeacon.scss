@@ -47,11 +47,35 @@ a:hover, a:active, a:focus {
 
 /* Patterns Specific */
 
+ul li {
+	margin-bottom: 5px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+table {
+	text-align: left;
+	font-size: 14px;
+	border-collapse: collapse;
+
+	th, td {
+		padding: 15px 30px;
+		border: 1px solid $background-grey;
+	}
+
+	td {
+		padding-right: 100px;
+	}
+}
+
 .header {
 	background-color: $background-grey;
 	display: block;
 	text-align: right;
 	height: 70px;
+	font-size: 16px;
 
 	ul {
 		display: inline;
@@ -64,6 +88,15 @@ a:hover, a:active, a:focus {
 			display: inline-block;
 			line-height: 70px;
 			padding: 0 20px;
+
+			a {
+				text-decoration: none;
+				color: $dark-grey;
+
+				&:hover {
+					color: $link;
+				}
+			}
 		}
 	}
 
@@ -166,12 +199,18 @@ section {
 		width: 300px;
 		margin-left: 40px;
 		float: left;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
 	}
 
-	.col-2-3 {
+	.column-2-3 {
 		width: 640px;
 		margin-left: 40px;
 		float: left;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
 	}
 }
 

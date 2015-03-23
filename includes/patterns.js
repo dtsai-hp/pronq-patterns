@@ -44,7 +44,7 @@ var footer = "<div class='uk-container uk-container-center'> \
 			</ul> \
 		</div> \
 		<div class='uk-width-1-1 bottom'> \
-			Privacy statement&nbsp;&nbsp;&bull;&nbsp;&nbsp;Terms of Use&nbsp;&nbsp;&bull;&nbsp;&nbsp;&copy; 2015 Hewlett-Packard Development Company, L.P  \
+			<a href='https://saas.hp.com/ru-ru/content/privacy'>Privacy statement</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href='https://saas.hp.com/ru-ru/content/terms'>Terms of Use</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;&copy; 2015 Hewlett-Packard Development Company, L.P  \
 		</div> \
 	</div> \
 </div>";

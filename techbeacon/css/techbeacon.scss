@@ -4,9 +4,11 @@ $medium-grey: #999999;
 $background-grey: #f2f2f2;
 $link: #0099dd;
 $link-hover: #22bbff;
+$sans-serif: 'Lato', sans-serif;
+$serif: 'Bitter', serif;
 
 body {
-	font-family: 'Lato', sans-serif;;
+	font-family: $sans-serif;
 	font-weight: 400;
 	color: $dark-grey;
 	margin: 0;
@@ -16,21 +18,21 @@ body {
 }
 
 h1 {
-	font-family: 'Bitter', serif;
+	font-family: $serif;
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 40px;
 }
 
 h2 {
-	font-family: 'Bitter', serif;
+	font-family: $serif;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 32px;
 }
 
 h3 {
-	font-family: 'Lato', sans-serif;
+	font-family: $sans-serif;
 	font-weight: 900;
 	font-size: 18px;
 	line-height: 20px;
@@ -39,10 +41,12 @@ h3 {
 a:link {
 	color: $link;
 	font-size: inherit;
+	text-decoration: none;
 }
 
 a:hover, a:active, a:focus {
 	color: $link-hover;
+	text-decoration: none;
 }
 
 /* Patterns Specific */
@@ -68,6 +72,11 @@ table {
 	td {
 		padding-right: 100px;
 	}
+}
+
+span.category {
+	color: $red;
+	text-transform: uppercase;
 }
 
 .header {
@@ -159,9 +168,9 @@ section {
 /* End Patterns Specific */
 
 .navigation {
+	border-bottom: 1px solid $background-grey;
 
 	.container {
-		border-bottom: 1px solid $background-grey;
 		padding: 30px 0;
 
 		ul {
@@ -230,9 +239,174 @@ button {
 	border: 0;
 	border-radius: 5px;
 	cursor: pointer;
-	font-family: 'Lato', sans-serif;
+	font-family: $sans-serif;
 }
 
 button:hover {
 	background-color: $link-hover;
+}
+
+.social {
+	color: white;
+	font-size: 18px;
+	border-radius: 50%;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.social:before {
+	line-height: 40px;
+}
+
+.social:hover {
+	opacity: .9;
+}
+
+.fa-twitter {
+	background-color: #00aced;
+
+}
+
+.fa-facebook {
+	background-color: #3b5998;
+}
+
+.fa-google-plus {
+	background-color: #DD4B39;
+}
+
+.fa-linkedin {
+	background-color: #007bb6;
+}
+
+.fa-envelope {
+	background-color: $medium-grey;
+}
+
+.tag-box {
+	width: 300px;
+	padding-bottom: 30px;
+}
+
+.tag {
+	background-color: white;
+	border-radius: 15px;
+	padding: 3px 10px;
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.tag:hover {
+	color: white;
+	background-color: $link;
+}
+
+blockquote {
+	border-left: 6px solid $red;
+	padding-left: 12px;
+	font-size: 24px;
+	font-family: $serif;
+	font-style: italic;
+	color: $medium-grey;
+	margin-left: 0;
+	line-height: 36px;
+}
+
+.article-listing {
+
+	width: 300px;
+
+	.title {
+
+		.subtitle {
+			color: $medium-grey;
+			display: block;
+			font-weight: 400;
+			font-size: 14px;
+
+			.category {
+				margin-right: 10px;
+			}
+		}
+
+		font-weight: 900;
+		display: block;
+
+		&:hover {
+			color: $link-hover;
+			cursor: pointer;
+
+			.subtitle {
+				color: $link-hover;
+			}
+		}
+	}
+
+
+	&.picture {
+		.title {
+			font-family: $serif;
+			font-size: 20px;
+			line-height: 23px;
+			font-weight: 700;
+
+			.subtitle {
+				font-family: $sans-serif;
+			}
+		}
+
+		img:hover + .title {
+			color: $link-hover;
+
+			.subtitle {
+				color: $link-hover;
+			}
+		}
+	}
+
+	.headshot {
+		width: 40px;
+		height: 40px;
+		overflow: hidden;
+		border-radius: 50%;
+		float: left;
+		margin-right: 5px;
+	}
+
+	.author-info {
+		margin-top: 5px;
+		color: $medium-grey;
+
+		i {
+			margin-left: 10px;
+		}
+	}
+
+	img.teaser {
+		width: 100%;
+		margin-bottom: 15px;
+		cursor: pointer;
+	}
+
+	&.long {
+		width: 640px;
+
+		img.teaser {
+			float: left;
+			margin-right: 20px;
+			width: 150px;
+			height: auto;
+		}
+	}
+}
+
+img.logo {
+	border: 1px solid #DDDDDD;
+	margin: 0 10px 10px 0;
+	border-radius: 10px;
 }

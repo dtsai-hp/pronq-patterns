@@ -524,6 +524,32 @@ ul > li:last-child, ol > li:last-child {
 }
 
 /*
+* Modifier: `uk-button-tertiary`
+*/
+
+.uk-button-tertiary {
+    background-color: $button-tertiary-background;
+    color: $button-tertiary-color;
+    @include hook-button-tertiary();
+}
+
+/* Hover */
+.uk-button-tertiary:hover,
+.uk-button-tertiary:focus {
+    background-color: $button-tertiary-hover-background;
+    color: $button-tertiary-hover-color;
+    @include hook-button-tertiary-hover();
+}
+
+/* Active */
+.uk-button-tertiary:active,
+.uk-button-tertiary.uk-active {
+    background-color: $button-tertiary-active-background;
+    color: $button-tertiary-active-color;
+    @include hook-button-tertiary-active();
+}
+
+/*
 * Modifier: `uk-button-mingrey`
 */
 

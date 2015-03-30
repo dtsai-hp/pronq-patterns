@@ -3358,7 +3358,7 @@ select.uk-form-width-mini {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 30px;
-  background: #0096D6;
+  background: #FF9E1B;
   vertical-align: middle;
   /* 8 */
   line-height: 40px;
@@ -3381,7 +3381,7 @@ select.uk-form-width-mini {
  */
 .uk-button:hover,
 .uk-button:focus {
-  background-color: #0084BD;
+  background-color: #F68E00;
   color: white;
   /* 2 */
   outline: none;
@@ -3391,7 +3391,7 @@ select.uk-form-width-mini {
 /* Active */
 .uk-button:active,
 .uk-button.uk-active {
-  background-color: #0084BD;
+  background-color: #F68E00;
   color: white; }
 
 /* Color modifiers
@@ -3400,19 +3400,19 @@ select.uk-form-width-mini {
  * Modifier: `uk-button-primary`
  */
 .uk-button-primary {
-  background-color: #FF9E1B;
+  background-color: #0096D6;
   color: white; }
 
 /* Hover */
 .uk-button-primary:hover,
 .uk-button-primary:focus {
-  background-color: #F68E00;
+  background-color: #0084BD;
   color: white; }
 
 /* Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-  background-color: #F68E00;
+  background-color: #0084BD;
   color: white; }
 
 /*

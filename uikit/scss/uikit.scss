@@ -167,7 +167,6 @@ ul > li:last-child, ol > li:last-child {
     padding: 20px 15px;
     border-bottom: 1px solid $grey-light3;
     cursor: pointer;
-    transition: border-right 0.3s;
     display: block;
     border-right: 5px solid white;
 }
@@ -190,14 +189,18 @@ ul > li:last-child, ol > li:last-child {
 }
 
 .pq-sideMenu div.tab:hover, .pq-sideMenu div.tab:active, .pq-sideMenu div.mobile-tab:hover, .pq-sideMenu div.mobile-tab:active {
-    background-color: $blue-light3;
-    border-right-color: $blue;
+    background-color: $grey-background;
+    font-weight: $bold;
+    border-right-color: $grey-background;
     color: $blue;
+    transition: border-right 0s;
 }
 
 .pq-sideMenu div.tab.active, .pq-sideMenu div.mobile-tab.active {
     font-weight: bold;
+    background-color: $grey-background;
     border-right: 5px solid $blue;
+    transition: border-right 0.3s;
 }
 
 .pq-sideMenu > div.tab.active i {

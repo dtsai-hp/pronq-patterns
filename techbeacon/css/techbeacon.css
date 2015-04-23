@@ -26,13 +26,12 @@ h3 {
   line-height: 20px; }
 
 a:link {
-  color: #0099dd;
+  color: #0096D6;
   font-size: inherit;
   text-decoration: none; }
 
 a:hover, a:active, a:focus {
-  color: #22bbff;
-  text-decoration: none; }
+  text-decoration: underline; }
 
 /* Patterns Specific */
 ul li {
@@ -51,7 +50,7 @@ table {
     padding-right: 100px; }
 
 span.category {
-  color: #ee1100;
+  color: #0096D6;
   text-transform: uppercase; }
 
 .header {
@@ -74,7 +73,7 @@ span.category {
         text-decoration: none;
         color: #333333; }
         .header ul li a:hover {
-          color: #0099dd; }
+          color: #0096D6; }
   .header img {
     float: left;
     max-height: 30px;
@@ -96,18 +95,14 @@ section {
   margin-right: 10px;
   width: 130px;
   display: inline-block; }
-  .colorbox.red {
-    border-color: #ee1100; }
+  .colorbox.blue {
+    border-color: #0096D6; }
   .colorbox.dark-grey {
     border-color: #333333; }
   .colorbox.medium-grey {
     border-color: #999999; }
   .colorbox.background-grey {
     border-color: #f2f2f2; }
-  .colorbox.link {
-    border-color: #0099dd; }
-  .colorbox.link-hover {
-    border-color: #22bbff; }
   .colorbox .hex {
     color: #999999;
     display: block;
@@ -165,7 +160,7 @@ section {
 
 button {
   color: white;
-  background-color: #0099dd;
+  background-color: #0096D6;
   padding: 0 15px;
   height: 40px;
   line-height: 40px;
@@ -176,7 +171,7 @@ button {
   font-family: "Lato", sans-serif; }
 
 button:hover {
-  background-color: #22bbff; }
+  background-color: rgba(0, 150, 214, 0.8); }
 
 .social {
   color: white;
@@ -224,10 +219,10 @@ button:hover {
 
 .tag:hover {
   color: white;
-  background-color: #0099dd; }
+  background-color: #0096D6; }
 
 blockquote {
-  border-left: 6px solid #ee1100;
+  border-left: 6px solid #0096D6;
   padding-left: 12px;
   font-size: 24px;
   font-family: "Bitter", serif;
@@ -249,10 +244,10 @@ blockquote {
       .article-listing .title .subtitle .category {
         margin-right: 10px; }
     .article-listing .title:hover {
-      color: #22bbff;
+      color: #0096D6;
       cursor: pointer; }
       .article-listing .title:hover .subtitle {
-        color: #22bbff; }
+        color: #999999; }
   .article-listing.picture .title {
     font-family: "Bitter", serif;
     font-size: 20px;
@@ -261,9 +256,9 @@ blockquote {
     .article-listing.picture .title .subtitle {
       font-family: "Lato", sans-serif; }
   .article-listing.picture img:hover + .title {
-    color: #22bbff; }
+    color: #0096D6; }
     .article-listing.picture img:hover + .title .subtitle {
-      color: #22bbff; }
+      color: #999999; }
   .article-listing .headshot {
     width: 40px;
     height: 40px;

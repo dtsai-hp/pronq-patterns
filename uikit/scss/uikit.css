@@ -6587,7 +6587,6 @@ ul > li:last-child, ol > li:last-child {
   padding: 20px 15px;
   border-bottom: 1px solid #DDDDDD;
   cursor: pointer;
-  transition: border-right 0.3s;
   display: block;
   border-right: 5px solid white; }
 
@@ -6606,13 +6605,17 @@ ul > li:last-child, ol > li:last-child {
   float: right; }
 
 .pq-sideMenu div.tab:hover, .pq-sideMenu div.tab:active, .pq-sideMenu div.mobile-tab:hover, .pq-sideMenu div.mobile-tab:active {
-  background-color: #BDEBFF;
-  border-right-color: #0096D6;
-  color: #0096D6; }
+  background-color: #F5F5F5;
+  font-weight: 700;
+  border-right-color: #F5F5F5;
+  color: #0096D6;
+  transition: border-right 0s; }
 
 .pq-sideMenu div.tab.active, .pq-sideMenu div.mobile-tab.active {
   font-weight: bold;
-  border-right: 5px solid #0096D6; }
+  background-color: #F5F5F5;
+  border-right: 5px solid #0096D6;
+  transition: border-right 0.3s; }
 
 .pq-sideMenu > div.tab.active i {
   color: #666666; }

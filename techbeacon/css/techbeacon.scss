@@ -1,9 +1,7 @@
-$red: #ee1100;
+$blue: #0096D6;
 $dark-grey: #333333;
 $medium-grey: #999999;
 $background-grey: #f2f2f2;
-$link: #0099dd;
-$link-hover: #22bbff;
 $sans-serif: 'Lato', sans-serif;
 $serif: 'Bitter', serif;
 
@@ -39,14 +37,13 @@ h3 {
 }
 
 a:link {
-	color: $link;
+	color: $blue;
 	font-size: inherit;
 	text-decoration: none;
 }
 
 a:hover, a:active, a:focus {
-	color: $link-hover;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 /* Patterns Specific */
@@ -75,7 +72,7 @@ table {
 }
 
 span.category {
-	color: $red;
+	color: $blue;
 	text-transform: uppercase;
 }
 
@@ -103,7 +100,7 @@ span.category {
 				color: $dark-grey;
 
 				&:hover {
-					color: $link;
+					color: $blue;
 				}
 			}
 		}
@@ -138,8 +135,8 @@ section {
 	width: 130px;
 	display: inline-block;
 
-	&.red {
-		border-color: $red;
+	&.blue {
+		border-color: $blue;
 	}
 	&.dark-grey {
 		border-color: $dark-grey;
@@ -149,12 +146,6 @@ section {
 	}
 	&.background-grey {
 		border-color: $background-grey;
-	}
-	&.link {
-		border-color: $link;
-	}
-	&.link-hover {
-		border-color: $link-hover;
 	}
 
 	.hex {
@@ -231,7 +222,7 @@ section {
 
 button {
 	color: white;
-	background-color: $link;
+	background-color: $blue;
 	padding: 0 15px;
 	height: 40px;
 	line-height: 40px;
@@ -243,7 +234,7 @@ button {
 }
 
 button:hover {
-	background-color: $link-hover;
+	background-color: transparentize($blue,.2);
 }
 
 .social {
@@ -303,11 +294,11 @@ button:hover {
 
 .tag:hover {
 	color: white;
-	background-color: $link;
+	background-color: $blue;
 }
 
 blockquote {
-	border-left: 6px solid $red;
+	border-left: 6px solid $blue;
 	padding-left: 12px;
 	font-size: 24px;
 	font-family: $serif;
@@ -338,11 +329,11 @@ blockquote {
 		display: block;
 
 		&:hover {
-			color: $link-hover;
+			color: $blue;
 			cursor: pointer;
 
 			.subtitle {
-				color: $link-hover;
+				color: $medium-grey;
 			}
 		}
 	}
@@ -361,10 +352,10 @@ blockquote {
 		}
 
 		img:hover + .title {
-			color: $link-hover;
+			color: $blue;
 
 			.subtitle {
-				color: $link-hover;
+				color: $medium-grey;
 			}
 		}
 	}
